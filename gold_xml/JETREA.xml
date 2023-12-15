@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Label drug="jetrea" track="TAC2017_ADR">
+  <Text>
+    <Section name="adverse reactions" id="S1">    6  ADVERSE REACTIONS
+
+  The following adverse reactions are described below and elsewhere in the labeling:
+
+
+
+ *    Decreased Vision [see Warnings and Precautions  (5.1)  ]  
+ *    Intravitreal Injection Procedure Associated Effects [see Warnings and Precautions  (5.2)  and Dosage and Administration  (2.4)  ]  
+ *    Potential for Lens Subluxation [see Warnings and Precautions  (5.3)  ]  
+ *    Retinal Breaks [see Warnings and Precautions  (5.4)  and Dosage and Administration  (2.4)  ]  
+   *  The most commonly reported reactions (&gt;= 5%) in patients treated with JETREA were vitreous floaters, conjunctival hemorrhage, eye pain, photopsia, blurred vision, macular hole, reduced visual acuity, visual impairment, and retinal edema.  (6.1)   
+      EXCERPT:     To report SUSPECTED ADVERSE REACTIONS, contact ThromboGenics Inc. at 1-855-253-7396 or FDA at 1-800-FDA-1088 or  www.fda.gov/medwatch  .  
+ 
+
+ 
+
+  6.1 Clinical Trials Experience
+
+  Because clinical trials are conducted under widely varying conditions, adverse reaction rates in one clinical trial of a drug cannot be directly compared with rates in the clinical trials of the same or another drug and may not reflect the rates observed in practice.
+
+
+
+ Approximately 800 patients have been treated with an intravitreal injection of JETREA. Of these, 465 patients received an intravitreal injection of ocriplasmin 0.125 mg (187 patients received vehicle) in the 2 vehicle-controlled studies (Study 1 and Study 2).
+
+
+
+ The most common adverse reactions (incidence 5% - 20% listed in descending order of frequency) in the vehicle-controlled clinical studies were: vitreous floaters, conjunctival hemorrhage, eye pain, photopsia, blurred vision, macular hole, reduced visual acuity, visual impairment, and retinal edema.
+
+
+
+ Less common adverse reactions observed in the studies at a frequency of 2% - &lt; 5% in patients treated with JETREA included macular edema, increased intraocular pressure, anterior chamber cell, photophobia, vitreous detachment, ocular discomfort, iritis, cataract, dry eye, metamorphopsia, conjunctival hyperemia, and retinal degeneration.
+
+
+
+ Dyschromatopsia was reported in 2% of patients injected with JETREA, with the majority of cases reported from two uncontrolled clinical studies. In approximately half of these dyschromatopsia cases there were also electroretinographic (ERG) changes reported (a- and b-wave amplitude decrease).
+
+
+
+   6.2 Immunogenicity
+
+  As with all therapeutic proteins, there is potential for immunogenicity. Immunogenicity for this product has not been evaluated.
+</Section>
+    <Section name="warnings and precautions" id="S2">    5  WARNINGS AND PRECAUTIONS
+
+
+
+   EXCERPT:    *  Decreases in vision due to progression of the condition with traction may occur requiring surgical intervention. Patients should be monitored and instructed to report any symptoms without delay.  (5.1)   
+ *  Intravitreal injection procedure associated effects (intraocular inflammation/infection, intraocular hemorrhage and increased IOP) may occur following an intravitreal injection. Patients should be monitored and instructed to report any symptoms without delay.  (5.2)   
+ *  Potential for lens subluxation.  (5.3)   
+    
+ 
+
+   5.1 Decreased Vision
+
+
+
+  A decrease of &gt;= 3 line of best corrected visual acuity (BCVA) was experienced by 5.6% of patients treated with JETREA and 3.2% of patients treated with vehicle in the controlled trials [see Clinical Studies  (14)  ]  .
+
+
+
+ The majority of these decreases in vision were due to progression of the condition with traction and many required surgical intervention. Patients should be monitored appropriately [see Dosage and Administration  (2.4)  ]  .
+
+
+
+    5.2 Intravitreal Injection Procedure Associated Effects
+
+
+
+  Intravitreal injections are associated with intraocular inflammation / infection, intraocular hemorrhage and increased intraocular pressure (IOP). In the controlled trials, intraocular inflammation occurred in 7.1% of patients injected with JETREA vs. 3.7% of patients injected with vehicle. Most of the post-injection intraocular inflammation events were mild and transient. Intraocular hemorrhage occurred in 2.4% vs. 3.7% of patients injected with JETREA vs. vehicle, respectively. Increased intraocular pressure occurred in 4.1% vs. 5.3% of patients injected with JETREA vs. vehicle, respectively.
+
+
+
+    5.3 Potential for Lens Subluxation
+
+
+
+  One case of lens subluxation was reported in a premature infant who received an intravitreal injection of 0.175 mg (1.4 times higher than the recommended dose) [see Pediatric Use  (8.4)  ]  . Lens subluxation was observed in three animal species (monkey, rabbit, minipig) following a single intravitreal injection that achieved vitreous concentrations of ocriplasmin 1.4 times higher than achieved with the recommended treatment dose. Administration of a second intravitreal dose in monkeys, 28 days apart, produced lens subluxation in 100% of the treated eyes [see Nonclinical Toxicology  (13.2)  ]  .
+
+
+
+    5.4 Retinal Breaks
+
+
+
+  In the controlled trials, the incidence of retinal detachment was 0.9% in the JETREA group and 1.6% in the vehicle group, while the incidence of retinal tear (without detachment) was 1.1% in the JETREA group and 2.7% in the vehicle group. Most of these events occurred during or after vitrectomy in both groups. The incidence of retinal detachment that occurred pre-vitrectomy was 0.4% in the JETREA group and none in the vehicle group, while the incidence of retinal tear (without detachment) that occurred pre-vitrectomy was none in the JETREA group and 0.5% in the vehicle group.
+
+
+
+    5.5 Dyschromatopsia
+
+
+
+  Dyschromatopsia (generally described as yellowish vision) was reported in 2% of all patients injected with JETREA. In approximately half of these dyschromatopsia cases there were also electroretinographic (ERG) changes reported (a- and b-wave amplitude decrease).
+</Section>
+  </Text>
+  <Mentions>
+    <Mention id="M1" section="S1" type="AdverseReaction" start="120" len="16" str="Decreased Vision" />
+    <Mention id="M2" section="S1" type="AdverseReaction" start="185" len="51" str="Intravitreal Injection Procedure Associated Effects" />
+    <Mention id="M3" section="S1" type="Factor" start="323" len="9" str="Potential" />
+    <Mention id="M4" section="S1" type="AdverseReaction" start="337" len="16" str="Lens Subluxation" />
+    <Mention id="M5" section="S1" type="AdverseReaction" start="402" len="14" str="Retinal Breaks" />
+    <Mention id="M6" section="S1" type="AdverseReaction" start="585" len="17" str="vitreous floaters" />
+    <Mention id="M7" section="S1" type="AdverseReaction" start="604" len="23" str="conjunctival hemorrhage" />
+    <Mention id="M8" section="S1" type="AdverseReaction" start="629" len="8" str="eye pain" />
+    <Mention id="M9" section="S1" type="AdverseReaction" start="639" len="9" str="photopsia" />
+    <Mention id="M10" section="S1" type="AdverseReaction" start="650" len="14" str="blurred vision" />
+    <Mention id="M11" section="S1" type="AdverseReaction" start="666" len="12" str="macular hole" />
+    <Mention id="M12" section="S1" type="AdverseReaction" start="680" len="21" str="reduced visual acuity" />
+    <Mention id="M13" section="S1" type="AdverseReaction" start="703" len="17" str="visual impairment" />
+    <Mention id="M14" section="S1" type="AdverseReaction" start="726" len="13" str="retinal edema" />
+    <Mention id="M15" section="S1" type="AdverseReaction" start="1631" len="17" str="vitreous floaters" />
+    <Mention id="M16" section="S1" type="AdverseReaction" start="1650" len="23" str="conjunctival hemorrhage" />
+    <Mention id="M17" section="S1" type="AdverseReaction" start="1675" len="8" str="eye pain" />
+    <Mention id="M18" section="S1" type="AdverseReaction" start="1685" len="9" str="photopsia" />
+    <Mention id="M19" section="S1" type="AdverseReaction" start="1696" len="14" str="blurred vision" />
+    <Mention id="M20" section="S1" type="AdverseReaction" start="1712" len="12" str="macular hole" />
+    <Mention id="M21" section="S1" type="AdverseReaction" start="1726" len="21" str="reduced visual acuity" />
+    <Mention id="M22" section="S1" type="AdverseReaction" start="1749" len="17" str="visual impairment" />
+    <Mention id="M23" section="S1" type="AdverseReaction" start="1772" len="13" str="retinal edema" />
+    <Mention id="M24" section="S1" type="AdverseReaction" start="1914" len="13" str="macular edema" />
+    <Mention id="M25" section="S1" type="AdverseReaction" start="1929" len="30" str="increased intraocular pressure" />
+    <Mention id="M26" section="S1" type="AdverseReaction" start="1961" len="21" str="anterior chamber cell" />
+    <Mention id="M27" section="S1" type="AdverseReaction" start="1984" len="11" str="photophobia" />
+    <Mention id="M28" section="S1" type="AdverseReaction" start="1997" len="19" str="vitreous detachment" />
+    <Mention id="M29" section="S1" type="AdverseReaction" start="2018" len="17" str="ocular discomfort" />
+    <Mention id="M30" section="S1" type="AdverseReaction" start="2037" len="6" str="iritis" />
+    <Mention id="M31" section="S1" type="AdverseReaction" start="2045" len="8" str="cataract" />
+    <Mention id="M32" section="S1" type="AdverseReaction" start="2055" len="7" str="dry eye" />
+    <Mention id="M33" section="S1" type="AdverseReaction" start="2064" len="14" str="metamorphopsia" />
+    <Mention id="M34" section="S1" type="AdverseReaction" start="2080" len="22" str="conjunctival hyperemia" />
+    <Mention id="M35" section="S1" type="AdverseReaction" start="2108" len="20" str="retinal degeneration" />
+    <Mention id="M36" section="S1" type="AdverseReaction" start="2134" len="15" str="Dyschromatopsia" />
+    <Mention id="M37" section="S1" type="AdverseReaction" start="2310" len="15" str="dyschromatopsia" />
+    <Mention id="M38" section="S1" type="AdverseReaction" start="2348,2375" len="20,7" str="electroretinographic changes" />
+    <Mention id="M39" section="S1" type="AdverseReaction" start="2348,2400" len="20,25" str="electroretinographic b-wave amplitude decrease" />
+    <Mention id="M40" section="S1" type="AdverseReaction" start="2348,2393,2402" len="20,1,23" str="electroretinographic a wave amplitude decrease" />
+    <Mention id="M41" section="S1" type="AdverseReaction" start="2370,2375" len="3,7" str="ERG changes" />
+    <Mention id="M42" section="S2" type="AdverseReaction" start="53" len="19" str="Decreases in vision" />
+    <Mention id="M43" section="S2" type="AdverseReaction" start="80" len="28" str="progression of the condition" />
+    <Mention id="M44" section="S2" type="Factor" start="123" len="3" str="may" />
+    <Mention id="M45" section="S2" type="AdverseReaction" start="262" len="51" str="Intravitreal injection procedure associated effects" />
+    <Mention id="M46" section="S2" type="AdverseReaction" start="315" len="24" str="intraocular inflammation" />
+    <Mention id="M47" section="S2" type="AdverseReaction" start="315,340" len="11,9" str="intraocular infection" />
+    <Mention id="M48" section="S2" type="AdverseReaction" start="351" len="22" str="intraocular hemorrhage" />
+    <Mention id="M49" section="S2" type="AdverseReaction" start="378" len="13" str="increased IOP" />
+    <Mention id="M50" section="S2" type="Factor" start="393" len="3" str="may" />
+    <Mention id="M51" section="S2" type="Factor" start="536" len="9" str="Potential" />
+    <Mention id="M52" section="S2" type="AdverseReaction" start="550" len="16" str="lens subluxation" />
+    <Mention id="M53" section="S2" type="AdverseReaction" start="617,639" len="8,31" str="decrease of best corrected visual acuity" />
+    <Mention id="M54" section="S2" type="AdverseReaction" start="617,639,672" len="8,2,4" str="decrease of BCVA" />
+    <Mention id="M55" section="S2" type="Severity" start="632" len="6" str="3 line" />
+    <Mention id="M56" section="S2" type="AdverseReaction" start="861" len="19" str="decreases in vision" />
+    <Mention id="M57" section="S2" type="AdverseReaction" start="893" len="28" str="progression of the condition" />
+    <Mention id="M58" section="S2" type="AdverseReaction" start="1305" len="24" str="intraocular inflammation" />
+    <Mention id="M59" section="S2" type="AdverseReaction" start="1436" len="46" str="post-injection intraocular inflammation events" />
+    <Mention id="M60" section="S2" type="Severity" start="1488" len="4" str="mild" />
+    <Mention id="M61" section="S2" type="AdverseReaction" start="1508" len="22" str="Intraocular hemorrhage" />
+    <Mention id="M62" section="S2" type="AdverseReaction" start="1617" len="30" str="Increased intraocular pressure" />
+    <Mention id="M63" section="S2" type="AdverseReaction" start="1793" len="16" str="lens subluxation" />
+    <Mention id="M64" section="S2" type="AdverseReaction" start="1973" len="16" str="Lens subluxation" />
+    <Mention id="M65" section="S2" type="Animal" start="2028" len="6" str="monkey" />
+    <Mention id="M66" section="S2" type="Animal" start="2036" len="6" str="rabbit" />
+    <Mention id="M67" section="S2" type="Animal" start="2044" len="7" str="minipig" />
+    <Mention id="M68" section="S2" type="Animal" start="2264" len="7" str="monkeys" />
+    <Mention id="M69" section="S2" type="AdverseReaction" start="2297" len="16" str="lens subluxation" />
+    <Mention id="M70" section="S2" type="AdverseReaction" start="2458" len="18" str="retinal detachment" />
+    <Mention id="M71" section="S2" type="AdverseReaction" start="2560,2574" len="12,18" str="retinal tear without detachment" />
+    <Mention id="M72" section="S2" type="AdverseReaction" start="2744" len="18" str="retinal detachment" />
+    <Mention id="M73" section="S2" type="AdverseReaction" start="2875,2889" len="12,18" str="retinal tear without detachment" />
+    <Mention id="M74" section="S2" type="AdverseReaction" start="3030" len="15" str="Dyschromatopsia" />
+    <Mention id="M75" section="S2" type="AdverseReaction" start="3070" len="16" str="yellowish vision" />
+    <Mention id="M76" section="S2" type="AdverseReaction" start="3176" len="15" str="dyschromatopsia" />
+    <Mention id="M77" section="S2" type="AdverseReaction" start="3214,3241" len="20,7" str="electroretinographic changes" />
+    <Mention id="M78" section="S2" type="AdverseReaction" start="3214,3266" len="20,25" str="electroretinographic b-wave amplitude decrease" />
+    <Mention id="M79" section="S2" type="AdverseReaction" start="3214,3259,3268" len="20,1,23" str="electroretinographic a wave amplitude decrease" />
+    <Mention id="M80" section="S2" type="AdverseReaction" start="3236,3241" len="3,7" str="ERG changes" />
+  </Mentions>
+  <Relations>
+    <Relation id="RL1" type="Hypothetical" arg1="M4" arg2="M3" />
+    <Relation id="RL2" type="Hypothetical" arg1="M42" arg2="M44" />
+    <Relation id="RL3" type="Hypothetical" arg1="M45" arg2="M50" />
+    <Relation id="RL4" type="Hypothetical" arg1="M46" arg2="M50" />
+    <Relation id="RL5" type="Hypothetical" arg1="M47" arg2="M50" />
+    <Relation id="RL6" type="Hypothetical" arg1="M48" arg2="M50" />
+    <Relation id="RL7" type="Hypothetical" arg1="M49" arg2="M50" />
+    <Relation id="RL8" type="Hypothetical" arg1="M52" arg2="M51" />
+    <Relation id="RL9" type="Effect" arg1="M53" arg2="M55" />
+    <Relation id="RL10" type="Effect" arg1="M54" arg2="M55" />
+    <Relation id="RL11" type="Effect" arg1="M59" arg2="M60" />
+    <Relation id="RL12" type="Hypothetical" arg1="M64" arg2="M65" />
+    <Relation id="RL13" type="Hypothetical" arg1="M64" arg2="M66" />
+    <Relation id="RL14" type="Hypothetical" arg1="M64" arg2="M67" />
+    <Relation id="RL15" type="Hypothetical" arg1="M69" arg2="M68" />
+  </Relations>
+  <Reactions>
+    <Reaction id="AR1" str="decreased vision">
+      <Normalization id="AR1.N1" meddra_pt="Visual acuity reduced" meddra_pt_id="10047531" meddra_llt="Vision decreased" meddra_llt_id="10047516" />
+    </Reaction>
+    <Reaction id="AR2" str="intravitreal injection procedure associated effects">
+      <Normalization id="AR2.N1" meddra_pt="Injection site reaction" meddra_pt_id="10022095" flag="underspecified" />
+    </Reaction>
+    <Reaction id="AR3" str="lens subluxation">
+      <Normalization id="AR3.N1" meddra_pt="Lens dislocation" meddra_pt_id="10024203" meddra_llt="Subluxation of lens" meddra_llt_id="10042408" />
+    </Reaction>
+    <Reaction id="AR4" str="retinal breaks">
+      <Normalization id="AR4.N1" meddra_pt="Retinal tear" meddra_pt_id="10038897" meddra_llt="Retinal break" meddra_llt_id="10066422" />
+    </Reaction>
+    <Reaction id="AR5" str="vitreous floaters">
+      <Normalization id="AR5.N1" meddra_pt="Vitreous floaters" meddra_pt_id="10047654" />
+    </Reaction>
+    <Reaction id="AR6" str="conjunctival hemorrhage">
+      <Normalization id="AR6.N1" meddra_pt="Conjunctival haemorrhage" meddra_pt_id="10010719" meddra_llt="Conjunctival hemorrhage" meddra_llt_id="10010720" />
+    </Reaction>
+    <Reaction id="AR7" str="eye pain">
+      <Normalization id="AR7.N1" meddra_pt="Eye pain" meddra_pt_id="10015958" />
+    </Reaction>
+    <Reaction id="AR8" str="photopsia">
+      <Normalization id="AR8.N1" meddra_pt="Photopsia" meddra_pt_id="10034962" />
+    </Reaction>
+    <Reaction id="AR9" str="blurred vision">
+      <Normalization id="AR9.N1" meddra_pt="Vision blurred" meddra_pt_id="10047513" meddra_llt="Blurred vision" meddra_llt_id="10005886" />
+    </Reaction>
+    <Reaction id="AR10" str="macular hole">
+      <Normalization id="AR10.N1" meddra_pt="Macular hole" meddra_pt_id="10051058" />
+    </Reaction>
+    <Reaction id="AR11" str="reduced visual acuity">
+      <Normalization id="AR11.N1" meddra_pt="Visual acuity reduced" meddra_pt_id="10047531" />
+    </Reaction>
+    <Reaction id="AR12" str="visual impairment">
+      <Normalization id="AR12.N1" meddra_pt="Visual impairment" meddra_pt_id="10047571" />
+    </Reaction>
+    <Reaction id="AR13" str="retinal edema">
+      <Normalization id="AR13.N1" meddra_pt="Retinal oedema" meddra_pt_id="10038886" meddra_llt="Retinal edema" meddra_llt_id="10038860" />
+    </Reaction>
+    <Reaction id="AR14" str="macular edema">
+      <Normalization id="AR14.N1" meddra_pt="Macular oedema" meddra_pt_id="10025415" meddra_llt="Macular edema" meddra_llt_id="10054467" />
+    </Reaction>
+    <Reaction id="AR15" str="increased intraocular pressure">
+      <Normalization id="AR15.N1" meddra_pt="Intraocular pressure increased" meddra_pt_id="10022806" meddra_llt="Increased intraocular pressure" meddra_llt_id="10021667" />
+    </Reaction>
+    <Reaction id="AR16" str="anterior chamber cell">
+      <Normalization id="AR16.N1" meddra_pt="Anterior chamber cell" meddra_pt_id="10053781" />
+    </Reaction>
+    <Reaction id="AR17" str="photophobia">
+      <Normalization id="AR17.N1" meddra_pt="Photophobia" meddra_pt_id="10034960" />
+    </Reaction>
+    <Reaction id="AR18" str="vitreous detachment">
+      <Normalization id="AR18.N1" meddra_pt="Vitreous detachment" meddra_pt_id="10047650" />
+    </Reaction>
+    <Reaction id="AR19" str="ocular discomfort">
+      <Normalization id="AR19.N1" meddra_pt="Ocular discomfort" meddra_pt_id="10052143" />
+    </Reaction>
+    <Reaction id="AR20" str="iritis">
+      <Normalization id="AR20.N1" meddra_pt="Iritis" meddra_pt_id="10022955" />
+    </Reaction>
+    <Reaction id="AR21" str="cataract">
+      <Normalization id="AR21.N1" meddra_pt="Cataract" meddra_pt_id="10007739" />
+    </Reaction>
+    <Reaction id="AR22" str="dry eye">
+      <Normalization id="AR22.N1" meddra_pt="Dry eye" meddra_pt_id="10013774" />
+    </Reaction>
+    <Reaction id="AR23" str="metamorphopsia">
+      <Normalization id="AR23.N1" meddra_pt="Metamorphopsia" meddra_pt_id="10063341" />
+    </Reaction>
+    <Reaction id="AR24" str="conjunctival hyperemia">
+      <Normalization id="AR24.N1" meddra_pt="Conjunctival hyperaemia" meddra_pt_id="10051625" meddra_llt="Conjunctival hyperemia" meddra_llt_id="10054364" />
+    </Reaction>
+    <Reaction id="AR25" str="retinal degeneration">
+      <Normalization id="AR25.N1" meddra_pt="Retinal degeneration" meddra_pt_id="10038845" />
+    </Reaction>
+    <Reaction id="AR26" str="dyschromatopsia">
+      <Normalization id="AR26.N1" meddra_pt="Chromatopsia" meddra_pt_id="10008795" meddra_llt="Dyschromatopsia" meddra_llt_id="10013892" />
+    </Reaction>
+    <Reaction id="AR27" str="electroretinographic changes">
+      <Normalization id="AR27.N1" meddra_pt="Retinogram abnormal" meddra_pt_id="10059663" meddra_llt="Electroretinogram abnormal" meddra_llt_id="10052533" />
+    </Reaction>
+    <Reaction id="AR28" str="electroretinographic b-wave amplitude decrease">
+      <Normalization id="AR28.N1" meddra_pt="Retinogram abnormal" meddra_pt_id="10059663" meddra_llt="Electroretinogram abnormal" meddra_llt_id="10052533" flag="underspecified" />
+    </Reaction>
+    <Reaction id="AR29" str="electroretinographic a wave amplitude decrease">
+      <Normalization id="AR29.N1" meddra_pt="Retinogram abnormal" meddra_pt_id="10059663" meddra_llt="Electroretinogram abnormal" meddra_llt_id="10052533" flag="underspecified" />
+    </Reaction>
+    <Reaction id="AR30" str="erg changes">
+      <Normalization id="AR30.N1" meddra_pt="Retinogram abnormal" meddra_pt_id="10059663" meddra_llt="Electroretinogram abnormal" meddra_llt_id="10052533" />
+    </Reaction>
+    <Reaction id="AR31" str="decreases in vision">
+      <Normalization id="AR31.N1" meddra_pt="Visual acuity reduced" meddra_pt_id="10047531" meddra_llt="Vision decreased" meddra_llt_id="10047516" />
+    </Reaction>
+    <Reaction id="AR32" str="progression of the condition">
+      <Normalization id="AR32.N1" meddra_pt="Disease progression" meddra_pt_id="10061818" />
+    </Reaction>
+    <Reaction id="AR33" str="intraocular inflammation">
+      <Normalization id="AR33.N1" meddra_pt="Eye inflammation" meddra_pt_id="10015943" />
+    </Reaction>
+    <Reaction id="AR34" str="intraocular infection">
+      <Normalization id="AR34.N1" meddra_pt="Eye infection intraocular" meddra_pt_id="10054762" />
+    </Reaction>
+    <Reaction id="AR35" str="intraocular hemorrhage">
+      <Normalization id="AR35.N1" meddra_pt="Eye haemorrhage" meddra_pt_id="10015926" meddra_llt="Intraocular hemorrhage" meddra_llt_id="10055297" />
+    </Reaction>
+    <Reaction id="AR36" str="increased iop">
+      <Normalization id="AR36.N1" meddra_pt="Intraocular pressure increased" meddra_pt_id="10022806" />
+    </Reaction>
+    <Reaction id="AR37" str="decrease of best corrected visual acuity">
+      <Normalization id="AR37.N1" meddra_pt="Visual acuity tests abnormal" meddra_pt_id="10047534" meddra_llt="Best-corrected distance visual acuity decreased" meddra_llt_id="10070552" />
+    </Reaction>
+    <Reaction id="AR38" str="decrease of bcva">
+      <Normalization id="AR38.N1" meddra_pt="Visual acuity tests abnormal" meddra_pt_id="10047534" meddra_llt="Best-corrected distance visual acuity decreased" meddra_llt_id="10070552" />
+    </Reaction>
+    <Reaction id="AR39" str="post-injection intraocular inflammation events">
+      <Normalization id="AR39.N1" meddra_pt="Eye inflammation" meddra_pt_id="10015943" />
+      <Normalization id="AR39.N2" meddra_pt="Injection site inflammation" meddra_pt_id="10022078" />
+    </Reaction>
+    <Reaction id="AR40" str="retinal detachment">
+      <Normalization id="AR40.N1" meddra_pt="Retinal detachment" meddra_pt_id="10038848" />
+    </Reaction>
+    <Reaction id="AR41" str="retinal tear without detachment">
+      <Normalization id="AR41.N1" meddra_pt="Retinal tear" meddra_pt_id="10038897" meddra_llt="Retinal tear (excl detachment)" meddra_llt_id="10038898" />
+    </Reaction>
+    <Reaction id="AR42" str="yellowish vision">
+      <Normalization id="AR42.N1" meddra_pt="Xanthopsia" meddra_pt_id="10048216" meddra_llt="Vision yellow" meddra_llt_id="10047527" />
+    </Reaction>
+  </Reactions>
+</Label>

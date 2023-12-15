@@ -1,0 +1,2447 @@
+drug_name,section_name,term,meddra_code
+KYPROLIS,adverse reactions,cardiac toxicities,
+KYPROLIS,adverse reactions,acute renal failure,10001041.0
+KYPROLIS,adverse reactions,tumor lysis syndrome,10045170.0
+KYPROLIS,adverse reactions,pulmonary toxicity,10061924.0
+KYPROLIS,adverse reactions,pulmonary hypertension,10037400.0
+KYPROLIS,adverse reactions,dyspnea,10013968.0
+KYPROLIS,adverse reactions,hypertension,10020772.0
+KYPROLIS,adverse reactions,venous thrombosis,10047249.0
+KYPROLIS,adverse reactions,infusion reactions,
+KYPROLIS,adverse reactions,thrombocytopenia,10043551.0
+KYPROLIS,adverse reactions,hepatic toxicity,
+KYPROLIS,adverse reactions,hepatic failure,10019663.0
+KYPROLIS,adverse reactions,thrombotic thrombocytopenic purpura/hemolytic uremic syndrome,
+KYPROLIS,adverse reactions,posterior reversible encephalopathy syndrome,10071066.0
+KYPROLIS,adverse reactions,anemia,10002034.0
+KYPROLIS,adverse reactions,fatigue,10016256.0
+KYPROLIS,adverse reactions,nausea,10028813.0
+KYPROLIS,adverse reactions,pyrexia,10037660.0
+KYPROLIS,adverse reactions,decreased platelets,
+KYPROLIS,adverse reactions,diarrhea,10012735.0
+KYPROLIS,adverse reactions,decreased lymphocyte,
+KYPROLIS,adverse reactions,headache,10019211.0
+KYPROLIS,adverse reactions,decreased hemoglobin,10011964.0
+KYPROLIS,adverse reactions,cough,10011224.0
+KYPROLIS,adverse reactions,edema peripheral,10030124.0
+KYPROLIS,adverse reactions,decreased lymphocytes,
+KYPROLIS,adverse reactions,decreased absolute neutrophil count,
+KYPROLIS,adverse reactions,decreased phosphorus,
+KYPROLIS,adverse reactions,neutropenia,10029354.0
+KYPROLIS,adverse reactions,decreased total white blood cell count,
+KYPROLIS,adverse reactions,muscle spasm,10028333.0
+KYPROLIS,adverse reactions,upper respiratory tract infection,10046306.0
+KYPROLIS,adverse reactions,hypokalemia,10021015.0
+KYPROLIS,adverse reactions,pneumonia,10035664.0
+KYPROLIS,adverse reactions,respiratory tract infection,10062352.0
+KYPROLIS,adverse reactions,pulmonary embolism,10037377.0
+KYPROLIS,adverse reactions,febrile neutropenia,10016288.0
+KYPROLIS,adverse reactions,lymphopenia,10025327.0
+KYPROLIS,adverse reactions,cardiac arrest,10007515.0
+KYPROLIS,adverse reactions,cardiac failure,10007554.0
+KYPROLIS,adverse reactions,cardiac failure congestive,10007559.0
+KYPROLIS,adverse reactions,myocardial infarction,10028596.0
+KYPROLIS,adverse reactions,myocardial ischemia,10028600.0
+KYPROLIS,adverse reactions,cataract,10007739.0
+KYPROLIS,adverse reactions,vision blurred,10047513.0
+KYPROLIS,adverse reactions,abdominal pain,10000081.0
+KYPROLIS,adverse reactions,abdominal pain upper,10000087.0
+KYPROLIS,adverse reactions,dyspepsia,10013946.0
+KYPROLIS,adverse reactions,toothache,10044055.0
+KYPROLIS,adverse reactions,chills,10008531.0
+KYPROLIS,adverse reactions,infusion site reaction,10054996.0
+KYPROLIS,adverse reactions,multi-organ failure,10028154.0
+KYPROLIS,adverse reactions,pain,10033371.0
+KYPROLIS,adverse reactions,influenza,10022000.0
+KYPROLIS,adverse reactions,sepsis,10040047.0
+KYPROLIS,adverse reactions,urinary tract infection,10046571.0
+KYPROLIS,adverse reactions,viral infection,10047461.0
+KYPROLIS,adverse reactions,dehydration,10012174.0
+KYPROLIS,adverse reactions,hyperkalemia,10020646.0
+KYPROLIS,adverse reactions,hyperuricemia,10020903.0
+KYPROLIS,adverse reactions,hypoalbuminemia,10020942.0
+KYPROLIS,adverse reactions,hyponatremia,10021036.0
+KYPROLIS,adverse reactions,tumor lysis syndrome,10045170.0
+KYPROLIS,adverse reactions,muscular weakness,10028372.0
+KYPROLIS,adverse reactions,myalgia,10028411.0
+KYPROLIS,adverse reactions,hypoesthesia,10020937.0
+KYPROLIS,adverse reactions,paresthesia,10033775.0
+KYPROLIS,adverse reactions,deafness,10011878.0
+KYPROLIS,adverse reactions,anxiety,10002855.0
+KYPROLIS,adverse reactions,delirium,10012218.0
+KYPROLIS,adverse reactions,renal failure,10038435.0
+KYPROLIS,adverse reactions,renal failure acute,10038436.0
+KYPROLIS,adverse reactions,renal impairment,10062237.0
+KYPROLIS,adverse reactions,dysphonia,10013952.0
+KYPROLIS,adverse reactions,epistaxis,10015090.0
+KYPROLIS,adverse reactions,oropharyngeal pain,10068319.0
+KYPROLIS,adverse reactions,pulmonary edema,10037423.0
+KYPROLIS,adverse reactions,erythema,10015150.0
+KYPROLIS,adverse reactions,hyperhidrosis,10020642.0
+KYPROLIS,adverse reactions,pruritus,10037087.0
+KYPROLIS,adverse reactions,deep vein thrombosis,10051055.0
+KYPROLIS,adverse reactions,hypotension,10021097.0
+KYPROLIS,adverse reactions,cardiac disorders,10007541.0
+KYPROLIS,adverse reactions,embolic and thrombotic events,
+KYPROLIS,adverse reactions,venous,
+KYPROLIS,adverse reactions,hypertension,10020772.0
+KYPROLIS,adverse reactions,blood and lymphatic system disorders,10005329.0
+KYPROLIS,adverse reactions,gastrointestinal disorders,10017947.0
+KYPROLIS,adverse reactions,general disorders and administration site conditions,10018065.0
+KYPROLIS,adverse reactions,infections and infestations,10021881.0
+KYPROLIS,adverse reactions,metabolism and nutrition disorders,10027433.0
+KYPROLIS,adverse reactions,musculoskeletal and connective tissue disorders,10028395.0
+KYPROLIS,adverse reactions,nervous system disorders,10029205.0
+KYPROLIS,adverse reactions,psychiatric disorders,10037175.0
+KYPROLIS,adverse reactions,respiratory,
+KYPROLIS,adverse reactions,thoracic,
+KYPROLIS,adverse reactions,and mediastinal disorders,
+KYPROLIS,adverse reactions,skin and subcutaneous tissue disorders,10040785.0
+KYPROLIS,adverse reactions,vascular disorders.,
+KYPROLIS,warnings and precautions,cardiac toxicities,
+KYPROLIS,warnings and precautions,cardiac failure,10007554.0
+KYPROLIS,warnings and precautions,myocardial infarction,10028596.0
+KYPROLIS,warnings and precautions,myocardial ischemia,10028600.0
+KYPROLIS,warnings and precautions,acute renal failure,10001041.0
+KYPROLIS,warnings and precautions,tumor lysis syndrome (tls),
+KYPROLIS,warnings and precautions,pulmonary toxicity,10061924.0
+KYPROLIS,warnings and precautions,acute respiratory distress syndrome,10001052.0
+KYPROLIS,warnings and precautions,acute respiratory failure,10001053.0
+KYPROLIS,warnings and precautions,acute diffuse infiltrative pulmonary disease,
+KYPROLIS,warnings and precautions,pulmonary hypertension,10037400.0
+KYPROLIS,warnings and precautions,dyspnea,10013968.0
+KYPROLIS,warnings and precautions,hypertension,10020772.0
+KYPROLIS,warnings and precautions,hypertensive crisis,10020802.0
+KYPROLIS,warnings and precautions,venous thrombosis,10047249.0
+KYPROLIS,warnings and precautions,infusion reactions,
+KYPROLIS,warnings and precautions,thrombocytopenia,10043551.0
+KYPROLIS,warnings and precautions,hepatic toxicity,
+KYPROLIS,warnings and precautions,hepatic failure,10019663.0
+KYPROLIS,warnings and precautions,thrombotic thrombocytopenic purpura/hemolytic uremic syndrome (ttp/hus),
+KYPROLIS,warnings and precautions,posterior reversible encephalopathy syndrome (pres),
+KYPROLIS,warnings and precautions,embryo-fetal toxicity.,
+MULTAQ,adverse reactions,new or worsening heart failure,
+MULTAQ,adverse reactions,liver injury,10067125.0
+MULTAQ,adverse reactions,pulmonary toxicity,10061924.0
+MULTAQ,adverse reactions,hypokalemia,10021015.0
+MULTAQ,adverse reactions,hypomagnesemia,10021027.0
+MULTAQ,adverse reactions,qt prolongation,
+MULTAQ,adverse reactions,diarrhea,10012735.0
+MULTAQ,adverse reactions,nausea,10028813.0
+MULTAQ,adverse reactions,abdominal pain,10000081.0
+MULTAQ,adverse reactions,vomiting,10047700.0
+MULTAQ,adverse reactions,asthenia,10003549.0
+MULTAQ,adverse reactions,gastrointestinal disorders,10017947.0
+MULTAQ,adverse reactions,bradycardia,10006093.0
+MULTAQ,adverse reactions,dyspeptic signs and symptoms,10013949.0
+MULTAQ,adverse reactions,asthenic conditions,10003550.0
+MULTAQ,adverse reactions,skin and subcutaneous tissue reactions,
+MULTAQ,adverse reactions,photosensitivity reaction,10034972.0
+MULTAQ,adverse reactions,dysgeusia,10013911.0
+MULTAQ,adverse reactions,increased creatinine,
+MULTAQ,adverse reactions,dronedarone 400 mg twice daily,
+MULTAQ,adverse reactions,atrial flutter with 1:1 atrioventricular conduction,10076040.0
+MULTAQ,adverse reactions,interstitial lung disease,10022611.0
+MULTAQ,adverse reactions,pneumonitis,10035742.0
+MULTAQ,adverse reactions,pulmonary fibrosis,10037383.0
+MULTAQ,adverse reactions,anaphylactic reactions,
+MULTAQ,adverse reactions,angioedema,10002424.0
+MULTAQ,adverse reactions,vasculitis,10047115.0
+MULTAQ,adverse reactions,leukocytoclastic vasculitis.,
+MULTAQ,boxed warnings,increased risk of death,
+MULTAQ,boxed warnings,stroke,10042244.0
+MULTAQ,boxed warnings,heart failure,10019279.0
+MULTAQ,boxed warnings,symptomatic heart failure,
+MULTAQ,boxed warnings,decompensation requiring hospitalization,
+MULTAQ,boxed warnings,nyha class iv heart failure,
+MULTAQ,boxed warnings,permanent atrial fibrillation,10071668.0
+MULTAQ,boxed warnings,hospitalization for heart failure.,
+MULTAQ,warnings and precautions,cardiac rhythm,
+MULTAQ,warnings and precautions,liver injury,10067125.0
+MULTAQ,warnings and precautions,pulmonary toxicity,10061924.0
+MULTAQ,warnings and precautions,hypokalemia,10021015.0
+MULTAQ,warnings and precautions,hypomagnesemia,10021027.0
+MULTAQ,warnings and precautions,renal impairment,10062237.0
+MULTAQ,warnings and precautions,teratogen,
+MULTAQ,warnings and precautions,cardiovascular death,
+MULTAQ,warnings and precautions,decompensated heart failure,10066159.0
+MULTAQ,warnings and precautions,stroke,10042244.0
+MULTAQ,warnings and precautions,new onset or worsening heart failure,
+MULTAQ,warnings and precautions,hepatocellular liver injury,
+MULTAQ,warnings and precautions,acute liver failure,10049844.0
+MULTAQ,warnings and precautions,anorexia,10002646.0
+MULTAQ,warnings and precautions,nausea,10028813.0
+MULTAQ,warnings and precautions,vomiting,10047700.0
+MULTAQ,warnings and precautions,fever,10016558.0
+MULTAQ,warnings and precautions,malaise,10025482.0
+MULTAQ,warnings and precautions,fatigue,10016256.0
+MULTAQ,warnings and precautions,right upper quadrant pain,10039162.0
+MULTAQ,warnings and precautions,jaundice,10023126.0
+MULTAQ,warnings and precautions,dark urine,10085963.0
+MULTAQ,warnings and precautions,itching,10023084.0
+MULTAQ,warnings and precautions,interstitial lung disease,10022611.0
+MULTAQ,warnings and precautions,pneumonitis,10035742.0
+MULTAQ,warnings and precautions,pulmonary fibrosis,10037383.0
+MULTAQ,warnings and precautions,dyspnea,10013968.0
+MULTAQ,warnings and precautions,non-productive cough,
+MULTAQ,warnings and precautions,qt interval prolongation,
+MULTAQ,warnings and precautions,renal impairment and failure,
+MULTAQ,warnings and precautions,serum creatinine,10040230.0
+MULTAQ,warnings and precautions,pre-renal azotemia,
+MULTAQ,warnings and precautions,acute renal failure,10001041.0
+JUBLIA,adverse reactions,ingrown toenails,
+JUBLIA,adverse reactions,application site dermatitis,10003036.0
+JUBLIA,adverse reactions,application site vesicles,10048941.0
+JUBLIA,adverse reactions,application site pain,10003051.0
+TEFLARO,adverse reactions,hypersensitivity reactions,
+TEFLARO,adverse reactions,clostridium difficile -associated diarrhea,
+TEFLARO,adverse reactions,direct coombs' test seroconversion,
+TEFLARO,adverse reactions,diarrhea,10012735.0
+TEFLARO,adverse reactions,nausea,10028813.0
+TEFLARO,adverse reactions,rash,10037844.0
+TEFLARO,adverse reactions,constipation,10010774.0
+TEFLARO,adverse reactions,vomiting,10047700.0
+TEFLARO,adverse reactions,increased transaminases,
+TEFLARO,adverse reactions,hypokalemia,10021015.0
+TEFLARO,adverse reactions,phlebitis,10034879.0
+TEFLARO,adverse reactions,anemia,10002034.0
+TEFLARO,adverse reactions,eosinophilia,10014950.0
+TEFLARO,adverse reactions,neutropenia,10029354.0
+TEFLARO,adverse reactions,thrombocytopenia,10043551.0
+TEFLARO,adverse reactions,bradycardia,10006093.0
+TEFLARO,adverse reactions,palpitations,10033557.0
+TEFLARO,adverse reactions,abdominal pain,10000081.0
+TEFLARO,adverse reactions,pyrexia,10037660.0
+TEFLARO,adverse reactions,hepatitis,10019717.0
+TEFLARO,adverse reactions,hypersensitivity,10020751.0
+TEFLARO,adverse reactions,anaphylaxis,10002218.0
+TEFLARO,adverse reactions,clostridium difficile colitis,10009657.0
+TEFLARO,adverse reactions,hyperglycemia,10020635.0
+TEFLARO,adverse reactions,hyperkalemia,10020646.0
+TEFLARO,adverse reactions,dizziness,10013573.0
+TEFLARO,adverse reactions,convulsion,10010904.0
+TEFLARO,adverse reactions,renal failure,10038435.0
+TEFLARO,adverse reactions,urticaria,10046735.0
+TEFLARO,adverse reactions,agranulocytosis.,
+TEFLARO,warnings and precautions,serious hypersensitivity (anaphylactic) reactions,
+TEFLARO,warnings and precautions,clostridium difficile -associated diarrhea (cdad),
+TEFLARO,warnings and precautions,direct coombs' test seroconversion,
+TEFLARO,warnings and precautions,anemia,10002034.0
+TEFLARO,warnings and precautions,drug-induced hemolytic anemia,
+TEFLARO,warnings and precautions,serious skin reactions,
+TEFLARO,warnings and precautions,fatal colitis,
+TEFLARO,warnings and precautions,morbidity,
+TEFLARO,warnings and precautions,mortality,
+TEFLARO,warnings and precautions,development of drug-resistant bacteria,
+DATSCAN,adverse reactions,hypersensitivity,10020751.0
+DATSCAN,adverse reactions,injection site reactions,10022097.0
+DATSCAN,adverse reactions,headache,10019211.0
+DATSCAN,adverse reactions,nausea,10028813.0
+DATSCAN,adverse reactions,vertigo,10047340.0
+DATSCAN,adverse reactions,dry mouth,10013781.0
+DATSCAN,adverse reactions,dizziness,10013573.0
+DATSCAN,adverse reactions,rash,10037844.0
+DATSCAN,adverse reactions,pruritis,10037086.0
+DATSCAN,adverse reactions,injection site pain,10022086.0
+DATSCAN,warnings and precautions,hypersensitivity reactions,
+DATSCAN,warnings and precautions,skin erythema,10040842.0
+DATSCAN,warnings and precautions,pruritis,10037086.0
+DATSCAN,warnings and precautions,anaphylactic reaction,10002198.0
+DATSCAN,warnings and precautions,thyroid accumulation,
+DATSCAN,warnings and precautions,thyroid neoplasia,10043743.0
+TIVICAY,adverse reactions,,
+TIVICAY,warnings and precautions,hypersensitivity reactions,
+TIVICAY,warnings and precautions,rash,10037844.0
+TIVICAY,warnings and precautions,constitutional findings,
+TIVICAY,warnings and precautions,organ dysfunction,
+TIVICAY,warnings and precautions,liver injury,10067125.0
+TIVICAY,warnings and precautions,transaminase elevations,
+TIVICAY,warnings and precautions,redistribution/accumulation of body fat,
+TIVICAY,warnings and precautions,immune reconstitution syndrome,10054014.0
+TIVICAY,warnings and precautions,severe rash,
+TIVICAY,warnings and precautions,fever,10016558.0
+TIVICAY,warnings and precautions,general malaise,10018066.0
+TIVICAY,warnings and precautions,fatigue,10016256.0
+TIVICAY,warnings and precautions,muscle or joint aches,
+TIVICAY,warnings and precautions,blisters,10005216.0
+TIVICAY,warnings and precautions,peeling of the skin,
+TIVICAY,warnings and precautions,oral blisters,
+TIVICAY,warnings and precautions,lesions,
+TIVICAY,warnings and precautions,conjunctivitis,10010741.0
+TIVICAY,warnings and precautions,facial edema,
+TIVICAY,warnings and precautions,hepatitis,10019717.0
+TIVICAY,warnings and precautions,eosinophilia,10014950.0
+TIVICAY,warnings and precautions,angioedema,10002424.0
+TIVICAY,warnings and precautions,difficulty breathing,10012791.0
+TIVICAY,warnings and precautions,central obesity,10065941.0
+TIVICAY,warnings and precautions,dorsocervical fat enlargement (buffalo hump),
+TIVICAY,warnings and precautions,peripheral wasting,
+TIVICAY,warnings and precautions,facial wasting,10056866.0
+TIVICAY,warnings and precautions,breast enlargement,10006242.0
+TIVICAY,warnings and precautions,"""cushingoid appearance""",
+TIVICAY,warnings and precautions,inflammatory response,
+TIVICAY,warnings and precautions,mycobacterium avium  infection,
+TIVICAY,warnings and precautions,cytomegalovirus,
+TIVICAY,warnings and precautions,pneumocystis jirovecii  pneumonia,
+TIVICAY,warnings and precautions,tuberculosis,10044755.0
+TIVICAY,warnings and precautions,autoimmune disorders,10003816.0
+TIVICAY,warnings and precautions,graves' disease,10018706.0
+TIVICAY,warnings and precautions,polymyositis,10036102.0
+TIVICAY,warnings and precautions,guillain-barre syndrome.,
+TAFINLAR,adverse reactions,,
+TAFINLAR,warnings and precautions,retinal vein occlusion,10038907.0
+TAFINLAR,warnings and precautions,interstitial lung disease,10022611.0
+TAFINLAR,warnings and precautions,new primary malignancies,
+TAFINLAR,warnings and precautions,increased cell proliferation,
+TAFINLAR,warnings and precautions,hemorrhage,10055798.0
+TAFINLAR,warnings and precautions,venous thromboembolism,10066899.0
+TAFINLAR,warnings and precautions,cardiomyopathy,10007636.0
+TAFINLAR,warnings and precautions,ocular toxicities,
+TAFINLAR,warnings and precautions,serious febrile reactions,
+TAFINLAR,warnings and precautions,serious skin toxicity,
+TAFINLAR,warnings and precautions,hyperglycemia,10020635.0
+TAFINLAR,warnings and precautions,glucose-6-phosphate dehydrogenase deficiency,10018444.0
+TAFINLAR,warnings and precautions,embryofetal toxicity,
+HORIZANT,adverse reactions,,
+HORIZANT,warnings and precautions,,
+IMBRUVICA,adverse reactions,,
+IMBRUVICA,warnings and precautions,hemorrhage,10055798.0
+IMBRUVICA,warnings and precautions,infections,
+IMBRUVICA,warnings and precautions,cytopenias,
+IMBRUVICA,warnings and precautions,atrial fibrillation,10003658.0
+IMBRUVICA,warnings and precautions,second primary malignancies,
+IMBRUVICA,warnings and precautions,tumor lysis syndrome,10045170.0
+IMBRUVICA,warnings and precautions,embryo-fetal toxicity,
+ULORIC,adverse reactions,,
+ULORIC,warnings and precautions,gout flare,10064900.0
+ULORIC,warnings and precautions,cardiovascular events,
+ULORIC,warnings and precautions,cardiovascular thromboembolic events,
+ULORIC,warnings and precautions,mi,10027524.0
+ULORIC,warnings and precautions,stroke,10042244.0
+ULORIC,warnings and precautions,hepatic effects,
+ULORIC,warnings and precautions,hepatic failure,10019663.0
+ULORIC,warnings and precautions,liver injury,10067125.0
+ULORIC,warnings and precautions,transaminase elevations,
+ULORIC,warnings and precautions,fatigue,10016256.0
+ULORIC,warnings and precautions,anorexia,10002646.0
+ULORIC,warnings and precautions,right upper abdominal discomfort,10078461.0
+ULORIC,warnings and precautions,dark urine,10085963.0
+ULORIC,warnings and precautions,jaundice,10023126.0
+ULORIC,warnings and precautions,abnormal liver tests,
+ULORIC,warnings and precautions,serum alt greater than three times the reference range,
+ULORIC,warnings and precautions,serum total bilirubin greater than two times the reference range,
+ULORIC,warnings and precautions,severe drug-induced liver injury,
+CIMZIA,adverse reactions,,
+CIMZIA,boxed warnings,serious infections,
+CIMZIA,boxed warnings,malignancy,
+CIMZIA,boxed warnings,active tuberculosis,10071157.0
+CIMZIA,boxed warnings,reactivation of latent tuberculosis,
+CIMZIA,boxed warnings,invasive fungal infections,
+CIMZIA,boxed warnings,histoplasmosis,10020141.0
+CIMZIA,boxed warnings,coccidioidomycosis,10009825.0
+CIMZIA,boxed warnings,candidiasis,10007152.0
+CIMZIA,boxed warnings,aspergillosis,10003488.0
+CIMZIA,boxed warnings,blastomycosis,10005098.0
+CIMZIA,boxed warnings,pneumocystosis,10035662.0
+CIMZIA,boxed warnings,bacterial infections,
+CIMZIA,boxed warnings,viral infections,
+CIMZIA,boxed warnings,infections due to opportunistic pathogens,
+CIMZIA,boxed warnings,legionella infection,10061266.0
+CIMZIA,boxed warnings,listeria infection,10024638.0
+CIMZIA,boxed warnings,sepsis,10040047.0
+CIMZIA,boxed warnings,lymphoma,10025310.0
+CIMZIA,warnings and precautions,,
+KALYDECO,adverse reactions,transaminase elevations,
+KALYDECO,adverse reactions,headache,10019211.0
+KALYDECO,adverse reactions,oropharyngeal pain,10068319.0
+KALYDECO,adverse reactions,upper respiratory tract infection,10046306.0
+KALYDECO,adverse reactions,nasal congestion,10028735.0
+KALYDECO,adverse reactions,abdominal pain,10000081.0
+KALYDECO,adverse reactions,nasopharyngitis,10028810.0
+KALYDECO,adverse reactions,diarrhea,10012735.0
+KALYDECO,adverse reactions,rash,10037844.0
+KALYDECO,adverse reactions,nausea,10028813.0
+KALYDECO,adverse reactions,dizziness,10013573.0
+KALYDECO,adverse reactions,increased hepatic enzymes,
+KALYDECO,adverse reactions,hypoglycemia,10020993.0
+KALYDECO,adverse reactions,rhinitis,10039083.0
+KALYDECO,adverse reactions,arthralgia,10003239.0
+KALYDECO,adverse reactions,bacteria in sputum,
+KALYDECO,adverse reactions,aspartate aminotransferase increased,10003481.0
+KALYDECO,adverse reactions,musculoskeletal chest pain,10050819.0
+KALYDECO,adverse reactions,myalgia,10028411.0
+KALYDECO,adverse reactions,sinus headache,10040744.0
+KALYDECO,adverse reactions,pharyngeal erythema,10057009.0
+KALYDECO,adverse reactions,pleuritic pain,10035623.0
+KALYDECO,adverse reactions,sinus congestion,10040742.0
+KALYDECO,adverse reactions,wheezing,10047924.0
+KALYDECO,adverse reactions,acne,10000496.0
+KALYDECO,warnings and precautions,elevated transaminases (alt or ast),
+KALYDECO,warnings and precautions,use with cyp3a inducers,
+KALYDECO,warnings and precautions,cataracts,10007771.0
+KALYDECO,warnings and precautions,non-congenital lens opacities,
+FULYZAQ,adverse reactions,upper respiratory tract infection,10046306.0
+FULYZAQ,adverse reactions,bronchitis,10006451.0
+FULYZAQ,adverse reactions,cough,10011224.0
+FULYZAQ,adverse reactions,flatulence,10016766.0
+FULYZAQ,adverse reactions,increased bilirubin,
+FULYZAQ,adverse reactions,nausea,10028813.0
+FULYZAQ,adverse reactions,back pain,10003988.0
+FULYZAQ,adverse reactions,arthralgia,10003239.0
+FULYZAQ,adverse reactions,urinary tract infection,10046571.0
+FULYZAQ,adverse reactions,nasopharyngitis,10028810.0
+FULYZAQ,adverse reactions,musculoskeletal pain,10028391.0
+FULYZAQ,adverse reactions,hemorrhoids,10019022.0
+FULYZAQ,adverse reactions,giardiasis,10018262.0
+FULYZAQ,adverse reactions,anxiety,10002855.0
+FULYZAQ,adverse reactions,increased alanine aminotransferase,
+FULYZAQ,adverse reactions,abdominal distension,10000060.0
+FULYZAQ,adverse reactions,abdominal pain,10000081.0
+FULYZAQ,adverse reactions,acne,10000496.0
+FULYZAQ,adverse reactions,increased aspartate aminotransferase,
+FULYZAQ,adverse reactions,increased conjugated bilirubin,
+FULYZAQ,adverse reactions,increased unconjugated blood bilirubin,
+FULYZAQ,adverse reactions,constipation,10010774.0
+FULYZAQ,adverse reactions,depression,10012378.0
+FULYZAQ,adverse reactions,dermatitis,10012431.0
+FULYZAQ,adverse reactions,dizziness,10013573.0
+FULYZAQ,adverse reactions,dry mouth,10013781.0
+FULYZAQ,adverse reactions,dyspepsia,10013946.0
+FULYZAQ,adverse reactions,gastroenteritis,10017888.0
+FULYZAQ,adverse reactions,herpes zoster,10019974.0
+FULYZAQ,adverse reactions,nephrolithiasis,10029148.0
+FULYZAQ,adverse reactions,pain in extremity,10033425.0
+FULYZAQ,adverse reactions,pollakiuria,10036018.0
+FULYZAQ,adverse reactions,procedural pain,10064882.0
+FULYZAQ,adverse reactions,seasonal allergy,10048908.0
+FULYZAQ,adverse reactions,sinusitis,10040753.0
+FULYZAQ,adverse reactions,decreased white blood cell count.,
+FULYZAQ,warnings and precautions,infectious diarrhea,10021907.0
+FULYZAQ,warnings and precautions,disease may worsen,
+QUTENZA,adverse reactions,,
+QUTENZA,warnings and precautions,irritation of eyes or airway,
+QUTENZA,warnings and precautions,coughing,10011232.0
+QUTENZA,warnings and precautions,sneezing,10041232.0
+QUTENZA,warnings and precautions,transient increases in blood pressure,
+QUTENZA,warnings and precautions,substantial procedural pain,
+QUTENZA,warnings and precautions,increases in blood pressure,
+QUTENZA,warnings and precautions,treatment related increases in pain,
+QUTENZA,warnings and precautions,adverse cardiovascular effects,
+GRANIX,adverse reactions,splenic rupture,10041658.0
+GRANIX,adverse reactions,acute respiratory distress syndrome,10001052.0
+GRANIX,adverse reactions,serious allergic reactions,
+GRANIX,adverse reactions,capillary leak syndrome,10007196.0
+GRANIX,adverse reactions,potential for tumor growth stimulatory effects on malignant cells,
+GRANIX,adverse reactions,bone pain,10006002.0
+GRANIX,adverse reactions,leukocytosis,10024378.0
+GRANIX,adverse reactions,myalgia,10028411.0
+GRANIX,adverse reactions,headache,10019211.0
+GRANIX,adverse reactions,vomiting,10047700.0
+GRANIX,adverse reactions,sweet's syndrome,10042673.0
+GRANIX,adverse reactions,cutaneous vasculitis,10011686.0
+GRANIX,adverse reactions,thrombocytopenia,10043551.0
+GRANIX,warnings and precautions,splenic rupture,10041658.0
+GRANIX,warnings and precautions,acute respiratory distress syndrome (ards),
+GRANIX,warnings and precautions,allergic reactions,
+GRANIX,warnings and precautions,sickle cell crisis,10040643.0
+GRANIX,warnings and precautions,capillary leak syndrome,10007196.0
+GRANIX,warnings and precautions,anaphylaxis,10002218.0
+GRANIX,warnings and precautions,serious allergic reactions,
+GRANIX,warnings and precautions,tumor growth stimulatory effects on malignant cells,
+GRANIX,warnings and precautions,myeloid malignancies,
+GRANIX,warnings and precautions,myelodysplasia,10028532.0
+COARTEM,adverse reactions,,
+COARTEM,warnings and precautions,,
+APTIOM,adverse reactions,suicidal behavior and ideation,
+APTIOM,adverse reactions,serious dermatologic reactions,
+APTIOM,adverse reactions,drug reaction with eosinophilia and systemic symptoms (dress)/multiorgan hypersensitivity,
+APTIOM,adverse reactions,anaphylactic reactions and angioedema,
+APTIOM,adverse reactions,hyponatremia,10021036.0
+APTIOM,adverse reactions,neurological adverse reactions,
+APTIOM,adverse reactions,drug induced liver injury,
+APTIOM,adverse reactions,abnormal thyroid function tests,
+APTIOM,adverse reactions,dizziness,10013573.0
+APTIOM,adverse reactions,somnolence,10041349.0
+APTIOM,adverse reactions,nausea,10028813.0
+APTIOM,adverse reactions,headache,10019211.0
+APTIOM,adverse reactions,diplopia,10013036.0
+APTIOM,adverse reactions,vomiting,10047700.0
+APTIOM,adverse reactions,fatigue,10016256.0
+APTIOM,adverse reactions,vertigo,10047340.0
+APTIOM,adverse reactions,ataxia,10003591.0
+APTIOM,adverse reactions,blurred vision,10005886.0
+APTIOM,adverse reactions,tremor,10044565.0
+APTIOM,adverse reactions,rash,10037844.0
+APTIOM,adverse reactions,dysarthria,10013887.0
+APTIOM,adverse reactions,asthenia,10003549.0
+APTIOM,adverse reactions,vertigo,10047340.0
+APTIOM,adverse reactions,visual impairment,10047571.0
+APTIOM,adverse reactions,diarrhea,10012735.0
+APTIOM,adverse reactions,constipation,10010774.0
+APTIOM,adverse reactions,abdominal pain,10000081.0
+APTIOM,adverse reactions,gastritis,10017853.0
+APTIOM,adverse reactions,gait disturbance,10017577.0
+APTIOM,adverse reactions,peripheral edema,10034570.0
+APTIOM,adverse reactions,urinary tract infections,10046577.0
+APTIOM,adverse reactions,fall,10016173.0
+APTIOM,adverse reactions,balance disorder,10049848.0
+APTIOM,adverse reactions,memory impairment,10027175.0
+APTIOM,adverse reactions,nystagmus,10029864.0
+APTIOM,adverse reactions,depression,10012378.0
+APTIOM,adverse reactions,insomnia,10022437.0
+APTIOM,adverse reactions,cough,10011224.0
+APTIOM,adverse reactions,hypertension,10020772.0
+APTIOM,adverse reactions,decreases in hemoglobin and hematocrit,
+APTIOM,adverse reactions,increases in total cholesterol,
+APTIOM,adverse reactions,triglycerides,10044660.0
+APTIOM,adverse reactions,and ldl,
+APTIOM,adverse reactions,and increases in creatine phosphokinase.,
+APTIOM,warnings and precautions,,
+PROLIA,adverse reactions,,
+PROLIA,warnings and precautions,hypersensitivity,10020751.0
+PROLIA,warnings and precautions,anaphylactic reactions,
+PROLIA,warnings and precautions,hypocalcemia,10020947.0
+PROLIA,warnings and precautions,osteonecrosis of the jaw,
+PROLIA,warnings and precautions,atypical femoral fractures,
+PROLIA,warnings and precautions,serious infections including skin infections,
+PROLIA,warnings and precautions,dermatologic reactions: dermatitis,
+PROLIA,warnings and precautions,rashes,
+PROLIA,warnings and precautions,eczema,10014184.0
+PROLIA,warnings and precautions,severe bone,
+PROLIA,warnings and precautions,joint,
+PROLIA,warnings and precautions,muscle pain,10028322.0
+PROLIA,warnings and precautions,suppression of bone turnover,
+PROLIA,warnings and precautions,hypotension,10021097.0
+PROLIA,warnings and precautions,dyspnea,10013968.0
+PROLIA,warnings and precautions,throat tightness,10043528.0
+PROLIA,warnings and precautions,facial and upper airway edema,
+PROLIA,warnings and precautions,pruritus,10037087.0
+PROLIA,warnings and precautions,urticaria,10046735.0
+PROLIA,warnings and precautions,disturbances of mineral metabolism,
+PROLIA,warnings and precautions,hypoparathyroidism,10021041.0
+PROLIA,warnings and precautions,thyroid surgery,
+PROLIA,warnings and precautions,parathyroid surgery,
+PROLIA,warnings and precautions,malabsorption syndromes,10025480.0
+PROLIA,warnings and precautions,excision of small intestine,
+PROLIA,warnings and precautions,severe renal impairment,
+PROLIA,warnings and precautions,creatinine clearance,10011362.0
+PROLIA,warnings and precautions,receiving dialysis,
+PROLIA,warnings and precautions,marked elevations of serum parathyroid hormone (pth),
+PROLIA,warnings and precautions,tooth extraction,10062132.0
+PROLIA,warnings and precautions,local infection with delayed healing,
+PROLIA,warnings and precautions,invasive dental procedures,
+PROLIA,warnings and precautions,dental implants,
+PROLIA,warnings and precautions,oral surgery,10051059.0
+PROLIA,warnings and precautions,poor oral hygiene,10065429.0
+PROLIA,warnings and precautions,periodontal and/or other pre-existing dental disease,
+PROLIA,warnings and precautions,anemia,10002034.0
+PROLIA,warnings and precautions,coagulopathy,10009802.0
+PROLIA,warnings and precautions,infection,10021789.0
+PROLIA,warnings and precautions,ill-fitting dentures,
+PROLIA,warnings and precautions,extensive dental surgery,
+PROLIA,warnings and precautions,atypical low-energy or low trauma fractures of the shaft,
+PROLIA,warnings and precautions,prodromal pain,
+PROLIA,warnings and precautions,glucocorticoids treatment,
+PROLIA,warnings and precautions,thigh,
+PROLIA,warnings and precautions,hip,
+PROLIA,warnings and precautions,or groin pain,
+PROLIA,warnings and precautions,incomplete femur fracture,
+PROLIA,warnings and precautions,serious skin infections,
+PROLIA,warnings and precautions,infections of the abdomen,
+PROLIA,warnings and precautions,urinary tract,
+PROLIA,warnings and precautions,and ear,
+PROLIA,warnings and precautions,endocarditis,10014665.0
+PROLIA,warnings and precautions,opportunistic infections,
+PROLIA,warnings and precautions,severe and occasionally incapacitating bone,
+PROLIA,warnings and precautions,joint,
+PROLIA,warnings and precautions,and/or muscle pain,
+PROLIA,warnings and precautions,significant suppression of bone remodeling,
+PROLIA,warnings and precautions,adverse outcomes.,
+BLINCYTO,adverse reactions,cytokine release syndrome,10052015.0
+BLINCYTO,adverse reactions,neurological toxicities,
+BLINCYTO,adverse reactions,infections,
+BLINCYTO,adverse reactions,tumor lysis syndrome,10045170.0
+BLINCYTO,adverse reactions,neutropenia,10029354.0
+BLINCYTO,adverse reactions,febrile neutropenia,10016288.0
+BLINCYTO,adverse reactions,effects on ability to drive and use machines,
+BLINCYTO,adverse reactions,elevated liver enzymes,10014481.0
+BLINCYTO,adverse reactions,leukoencephalopathy,10024382.0
+BLINCYTO,adverse reactions,preparation and administration errors,
+BLINCYTO,adverse reactions,pyrexia,10037660.0
+BLINCYTO,adverse reactions,headache,10019211.0
+BLINCYTO,adverse reactions,peripheral edema,10034570.0
+BLINCYTO,adverse reactions,nausea,10028813.0
+BLINCYTO,adverse reactions,hypokalemia,10021015.0
+BLINCYTO,adverse reactions,tremor,10044565.0
+BLINCYTO,adverse reactions,rash,10037844.0
+BLINCYTO,adverse reactions,constipation,10010774.0
+BLINCYTO,adverse reactions,pneumonia,10035664.0
+BLINCYTO,adverse reactions,sepsis,10040047.0
+BLINCYTO,adverse reactions,device-related infection,
+BLINCYTO,adverse reactions,encephalopathy,10014625.0
+BLINCYTO,adverse reactions,infection,10021789.0
+BLINCYTO,adverse reactions,overdose,10033295.0
+BLINCYTO,adverse reactions,confusion,10010300.0
+BLINCYTO,adverse reactions,staphylococcal bacteremia,10051017.0
+BLINCYTO,adverse reactions,anemia,10002034.0
+BLINCYTO,adverse reactions,thrombocytopenia,10043551.0
+BLINCYTO,adverse reactions,leukopenia,10024384.0
+BLINCYTO,adverse reactions,diarrhea,10012735.0
+BLINCYTO,adverse reactions,abdominal pain,10000081.0
+BLINCYTO,adverse reactions,vomiting,10047700.0
+BLINCYTO,adverse reactions,fatigue,10016256.0
+BLINCYTO,adverse reactions,chills,10008531.0
+BLINCYTO,adverse reactions,chest pain,10008479.0
+BLINCYTO,adverse reactions,immune system disorders,10021428.0
+BLINCYTO,adverse reactions,bacterial infections,
+BLINCYTO,adverse reactions,fungal infections,
+BLINCYTO,adverse reactions,viral infections,
+BLINCYTO,adverse reactions,increased alanine aminotransferase,
+BLINCYTO,adverse reactions,increased aspartate aminotransferase,
+BLINCYTO,adverse reactions,increased weight,
+BLINCYTO,adverse reactions,hypomagnesemia,10021027.0
+BLINCYTO,adverse reactions,hyperglycemia,10020635.0
+BLINCYTO,adverse reactions,decreased appetite,10061428.0
+BLINCYTO,adverse reactions,hypophosphatemia,10021058.0
+BLINCYTO,adverse reactions,back pain,10003988.0
+BLINCYTO,adverse reactions,pain in extremity,10033425.0
+BLINCYTO,adverse reactions,bone pain,10006002.0
+BLINCYTO,adverse reactions,arthralgia,10003239.0
+BLINCYTO,adverse reactions,dizziness,10013573.0
+BLINCYTO,adverse reactions,insomnia,10022437.0
+BLINCYTO,adverse reactions,cough,10011224.0
+BLINCYTO,adverse reactions,dyspnea,10013968.0
+BLINCYTO,adverse reactions,hypotension,10021097.0
+BLINCYTO,adverse reactions,hypertension,10020772.0
+BLINCYTO,adverse reactions,leukocytosis,10024378.0
+BLINCYTO,adverse reactions,lymphopenia,10025327.0
+BLINCYTO,adverse reactions,tachycardia,10043071.0
+BLINCYTO,adverse reactions,edema,10030095.0
+BLINCYTO,adverse reactions,cytokine storm,10050685.0
+BLINCYTO,adverse reactions,decreased immunoglobulins,10011969.0
+BLINCYTO,adverse reactions,increased blood bilirubin,
+BLINCYTO,adverse reactions,increased gamma-glutamyl-transferase,
+BLINCYTO,adverse reactions,tumor lysis syndrome,10045170.0
+BLINCYTO,adverse reactions,hypoalbuminemia,10020942.0
+BLINCYTO,adverse reactions,paresthesia,10033775.0
+BLINCYTO,adverse reactions,aphasia,10002948.0
+BLINCYTO,adverse reactions,convulsion,10010904.0
+BLINCYTO,adverse reactions,memory impairment,10027175.0
+BLINCYTO,adverse reactions,cognitive disorder,10057668.0
+BLINCYTO,adverse reactions,speech disorder,10041466.0
+BLINCYTO,adverse reactions,disorientation,10013395.0
+BLINCYTO,adverse reactions,capillary leak syndrome,10007196.0
+BLINCYTO,adverse reactions,hypersensitivity,10020751.0
+BLINCYTO,adverse reactions,bronchospasm.,
+BLINCYTO,boxed warnings,cytokine release syndrome,10052015.0
+BLINCYTO,boxed warnings,neurological toxicities,
+BLINCYTO,warnings and precautions,cytokine release syndrome,10052015.0
+BLINCYTO,warnings and precautions,pyrexia,10037660.0
+BLINCYTO,warnings and precautions,headache,10019211.0
+BLINCYTO,warnings and precautions,nausea,10028813.0
+BLINCYTO,warnings and precautions,asthenia,10003549.0
+BLINCYTO,warnings and precautions,hypotension,10021097.0
+BLINCYTO,warnings and precautions,increased alanine aminotransferase,
+BLINCYTO,warnings and precautions,increased aspartate aminotransferase,
+BLINCYTO,warnings and precautions,increased total bilirubin,
+BLINCYTO,warnings and precautions,disseminated intravascular coagulation,10013442.0
+BLINCYTO,warnings and precautions,capillary leak syndrome,10007196.0
+BLINCYTO,warnings and precautions,hemophagocytic lymphohistiocytosis/macrophage activation syndrome,
+BLINCYTO,warnings and precautions,encephalopathy,10014625.0
+BLINCYTO,warnings and precautions,convulsions,10010914.0
+BLINCYTO,warnings and precautions,speech disorders,
+BLINCYTO,warnings and precautions,disturbances in consciousness,
+BLINCYTO,warnings and precautions,confusion and disorientation,10010301.0
+BLINCYTO,warnings and precautions,coordination and balance disorders,
+BLINCYTO,warnings and precautions,infections,
+BLINCYTO,warnings and precautions,sepsis,10040047.0
+BLINCYTO,warnings and precautions,pneumonia,10035664.0
+BLINCYTO,warnings and precautions,bacteremia,10003997.0
+BLINCYTO,warnings and precautions,opportunistic infections,
+BLINCYTO,warnings and precautions,catheter-site infections,
+BLINCYTO,warnings and precautions,tumor lysis syndrome,10045170.0
+BLINCYTO,warnings and precautions,neutropenia,10029354.0
+BLINCYTO,warnings and precautions,febrile neutropenia,10016288.0
+BLINCYTO,warnings and precautions,loss of consciousness,10024855.0
+BLINCYTO,warnings and precautions,elevated liver enzymes,10014481.0
+BLINCYTO,warnings and precautions,leukoencephalopathy.,
+STENDRA,adverse reactions,,
+STENDRA,warnings and precautions,,
+XIAFLEX,adverse reactions,,
+XIAFLEX,boxed warnings,corporal rupture,
+XIAFLEX,boxed warnings,penile fracture,
+XIAFLEX,boxed warnings,serious penile injury,
+XIAFLEX,boxed warnings,penile ecchymoses,
+XIAFLEX,boxed warnings,hematoma,10018852.0
+XIAFLEX,boxed warnings,sudden penile detumescence,
+XIAFLEX,boxed warnings,"penile ""popping"" sound or sensation",
+XIAFLEX,boxed warnings,severe penile hematoma,
+XIAFLEX,warnings and precautions,tendon rupture,10043248.0
+XIAFLEX,warnings and precautions,serious injury to the injected finger/hand,
+XIAFLEX,warnings and precautions,corporal rupture (penile fracture),
+XIAFLEX,warnings and precautions,other serious injury to the penis,
+XIAFLEX,warnings and precautions,hypersensitivity reactions,
+XIAFLEX,warnings and precautions,anaphylaxis,10002218.0
+XIAFLEX,warnings and precautions,abnormal coagulation,
+XIAFLEX,warnings and precautions,ligament damage,
+XIAFLEX,warnings and precautions,skin laceration,10058818.0
+XIAFLEX,warnings and precautions,pulley rupture,
+XIAFLEX,warnings and precautions,ligament injury,10061223.0
+XIAFLEX,warnings and precautions,complex regional pain syndrome (crps),
+XIAFLEX,warnings and precautions,sensory abnormality of the hand,
+XIAFLEX,warnings and precautions,penile ecchymoses,
+XIAFLEX,warnings and precautions,penile hematoma,10070656.0
+XIAFLEX,warnings and precautions,sudden penile detumescence,
+XIAFLEX,warnings and precautions,"penile ""popping"" sound or sensation",
+XIAFLEX,warnings and precautions,severe penile hematoma,
+XIAFLEX,warnings and precautions,mild allergic reactions (pruritus),
+XIAFLEX,warnings and precautions,severe allergic reactions,
+XIAFLEX,warnings and precautions,ecchymosis/contusion,
+XIAFLEX,warnings and precautions,injection site hemorrhage.,
+XEOMIN,adverse reactions,,
+XEOMIN,boxed warnings,asthenia,10003549.0
+XEOMIN,boxed warnings,generalized muscle weakness,10062572.0
+XEOMIN,boxed warnings,diplopia,10013036.0
+XEOMIN,boxed warnings,blurred vision,10005886.0
+XEOMIN,boxed warnings,ptosis,10037272.0
+XEOMIN,boxed warnings,dysphagia,10013950.0
+XEOMIN,boxed warnings,dysphonia,10013952.0
+XEOMIN,boxed warnings,dysarthria,10013887.0
+XEOMIN,boxed warnings,urinary incontinence,10046543.0
+XEOMIN,boxed warnings,breathing difficulties,
+XEOMIN,boxed warnings,swallowing difficulties,
+XEOMIN,boxed warnings,death,10011906.0
+XEOMIN,warnings and precautions,respiratory difficulties,
+XEOMIN,warnings and precautions,speech difficulties,
+XEOMIN,warnings and precautions,swallowing difficulties,
+XEOMIN,warnings and precautions,dysphagia,10013950.0
+XEOMIN,warnings and precautions,corneal exposure,
+XEOMIN,warnings and precautions,corneal ulceration,10011060.0
+XEOMIN,warnings and precautions,diplopia,10013036.0
+XEOMIN,warnings and precautions,ptosis,10037272.0
+XEOMIN,warnings and precautions,asthenia,10003549.0
+XEOMIN,warnings and precautions,generalized muscle weakness,10062572.0
+XEOMIN,warnings and precautions,blurred vision,10005886.0
+XEOMIN,warnings and precautions,dysphonia,10013952.0
+XEOMIN,warnings and precautions,dysarthria,10013887.0
+XEOMIN,warnings and precautions,urinary incontinence,10046543.0
+XEOMIN,warnings and precautions,breathing difficulties,
+XEOMIN,warnings and precautions,hypersensitivity reactions,
+XEOMIN,warnings and precautions,anaphylaxis,10002218.0
+XEOMIN,warnings and precautions,serum sickness,10040400.0
+XEOMIN,warnings and precautions,urticaria,10046735.0
+XEOMIN,warnings and precautions,soft tissue edema,
+XEOMIN,warnings and precautions,dyspnea,10013968.0
+XEOMIN,warnings and precautions,severe dysphagia,
+XEOMIN,warnings and precautions,aspiration,10003504.0
+XEOMIN,warnings and precautions,respiratory failure,10038695.0
+XEOMIN,warnings and precautions,peripheral motor neuropathic diseases,
+XEOMIN,warnings and precautions,amyotrophic lateral sclerosis,10002026.0
+XEOMIN,warnings and precautions,neuromuscular junctional disorders,
+XEOMIN,warnings and precautions,myasthenia gravis,10028417.0
+XEOMIN,warnings and precautions,lambert-eaton syndrome,
+XEOMIN,warnings and precautions,vii nerve disorders,
+XEOMIN,warnings and precautions,narrow angle glaucoma,
+XEOMIN,warnings and precautions,ectropion,10014179.0
+XEOMIN,warnings and precautions,ecchymosis,10014080.0
+XEOMIN,warnings and precautions,creutzfeldt-jakob disease.,
+GILOTRIF,adverse reactions,,
+GILOTRIF,warnings and precautions,diarrhea,10012735.0
+GILOTRIF,warnings and precautions,dehydration,10012174.0
+GILOTRIF,warnings and precautions,renal failure,10038435.0
+GILOTRIF,warnings and precautions,bullous and exfoliative skin disorders,
+GILOTRIF,warnings and precautions,severe bullous,
+GILOTRIF,warnings and precautions,blistering,10005214.0
+GILOTRIF,warnings and precautions,exfoliating lesions,
+GILOTRIF,warnings and precautions,interstitial lung disease (ild),
+GILOTRIF,warnings and precautions,acute onset or worsening of pulmonary symptoms,
+GILOTRIF,warnings and precautions,hepatic toxicity,
+GILOTRIF,warnings and precautions,fatal hepatic impairment,
+GILOTRIF,warnings and precautions,keratitis,10023332.0
+GILOTRIF,warnings and precautions,ulcerative keratitis,10064996.0
+GILOTRIF,warnings and precautions,embryofetal toxicity,
+GILOTRIF,warnings and precautions,fetal harm,
+GILOTRIF,warnings and precautions,renal impairment,10062237.0
+GILOTRIF,warnings and precautions,cutaneous reactions,
+GILOTRIF,warnings and precautions,rash,10037844.0
+GILOTRIF,warnings and precautions,erythema,10015150.0
+GILOTRIF,warnings and precautions,acneiform rash,
+GILOTRIF,warnings and precautions,palmar-plantar erythrodysesthesia syndrome,10054524.0
+GILOTRIF,warnings and precautions,life-threatening bullous,
+GILOTRIF,warnings and precautions,blistering,10005214.0
+GILOTRIF,warnings and precautions,or exfoliating lesions,
+GILOTRIF,warnings and precautions,lung infiltration,10025102.0
+GILOTRIF,warnings and precautions,pneumonitis,10035742.0
+GILOTRIF,warnings and precautions,acute respiratory distress syndrome,10001052.0
+GILOTRIF,warnings and precautions,alveolitis allergic,10001890.0
+GILOTRIF,warnings and precautions,liver test abnormalities,
+GILOTRIF,warnings and precautions,worsening of liver function,
+GILOTRIF,warnings and precautions,severe hepatic impairment,
+GILOTRIF,warnings and precautions,acute or worsening eye inflammation,
+GILOTRIF,warnings and precautions,lacrimation,10023639.0
+GILOTRIF,warnings and precautions,light sensitivity,
+GILOTRIF,warnings and precautions,blurred vision,10005886.0
+GILOTRIF,warnings and precautions,eye pain,10015958.0
+GILOTRIF,warnings and precautions,red eye,10038189.0
+GILOTRIF,warnings and precautions,embryotoxic,
+GILOTRIF,warnings and precautions,abortions at late gestational stages.,
+TREANDA,adverse reactions,,
+TREANDA,warnings and precautions,myelosuppression,10028584.0
+TREANDA,warnings and precautions,infections,
+TREANDA,warnings and precautions,anaphylaxis,10002218.0
+TREANDA,warnings and precautions,infusion reactions,
+TREANDA,warnings and precautions,tumor lysis syndrome,10045170.0
+TREANDA,warnings and precautions,skin reactions,
+TREANDA,warnings and precautions,other malignancies,
+TREANDA,warnings and precautions,extravasation,10015866.0
+TREANDA,warnings and precautions,embryo-fetal toxicity,
+CHOLINE,adverse reactions,mild injection site reaction,
+CHOLINE,warnings and precautions,imaging errors,
+CHOLINE,warnings and precautions,allergic reactions,
+CHOLINE,warnings and precautions,radiation risk,
+CHOLINE,warnings and precautions,poor performance of 11 c-choline pet imaging,
+CHOLINE,warnings and precautions,false positive 11 c-choline pet images,
+CHOLINE,warnings and precautions,tissue inflammation,
+CHOLINE,warnings and precautions,prostatic hyperplasia,10036961.0
+CHOLINE,warnings and precautions,interference with 11 c-choline pet imaging,
+CHOLINE,warnings and precautions,anaphylaxis,10002218.0
+CHOLINE,warnings and precautions,increased risk for cancer,
+CHOLINE,warnings and precautions,long-term cumulative radiation exposure,10078958.0
+ERWINAZE,adverse reactions,,
+ERWINAZE,warnings and precautions,serious hypersensitivity reactions,
+ERWINAZE,warnings and precautions,anaphylaxis,10002218.0
+ERWINAZE,warnings and precautions,severe or hemorrhagic pancreatitis,
+ERWINAZE,warnings and precautions,glucose intolerance,10052426.0
+ERWINAZE,warnings and precautions,hyperglycemia,10020635.0
+ERWINAZE,warnings and precautions,thrombosis,10043607.0
+ERWINAZE,warnings and precautions,hemorrhage,10055798.0
+ERWINAZE,warnings and precautions,sagittal sinus thrombosis,10039369.0
+ERWINAZE,warnings and precautions,pulmonary embolism,10037377.0
+ERWINAZE,warnings and precautions,decreased fibrinogen,
+ERWINAZE,warnings and precautions,decreased protein c activity,
+ERWINAZE,warnings and precautions,decreased protein s activity,
+ERWINAZE,warnings and precautions,decreased anti-thrombin iii.,
+TRULICITY,adverse reactions,,
+TRULICITY,boxed warnings,thyroid c-cell tumors,
+TRULICITY,boxed warnings,adenomas,
+TRULICITY,boxed warnings,carcinomas,
+TRULICITY,boxed warnings,medullary thyroid carcinoma (mtc),
+TRULICITY,boxed warnings,multiple endocrine neoplasia syndrome type 2 (men 2),
+TRULICITY,boxed warnings,mass in the neck,
+TRULICITY,boxed warnings,dysphagia,10013950.0
+TRULICITY,boxed warnings,dyspnea,10013968.0
+TRULICITY,boxed warnings,persistent hoarseness,
+TRULICITY,warnings and precautions,thyroid c-cell tumors,
+TRULICITY,warnings and precautions,pancreatitis,10033645.0
+TRULICITY,warnings and precautions,hypoglycemia,10020993.0
+TRULICITY,warnings and precautions,hypersensitivity reactions,
+TRULICITY,warnings and precautions,renal impairment,10062237.0
+TRULICITY,warnings and precautions,severe gastrointestinal disease,
+TRULICITY,warnings and precautions,macrovascular outcomes,
+ADREVIEW,adverse reactions,serious hypersensitivity reactions,
+ADREVIEW,adverse reactions,dizziness,10013573.0
+ADREVIEW,adverse reactions,rash,10037844.0
+ADREVIEW,adverse reactions,pruritus,10037087.0
+ADREVIEW,adverse reactions,flushing,10016825.0
+ADREVIEW,adverse reactions,headache,10019211.0
+ADREVIEW,adverse reactions,injection site hemorrhage,10022067.0
+ADREVIEW,adverse reactions,hematoma,10018852.0
+ADREVIEW,adverse reactions,bruising,10006504.0
+ADREVIEW,warnings and precautions,,
+DOTAREM,adverse reactions,nsf,
+DOTAREM,adverse reactions,hypersensitivity reactions,
+DOTAREM,adverse reactions,acute kidney injury,10069339.0
+DOTAREM,adverse reactions,nausea,10028813.0
+DOTAREM,adverse reactions,headache,10019211.0
+DOTAREM,adverse reactions,injection site pain,10022086.0
+DOTAREM,adverse reactions,injection site coldness,10050082.0
+DOTAREM,adverse reactions,burning sensation,10006784.0
+DOTAREM,adverse reactions,feeling cold,10016326.0
+DOTAREM,adverse reactions,rash,10037844.0
+DOTAREM,adverse reactions,somnolence,10041349.0
+DOTAREM,adverse reactions,fatigue,10016256.0
+DOTAREM,adverse reactions,dizziness,10013573.0
+DOTAREM,adverse reactions,vomiting,10047700.0
+DOTAREM,adverse reactions,pruritus,10037087.0
+DOTAREM,adverse reactions,paresthesia,10033775.0
+DOTAREM,adverse reactions,dysgeusia,10013911.0
+DOTAREM,adverse reactions,pain in extremity,10033425.0
+DOTAREM,adverse reactions,anxiety,10002855.0
+DOTAREM,adverse reactions,hypertension,10020772.0
+DOTAREM,adverse reactions,palpitations,10033557.0
+DOTAREM,adverse reactions,oropharyngeal discomfort,10068318.0
+DOTAREM,adverse reactions,serum creatinine increased,10040233.0
+DOTAREM,adverse reactions,injection site reactions,10022097.0
+DOTAREM,adverse reactions,site inflammation,
+DOTAREM,adverse reactions,extravasation,10015866.0
+DOTAREM,adverse reactions,warmth,10047824.0
+DOTAREM,adverse reactions,bradycardia,10006093.0
+DOTAREM,adverse reactions,tachycardia,10043071.0
+DOTAREM,adverse reactions,arrhythmia,10003119.0
+DOTAREM,adverse reactions,hypersensitivity /anaphylactoid reactions,
+DOTAREM,adverse reactions,cardiac arrest,10007515.0
+DOTAREM,adverse reactions,respiratory arrest,10038669.0
+DOTAREM,adverse reactions,cyanosis pharyngeal edema,
+DOTAREM,adverse reactions,laryngospasm,10023891.0
+DOTAREM,adverse reactions,bronchospasm,10006482.0
+DOTAREM,adverse reactions,angioedema,10002424.0
+DOTAREM,adverse reactions,conjunctivitis,10010741.0
+DOTAREM,adverse reactions,ocular hyperemia,10030041.0
+DOTAREM,adverse reactions,eyelid edema,10015993.0
+DOTAREM,adverse reactions,lacrimation increased,10023644.0
+DOTAREM,adverse reactions,hyperhidrosis,10020642.0
+DOTAREM,adverse reactions,urticaria,10046735.0
+DOTAREM,adverse reactions,coma,10010071.0
+DOTAREM,adverse reactions,convulsion,10010904.0
+DOTAREM,adverse reactions,syncope,10042772.0
+DOTAREM,adverse reactions,presyncope,10036653.0
+DOTAREM,adverse reactions,parosmia,10034018.0
+DOTAREM,adverse reactions,tremor,10044565.0
+DOTAREM,adverse reactions,muscle contracture,10062575.0
+DOTAREM,adverse reactions,muscle weakness,10028350.0
+DOTAREM,adverse reactions,diarrhea,10012735.0
+DOTAREM,adverse reactions,salivary hypersecretion,10039424.0
+DOTAREM,adverse reactions,malaise,10025482.0
+DOTAREM,adverse reactions,fever,10016558.0
+DOTAREM,adverse reactions,nsf (in context of other gbcas),
+DOTAREM,adverse reactions,superficial phlebitis,
+DOTAREM,boxed warnings,nephrogenic systemic fibrosis (nsf),
+DOTAREM,boxed warnings,fatal or debilitating fibrosis affecting the skin,
+DOTAREM,boxed warnings,muscle and internal organs,
+DOTAREM,boxed warnings,chronic severe kidney disease,
+DOTAREM,boxed warnings,acute kidney injury,10069339.0
+DOTAREM,boxed warnings,conditions that may reduce renal function,
+DOTAREM,boxed warnings,chronically reduced renal function,
+DOTAREM,warnings and precautions,nephrogenic systemic fibrosis,10067467.0
+DOTAREM,warnings and precautions,hypersensitivity,10020751.0
+DOTAREM,warnings and precautions,anaphylactoid/anaphylactic reactions,
+DOTAREM,warnings and precautions,cardiovascular manifestations,
+DOTAREM,warnings and precautions,respiratory manifestations,
+DOTAREM,warnings and precautions,cutaneous manifestations,
+DOTAREM,warnings and precautions,acute kidney injury,10069339.0
+DOTAREM,warnings and precautions,drug-induced kidney toxicity,
+DOTAREM,warnings and precautions,nsf,
+DOTAREM,warnings and precautions,renal impairment,10062237.0
+DOTAREM,warnings and precautions,extravasation,10015866.0
+DOTAREM,warnings and precautions,injection site reactions,10022097.0
+DOTAREM,warnings and precautions,tissue irritation,10080906.0
+PRADAXA,adverse reactions,,
+PRADAXA,boxed warnings,premature discontinuation,
+PRADAXA,boxed warnings,thrombotic events,
+PRADAXA,boxed warnings,spinal/epidural hematoma,
+PRADAXA,boxed warnings,pathological bleeding,
+PRADAXA,boxed warnings,long-term paralysis,
+PRADAXA,boxed warnings,permanent paralysis,
+PRADAXA,boxed warnings,neurological impairment.,
+PRADAXA,warnings and precautions,,
+ELIQUIS,adverse reactions,,
+ELIQUIS,boxed warnings,thrombotic events,
+ELIQUIS,boxed warnings,spinal/epidural hematoma,
+ELIQUIS,boxed warnings,pathological bleeding,
+ELIQUIS,boxed warnings,long-term or permanent paralysis,
+ELIQUIS,boxed warnings,neurological impairment,10074237.0
+ELIQUIS,warnings and precautions,serious,
+ELIQUIS,warnings and precautions,potentially fatal bleeding,
+ELIQUIS,warnings and precautions,signs and symptoms of blood loss,
+ELIQUIS,warnings and precautions,increased risk of thrombotic events,
+ELIQUIS,warnings and precautions,increased rate of stroke,
+ELIQUIS,warnings and precautions,bleeding,10005103.0
+ELIQUIS,warnings and precautions,concomitant use of drugs affecting hemostasis,
+ELIQUIS,warnings and precautions,active pathological hemorrhage,
+ELIQUIS,warnings and precautions,persist for at least 24 hours after the last dose,
+ELIQUIS,warnings and precautions,epidural or spinal hematoma,
+ELIQUIS,warnings and precautions,long-term or permanent paralysis,
+ELIQUIS,warnings and precautions,signs and symptoms of neurological impairment,
+ELIQUIS,warnings and precautions,numbness or weakness of the legs,
+ELIQUIS,warnings and precautions,bowel,
+ELIQUIS,warnings and precautions,or bladder dysfunction,
+ELIQUIS,warnings and precautions,neurological compromise,
+ELIQUIS,warnings and precautions,prosthetic heart valves,
+ELIQUIS,warnings and precautions,acute pe in hemodynamically unstable patients,
+ELIQUIS,warnings and precautions,thrombolysis,10043568.0
+ELIQUIS,warnings and precautions,pulmonary embolectomy,
+ZERBAXA,adverse reactions,,
+ZERBAXA,warnings and precautions,decreased efficacy,
+ZERBAXA,warnings and precautions,serious hypersensitivity (anaphylactic) reactions,
+ZERBAXA,warnings and precautions,clostridium difficile -associated diarrhea (cdad),
+ZERBAXA,warnings and precautions,fatal hypersensitivity (anaphylactic) reactions,
+ZERBAXA,warnings and precautions,mild diarrhea,
+ZERBAXA,warnings and precautions,fatal colitis,
+ZERBAXA,warnings and precautions,drug-resistant bacteria,
+FERRIPROX,adverse reactions,,
+FERRIPROX,boxed warnings,agranulocytosis,10001507.0
+FERRIPROX,boxed warnings,neutropenia,10029354.0
+FERRIPROX,boxed warnings,serious infections,
+FERRIPROX,boxed warnings,death,10011906.0
+FERRIPROX,boxed warnings,symptoms indicative of infection,
+FERRIPROX,warnings and precautions,infection,10021789.0
+FERRIPROX,warnings and precautions,fetal harm,
+FERRIPROX,warnings and precautions,agranulocytosis,10001507.0
+FERRIPROX,warnings and precautions,neutropenia,10029354.0
+FERRIPROX,warnings and precautions,death,10011906.0
+FERRIPROX,warnings and precautions,symptoms indicative of infection,
+FERRIPROX,warnings and precautions,agranulocytosis leading to death,
+FERRIPROX,warnings and precautions,embryofetal death,
+FERRIPROX,warnings and precautions,malformations,
+FERRIPROX,warnings and precautions,increased alt values,
+FERRIPROX,warnings and precautions,increase in both alt and ast,
+FERRIPROX,warnings and precautions,decreased plasma zinc concentrations,
+FERRIPROX,warnings and precautions,deficiency,
+DALVANCE,adverse reactions,,
+DALVANCE,warnings and precautions,serious hypersensitivity,
+DALVANCE,warnings and precautions,skin reactions,
+DALVANCE,warnings and precautions,reactions due to rapid intravenous infusion,
+DALVANCE,warnings and precautions,alt elevations,
+DALVANCE,warnings and precautions,clostridium difficile -associated diarrhea,
+DALVANCE,warnings and precautions,anaphylactic reactions,
+DALVANCE,warnings and precautions,"""red-man syndrome""",
+DALVANCE,warnings and precautions,flushing of the upper body,
+DALVANCE,warnings and precautions,urticaria,10046735.0
+DALVANCE,warnings and precautions,pruritus,10037087.0
+DALVANCE,warnings and precautions,rash,10037844.0
+DALVANCE,warnings and precautions,abnormalities in liver tests,
+DALVANCE,warnings and precautions,mild diarrhea,
+DALVANCE,warnings and precautions,fatal colitis,
+DALVANCE,warnings and precautions,increased morbidity and mortality,
+DALVANCE,warnings and precautions,drug-resistant bacteria,
+ARCAPTA,adverse reactions,,
+ARCAPTA,boxed warnings,asthma-related death,
+ARCAPTA,boxed warnings,increase in asthma-related deaths,
+ARCAPTA,boxed warnings,increased risk of asthma-related death,
+ARCAPTA,warnings and precautions,,
+CERDELGA,adverse reactions,fatigue,10016256.0
+CERDELGA,adverse reactions,headache,10019211.0
+CERDELGA,adverse reactions,nausea,10028813.0
+CERDELGA,adverse reactions,diarrhea,10012735.0
+CERDELGA,adverse reactions,back pain,10003988.0
+CERDELGA,adverse reactions,pain in extremities,
+CERDELGA,adverse reactions,upper abdominal pain,10046272.0
+CERDELGA,adverse reactions,arthralgia,10003239.0
+CERDELGA,adverse reactions,migraine,10027599.0
+CERDELGA,adverse reactions,flatulence,10016766.0
+CERDELGA,adverse reactions,oropharyngeal pain,10068319.0
+CERDELGA,adverse reactions,dizziness,10013573.0
+CERDELGA,adverse reactions,asthenia,10003549.0
+CERDELGA,adverse reactions,cough,10011224.0
+CERDELGA,adverse reactions,dyspepsia,10013946.0
+CERDELGA,adverse reactions,gastroesophageal reflux disease,10066874.0
+CERDELGA,adverse reactions,constipation,10010774.0
+CERDELGA,adverse reactions,palpitations,10033557.0
+CERDELGA,adverse reactions,rash,10037844.0
+CERDELGA,warnings and precautions,ecg changes,
+CERDELGA,warnings and precautions,cardiac arrhythmias,10007521.0
+CERDELGA,warnings and precautions,pre-existing cardiac disease,
+CERDELGA,warnings and precautions,long qt syndrome,10024803.0
+CERDELGA,warnings and precautions,concomitant use of class ia and class iii antiarrhythmics,
+CERDELGA,warnings and precautions,prolongation of the pr,
+CERDELGA,warnings and precautions,qtc,10037707.0
+CERDELGA,warnings and precautions,and/or qrs cardiac intervals,
+CERDELGA,warnings and precautions,cardiac arrhythmias,10007521.0
+CERDELGA,warnings and precautions,increases in ecg intervals,
+CERDELGA,warnings and precautions,congestive heart failure,10010684.0
+CERDELGA,warnings and precautions,recent acute myocardial infarction,
+CERDELGA,warnings and precautions,bradycardia,10006093.0
+CERDELGA,warnings and precautions,heart block,10019252.0
+CERDELGA,warnings and precautions,ventricular arrhythmia,10047281.0
+GADAVIST,adverse reactions,,
+GADAVIST,boxed warnings,nephrogenic systemic fibrosis,10067467.0
+GADAVIST,boxed warnings,nsf,
+GADAVIST,boxed warnings,fatal fibrosis,
+GADAVIST,boxed warnings,debilitating fibrosis,
+GADAVIST,boxed warnings,severe kidney disease,
+GADAVIST,boxed warnings,acute kidney injury,10069339.0
+GADAVIST,boxed warnings,reduced renal function,
+GADAVIST,boxed warnings,chronically reduced renal function,
+GADAVIST,warnings and precautions,nephrogenic systemic fibrosis,10067467.0
+GADAVIST,warnings and precautions,anaphylactic reactions,
+GADAVIST,warnings and precautions,hypersensitivity reactions,
+GADAVIST,warnings and precautions,cardiovascular manifestations,
+GADAVIST,warnings and precautions,respiratory manifestations,
+GADAVIST,warnings and precautions,cutaneous manifestations,
+GADAVIST,warnings and precautions,death,10011906.0
+GADAVIST,warnings and precautions,acute kidney injury,10069339.0
+GADAVIST,warnings and precautions,drug-induced kidney toxicity,
+GADAVIST,warnings and precautions,fibrosis,10016642.0
+GADAVIST,warnings and precautions,extravasation,10015866.0
+GADAVIST,warnings and precautions,moderate irritation,
+GADAVIST,warnings and precautions,overestimation of extent of malignant disease,
+ZYKADIA,adverse reactions,,
+ZYKADIA,warnings and precautions,,
+XALKORI,adverse reactions,,
+XALKORI,warnings and precautions,hepatotoxicity,10019851.0
+XALKORI,warnings and precautions,interstitial lung disease (ild)/pneumonitis,
+XALKORI,warnings and precautions,qt interval prolongation,
+XALKORI,warnings and precautions,bradycardia,10006093.0
+XALKORI,warnings and precautions,severe visual loss,
+XALKORI,warnings and precautions,embryofetal toxicity,
+BEPREVE,adverse reactions,mild taste following instillation,
+BEPREVE,adverse reactions,eye irritation,10015946.0
+BEPREVE,adverse reactions,headache,10019211.0
+BEPREVE,adverse reactions,nasopharyngitis,10028810.0
+BEPREVE,adverse reactions,hypersensitivity reactions,
+BEPREVE,adverse reactions,itching,10023084.0
+BEPREVE,adverse reactions,body rash,
+BEPREVE,adverse reactions,swelling of lips,10042703.0
+BEPREVE,adverse reactions,tongue and/or throat,
+BEPREVE,warnings and precautions,contamination,
+BEPREVE,warnings and precautions,contact lens-related irritation,
+BEPREVE,warnings and precautions,eye is red,
+BEPREVE,warnings and precautions,benzalkonium chloride absorption by soft contact lenses,
+EDARBI,adverse reactions,diarrhea,10012735.0
+EDARBI,adverse reactions,hypotension/orthostatic hypotension,
+EDARBI,adverse reactions,nausea,10028813.0
+EDARBI,adverse reactions,asthenia,10003549.0
+EDARBI,adverse reactions,fatigue,10016256.0
+EDARBI,adverse reactions,muscle spasm,10028333.0
+EDARBI,adverse reactions,dizziness,10013573.0
+EDARBI,adverse reactions,dizziness postural,10013578.0
+EDARBI,adverse reactions,cough,10011224.0
+EDARBI,adverse reactions,serum creatinine increases,
+EDARBI,adverse reactions,low hemoglobin,
+EDARBI,adverse reactions,low hematocrit,
+EDARBI,adverse reactions,low rbc counts,
+EDARBI,adverse reactions,low and high markedly abnormal platelet and wbc counts,
+EDARBI,adverse reactions,rash,10037844.0
+EDARBI,adverse reactions,pruritus,10037087.0
+EDARBI,adverse reactions,angioedema.,
+EDARBI,boxed warnings,fetal toxicity,
+EDARBI,boxed warnings,injury,10022116.0
+EDARBI,boxed warnings,death,10011906.0
+EDARBI,warnings and precautions,fetal renal function reduction,
+EDARBI,warnings and precautions,fetal morbidity,
+EDARBI,warnings and precautions,fetal death,10055690.0
+EDARBI,warnings and precautions,neonatal morbidity,
+EDARBI,warnings and precautions,neonatal death,
+EDARBI,warnings and precautions,oligohydramnios,10030289.0
+EDARBI,warnings and precautions,fetal lung hypoplasia,
+EDARBI,warnings and precautions,skeletal deformations,
+EDARBI,warnings and precautions,skull hypoplasia,10073498.0
+EDARBI,warnings and precautions,anuria,10002847.0
+EDARBI,warnings and precautions,hypotension,10021097.0
+EDARBI,warnings and precautions,renal failure,10038435.0
+EDARBI,warnings and precautions,symptomatic hypotension,
+EDARBI,warnings and precautions,changes in renal function,
+EDARBI,warnings and precautions,oliguria,10030302.0
+EDARBI,warnings and precautions,progressive azotemia,10078996.0
+EDARBI,warnings and precautions,acute renal failure,10001041.0
+EDARBI,warnings and precautions,increases in serum creatinine,
+EDARBI,warnings and precautions,increases in blood urea nitrogen,
+POTIGA,adverse reactions,,
+POTIGA,boxed warnings,retinal abnormalities,
+POTIGA,boxed warnings,potential vision loss,
+POTIGA,boxed warnings,damage to the photoreceptors,
+POTIGA,boxed warnings,abnormal visual acuity,
+POTIGA,boxed warnings,decreased visual acuity,
+POTIGA,boxed warnings,retinal pigmentary abnormalities,
+POTIGA,boxed warnings,vision changes,
+POTIGA,warnings and precautions,,
+TUDORZA,adverse reactions,paradoxical bronchospasm,10033770.0
+TUDORZA,adverse reactions,worsening of narrow-angle glaucoma,
+TUDORZA,adverse reactions,worsening of urinary retention,
+TUDORZA,adverse reactions,immediate hypersensitivity reactions,
+TUDORZA,adverse reactions,headache,10019211.0
+TUDORZA,adverse reactions,nasopharyngitis,10028810.0
+TUDORZA,adverse reactions,cough,10011224.0
+TUDORZA,adverse reactions,diarrhea,10012735.0
+TUDORZA,adverse reactions,sinusitis,10040753.0
+TUDORZA,adverse reactions,rhinitis,10039083.0
+TUDORZA,adverse reactions,toothache,10044055.0
+TUDORZA,adverse reactions,fall,10016173.0
+TUDORZA,adverse reactions,vomiting,10047700.0
+TUDORZA,adverse reactions,diabetes mellitus,10012601.0
+TUDORZA,adverse reactions,dry mouth,10013781.0
+TUDORZA,adverse reactions,1st degree av block,
+TUDORZA,adverse reactions,osteoarthritis,10031161.0
+TUDORZA,adverse reactions,cardiac failure,10007554.0
+TUDORZA,adverse reactions,cardio-respiratory arrest,10007617.0
+TUDORZA,adverse reactions,anaphylaxis,10002218.0
+TUDORZA,adverse reactions,angioedema,10002424.0
+TUDORZA,adverse reactions,urticaria,10046735.0
+TUDORZA,adverse reactions,rash,10037844.0
+TUDORZA,adverse reactions,bronchospasm,10006482.0
+TUDORZA,adverse reactions,itching,10023084.0
+TUDORZA,warnings and precautions,paradoxical bronchospasm,10033770.0
+TUDORZA,warnings and precautions,worsening of narrow-angle glaucoma,
+TUDORZA,warnings and precautions,worsening of urinary retention,
+TUDORZA,warnings and precautions,immediate hypersensitivity reactions,
+TUDORZA,warnings and precautions,angioedema,10002424.0
+TUDORZA,warnings and precautions,bronchospasm,10006482.0
+TUDORZA,warnings and precautions,anaphylaxis,10002218.0
+TUDORZA,warnings and precautions,eye pain or discomfort,
+TUDORZA,warnings and precautions,blurred vision,10005886.0
+TUDORZA,warnings and precautions,visual halos or colored images in association with red eyes from conjunctival congestion and corneal edema,
+TUDORZA,warnings and precautions,difficulty passing urine,
+TUDORZA,warnings and precautions,painful urination,10033521.0
+TUDORZA,warnings and precautions,swelling of the lips,
+TUDORZA,warnings and precautions,tongue,
+TUDORZA,warnings and precautions,or throat,
+TUDORZA,warnings and precautions,urticaria,10046735.0
+TUDORZA,warnings and precautions,rash,10037844.0
+TUDORZA,warnings and precautions,itching,10023084.0
+PROMACTA,adverse reactions,,
+PROMACTA,boxed warnings,hepatic decompensation,10076894.0
+PROMACTA,boxed warnings,chronic hepatitis c,10008912.0
+PROMACTA,warnings and precautions,hepatotoxicity,10019851.0
+PROMACTA,warnings and precautions,thrombotic complications,
+PROMACTA,warnings and precautions,thromboembolic complications,
+PROMACTA,warnings and precautions,hepatic decompensation,10076894.0
+PROMACTA,warnings and precautions,ascites,10003445.0
+PROMACTA,warnings and precautions,encephalopathy,10014625.0
+PROMACTA,warnings and precautions,liver enzyme elevations,
+PROMACTA,warnings and precautions,indirect hyperbilirubinemia,10075817.0
+PROMACTA,warnings and precautions,liver injury,10067125.0
+PROMACTA,warnings and precautions,hepatic decompensation,10076894.0
+PROMACTA,warnings and precautions,thrombotic event,
+PROMACTA,warnings and precautions,thromboembolism,10043566.0
+PROMACTA,warnings and precautions,portal venous thrombosis,
+PROMACTA,warnings and precautions,portal vein thrombosis,10036206.0
+PROMACTA,warnings and precautions,cataracts,10007771.0
+INLYTA,adverse reactions,,
+INLYTA,warnings and precautions,,
+NORTHERA,adverse reactions,supine hypertension,10078932.0
+NORTHERA,adverse reactions,hyperpyrexia,10020741.0
+NORTHERA,adverse reactions,confusion,10010300.0
+NORTHERA,adverse reactions,ischemic heart disease,10055218.0
+NORTHERA,adverse reactions,arrhythmias,
+NORTHERA,adverse reactions,congestive heart failure,10010684.0
+NORTHERA,adverse reactions,headache,10019211.0
+NORTHERA,adverse reactions,dizziness,10013573.0
+NORTHERA,adverse reactions,nausea,10028813.0
+NORTHERA,adverse reactions,hypertension,10020772.0
+NORTHERA,adverse reactions,fatigue,10016256.0
+NORTHERA,adverse reactions,increased blood pressure,10021655.0
+NORTHERA,adverse reactions,falls,
+NORTHERA,adverse reactions,urinary tract infections,10046577.0
+NORTHERA,adverse reactions,syncope,10042772.0
+NORTHERA,boxed warnings,supine hypertension,10078932.0
+NORTHERA,warnings and precautions,supine hypertension,10078932.0
+NORTHERA,warnings and precautions,hyperpyrexia,10020741.0
+NORTHERA,warnings and precautions,confusion,10010300.0
+NORTHERA,warnings and precautions,symptoms in patients with existing ischemic heart disease,
+NORTHERA,warnings and precautions,arrhythmias,
+NORTHERA,warnings and precautions,congestive heart failure,10010684.0
+NORTHERA,warnings and precautions,allergic reactions,
+JARDIANCE,adverse reactions,,
+JARDIANCE,warnings and precautions,hypotension,10021097.0
+JARDIANCE,warnings and precautions,impairment in renal function,
+JARDIANCE,warnings and precautions,hypoglycemia,10020993.0
+JARDIANCE,warnings and precautions,genital mycotic infections,
+JARDIANCE,warnings and precautions,urinary tract infections,10046577.0
+JARDIANCE,warnings and precautions,increased ldl-c,
+JARDIANCE,warnings and precautions,macrovascular outcomes,
+FANAPT,adverse reactions,,
+FANAPT,boxed warnings,increased mortality,
+FANAPT,boxed warnings,death,10011906.0
+FANAPT,boxed warnings,cardiovascular events,
+FANAPT,boxed warnings,heart failure,10019279.0
+FANAPT,boxed warnings,sudden death,10042434.0
+FANAPT,boxed warnings,infectious events,
+FANAPT,boxed warnings,pneumonia,10035664.0
+FANAPT,warnings and precautions,,
+TANZEUM,adverse reactions,,
+TANZEUM,boxed warnings,thyroid c-cell tumors,
+TANZEUM,boxed warnings,medullary thyroid carcinoma (mtc),
+TANZEUM,boxed warnings,multiple endocrine neoplasia syndrome type 2 (men 2),
+TANZEUM,warnings and precautions,thyroid c-cell tumors,
+TANZEUM,warnings and precautions,pancreatitis,10033645.0
+TANZEUM,warnings and precautions,hypoglycemia,10020993.0
+TANZEUM,warnings and precautions,hypersensitivity reactions,
+TANZEUM,warnings and precautions,renal impairment,10062237.0
+TANZEUM,warnings and precautions,macrovascular outcomes,
+EYLEA,adverse reactions,,
+EYLEA,warnings and precautions,endophthalmitis,10014801.0
+EYLEA,warnings and precautions,retinal detachments,
+EYLEA,warnings and precautions,increases in intraocular pressure,
+EYLEA,warnings and precautions,arterial thromboembolic events,
+JEVTANA,adverse reactions,,
+JEVTANA,boxed warnings,neutropenia,10029354.0
+JEVTANA,boxed warnings,neutropenic deaths,
+JEVTANA,boxed warnings,hypersensitivity,10020751.0
+JEVTANA,boxed warnings,severe hypersensitivity,
+JEVTANA,boxed warnings,generalized rash/erythema,
+JEVTANA,boxed warnings,hypotension,10021097.0
+JEVTANA,boxed warnings,bronchospasm,10006482.0
+JEVTANA,warnings and precautions,,
+YERVOY,adverse reactions,,
+YERVOY,boxed warnings,immune-mediated adverse reactions,
+YERVOY,boxed warnings,enterocolitis,10014893.0
+YERVOY,boxed warnings,hepatitis,10019717.0
+YERVOY,boxed warnings,dermatitis,10012431.0
+YERVOY,boxed warnings,toxic epidermal necrolysis,10044223.0
+YERVOY,boxed warnings,neuropathy,10029328.0
+YERVOY,boxed warnings,endocrinopathy,
+YERVOY,warnings and precautions,,
+FARXIGA,adverse reactions,,
+FARXIGA,warnings and precautions,hypotension,10021097.0
+FARXIGA,warnings and precautions,impairment in renal function,
+FARXIGA,warnings and precautions,hypoglycemia,10020993.0
+FARXIGA,warnings and precautions,genital mycotic infections,
+FARXIGA,warnings and precautions,increased ldl-c,
+FARXIGA,warnings and precautions,bladder cancer,10005003.0
+FARXIGA,warnings and precautions,macrovascular outcomes,
+PICATO,adverse reactions,ophthalmic adverse reaction,
+PICATO,adverse reactions,hypersensitivity reactions,
+PICATO,adverse reactions,local skin reactions,
+PICATO,adverse reactions,application site pain,10003051.0
+PICATO,adverse reactions,application site pruritus,10003053.0
+PICATO,adverse reactions,application site irritation,10003046.0
+PICATO,adverse reactions,application site infection,10049041.0
+PICATO,adverse reactions,periorbital edema,10034545.0
+PICATO,adverse reactions,nasopharyngitis,10028810.0
+PICATO,adverse reactions,headache,10019211.0
+PICATO,adverse reactions,erythema,10015150.0
+PICATO,adverse reactions,flaking/scaling,
+PICATO,adverse reactions,crusting,
+PICATO,adverse reactions,swelling,10042674.0
+PICATO,adverse reactions,vesiculation/pustulation,
+PICATO,adverse reactions,erosion/ulceration,
+PICATO,adverse reactions,application site pain,10003051.0
+PICATO,adverse reactions,application site pruritus,10003053.0
+PICATO,adverse reactions,application site infection,10049041.0
+PICATO,adverse reactions,periorbital edema,10034545.0
+PICATO,adverse reactions,headache,10019211.0
+PICATO,adverse reactions,application site irritation,10003046.0
+PICATO,adverse reactions,nasopharyngitis,10028810.0
+PICATO,adverse reactions,eyelid edema,10015993.0
+PICATO,adverse reactions,eye pain,10015958.0
+PICATO,adverse reactions,conjunctivitis,10010741.0
+PICATO,adverse reactions,hypersensitivity,10020751.0
+PICATO,adverse reactions,allergic contact dermatitis,10056265.0
+PICATO,adverse reactions,herpes zoster,10019974.0
+PICATO,adverse reactions,chemical conjunctivitis,10055119.0
+PICATO,adverse reactions,corneal burn.,
+PICATO,warnings and precautions,severe eye pain,
+PICATO,warnings and precautions,chemical conjunctivitis,10055119.0
+PICATO,warnings and precautions,corneal burn,10068161.0
+PICATO,warnings and precautions,eyelid edema,10015993.0
+PICATO,warnings and precautions,eyelid ptosis,10015995.0
+PICATO,warnings and precautions,periorbital edema,10034545.0
+PICATO,warnings and precautions,vesiculation/pustulation,
+PICATO,warnings and precautions,erosion/ulceration,
+PICATO,warnings and precautions,anaphylaxis,10002218.0
+PICATO,warnings and precautions,allergic contact dermatitis,10056265.0
+PICATO,warnings and precautions,erythema,10015150.0
+PICATO,warnings and precautions,crusting,
+PICATO,warnings and precautions,swelling,10042674.0
+PRISTIQ,adverse reactions,,
+PRISTIQ,boxed warnings,suicidal thoughts and behaviors,
+PRISTIQ,boxed warnings,worsening,
+PRISTIQ,boxed warnings,emergence of suicidal thoughts and behaviors,
+PRISTIQ,warnings and precautions,,
+STRIBILD,adverse reactions,,
+STRIBILD,boxed warnings,lactic acidosis,10023676.0
+STRIBILD,boxed warnings,severe hepatomegaly with steatosis,
+STRIBILD,boxed warnings,acute exacerbations of hepatitis b,
+STRIBILD,warnings and precautions,,
+NULOJIX,adverse reactions,,
+NULOJIX,boxed warnings,post-transplant lymphoproliferative disorder,
+NULOJIX,boxed warnings,other malignancies,
+NULOJIX,boxed warnings,serious infections,
+NULOJIX,boxed warnings,increased susceptibility to infection,
+NULOJIX,boxed warnings,possible development of malignancies,
+NULOJIX,boxed warnings,increased risk of graft loss,
+NULOJIX,boxed warnings,death,10011906.0
+NULOJIX,warnings and precautions,post-transplant lymphoproliferative disorder,
+NULOJIX,warnings and precautions,other malignancies,
+NULOJIX,warnings and precautions,progressive multifocal leukoencephalopathy,10036807.0
+NULOJIX,warnings and precautions,other serious infections,
+NULOJIX,warnings and precautions,liver transplant,10024714.0
+NULOJIX,warnings and precautions,acute rejection and graft loss with corticosteroid minimization,
+NULOJIX,warnings and precautions,immunizations,10021431.0
+NULOJIX,warnings and precautions,ptld,
+NULOJIX,warnings and precautions,ebv serostatus,
+NULOJIX,warnings and precautions,other risk factors,
+NULOJIX,warnings and precautions,management of immunosuppression,
+NULOJIX,warnings and precautions,serious infections,
+NULOJIX,warnings and precautions,tuberculosis,10044755.0
+NULOJIX,warnings and precautions,polyoma virus nephropathy,
+NULOJIX,warnings and precautions,liver transplant,10024714.0
+NULOJIX,warnings and precautions,acute rejection and graft loss with corticosteroid minimization,
+NULOJIX,warnings and precautions,immunizations.,
+LUMIZYME,adverse reactions,,
+LUMIZYME,boxed warnings,anaphylaxis,10002218.0
+LUMIZYME,boxed warnings,hypersensitivity,10020751.0
+LUMIZYME,boxed warnings,immune-mediated reactions,
+LUMIZYME,boxed warnings,cardiorespiratory failure,
+LUMIZYME,boxed warnings,respiratory distress,10038687.0
+LUMIZYME,boxed warnings,hypoxia,10021143.0
+LUMIZYME,boxed warnings,apnea,10002974.0
+LUMIZYME,boxed warnings,dyspnea,10013968.0
+LUMIZYME,boxed warnings,bradycardia,10006093.0
+LUMIZYME,boxed warnings,tachycardia,10043071.0
+LUMIZYME,boxed warnings,bronchospasm,10006482.0
+LUMIZYME,boxed warnings,throat tightness,10043528.0
+LUMIZYME,boxed warnings,hypotension,10021097.0
+LUMIZYME,boxed warnings,angioedema,10002424.0
+LUMIZYME,boxed warnings,tongue swelling,
+LUMIZYME,boxed warnings,lip swelling,10024570.0
+LUMIZYME,boxed warnings,periorbital edema,10034545.0
+LUMIZYME,boxed warnings,face edema,10016029.0
+LUMIZYME,boxed warnings,urticaria,10046735.0
+LUMIZYME,boxed warnings,proteinuria,10037032.0
+LUMIZYME,boxed warnings,nephrotic syndrome,10029164.0
+LUMIZYME,boxed warnings,necrotizing skin lesions,
+LUMIZYME,boxed warnings,fluid overload.,
+LUMIZYME,warnings and precautions,,
+EOVIST,adverse reactions,nephrogenic systemic fibrosis,10067467.0
+EOVIST,adverse reactions,hypersensitivity reactions,
+EOVIST,adverse reactions,nausea,10028813.0
+EOVIST,adverse reactions,headache,10019211.0
+EOVIST,adverse reactions,feeling hot,10016334.0
+EOVIST,adverse reactions,dizziness,10013573.0
+EOVIST,adverse reactions,back pain,10003988.0
+EOVIST,adverse reactions,vomiting,10047700.0
+EOVIST,adverse reactions,blood pressure increased,10005750.0
+EOVIST,adverse reactions,injection site reactions,10022097.0
+EOVIST,adverse reactions,dysgeusia,10013911.0
+EOVIST,adverse reactions,paresthesia,10033775.0
+EOVIST,adverse reactions,flushing,10016825.0
+EOVIST,adverse reactions,parosmia,10034018.0
+EOVIST,adverse reactions,pruritus,10037087.0
+EOVIST,adverse reactions,rash,10037844.0
+EOVIST,adverse reactions,respiratory disorders,
+EOVIST,adverse reactions,fatigue,10016256.0
+EOVIST,adverse reactions,chest pain,10008479.0
+EOVIST,adverse reactions,vertigo,10047340.0
+EOVIST,adverse reactions,dry mouth,10013781.0
+EOVIST,adverse reactions,chills,10008531.0
+EOVIST,adverse reactions,feeling abnormal,10016322.0
+EOVIST,adverse reactions,tremor,10044565.0
+EOVIST,adverse reactions,akathisia,10001540.0
+EOVIST,adverse reactions,bundle branch block,10006578.0
+EOVIST,adverse reactions,palpitation,10033556.0
+EOVIST,adverse reactions,oral discomfort,10030973.0
+EOVIST,adverse reactions,salivary hypersecretion,10039424.0
+EOVIST,adverse reactions,maculopapular rash,10025424.0
+EOVIST,adverse reactions,hyperhidrosis,10020642.0
+EOVIST,adverse reactions,discomfort,10013082.0
+EOVIST,adverse reactions,malaise,10025482.0
+EOVIST,adverse reactions,elevation of serum iron values,
+EOVIST,adverse reactions,elevation of serum bilirubin values,
+EOVIST,adverse reactions,hypersensitivity reactions,
+EOVIST,adverse reactions,anaphylactic shock,10002199.0
+EOVIST,adverse reactions,hypotension,10021097.0
+EOVIST,adverse reactions,pharyngolaryngeal edema,10086305.0
+EOVIST,adverse reactions,urticaria,10046735.0
+EOVIST,adverse reactions,face edema,10016029.0
+EOVIST,adverse reactions,rhinitis,10039083.0
+EOVIST,adverse reactions,conjunctivitis,10010741.0
+EOVIST,adverse reactions,abdominal pain,10000081.0
+EOVIST,adverse reactions,hypoesthesia,10020937.0
+EOVIST,adverse reactions,sneezing,10041232.0
+EOVIST,adverse reactions,cough,10011224.0
+EOVIST,adverse reactions,pallor,10033546.0
+EOVIST,adverse reactions,tachycardia,10043071.0
+EOVIST,adverse reactions,restlessness,10038743.0
+EOVIST,boxed warnings,nephrogenic systemic fibrosis (nsf),
+EOVIST,boxed warnings,fatal or debilitating fibrosis affecting the skin,
+EOVIST,boxed warnings,muscle and internal organs,
+EOVIST,boxed warnings,chronic,
+EOVIST,boxed warnings,severe kidney disease,
+EOVIST,boxed warnings,acute kidney injury,10069339.0
+EOVIST,boxed warnings,reduced renal function,
+EOVIST,boxed warnings,chronically reduced renal function,
+EOVIST,warnings and precautions,nephrogenic systemic fibrosis,10067467.0
+EOVIST,warnings and precautions,hypersensitivity: anaphylactoid/hypersensitivity reactions,
+EOVIST,warnings and precautions,cardiovascular manifestations,
+EOVIST,warnings and precautions,respiratory manifestations,
+EOVIST,warnings and precautions,cutaneous manifestations,
+EOVIST,warnings and precautions,severe reactions including shock,
+EOVIST,warnings and precautions,acute kidney injury,10069339.0
+EOVIST,warnings and precautions,debilitating fibrosis,
+EOVIST,warnings and precautions,fatal fibrosis,
+EOVIST,warnings and precautions,drug-induced kidney toxicity,
+EOVIST,warnings and precautions,anaphylactic reactions,
+EOVIST,warnings and precautions,acute kidney injury,10069339.0
+EOVIST,warnings and precautions,extravasation into tissues,
+EOVIST,warnings and precautions,local tissue reactions,
+EOVIST,warnings and precautions,myocyte necrosis and inflammation,
+EOVIST,warnings and precautions,interference with laboratory tests,
+EOVIST,warnings and precautions,interference with visualization of liver lesions,
+EOVIST,warnings and precautions,reduced hepatic contrast,
+BELEODAQ,adverse reactions,,
+BELEODAQ,warnings and precautions,thrombocytopenia,10043551.0
+BELEODAQ,warnings and precautions,leukopenia,10024384.0
+BELEODAQ,warnings and precautions,neutropenia,10029354.0
+BELEODAQ,warnings and precautions,lymphopenia,10025327.0
+BELEODAQ,warnings and precautions,anemia,10002034.0
+BELEODAQ,warnings and precautions,infection,10021789.0
+BELEODAQ,warnings and precautions,pneumonia,10035664.0
+BELEODAQ,warnings and precautions,sepsis,10040047.0
+BELEODAQ,warnings and precautions,hepatotoxicity,10019851.0
+BELEODAQ,warnings and precautions,liver function test abnormalities,
+BELEODAQ,warnings and precautions,tumor lysis syndrome,10045170.0
+BELEODAQ,warnings and precautions,embryo-fetal toxicity,
+BELEODAQ,warnings and precautions,fetal harm,
+BELEODAQ,warnings and precautions,teratogenicity,10043275.0
+BELEODAQ,warnings and precautions,embryo-fetal lethality,
+BELEODAQ,warnings and precautions,nausea,10028813.0
+BELEODAQ,warnings and precautions,vomiting,10047700.0
+BELEODAQ,warnings and precautions,diarrhea,10012735.0
+VICTRELIS,adverse reactions,,
+VICTRELIS,warnings and precautions,,
+VIMIZIM,adverse reactions,anaphylaxis,10002218.0
+VIMIZIM,adverse reactions,hypersensitivity reactions,
+VIMIZIM,adverse reactions,pyrexia,10037660.0
+VIMIZIM,adverse reactions,vomiting,10047700.0
+VIMIZIM,adverse reactions,headache,10019211.0
+VIMIZIM,adverse reactions,nausea,10028813.0
+VIMIZIM,adverse reactions,abdominal pain,10000081.0
+VIMIZIM,adverse reactions,chills,10008531.0
+VIMIZIM,adverse reactions,fatigue,10016256.0
+VIMIZIM,boxed warnings,anaphylaxis,10002218.0
+VIMIZIM,boxed warnings,cough,10011224.0
+VIMIZIM,boxed warnings,erythema,10015150.0
+VIMIZIM,boxed warnings,throat tightness,10043528.0
+VIMIZIM,boxed warnings,urticaria,10046735.0
+VIMIZIM,boxed warnings,flushing,10016825.0
+VIMIZIM,boxed warnings,cyanosis,10011703.0
+VIMIZIM,boxed warnings,hypotension,10021097.0
+VIMIZIM,boxed warnings,rash,10037844.0
+VIMIZIM,boxed warnings,dyspnea,10013968.0
+VIMIZIM,boxed warnings,chest discomfort,10008469.0
+VIMIZIM,boxed warnings,gastrointestinal symptoms (nausea,
+VIMIZIM,boxed warnings,abdominal pain,10000081.0
+VIMIZIM,boxed warnings,retching,10038776.0
+VIMIZIM,boxed warnings,and vomiting),
+VIMIZIM,boxed warnings,acute exacerbation of respiratory compromise,
+VIMIZIM,boxed warnings,hypersensitivity reactions,
+VIMIZIM,warnings and precautions,anaphylaxis,10002218.0
+VIMIZIM,warnings and precautions,hypersensitivity reactions,
+VIMIZIM,warnings and precautions,acute respiratory complications,
+VIMIZIM,warnings and precautions,cough,10011224.0
+VIMIZIM,warnings and precautions,erythema,10015150.0
+VIMIZIM,warnings and precautions,throat tightness,10043528.0
+VIMIZIM,warnings and precautions,urticaria,10046735.0
+VIMIZIM,warnings and precautions,flushing,10016825.0
+VIMIZIM,warnings and precautions,cyanosis,10011703.0
+VIMIZIM,warnings and precautions,hypotension,10021097.0
+VIMIZIM,warnings and precautions,rash,10037844.0
+VIMIZIM,warnings and precautions,dyspnea,10013968.0
+VIMIZIM,warnings and precautions,chest discomfort,10008469.0
+VIMIZIM,warnings and precautions,gastrointestinal symptoms,
+VIMIZIM,warnings and precautions,nausea,10028813.0
+VIMIZIM,warnings and precautions,abdominal pain,10000081.0
+VIMIZIM,warnings and precautions,retching,10038776.0
+VIMIZIM,warnings and precautions,vomiting,10047700.0
+VIMIZIM,warnings and precautions,peripheral edema,10034570.0
+VIMIZIM,warnings and precautions,sleep apnea,10040975.0
+VIMIZIM,warnings and precautions,spinal or cervical cord compression,
+VIMIZIM,warnings and precautions,back pain,10003988.0
+VIMIZIM,warnings and precautions,paralysis of limbs below the level of compression,
+VIMIZIM,warnings and precautions,urinary incontinence,10046543.0
+VIMIZIM,warnings and precautions,fecal incontinence,10016296.0
+SIRTURO,adverse reactions,increased mortality,
+SIRTURO,adverse reactions,qt prolongation,
+SIRTURO,adverse reactions,hepatotoxicity,10019851.0
+SIRTURO,adverse reactions,drug interactions,
+SIRTURO,adverse reactions,nausea,10028813.0
+SIRTURO,adverse reactions,arthralgia,10003239.0
+SIRTURO,adverse reactions,headache,10019211.0
+SIRTURO,adverse reactions,hemoptysis,10018964.0
+SIRTURO,adverse reactions,chest pain,10008479.0
+SIRTURO,adverse reactions,anorexia,10002646.0
+SIRTURO,adverse reactions,transaminases increased,10054889.0
+SIRTURO,adverse reactions,rash,10037844.0
+SIRTURO,adverse reactions,blood amylase increased,10005328.0
+SIRTURO,adverse reactions,aminotransferase elevations,
+SIRTURO,boxed warnings,increased mortality,
+SIRTURO,boxed warnings,qt prolongation,
+SIRTURO,boxed warnings,significant ventricular arrhythmia,
+SIRTURO,boxed warnings,qtcf interval >500 ms,
+SIRTURO,boxed warnings,qtcf interval prolongation of greater than 500 ms,
+SIRTURO,warnings and precautions,,
+NEURACEQ,adverse reactions,injection site reaction,10022095.0
+NEURACEQ,adverse reactions,erythema,10015150.0
+NEURACEQ,adverse reactions,irritation,
+NEURACEQ,adverse reactions,pain,10033371.0
+NEURACEQ,warnings and precautions,image interpretation errors,
+NEURACEQ,warnings and precautions,false positives,
+NEURACEQ,warnings and precautions,unintentional radiation exposure,
+NEURACEQ,warnings and precautions,cumulative radiation exposure,
+NEURACEQ,warnings and precautions,risk for image misinterpretation,
+NEURACEQ,warnings and precautions,errors in neuraceq estimation,
+NEURACEQ,warnings and precautions,errors due to severe brain atrophy,
+NEURACEQ,warnings and precautions,errors due to motion artifacts,
+NEURACEQ,warnings and precautions,increased risk of cancer.,
+COMETRIQ,adverse reactions,,
+COMETRIQ,boxed warnings,perforations and fistulas,
+COMETRIQ,boxed warnings,hemorrhage,10055798.0
+COMETRIQ,boxed warnings,gastrointestinal perforations,
+COMETRIQ,boxed warnings,fistula formation,
+COMETRIQ,boxed warnings,hemoptysis,10018964.0
+COMETRIQ,boxed warnings,gastrointestinal hemorrhage,10017955.0
+COMETRIQ,boxed warnings,bleeding,10005103.0
+COMETRIQ,boxed warnings,severe hemorrhage,
+COMETRIQ,warnings and precautions,,
+AFINITOR,adverse reactions,,
+AFINITOR,warnings and precautions,,
+BREO,adverse reactions,,
+BREO,boxed warnings,asthma-related death,
+BREO,boxed warnings,increase in asthma-related deaths,
+BREO,boxed warnings,increased risk of asthma-related death,
+BREO,boxed warnings,asthma-related hospitalization,
+BREO,warnings and precautions,,
+FIRAZYR,adverse reactions,injection site reactions,10022097.0
+FIRAZYR,adverse reactions,pyrexia,10037660.0
+FIRAZYR,adverse reactions,transaminase increase,
+FIRAZYR,adverse reactions,dizziness,10013573.0
+FIRAZYR,adverse reactions,rash,10037844.0
+FIRAZYR,adverse reactions,nausea,10028813.0
+FIRAZYR,adverse reactions,headache,10019211.0
+FIRAZYR,warnings and precautions,laryngeal attacks,
+FIRAZYR,warnings and precautions,airway obstruction,
+INVOKANA,adverse reactions,,
+INVOKANA,warnings and precautions,hypotension,10021097.0
+INVOKANA,warnings and precautions,impairment in renal function,
+INVOKANA,warnings and precautions,hyperkalemia,10020646.0
+INVOKANA,warnings and precautions,hypoglycemia,10020993.0
+INVOKANA,warnings and precautions,genital mycotic infections,
+INVOKANA,warnings and precautions,hypersensitivity reactions,
+INVOKANA,warnings and precautions,bone fracture,
+INVOKANA,warnings and precautions,increased ldl-c,
+VORAXAZE,adverse reactions,serious allergic reactions,
+VORAXAZE,adverse reactions,anaphylactic reactions,
+VORAXAZE,adverse reactions,paraesthesias,
+VORAXAZE,adverse reactions,flushing,10016825.0
+VORAXAZE,adverse reactions,nausea,10028813.0
+VORAXAZE,adverse reactions,vomiting,10047700.0
+VORAXAZE,adverse reactions,hypotension,10021097.0
+VORAXAZE,adverse reactions,headache,10019211.0
+VORAXAZE,adverse reactions,myelosuppression,10028584.0
+VORAXAZE,adverse reactions,mucositis,10028127.0
+VORAXAZE,adverse reactions,acute hepatitis,
+VORAXAZE,adverse reactions,renal dysfunction,
+VORAXAZE,adverse reactions,renal failure,10038435.0
+VORAXAZE,adverse reactions,blurred vision,10005886.0
+VORAXAZE,adverse reactions,diarrhea,10012735.0
+VORAXAZE,adverse reactions,hypersensitivity,10020751.0
+VORAXAZE,adverse reactions,hypertension,10020772.0
+VORAXAZE,adverse reactions,rash,10037844.0
+VORAXAZE,adverse reactions,throat irritation,10043521.0
+VORAXAZE,adverse reactions,throat tightness,10043528.0
+VORAXAZE,adverse reactions,tremor,10044565.0
+VORAXAZE,warnings and precautions,serious allergic reactions,
+VORAXAZE,warnings and precautions,anaphylactic reactions,
+NESINA,adverse reactions,,
+NESINA,warnings and precautions,,
+GILENYA,adverse reactions,bradyarrhythmia,10049765.0
+GILENYA,adverse reactions,atrioventricular blocks,
+GILENYA,adverse reactions,infections,
+GILENYA,adverse reactions,progressive multifocal leukoencephalopathy,10036807.0
+GILENYA,adverse reactions,macular edema,10025415.0
+GILENYA,adverse reactions,posterior reversible encephalopathy syndrome,10071066.0
+GILENYA,adverse reactions,respiratory effects,
+GILENYA,adverse reactions,liver injury,10067125.0
+GILENYA,adverse reactions,headache,10019211.0
+GILENYA,adverse reactions,liver transaminase elevation,
+GILENYA,adverse reactions,diarrhea,10012735.0
+GILENYA,adverse reactions,cough,10011224.0
+GILENYA,adverse reactions,influenza,10022000.0
+GILENYA,adverse reactions,sinusitis,10040753.0
+GILENYA,adverse reactions,back pain,10003988.0
+GILENYA,adverse reactions,abdominal pain,10000081.0
+GILENYA,adverse reactions,pain in extremity,10033425.0
+GILENYA,adverse reactions,serum transaminase elevations,
+GILENYA,adverse reactions,basal cell carcinoma,10004146.0
+GILENYA,adverse reactions,influenza,10022000.0
+GILENYA,adverse reactions,sinusitis,10040753.0
+GILENYA,adverse reactions,bronchitis,10006451.0
+GILENYA,adverse reactions,herpes zoster,10019974.0
+GILENYA,adverse reactions,tinea versicolor,10043875.0
+GILENYA,adverse reactions,bradycardia,10006093.0
+GILENYA,adverse reactions,headache,10019211.0
+GILENYA,adverse reactions,migraine,10027599.0
+GILENYA,adverse reactions,nausea,10028813.0
+GILENYA,adverse reactions,diarrhea,10012735.0
+GILENYA,adverse reactions,abdominal pain,10000081.0
+GILENYA,adverse reactions,asthenia,10003549.0
+GILENYA,adverse reactions,back pain,10003988.0
+GILENYA,adverse reactions,pain in extremity,10033425.0
+GILENYA,adverse reactions,alopecia,10001760.0
+GILENYA,adverse reactions,actinic keratosis,10000614.0
+GILENYA,adverse reactions,liver transaminase elevations,
+GILENYA,adverse reactions,blood triglycerides increased,10005839.0
+GILENYA,adverse reactions,cough,10011224.0
+GILENYA,adverse reactions,dyspnea,10013968.0
+GILENYA,adverse reactions,vision blurred,10047513.0
+GILENYA,adverse reactions,hypertension,10020772.0
+GILENYA,adverse reactions,lymphopenia,10025327.0
+GILENYA,adverse reactions,leukopenia,10024384.0
+GILENYA,adverse reactions,skin papilloma,10040907.0
+GILENYA,adverse reactions,basal cell carcinoma,10004146.0
+GILENYA,adverse reactions,dizziness,10013573.0
+GILENYA,adverse reactions,pneumonia,10035664.0
+GILENYA,adverse reactions,eczema,10014184.0
+GILENYA,adverse reactions,pruritus,10037087.0
+GILENYA,adverse reactions,vascular events,
+GILENYA,adverse reactions,ischemic and hemorrhagic strokes,
+GILENYA,adverse reactions,peripheral arterial occlusive disease,10062585.0
+GILENYA,adverse reactions,lymphomas,
+GILENYA,warnings and precautions,,
+HALAVEN,adverse reactions,,
+HALAVEN,warnings and precautions,neutropenia,10029354.0
+HALAVEN,warnings and precautions,peripheral neuropathy,10080342.0
+HALAVEN,warnings and precautions,embryo-fetal toxicity,
+HALAVEN,warnings and precautions,qt prolongation,
+HALAVEN,warnings and precautions,congestive heart failure,10010684.0
+HALAVEN,warnings and precautions,bradyarrhythmias,
+HALAVEN,warnings and precautions,electrolyte abnormalities,
+HALAVEN,warnings and precautions,congenital long qt syndrome,
+HALAVEN,warnings and precautions,severe neutropenia,
+HALAVEN,warnings and precautions,febrile neutropenia,10016288.0
+HALAVEN,warnings and precautions,grade 3 or 4 cytopenias,
+HALAVEN,warnings and precautions,grade 3 peripheral neuropathy,
+HALAVEN,warnings and precautions,grade 4 peripheral neuropathy,
+HALAVEN,warnings and precautions,peripheral motor and sensory neuropathy,
+HALAVEN,warnings and precautions,embryo-fetal toxicity,
+HALAVEN,warnings and precautions,teratogenicity,10043275.0
+HALAVEN,warnings and precautions,hypokalemia,10021015.0
+HALAVEN,warnings and precautions,hypomagnesemia,10021027.0
+INTELENCE,adverse reactions,,
+INTELENCE,warnings and precautions,severe skin reactions,
+INTELENCE,warnings and precautions,fatal skin reactions,
+INTELENCE,warnings and precautions,stevens-johnson syndrome,10042033.0
+INTELENCE,warnings and precautions,hypersensitivity reaction,10020756.0
+INTELENCE,warnings and precautions,toxic epidermal necrolysis,10044223.0
+INTELENCE,warnings and precautions,erythema multiforme,10015218.0
+INTELENCE,warnings and precautions,severe hypersensitivity,
+INTELENCE,warnings and precautions,severe rash,
+INTELENCE,warnings and precautions,rash with systemic symptoms,
+INTELENCE,warnings and precautions,liver transaminase elevations,
+INTELENCE,warnings and precautions,drug rash with eosinophilia and systemic symptoms (dress),
+INTELENCE,warnings and precautions,rash,10037844.0
+INTELENCE,warnings and precautions,constitutional findings,
+INTELENCE,warnings and precautions,organ dysfunction,
+INTELENCE,warnings and precautions,hepatic failure,10019663.0
+INTELENCE,warnings and precautions,grade 3 and 4 rashes,
+INTELENCE,warnings and precautions,severe skin reactions,
+INTELENCE,warnings and precautions,rash accompanied by fever,
+INTELENCE,warnings and precautions,general malaise,10018066.0
+INTELENCE,warnings and precautions,fatigue,10016256.0
+INTELENCE,warnings and precautions,muscle or joint aches,
+INTELENCE,warnings and precautions,blisters,10005216.0
+INTELENCE,warnings and precautions,oral lesions,
+INTELENCE,warnings and precautions,conjunctivitis,10010741.0
+INTELENCE,warnings and precautions,facial edema,
+INTELENCE,warnings and precautions,hepatitis,10019717.0
+INTELENCE,warnings and precautions,eosinophilia,10014950.0
+INTELENCE,warnings and precautions,angioedema,10002424.0
+INTELENCE,warnings and precautions,redistribution/accumulation of body fat,
+INTELENCE,warnings and precautions,central obesity,10065941.0
+INTELENCE,warnings and precautions,dorsocervical fat enlargement (buffalo hump),
+INTELENCE,warnings and precautions,peripheral wasting,
+INTELENCE,warnings and precautions,facial wasting,10056866.0
+INTELENCE,warnings and precautions,breast enlargement,10006242.0
+INTELENCE,warnings and precautions,"""cushingoid appearance""",
+INTELENCE,warnings and precautions,immune reconstitution syndrome,10054014.0
+INTELENCE,warnings and precautions,inflammatory response,
+INTELENCE,warnings and precautions,mycobacterium avium infection,
+INTELENCE,warnings and precautions,cytomegalovirus,
+INTELENCE,warnings and precautions,pneumocystis jiroveci pneumonia (pcp),
+INTELENCE,warnings and precautions,tuberculosis,10044755.0
+INTELENCE,warnings and precautions,autoimmune disorders,10003816.0
+INTELENCE,warnings and precautions,graves' disease,10018706.0
+INTELENCE,warnings and precautions,polymyositis,10036102.0
+INTELENCE,warnings and precautions,guillain-barre syndrome.,
+AMYVID,adverse reactions,headache,10019211.0
+AMYVID,adverse reactions,musculoskeletal pain,10028391.0
+AMYVID,adverse reactions,blood pressure increased,10005750.0
+AMYVID,adverse reactions,fatigue,10016256.0
+AMYVID,adverse reactions,nausea,10028813.0
+AMYVID,adverse reactions,injection site reaction,10022095.0
+AMYVID,adverse reactions,anxiety,10002855.0
+AMYVID,adverse reactions,back pain,10003988.0
+AMYVID,adverse reactions,claustrophobia,10009244.0
+AMYVID,adverse reactions,dizziness,10013573.0
+AMYVID,adverse reactions,feeling cold,10016326.0
+AMYVID,adverse reactions,insomnia,10022437.0
+AMYVID,adverse reactions,neck pain,10028836.0
+AMYVID,adverse reactions,infusion site rash,10059830.0
+AMYVID,adverse reactions,dysgeusia,10013911.0
+AMYVID,adverse reactions,pruritis,10037086.0
+AMYVID,adverse reactions,urticaria,10046735.0
+AMYVID,adverse reactions,flushing,10016825.0
+AMYVID,warnings and precautions,image interpretation errors,
+AMYVID,warnings and precautions,false negatives,
+AMYVID,warnings and precautions,radiation risk,
+AMYVID,warnings and precautions,unintentional radiation exposure,
+AMYVID,warnings and precautions,errors in amyvid estimation of brain neuritic plaque density,
+AMYVID,warnings and precautions,extensive brain atrophy,
+AMYVID,warnings and precautions,motion artifacts,
+AMYVID,warnings and precautions,increase risk of cancer,
+ULESFIA,adverse reactions,ocular irritation,
+ULESFIA,adverse reactions,application site irritation,10003046.0
+ULESFIA,adverse reactions,application site anesthesia,10003033.0
+ULESFIA,adverse reactions,hypoesthesia,10020937.0
+ULESFIA,adverse reactions,pain,10033371.0
+ULESFIA,adverse reactions,pruritus,10037087.0
+ULESFIA,adverse reactions,erythema,10015150.0
+ULESFIA,adverse reactions,pyoderma,10037632.0
+ULESFIA,adverse reactions,application site dryness,10048943.0
+ULESFIA,adverse reactions,application site excoriation,10059006.0
+ULESFIA,adverse reactions,paraesthesia,10033775.0
+ULESFIA,adverse reactions,application site dermatitis,10003036.0
+ULESFIA,adverse reactions,excoriation,10049796.0
+ULESFIA,adverse reactions,thermal burn,10053615.0
+ULESFIA,adverse reactions,dandruff,10011859.0
+ULESFIA,adverse reactions,rash,10037844.0
+ULESFIA,adverse reactions,skin exfoliation,10040844.0
+ULESFIA,warnings and precautions,neonatal toxicity,10078986.0
+ULESFIA,warnings and precautions,gasping syndrome,10069162.0
+ULESFIA,warnings and precautions,eye irritation,10015946.0
+ULESFIA,warnings and precautions,contact dermatitis,10010790.0
+ULESFIA,warnings and precautions,allergic dermatitis,10001711.0
+ULESFIA,warnings and precautions,irritant dermatitis,
+ULESFIA,warnings and precautions,severe metabolic acidosis,
+ULESFIA,warnings and precautions,gasping respirations,
+ULESFIA,warnings and precautions,progressive hypotension,
+ULESFIA,warnings and precautions,seizures,10039910.0
+ULESFIA,warnings and precautions,central nervous system depression,10009710.0
+ULESFIA,warnings and precautions,intraventricular hemorrhage,10022840.0
+ULESFIA,warnings and precautions,death,10011906.0
+OTEZLA,adverse reactions,diarrhea,10012735.0
+OTEZLA,adverse reactions,nausea,10028813.0
+OTEZLA,adverse reactions,headache,10019211.0
+OTEZLA,adverse reactions,upper respiratory tract infection,10046306.0
+OTEZLA,adverse reactions,tension headache,10043269.0
+OTEZLA,adverse reactions,vomiting,10047700.0
+OTEZLA,adverse reactions,abdominal pain,10000081.0
+OTEZLA,adverse reactions,fatigue,10016256.0
+OTEZLA,adverse reactions,dyspepsia,10013946.0
+OTEZLA,adverse reactions,decreased appetite,10061428.0
+OTEZLA,adverse reactions,insomnia,10022437.0
+OTEZLA,adverse reactions,back pain,10003988.0
+OTEZLA,adverse reactions,migraine,10027599.0
+OTEZLA,adverse reactions,frequent bowel movements,10017367.0
+OTEZLA,adverse reactions,depression,10012378.0
+OTEZLA,adverse reactions,bronchitis,10006451.0
+OTEZLA,adverse reactions,tooth abscess,10044016.0
+OTEZLA,adverse reactions,folliculitis,10016936.0
+OTEZLA,adverse reactions,sinus headache,10040744.0
+OTEZLA,adverse reactions,severe worsening of psoriasis.,
+OTEZLA,warnings and precautions,depression,10012378.0
+OTEZLA,warnings and precautions,suicidal thoughts,
+OTEZLA,warnings and precautions,mood changes,
+OTEZLA,warnings and precautions,weight decrease,10047893.0
+OTEZLA,warnings and precautions,loss of efficacy,
+ILARIS,adverse reactions,,
+ILARIS,warnings and precautions,,
+NATAZIA,adverse reactions,serious cardiovascular events,
+NATAZIA,adverse reactions,stroke,10042244.0
+NATAZIA,adverse reactions,vascular events,
+NATAZIA,adverse reactions,liver disease,
+NATAZIA,adverse reactions,irregular uterine bleeding,
+NATAZIA,adverse reactions,nausea,10028813.0
+NATAZIA,adverse reactions,breast tenderness,10006313.0
+NATAZIA,adverse reactions,headache,10019211.0
+NATAZIA,adverse reactions,headaches,10019231.0
+NATAZIA,adverse reactions,migraines,
+NATAZIA,adverse reactions,breast tenderness,10006313.0
+NATAZIA,adverse reactions,pain,10033371.0
+NATAZIA,adverse reactions,menstrual disorders,
+NATAZIA,adverse reactions,nausea/or vomiting,
+NATAZIA,adverse reactions,acne,10000496.0
+NATAZIA,adverse reactions,mood changes,
+NATAZIA,adverse reactions,increased weight,
+NATAZIA,adverse reactions,menstrual disorder,10027327.0
+NATAZIA,adverse reactions,metrorrhagia,10027514.0
+NATAZIA,adverse reactions,menorrhagia,10027313.0
+NATAZIA,adverse reactions,menstruation irregular,10027339.0
+NATAZIA,adverse reactions,genital hemorrhage,10061178.0
+NATAZIA,adverse reactions,vaginal hemorrhage,10046910.0
+NATAZIA,adverse reactions,dysfunctional uterine bleeding,10013908.0
+NATAZIA,adverse reactions,depression,10012378.0
+NATAZIA,adverse reactions,mood swings,10027951.0
+NATAZIA,adverse reactions,mood altered,10027940.0
+NATAZIA,adverse reactions,depressed mood,10012374.0
+NATAZIA,adverse reactions,dysthymic disorder,10013982.0
+NATAZIA,adverse reactions,crying,10011469.0
+NATAZIA,adverse reactions,weight increased,10047899.0
+NATAZIA,adverse reactions,myocardial infarction,10028596.0
+NATAZIA,adverse reactions,ruptured ovarian cyst,
+NATAZIA,adverse reactions,deep vein thrombosis,10051055.0
+NATAZIA,adverse reactions,focal nodular hyperplasia of the liver,
+NATAZIA,adverse reactions,uterine leiomyoma,10046798.0
+NATAZIA,adverse reactions,acute cholecystitis,10000691.0
+NATAZIA,adverse reactions,chronic acalculous cholecystitis,10080289.0
+NATAZIA,adverse reactions,venous and arterial thromboembolic events,
+NATAZIA,adverse reactions,pulmonary emboli,
+NATAZIA,adverse reactions,cerebral thrombosis,10008132.0
+NATAZIA,adverse reactions,hypertension,10020772.0
+NATAZIA,adverse reactions,gallbladder disease,10017641.0
+NATAZIA,adverse reactions,hepatitis,10019717.0
+NATAZIA,adverse reactions,hypersensitivity,10020751.0
+NATAZIA,adverse reactions,fluid retention,10016807.0
+NATAZIA,adverse reactions,hypertriglyceridemia,10020869.0
+NATAZIA,adverse reactions,dizziness,10013573.0
+NATAZIA,adverse reactions,chloasma,10008570.0
+NATAZIA,adverse reactions,angioedema,10002424.0
+NATAZIA,adverse reactions,erythema nodosum,10015226.0
+NATAZIA,adverse reactions,erythema multiforme,10015218.0
+NATAZIA,adverse reactions,gastrointestinal symptoms,
+NATAZIA,adverse reactions,abdominal pain,10000081.0
+NATAZIA,adverse reactions,vulvovaginal candidiasis,10047784.0
+NATAZIA,boxed warnings,cigarette smoking,
+NATAZIA,boxed warnings,serious cardiovascular events,
+NATAZIA,warnings and precautions,,
+DIFICID,adverse reactions,nausea,10028813.0
+DIFICID,adverse reactions,vomiting,10047700.0
+DIFICID,adverse reactions,abdominal pain,10000081.0
+DIFICID,adverse reactions,gastrointestinal hemorrhage,10017955.0
+DIFICID,adverse reactions,anemia,10002034.0
+DIFICID,adverse reactions,neutropenia,10029354.0
+DIFICID,adverse reactions,abdominal distension,10000060.0
+DIFICID,adverse reactions,abdominal tenderness,10000097.0
+DIFICID,adverse reactions,dyspepsia,10013946.0
+DIFICID,adverse reactions,dysphagia,10013950.0
+DIFICID,adverse reactions,flatulence,10016766.0
+DIFICID,adverse reactions,intestinal obstruction,10022687.0
+DIFICID,adverse reactions,megacolon,10027110.0
+DIFICID,adverse reactions,increased blood alkaline phosphatase,
+DIFICID,adverse reactions,decreased blood bicarbonate,
+DIFICID,adverse reactions,increased hepatic enzymes,
+DIFICID,adverse reactions,decreased platelet count,
+DIFICID,adverse reactions,hyperglycemia,10020635.0
+DIFICID,adverse reactions,metabolic acidosis,10027417.0
+DIFICID,adverse reactions,drug eruption,10013687.0
+DIFICID,adverse reactions,pruritus,10037087.0
+DIFICID,adverse reactions,rash,10037844.0
+DIFICID,adverse reactions,hypersensitivity reactions,
+DIFICID,adverse reactions,dyspnea,10013968.0
+DIFICID,adverse reactions,angioedema,10002424.0
+DIFICID,warnings and precautions,systemic infections,
+DIFICID,warnings and precautions,acute hypersensitivity reactions,
+DIFICID,warnings and precautions,angioedema,10002424.0
+DIFICID,warnings and precautions,dyspnea,10013968.0
+DIFICID,warnings and precautions,pruritus,10037087.0
+DIFICID,warnings and precautions,rash,10037844.0
+DIFICID,warnings and precautions,drug-resistant bacteria,
+ONFI,adverse reactions,,
+ONFI,warnings and precautions,somnolence,10041349.0
+ONFI,warnings and precautions,sedation,10039897.0
+ONFI,warnings and precautions,withdrawal,
+ONFI,warnings and precautions,serious dermatological reactions,
+ONFI,warnings and precautions,stevens-johnson syndrome,10042033.0
+ONFI,warnings and precautions,toxic epidermal necrolysis,10044223.0
+ONFI,warnings and precautions,physical and psychological dependence,
+ONFI,warnings and precautions,suicidal behavior and ideation,
+ONFI,warnings and precautions,depression,10012378.0
+ONFI,warnings and precautions,convulsions,10010914.0
+ONFI,warnings and precautions,psychosis,10037234.0
+ONFI,warnings and precautions,hallucinations,10019077.0
+ONFI,warnings and precautions,behavioral disorder,10004210.0
+ONFI,warnings and precautions,tremor,10044565.0
+ONFI,warnings and precautions,anxiety,10002855.0
+ONFI,warnings and precautions,dysphoria,10013954.0
+ONFI,warnings and precautions,insomnia,10022437.0
+ONFI,warnings and precautions,rash,10037844.0
+ONFI,warnings and precautions,habituation,10018810.0
+ONFI,warnings and precautions,signs or symptoms of sjs/ten,
+ONFI,warnings and precautions,suicidal thoughts or behaviors,
+ONFI,warnings and precautions,worsening of depression,
+ONFI,warnings and precautions,any unusual changes in mood or behavior,
+ONFI,warnings and precautions,thinking or behavior related to suicide.,
+TECFIDERA,adverse reactions,anaphylaxis,10002218.0
+TECFIDERA,adverse reactions,angioedema,10002424.0
+TECFIDERA,adverse reactions,progressive multifocal leukoencephalopathy,10036807.0
+TECFIDERA,adverse reactions,lymphopenia,10025327.0
+TECFIDERA,adverse reactions,flushing,10016825.0
+TECFIDERA,adverse reactions,abdominal pain,10000081.0
+TECFIDERA,adverse reactions,diarrhea,10012735.0
+TECFIDERA,adverse reactions,nausea,10028813.0
+TECFIDERA,adverse reactions,vomiting,10047700.0
+TECFIDERA,adverse reactions,pruritus,10037087.0
+TECFIDERA,adverse reactions,rash,10037844.0
+TECFIDERA,adverse reactions,albumin urine present,10001582.0
+TECFIDERA,adverse reactions,erythema,10015150.0
+TECFIDERA,adverse reactions,dyspepsia,10013946.0
+TECFIDERA,adverse reactions,aspartate aminotransferase increased,10003481.0
+TECFIDERA,adverse reactions,elevated hepatic transaminases,
+TECFIDERA,adverse reactions,eosinophilia,10014950.0
+TECFIDERA,warnings and precautions,,
+DYSPORT,adverse reactions,,
+DYSPORT,boxed warnings,asthenia,10003549.0
+DYSPORT,boxed warnings,generalized muscle weakness,10062572.0
+DYSPORT,boxed warnings,diplopia,10013036.0
+DYSPORT,boxed warnings,blurred vision,10005886.0
+DYSPORT,boxed warnings,ptosis,10037272.0
+DYSPORT,boxed warnings,dysphagia,10013950.0
+DYSPORT,boxed warnings,dysphonia,10013952.0
+DYSPORT,boxed warnings,dysarthria,10013887.0
+DYSPORT,boxed warnings,urinary incontinence,10046543.0
+DYSPORT,boxed warnings,breathing difficulties,
+DYSPORT,boxed warnings,death,10011906.0
+DYSPORT,warnings and precautions,respiratory difficulties,
+DYSPORT,warnings and precautions,speech difficulties,
+DYSPORT,warnings and precautions,swallowing difficulties,
+DYSPORT,warnings and precautions,clinical effects of treatment,
+DYSPORT,warnings and precautions,transmission of creutzfeldt-jakob disease (cjd),
+DYSPORT,warnings and precautions,asthenia,10003549.0
+DYSPORT,warnings and precautions,generalized muscle weakness,10062572.0
+DYSPORT,warnings and precautions,diplopia,10013036.0
+DYSPORT,warnings and precautions,blurred vision,10005886.0
+DYSPORT,warnings and precautions,ptosis,10037272.0
+DYSPORT,warnings and precautions,dysphagia,10013950.0
+DYSPORT,warnings and precautions,dysphonia,10013952.0
+DYSPORT,warnings and precautions,dysarthria,10013887.0
+DYSPORT,warnings and precautions,urinary incontinence,10046543.0
+DYSPORT,warnings and precautions,breathing difficulties,
+DYSPORT,warnings and precautions,death related to spread of toxin effects,
+DYSPORT,warnings and precautions,spread of toxin effect,
+DYSPORT,warnings and precautions,swallowing difficulties,
+DYSPORT,warnings and precautions,breathing difficulties,
+DYSPORT,warnings and precautions,severe dysphagia,
+DYSPORT,warnings and precautions,use of a feeding tube,
+DYSPORT,warnings and precautions,aspiration,10003504.0
+DYSPORT,warnings and precautions,critical loss of breathing capacity,
+DYSPORT,warnings and precautions,respiratory failure,10038695.0
+DYSPORT,warnings and precautions,problems with swallowing,
+DYSPORT,warnings and precautions,speech disorders,
+DYSPORT,warnings and precautions,respiratory disorders,
+DYSPORT,warnings and precautions,excessive weakness or atrophy in the target muscle(s),
+DYSPORT,warnings and precautions,marked facial asymmetry,
+DYSPORT,warnings and precautions,inflammation at the injection site(s),
+DYSPORT,warnings and precautions,ptosis,10037272.0
+DYSPORT,warnings and precautions,excessive dermatochalasis,
+DYSPORT,warnings and precautions,deep dermal scarring,
+DYSPORT,warnings and precautions,thick sebaceous skin,
+DYSPORT,warnings and precautions,inability to substantially lessen glabellar lines by physically spreading them apart,
+DYSPORT,warnings and precautions,eyelid ptosis,10015995.0
+DYSPORT,warnings and precautions,peripheral motor neuropathic diseases,
+DYSPORT,warnings and precautions,amyotrophic lateral sclerosis,10002026.0
+DYSPORT,warnings and precautions,neuromuscular junction disorders,
+DYSPORT,warnings and precautions,severe dysphagia,
+DYSPORT,warnings and precautions,respiratory compromise,10082862.0
+DYSPORT,warnings and precautions,transmission of viral diseases,
+DYSPORT,warnings and precautions,intradermal immune reaction,
+ZYTIGA,adverse reactions,,
+ZYTIGA,warnings and precautions,mineralocorticoid excess,
+ZYTIGA,warnings and precautions,adrenocortical insufficiency,
+ZYTIGA,warnings and precautions,hepatotoxicity,10019851.0
+ZYTIGA,warnings and precautions,hypertension,10020772.0
+ZYTIGA,warnings and precautions,hypokalemia,10021015.0
+ZYTIGA,warnings and precautions,fluid retention,10016807.0
+ZYTIGA,warnings and precautions,adrenal insufficiency,10001367.0
+ZYTIGA,warnings and precautions,alt or ast increases,
+ZYTIGA,warnings and precautions,liver enzyme increases,
+ZYTIGA,warnings and precautions,hepatotoxicity events,
+ZYTIGA,warnings and precautions,elevations of ast,
+ZYTIGA,warnings and precautions,alt,10001844.0
+ZYTIGA,warnings and precautions,or bilirubin,
+ZYTIGA,warnings and precautions,liver function tests to the patient's baseline,
+ZYTIGA,warnings and precautions,ast or alt greater than or equal to 20* uln and/or bilirubin greater than or equal to 10* uln.,
+DUAVEE,adverse reactions,cardiovascular disorders,
+DUAVEE,adverse reactions,malignant neoplasms,
+DUAVEE,adverse reactions,gallbladder disease,10017641.0
+DUAVEE,adverse reactions,hypertriglyceridemia,10020869.0
+DUAVEE,adverse reactions,muscle spasms,10028334.0
+DUAVEE,adverse reactions,nausea,10028813.0
+DUAVEE,adverse reactions,diarrhea,10012735.0
+DUAVEE,adverse reactions,dyspepsia,10013946.0
+DUAVEE,adverse reactions,abdominal pain upper,10000087.0
+DUAVEE,adverse reactions,oropharyngeal pain,10068319.0
+DUAVEE,adverse reactions,dizziness,10013573.0
+DUAVEE,adverse reactions,neck pain,10028836.0
+DUAVEE,adverse reactions,hot flush,10060800.0
+DUAVEE,adverse reactions,venous thromboembolism,10066899.0
+DUAVEE,adverse reactions,deep venous thrombosis,
+DUAVEE,adverse reactions,pulmonary embolism,10037377.0
+DUAVEE,adverse reactions,retinal vein thrombosis,10038908.0
+DUAVEE,boxed warnings,,
+DUAVEE,warnings and precautions,,
+SAPHRIS,adverse reactions,,
+SAPHRIS,boxed warnings,increased mortality,
+SAPHRIS,boxed warnings,dementia-related psychosis,
+SAPHRIS,boxed warnings,risk of death,
+SAPHRIS,warnings and precautions,,
+DUREZOL,adverse reactions,elevated intraocular pressure,
+DUREZOL,adverse reactions,optic nerve damage,10075452.0
+DUREZOL,adverse reactions,visual acuity and field defects,
+DUREZOL,adverse reactions,posterior subcapsular cataract formation,
+DUREZOL,adverse reactions,secondary ocular infection,
+DUREZOL,adverse reactions,herpes simplex,10019948.0
+DUREZOL,adverse reactions,perforation of the globe,
+DUREZOL,adverse reactions,thinning of the cornea,
+DUREZOL,adverse reactions,thinning of the sclera,
+DUREZOL,adverse reactions,corneal edema,10011033.0
+DUREZOL,adverse reactions,ciliary and conjunctival hyperemia,
+DUREZOL,adverse reactions,eye pain,10015958.0
+DUREZOL,adverse reactions,photophobia,10034960.0
+DUREZOL,adverse reactions,posterior capsule opacification,10036346.0
+DUREZOL,adverse reactions,anterior chamber cells,
+DUREZOL,adverse reactions,anterior chamber flare,10052127.0
+DUREZOL,adverse reactions,conjunctival edema,10010726.0
+DUREZOL,adverse reactions,blepharitis,10005148.0
+DUREZOL,adverse reactions,reduced visual acuity,
+DUREZOL,adverse reactions,punctate keratitis,10037508.0
+DUREZOL,adverse reactions,eye inflammation,10015943.0
+DUREZOL,adverse reactions,iritis,10022955.0
+DUREZOL,adverse reactions,application site discomfort,10063072.0
+DUREZOL,adverse reactions,application site irritation,10003046.0
+DUREZOL,adverse reactions,corneal pigmentation,10011040.0
+DUREZOL,adverse reactions,corneal striae,10052118.0
+DUREZOL,adverse reactions,episcleritis,10015084.0
+DUREZOL,adverse reactions,eye pruritis,
+DUREZOL,adverse reactions,eyelid irritation,10057385.0
+DUREZOL,adverse reactions,eyelid crusting,
+DUREZOL,adverse reactions,foreign body sensation,
+DUREZOL,adverse reactions,increased lacrimation,
+DUREZOL,adverse reactions,macular edema,10025415.0
+DUREZOL,adverse reactions,sclera hyperemia,
+DUREZOL,adverse reactions,uveitis,10046851.0
+DUREZOL,adverse reactions,blurred vision,10005886.0
+DUREZOL,adverse reactions,eye irritation,10015946.0
+DUREZOL,adverse reactions,headache,10019211.0
+DUREZOL,adverse reactions,increased iop,
+DUREZOL,adverse reactions,limbal and conjunctival hyperemia,
+DUREZOL,adverse reactions,dry eye,10013774.0
+DUREZOL,adverse reactions,iridocyclitis,10022941.0
+DUREZOL,adverse reactions,anterior chamber flare,10052127.0
+DUREZOL,warnings and precautions,intraocular pressure increase,
+DUREZOL,warnings and precautions,glaucoma,10018304.0
+DUREZOL,warnings and precautions,damage to the optic nerve,
+DUREZOL,warnings and precautions,defects in visual acuity,
+DUREZOL,warnings and precautions,defects in fields of vision,
+DUREZOL,warnings and precautions,cataracts,10007771.0
+DUREZOL,warnings and precautions,posterior subcapsular cataract formation,
+DUREZOL,warnings and precautions,delayed healing,
+DUREZOL,warnings and precautions,bleb formation,
+DUREZOL,warnings and precautions,perforations of the cornea or sclera,
+DUREZOL,warnings and precautions,bacterial infections,
+DUREZOL,warnings and precautions,secondary ocular infections,
+DUREZOL,warnings and precautions,masking infection,
+DUREZOL,warnings and precautions,enhancing existing infection,
+DUREZOL,warnings and precautions,viral infections,
+DUREZOL,warnings and precautions,exacerbation of many viral infections of the eye,
+DUREZOL,warnings and precautions,herpes simplex,10019948.0
+DUREZOL,warnings and precautions,fungal infections,
+DUREZOL,warnings and precautions,fungus invasion,
+DUREZOL,warnings and precautions,persistent corneal ulceration,
+DUREZOL,warnings and precautions,absorption by soft contact lenses,
+ZYDELIG,adverse reactions,hepatotoxicity,10019851.0
+ZYDELIG,adverse reactions,severe diarrhea,
+ZYDELIG,adverse reactions,colitis,10009887.0
+ZYDELIG,adverse reactions,pneumonitis,10035742.0
+ZYDELIG,adverse reactions,intestinal perforation,10022694.0
+ZYDELIG,adverse reactions,severe cutaneous reactions,
+ZYDELIG,adverse reactions,anaphylaxis,10002218.0
+ZYDELIG,adverse reactions,neutropenia,10029354.0
+ZYDELIG,adverse reactions,diarrhea,10012735.0
+ZYDELIG,adverse reactions,pyrexia,10037660.0
+ZYDELIG,adverse reactions,fatigue,10016256.0
+ZYDELIG,adverse reactions,nausea,10028813.0
+ZYDELIG,adverse reactions,cough,10011224.0
+ZYDELIG,adverse reactions,pneumonia,10035664.0
+ZYDELIG,adverse reactions,abdominal pain,10000081.0
+ZYDELIG,adverse reactions,chills,10008531.0
+ZYDELIG,adverse reactions,rash,10037844.0
+ZYDELIG,adverse reactions,hypertriglyceridemia,10020869.0
+ZYDELIG,adverse reactions,hyperglycemia,10020635.0
+ZYDELIG,adverse reactions,alt elevations,
+ZYDELIG,adverse reactions,ast elevations,
+ZYDELIG,adverse reactions,pneumonia,10035664.0
+ZYDELIG,adverse reactions,sepsis,10040047.0
+ZYDELIG,adverse reactions,febrile neutropenia,10016288.0
+ZYDELIG,adverse reactions,elevated transaminases,
+ZYDELIG,adverse reactions,nausea,10028813.0
+ZYDELIG,adverse reactions,vomiting,10047700.0
+ZYDELIG,adverse reactions,gastroesophageal reflux disease,10066874.0
+ZYDELIG,adverse reactions,stomatitis,10042128.0
+ZYDELIG,adverse reactions,headache,10019211.0
+ZYDELIG,adverse reactions,pyrexia,10037660.0
+ZYDELIG,adverse reactions,chills,10008531.0
+ZYDELIG,adverse reactions,pain,10033371.0
+ZYDELIG,adverse reactions,rash,10037844.0
+ZYDELIG,adverse reactions,nasal congestion,10028735.0
+ZYDELIG,adverse reactions,sepsis,10040047.0
+ZYDELIG,adverse reactions,bronchitis,10006451.0
+ZYDELIG,adverse reactions,sinusitis,10040753.0
+ZYDELIG,adverse reactions,urinary tract infection,10046571.0
+ZYDELIG,adverse reactions,arthralgia,10003239.0
+ZYDELIG,adverse reactions,neutrophil count decreased,10029366.0
+ZYDELIG,adverse reactions,lymphocyte count decreased,10025256.0
+ZYDELIG,adverse reactions,lymphocyte count increased,10025258.0
+ZYDELIG,adverse reactions,alt increased,10001845.0
+ZYDELIG,adverse reactions,ast increased,10003544.0
+ZYDELIG,adverse reactions,ggt increased,10056910.0
+ZYDELIG,adverse reactions,hypertriglyceridemia,10020869.0
+ZYDELIG,adverse reactions,hypoglycemia,10020993.0
+ZYDELIG,adverse reactions,hyponatremia,10021036.0
+ZYDELIG,adverse reactions,diarrhea,10012735.0
+ZYDELIG,adverse reactions,pneumonia,10035664.0
+ZYDELIG,adverse reactions,elevated transaminases,
+ZYDELIG,adverse reactions,abdominal pain,10000081.0
+ZYDELIG,adverse reactions,vomiting,10047700.0
+ZYDELIG,adverse reactions,fatigue,10016256.0
+ZYDELIG,adverse reactions,pyrexia,10037660.0
+ZYDELIG,adverse reactions,asthenia,10003549.0
+ZYDELIG,adverse reactions,peripheral edema,10034570.0
+ZYDELIG,adverse reactions,upper respiratory tract infection,10046306.0
+ZYDELIG,adverse reactions,pneumonia,10035664.0
+ZYDELIG,adverse reactions,cough,10011224.0
+ZYDELIG,adverse reactions,dyspnea,10013968.0
+ZYDELIG,adverse reactions,rash,10037844.0
+ZYDELIG,adverse reactions,night sweats,10029410.0
+ZYDELIG,adverse reactions,headache,10019211.0
+ZYDELIG,adverse reactions,decreased appetite,10061428.0
+ZYDELIG,adverse reactions,insomnia,10022437.0
+ZYDELIG,adverse reactions,alt increased,10001845.0
+ZYDELIG,adverse reactions,ast increased,10003544.0
+ZYDELIG,adverse reactions,neutrophils decreased,
+ZYDELIG,adverse reactions,hemoglobin decreased,10018884.0
+ZYDELIG,adverse reactions,platelets decreased.,
+ZYDELIG,boxed warnings,fatal and serious toxicities,
+ZYDELIG,boxed warnings,hepatic,
+ZYDELIG,boxed warnings,severe diarrhea,
+ZYDELIG,boxed warnings,colitis,10009887.0
+ZYDELIG,boxed warnings,pneumonitis,10035742.0
+ZYDELIG,boxed warnings,intestinal perforation,10022694.0
+ZYDELIG,boxed warnings,fatal and/or serious hepatotoxicity,
+ZYDELIG,boxed warnings,pulmonary symptoms,
+ZYDELIG,boxed warnings,bilateral interstitial infiltrates,
+ZYDELIG,warnings and precautions,severe cutaneous reactions,
+ZYDELIG,warnings and precautions,anaphylaxis,10002218.0
+ZYDELIG,warnings and precautions,neutropenia,10029354.0
+ZYDELIG,warnings and precautions,embryo-fetal toxicity,
+ZYDELIG,warnings and precautions,hepatotoxicity,10019851.0
+ZYDELIG,warnings and precautions,severe diarrhea or colitis,
+ZYDELIG,warnings and precautions,pneumonitis,10035742.0
+ZYDELIG,warnings and precautions,intestinal perforation,10022694.0
+KALBITOR,adverse reactions,hypersensitivity reactions,
+KALBITOR,adverse reactions,anaphylaxis,10002218.0
+KALBITOR,adverse reactions,headache,10019211.0
+KALBITOR,adverse reactions,nausea,10028813.0
+KALBITOR,adverse reactions,diarrhea,10012735.0
+KALBITOR,adverse reactions,pyrexia,10037660.0
+KALBITOR,adverse reactions,injection site reactions,10022097.0
+KALBITOR,adverse reactions,nasopharyngitis,10028810.0
+KALBITOR,adverse reactions,fatigue,10016256.0
+KALBITOR,adverse reactions,upper respiratory tract infection,10046306.0
+KALBITOR,adverse reactions,vomiting,10047700.0
+KALBITOR,adverse reactions,pruritus,10037087.0
+KALBITOR,adverse reactions,upper abdominal pain,10046272.0
+KALBITOR,adverse reactions,local pruritus,
+KALBITOR,adverse reactions,erythema,10015150.0
+KALBITOR,adverse reactions,pain,10033371.0
+KALBITOR,adverse reactions,irritation,
+KALBITOR,adverse reactions,urticaria,10046735.0
+KALBITOR,adverse reactions,bruising,10006504.0
+KALBITOR,boxed warnings,anaphylaxis,10002218.0
+KALBITOR,boxed warnings,hypersensitivity reactions,
+KALBITOR,boxed warnings,hereditary angioedema,10019860.0
+KALBITOR,warnings and precautions,hypersensitivity reactions,
+KALBITOR,warnings and precautions,anaphylaxis,10002218.0
+KALBITOR,warnings and precautions,chest discomfort,10008469.0
+KALBITOR,warnings and precautions,flushing,10016825.0
+KALBITOR,warnings and precautions,pharyngeal edema,10034829.0
+KALBITOR,warnings and precautions,pruritus,10037087.0
+KALBITOR,warnings and precautions,rhinorrhea,10039101.0
+KALBITOR,warnings and precautions,sneezing,10041232.0
+KALBITOR,warnings and precautions,nasal congestion,10028735.0
+KALBITOR,warnings and precautions,throat irritation,10043521.0
+KALBITOR,warnings and precautions,urticaria,10046735.0
+KALBITOR,warnings and precautions,wheezing,10047924.0
+KALBITOR,warnings and precautions,hypotension,10021097.0
+KALBITOR,warnings and precautions,rash,10037844.0
+ADCETRIS,adverse reactions,,
+ADCETRIS,boxed warnings,progressive multifocal leukoencephalopathy,10036807.0
+ADCETRIS,boxed warnings,jc virus infection,10023163.0
+ADCETRIS,boxed warnings,death,10011906.0
+ADCETRIS,warnings and precautions,,
+BESIVANCE,adverse reactions,conjunctival redness,10010731.0
+BESIVANCE,adverse reactions,blurred vision,10005886.0
+BESIVANCE,adverse reactions,eye pain,10015958.0
+BESIVANCE,adverse reactions,eye irritation,10015946.0
+BESIVANCE,adverse reactions,eye pruritus,10052140.0
+BESIVANCE,adverse reactions,headache,10019211.0
+BESIVANCE,warnings and precautions,topical ophthalmic use only,
+BESIVANCE,warnings and precautions,growth of resistant organisms with prolonged use,
+BESIVANCE,warnings and precautions,avoidance of contact lenses,
+BESIVANCE,warnings and precautions,overgrowth of non-susceptible organisms,
+BESIVANCE,warnings and precautions,super-infection,
+BESIVANCE,warnings and precautions,bacterial conjunctivitis,
+CLEVIPREX,adverse reactions,hypotension,10021097.0
+CLEVIPREX,adverse reactions,reflex tachycardia,10063096.0
+CLEVIPREX,adverse reactions,headache,10019211.0
+CLEVIPREX,adverse reactions,nausea,10028813.0
+CLEVIPREX,adverse reactions,vomiting,10047700.0
+CLEVIPREX,adverse reactions,acute renal failure,10001041.0
+CLEVIPREX,adverse reactions,atrial fibrillation,10003658.0
+CLEVIPREX,adverse reactions,myocardial infarction,10028596.0
+CLEVIPREX,adverse reactions,cardiac arrest,10007515.0
+CLEVIPREX,adverse reactions,syncope,10042772.0
+CLEVIPREX,adverse reactions,dyspnea,10013968.0
+CLEVIPREX,adverse reactions,increased blood triglycerides,
+CLEVIPREX,adverse reactions,ileus,10021328.0
+CLEVIPREX,adverse reactions,hypersensitivity,10020751.0
+CLEVIPREX,adverse reactions,decreased oxygen saturation,
+CLEVIPREX,adverse reactions,possible pulmonary shunting,
+CLEVIPREX,warnings and precautions,hypotension,10021097.0
+CLEVIPREX,warnings and precautions,reflex tachycardia,10063096.0
+CLEVIPREX,warnings and precautions,negative inotropic effects,
+CLEVIPREX,warnings and precautions,exacerbate heart failure,
+CLEVIPREX,warnings and precautions,rebound hypertension,10038002.0
+XTANDI,adverse reactions,,
+XTANDI,warnings and precautions,seizure,10039906.0
+XTANDI,warnings and precautions,loss of consciousness,10024855.0
+XTANDI,warnings and precautions,transient ischemic attack,10044390.0
+XTANDI,warnings and precautions,cerebral vascular accident,
+XTANDI,warnings and precautions,brain metastases,10006128.0
+XTANDI,warnings and precautions,brain arteriovenous malformation,
+XTANDI,warnings and precautions,sudden loss of consciousness,
+BOSULIF,adverse reactions,,
+BOSULIF,warnings and precautions,,
+CARBAGLU,adverse reactions,infections,
+CARBAGLU,adverse reactions,vomiting,10047700.0
+CARBAGLU,adverse reactions,abdominal pain,10000081.0
+CARBAGLU,adverse reactions,pyrexia,10037660.0
+CARBAGLU,adverse reactions,tonsillitis,10044008.0
+CARBAGLU,adverse reactions,anemia,10002034.0
+CARBAGLU,adverse reactions,ear infection,10014011.0
+CARBAGLU,adverse reactions,diarrhea,10012735.0
+CARBAGLU,adverse reactions,nasopharyngitis,10028810.0
+CARBAGLU,adverse reactions,headache,10019211.0
+CARBAGLU,adverse reactions,dysgeusia,10013911.0
+CARBAGLU,adverse reactions,asthenia,10003549.0
+CARBAGLU,adverse reactions,hyperhidrosis,10020642.0
+CARBAGLU,adverse reactions,influenza,10022000.0
+CARBAGLU,adverse reactions,pneumonia,10035664.0
+CARBAGLU,adverse reactions,hemoglobin decreased,10018884.0
+CARBAGLU,adverse reactions,weight decreased,10047895.0
+CARBAGLU,adverse reactions,anorexia,10002646.0
+CARBAGLU,adverse reactions,somnolence,10041349.0
+CARBAGLU,adverse reactions,rash,10037844.0
+CARBAGLU,warnings and precautions,hyperammonemia,10020575.0
+CARBAGLU,warnings and precautions,injury to the brain,
+CARBAGLU,warnings and precautions,death,10011906.0
+CARBAGLU,warnings and precautions,brain injury/damage,
+SIMPONI,adverse reactions,,
+SIMPONI,boxed warnings,serious infections,
+SIMPONI,boxed warnings,malignancy,
+SIMPONI,boxed warnings,serious infections leading to hospitalization or death,
+SIMPONI,boxed warnings,tuberculosis (tb),
+SIMPONI,boxed warnings,bacterial sepsis,10053840.0
+SIMPONI,boxed warnings,invasive fungal (such as histoplasmosis),
+SIMPONI,boxed warnings,opportunistic infections,
+SIMPONI,boxed warnings,active tuberculosis,10071157.0
+SIMPONI,boxed warnings,reactivation of latent tuberculosis,
+SIMPONI,boxed warnings,disseminated or extrapulmonary disease,
+SIMPONI,boxed warnings,invasive fungal infections,
+SIMPONI,boxed warnings,histoplasmosis,10020141.0
+SIMPONI,boxed warnings,coccidioidomycosis,10009825.0
+SIMPONI,boxed warnings,candidiasis,10007152.0
+SIMPONI,boxed warnings,aspergillosis,10003488.0
+SIMPONI,boxed warnings,blastomycosis,10005098.0
+SIMPONI,boxed warnings,pneumocystosis,10035662.0
+SIMPONI,boxed warnings,disseminated disease,
+SIMPONI,boxed warnings,bacterial,
+SIMPONI,boxed warnings,viral,
+SIMPONI,boxed warnings,and other infections due to opportunistic pathogens,
+SIMPONI,boxed warnings,legionella,
+SIMPONI,boxed warnings,listeria,
+SIMPONI,boxed warnings,lymphoma,10025310.0
+SIMPONI,warnings and precautions,,
+BENLYSTA,adverse reactions,mortality,
+BENLYSTA,adverse reactions,serious infections,
+BENLYSTA,adverse reactions,malignancy,
+BENLYSTA,adverse reactions,hypersensitivity reactions,
+BENLYSTA,adverse reactions,anaphylaxis,10002218.0
+BENLYSTA,adverse reactions,infusion reactions,
+BENLYSTA,adverse reactions,depression,10012378.0
+BENLYSTA,adverse reactions,nausea,10028813.0
+BENLYSTA,adverse reactions,diarrhea,10012735.0
+BENLYSTA,adverse reactions,pyrexia,10037660.0
+BENLYSTA,adverse reactions,nasopharyngitis,10028810.0
+BENLYSTA,adverse reactions,bronchitis,10006451.0
+BENLYSTA,adverse reactions,insomnia,10022437.0
+BENLYSTA,adverse reactions,pain in extremity,10033425.0
+BENLYSTA,adverse reactions,migraine,10027599.0
+BENLYSTA,adverse reactions,pharyngitis,10034835.0
+BENLYSTA,adverse reactions,lupus nephritis,10025140.0
+BENLYSTA,adverse reactions,infections,
+BENLYSTA,adverse reactions,cystitis,10011781.0
+BENLYSTA,adverse reactions,leukopenia,10024384.0
+BENLYSTA,adverse reactions,gastroenteritis viral,10017918.0
+BENLYSTA,adverse reactions,fatal anaphylaxis,
+BENLYSTA,warnings and precautions,,
+TOVIAZ,adverse reactions,dry mouth,10013781.0
+TOVIAZ,adverse reactions,constipation,10010774.0
+TOVIAZ,adverse reactions,angina,10002372.0
+TOVIAZ,adverse reactions,chest pain,10008479.0
+TOVIAZ,adverse reactions,gastroenteritis,10017888.0
+TOVIAZ,adverse reactions,qt prolongation on ecg,
+TOVIAZ,adverse reactions,dyspepsia,10013946.0
+TOVIAZ,adverse reactions,nausea,10028813.0
+TOVIAZ,adverse reactions,abdominal pain upper,10000087.0
+TOVIAZ,adverse reactions,urinary tract infection,10046571.0
+TOVIAZ,adverse reactions,upper respiratory tract infection,10046306.0
+TOVIAZ,adverse reactions,dry eyes,10013778.0
+TOVIAZ,adverse reactions,dysuria,10013990.0
+TOVIAZ,adverse reactions,urinary retention,10046555.0
+TOVIAZ,adverse reactions,cough,10011224.0
+TOVIAZ,adverse reactions,dry throat,10013789.0
+TOVIAZ,adverse reactions,edema peripheral,10030124.0
+TOVIAZ,adverse reactions,back pain,10003988.0
+TOVIAZ,adverse reactions,insomnia,10022437.0
+TOVIAZ,adverse reactions,alt increased,10001845.0
+TOVIAZ,adverse reactions,ggt increased,10056910.0
+TOVIAZ,adverse reactions,rash,10037844.0
+TOVIAZ,adverse reactions,urinary retention,10046555.0
+TOVIAZ,adverse reactions,diverticulitis,10013538.0
+TOVIAZ,adverse reactions,irritable bowel syndrome,10023003.0
+TOVIAZ,adverse reactions,electrocardiogram qt corrected interval prolongation,
+TOVIAZ,adverse reactions,blurred vision,10005886.0
+TOVIAZ,adverse reactions,palpitations,10033557.0
+TOVIAZ,adverse reactions,hypersensitivity reactions,
+TOVIAZ,adverse reactions,angioedema with airway obstruction,
+TOVIAZ,adverse reactions,face edema,10016029.0
+TOVIAZ,adverse reactions,dizziness,10013573.0
+TOVIAZ,adverse reactions,headache,10019211.0
+TOVIAZ,adverse reactions,somnolence,10041349.0
+TOVIAZ,adverse reactions,urticaria,10046735.0
+TOVIAZ,adverse reactions,pruritus.,
+TOVIAZ,warnings and precautions,angioedema of the face,
+TOVIAZ,warnings and precautions,lips,
+TOVIAZ,warnings and precautions,tongue,
+TOVIAZ,warnings and precautions,larynx,
+TOVIAZ,warnings and precautions,urinary retention,10046555.0
+TOVIAZ,warnings and precautions,decreased gastrointestinal motility,
+TOVIAZ,warnings and precautions,severe constipation,
+TOVIAZ,warnings and precautions,narrow-angle glaucoma,
+TOVIAZ,warnings and precautions,central nervous system effects,
+TOVIAZ,warnings and precautions,somnolence,10041349.0
+TOVIAZ,warnings and precautions,headache,10019211.0
+TOVIAZ,warnings and precautions,dizziness,10013573.0
+TOVIAZ,warnings and precautions,hepatic impairment,10052254.0
+TOVIAZ,warnings and precautions,renal impairment.,
+ENTEREG,adverse reactions,dyspepsia,10013946.0
+ENTEREG,boxed warnings,myocardial infarction,10028596.0
+ENTEREG,warnings and precautions,,
+VIZAMYL,adverse reactions,flushing,10016825.0
+VIZAMYL,adverse reactions,headache,10019211.0
+VIZAMYL,adverse reactions,increased blood pressure,10021655.0
+VIZAMYL,adverse reactions,nausea,10028813.0
+VIZAMYL,adverse reactions,dizziness,10013573.0
+VIZAMYL,adverse reactions,hypersensitivity reaction,10020756.0
+VIZAMYL,adverse reactions,dyspnea,10013968.0
+VIZAMYL,adverse reactions,chest pressure,10008486.0
+VIZAMYL,warnings and precautions,hypersensitivity reactions,
+VIZAMYL,warnings and precautions,image interpretation errors,
+VIZAMYL,warnings and precautions,radiation risk,
+VIZAMYL,warnings and precautions,flushing,10016825.0
+VIZAMYL,warnings and precautions,dyspnea,10013968.0
+VIZAMYL,warnings and precautions,risk for image misinterpretation,
+VIZAMYL,warnings and precautions,motion artifacts,
+VIZAMYL,warnings and precautions,increased risk of cancer,
+VIZAMYL,warnings and precautions,unintentional radiation exposure,
+AMPYRA,adverse reactions,,
+AMPYRA,warnings and precautions,seizures,10039910.0
+AMPYRA,warnings and precautions,anaphylaxis,10002218.0
+AMPYRA,warnings and precautions,renal impairment,10062237.0
+AMPYRA,warnings and precautions,adverse reactions,
+AMPYRA,warnings and precautions,severe allergic reactions,
+AMPYRA,warnings and precautions,respiratory compromise,10082862.0
+AMPYRA,warnings and precautions,urticaria,10046735.0
+AMPYRA,warnings and precautions,angioedema of the throat and or tongue,
+AMPYRA,warnings and precautions,urinary tract infections (utis),

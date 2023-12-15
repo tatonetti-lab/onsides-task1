@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Label drug="kerydin" track="TAC2017_ADR">
+  <Text>
+    <Section name="adverse reactions" id="S1">    6 ADVERSE REACTIONS
+
+  EXCERPT:   Common adverse reactions occurring in &gt;=1% in subjects treated with KERYDIN included application site exfoliation, ingrown toenail, application site erythema, and application site dermatitis. (  6.1  )
+
+
+
+   To report SUSPECTED ADVERSE REACTIONS, contact Anacor Pharmaceuticals at 1-844-4ANACOR [1-844-426-2267] or FDA at 1-800-FDA-1088 or    www.fda.gov/medwatch    .  
+
+
+
+ 
+
+  6.1 Clinical Trials Experience
+
+  Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice.
+
+
+
+ In two clinical trials, 791 subjects were treated with KERYDIN. The most commonly reported adverse reactions are listed below (  Table 1  ).
+
+
+
+ Table 1: Adverse Reactions Occurring in &gt;=1% of KERYDIN Topical Solution, 5%-Treated Subjects and at a Greater Frequency than Observed with Vehicle 
+   Preferred Term                                          KERYDINN=791    n(%)      VehicleN=395    n(%)     
+ Application site exfoliation                            21 (2.7%)               1 (0.3%)                 
+ Ingrown toenail                                         20 (2.5%)               1 (0.3%)                 
+ Application site erythema                               13 (1.6%)               0 (0%)                   
+ Application site dermatitis                             10 (1.3%)               0 (0%)                   
+         A cumulative irritancy study revealed the potential for KERYDIN to cause skin irritation. There was no evidence that KERYDIN causes contact sensitization.
+</Section>
+  </Text>
+  <Mentions>
+    <Mention id="M1" section="S1" type="AdverseReaction" start="123" len="28" str="application site exfoliation" />
+    <Mention id="M2" section="S1" type="AdverseReaction" start="153" len="15" str="ingrown toenail" />
+    <Mention id="M3" section="S1" type="AdverseReaction" start="170" len="25" str="application site erythema" />
+    <Mention id="M4" section="S1" type="AdverseReaction" start="201" len="27" str="application site dermatitis" />
+    <Mention id="M5" section="S1" type="AdverseReaction" start="1125" len="28" str="Application site exfoliation" />
+    <Mention id="M6" section="S1" type="AdverseReaction" start="1232" len="15" str="Ingrown toenail" />
+    <Mention id="M7" section="S1" type="AdverseReaction" start="1339" len="25" str="Application site erythema" />
+    <Mention id="M8" section="S1" type="AdverseReaction" start="1446" len="27" str="Application site dermatitis" />
+    <Mention id="M9" section="S1" type="Factor" start="1603" len="9" str="potential" />
+    <Mention id="M10" section="S1" type="AdverseReaction" start="1634" len="15" str="skin irritation" />
+    <Mention id="M11" section="S1" type="Negation" start="1661" len="2" str="no" />
+    <Mention id="M12" section="S1" type="AdverseReaction" start="1693" len="21" str="contact sensitization" />
+  </Mentions>
+  <Relations>
+    <Relation id="RL1" type="Hypothetical" arg1="M10" arg2="M9" />
+    <Relation id="RL2" type="Negated" arg1="M12" arg2="M11" />
+  </Relations>
+  <Reactions>
+    <Reaction id="AR1" str="application site exfoliation">
+      <Normalization id="AR1.N1" meddra_pt="Application site exfoliation" meddra_pt_id="10064578" />
+    </Reaction>
+    <Reaction id="AR2" str="ingrown toenail">
+      <Normalization id="AR2.N1" meddra_pt="Ingrowing nail" meddra_pt_id="10022013" meddra_llt="Ingrown toe nail" meddra_llt_id="10022015" />
+    </Reaction>
+    <Reaction id="AR3" str="application site erythema">
+      <Normalization id="AR3.N1" meddra_pt="Application site erythema" meddra_pt_id="10003041" />
+    </Reaction>
+    <Reaction id="AR4" str="application site dermatitis">
+      <Normalization id="AR4.N1" meddra_pt="Application site dermatitis" meddra_pt_id="10003036" />
+    </Reaction>
+    <Reaction id="AR5" str="skin irritation">
+      <Normalization id="AR5.N1" meddra_pt="Skin irritation" meddra_pt_id="10040880" />
+    </Reaction>
+  </Reactions>
+</Label>

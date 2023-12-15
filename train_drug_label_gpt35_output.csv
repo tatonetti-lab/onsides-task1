@@ -1,0 +1,470 @@
+drug_name,section_name,gpt35_output
+KYPROLIS,adverse reactions,"Cardiac Toxicities, Acute Renal Failure, Tumor Lysis Syndrome, Pulmonary Toxicity, Pulmonary Hypertension, Dyspnea, Hypertension, Venous Thrombosis, Infusion Reactions, Thrombocytopenia, Hepatic Toxicity and Hepatic Failure, Thrombotic Thrombocytopenic Purpura/Hemolytic Uremic Syndrome, Posterior Reversible Encephalopathy Syndrome (PRES), anemia, fatigue, thrombocytopenia, nausea, pyrexia, decreased platelets, dyspnea, diarrhea, decreased lymphocyte, headache, decreased hemoglobin, cough, edema peripheral, decreased lymphocytes, decreased absolute neutrophil count, decreased phosphorus, neutropenia, decreased total white blood cell count, muscle spasm, upper respiratory tract infection, hypokalemia, febrile neutropenia, lymphopenia, cardiac arrest, cardiac failure, cardiac failure congestive, myocardial infarction, myocardial ischemia, cataract, vision blurred, abdominal pain, dyspepsia, toothache, chills, infusion site reaction, multi-organ failure, pain, influenza, sepsis, urinary tract infection, viral infection, dehydration, hyperkalemia, hyperuricemia, hypoalbuminemia, hyponatremia, deep vein thrombosis, hypotension."
+KYPROLIS,warnings and precautions,"cardiac toxicities, acute renal failure, tumor lysis syndrome, pulmonary toxicity, pulmonary hypertension, dyspnea, hypertension, venous thrombosis, infusion reactions, thrombocytopenia, hepatic toxicity, thrombotic thrombocytopenic purpura, posterior reversible encephalopathy syndrome, embryo-fetal toxicity"
+MULTAQ,adverse reactions,"heart failure, liver injury, pulmonary toxicity, hypokalemia, hypomagnesemia, QT prolongation, diarrhea, nausea, abdominal pain, vomiting, asthenia, bradycardia, skin rash, pruritus,  dermatitis, photosensitivity reaction, dysgeusia, early increases in creatinine, prolonged QTc, atrial flutter, pneumonitis, pulmonary fibrosis, anaphylactic reactions, angioedema, vasculitis, leukocytoclastic vasculitis"
+MULTAQ,boxed warnings,"risk of death, stroke, heart failure, atrial fibrillation, decompensation, hospitalization, NYHA Class IV"
+MULTAQ,warnings and precautions,"cardiovascular death, heart failure, arrhythmic, stroke, hepatic injury, liver injury, pulmonary toxicity, hypokalemia, hypomagnesemia, QT interval prolongation, renal impairment, renal failure, teratogen"
+JUBLIA,adverse reactions,"ingrown toenails, application site dermatitis, application site vesicles, application site pain"
+TEFLARO,adverse reactions,"Hypersensitivity Reactions, Clostridium difficile-Associated diarrhea, Direct Coombs' Test Seroconversion, diarrhea, nausea, rash, hypersensitivity, anaphylaxis, Clostridium difficile colitis, increased transaminases, hypokalemia, rash, phlebitis, anemia, eosinophilia, neutropenia, thrombocytopenia, bradycardia, palpitations, abdominal pain, pyrexia, hepatitis, dizziness, convulsion, renal failure, urticaria, agranulocytosis"
+TEFLARO,warnings and precautions,"hypersensitivity reactions, anaphylactic reactions, clostridium difficile-associated diarrhea, CDAD, direct Coombs' test, drug-induced hemolytic anemia"
+DATSCAN,adverse reactions,"hypersensitivity, injection site reactions, headache, nausea, vertigo, dry mouth, dizziness, rash, pruritis, injection site pain"
+DATSCAN,warnings and precautions,"Hypersensitivity reactions, anaphylactic, skin erythema, pruritis, corticosteroids, anti-histamines, thyroid-blocking agent, free iodide, thyroid accumulation, potassium iodide, Lugol's Solution, thyroid neoplasia"
+TIVICAY,adverse reactions,"hypersensitivity reactions, effects on serum liver biochemistries, fat redistribution, immune reconstitution syndrome, insomnia, fatigue, headache, depression, abnormal dreams, dizziness, nausea, diarrhea, rash, vertigo, abdominal pain, flatulence, vomiting, hepatitis, myositis, suicidal ideation, renal impairment, pruritus, elevated ALT, elevated AST, elevated creatine kinase, hyperglycemia, elevated lipase, elevated total neutrophils, elevated cholesterol, elevated HDL cholesterol, elevated LDL cholesterol, elevated triglycerides"
+TIVICAY,warnings and precautions,"hypersensitivity reactions, rash, constitutional findings, organ dysfunction, liver injury, transaminase elevations, hepatotoxicity, fat redistribution, immune reconstitution syndrome, central obesity, peripheral wasting, facial wasting, breast enlargement, cushingoid appearance, autoimmune disorders"
+TAFINLAR,adverse reactions,"New Primary Malignancies, Tumor Promotion in BRAF Wild-Type Melanoma, Hemorrhage, Venous Thromboembolism, Cardiomyopathy, Ocular Toxicities, Serious Febrile Reactions, Serious Skin Toxicity, Hyperglycemia, Glucose-6-Phosphate Dehydrogenase Deficiency, hyperkeratosis, headache, pyrexia, arthralgia, papilloma, alopecia, palmar-plantar erythrodysesthesia syndrome, chills, fatigue, rash, nausea, vomiting, diarrhea, abdominal pain, peripheral edema, cough, night sweats, decreased appetite, constipation, myalgia, hyperkeratosis, headache, pyrexia, arthralgia, papilloma, alopecia, palmar-plantar erythrodysesthesia syndrome, rash, cough, constipation, myalgia, vision blurred, transient blindness, stomatitis, pancreatitis, asthenia, cellulitis, folliculitis, paronychia, hypertension, palpitation, dry mucous membranes, decreased caloric intake, sunken eyes, hypovolemia, and abnormal electrocardiogram QT correction."
+TAFINLAR,warnings and precautions,"Retinal vein occlusion, interstitial lung disease, new primary malignancies, cutaneous and non-cutaneous, tumor promotion, hemorrhage, venous thromboembolism, cardiomyopathy, ocular toxicities, serious febrile reactions, serious skin toxicity, hyperglycemia, glucose-6-phosphate dehydrogenase deficiency, embryofetal toxicity"
+HORIZANT,adverse reactions,"somnolence, sedation, dizziness, headache, nausea, dry mouth, flatulence, fatigue, irritability, feeling drunk, feeling abnormal, peripheral edema, weight increased, increased appetite, vertigo, depression, libido decreased, balance disorder, blurred vision, disorientation, lethargy, breast enlargement, gynecomastia, elevated creatine kinase"
+HORIZANT,warnings and precautions,"driving impairment, somnolence, sedation, dizziness, suicidal thoughts, suicidal behavior, drug reaction with eosinophilia and systemic symptoms, DRESS, discontinuation syndrome"
+IMBRUVICA,adverse reactions,"Hemorrhage, Infections, Cytopenias, Atrial Fibrillation, Second Primary Malignancies, Tumor Lysis Syndrome, Thrombocytopenia, Neutropenia, Diarrhea, Anemia, Fatigue, Musculoskeletal pain, Bruising, Nausea, Upper respiratory tract infection, Rash, Pneumonia, Abdominal pain, Dyspnea, Constipation, Vomiting, Peripheral edema, Decreased appetite, Subdural hematoma, Renal failure, Lymphocytosis, Intracranial hemorrhage, Lethargy, Gait instability, Elevated uric acid levels, Hyperuricemia, Hypersensitivity reactions, Anaphylactic shock, Urticaria, Angioedema."
+IMBRUVICA,warnings and precautions,"Hemorrhage, bleeding events, subdural hematoma, gastrointestinal bleeding, hematuria, post procedural hemorrhage, bruising, petechiae, antiplatelet therapy, anticoagulant therapy, infections, progressive multifocal leukoencephalopathy, fever, cytopenias, neutropenia, thrombocytopenia, anemia, complete blood counts, atrial fibrillation, atrial flutter, second primary malignancies, non-skin carcinomas, non-melanoma skin cancer, tumor lysis syndrome, embryo-fetal toxicity, fetal harm, malformations, reduced fetal weights, pregnancy."
+ULORIC,adverse reactions,"liver function abnormalities, nausea, arthralgia, rash, dizziness, anemia, thrombocytopenic purpura, leukocytosis, leukopenia, neutropenia, pancytopenia,  splenomegaly, thrombocytopenia, angina pectoris, atrial fibrillation, ECG abnormal, palpitations, vision blurred, hepatitis, hepatomegaly, hypersensitivity, herpes zoster, contusion, anorexia, diarrhea, dry mouth, dyspepsia, vomiting, fatigue, gait disturbance, insomnia, renal failure, nephrolithiasis, urinary urgency, erectile dysfunction, cough, dyspnea, rash, urticaria, photosensitivity, flushing, increased sodium, increased cholesterol, increased triglycerides, increased potassium, and increased creatinine."
+ULORIC,warnings and precautions,"Gout Flare, Cardiovascular Events, Hepatic Effects, gout flares, cardiovascular thromboembolic events, MI, stroke, hepatic failure, liver injury, transaminase elevations, serum alanine aminotransferase, ALT, aspartate aminotransferase, AST, alkaline phosphatase, total bilirubin."
+CIMZIA,adverse reactions,"upper respiratory tract infection, rash, urinary tract infection, serious infections, malignancies, heart failure, abdominal pain, diarrhea, intestinal obstruction, tuberculosis infections, pyrexia, urticaria, pneumonia, nasopharyngitis, laryngitis, viral infection, bladder infection, bacteriuria, cystitis, arthralgia, anemia, leukopenia, lymphadenopathy, pancytopenia, thrombophilia, angina pectoris, arrhythmias, atrial fibrillation, cardiac failure, hypertensive heart disease, myocardial infarction, myocardial ischemia, pericardial effusion, pericarditis, stroke, transient ischemic attack, optic neuritis, retinal hemorrhage, uveitis, bleeding, injection site reactions, elevated liver enzymes, hepatitis, alopecia totalis, anxiety, bipolar disorder, suicide attempt, nephrotic syndrome, renal failure, menstrual disorder, dermatitis, erythema nodosum, vasculitis, thrombophlebitis, systemic vasculitis, Stevens-Johnson syndrome, toxic epidermal necrolysis, sarcoidosis"
+CIMZIA,boxed warnings,"serious infections, malignancy, tuberculosis, bacterial sepsis, invasive fungal infections, histoplasmosis, opportunistic pathogens, lymphoma"
+CIMZIA,warnings and precautions,"The adverse drug event terms in this text are: Serious infections, Invasive fungal infections, Lymphoma, Malignancies, Heart failure, Anaphylaxis, Allergic reactions, Hepatitis B virus reactivation, Demyelinating disease, Cytopenias, Pancytopenia, Lupus-like syndrome, Hypotension, Hypersensitivity reactions, Neurologic reactions, Hematological reactions, Autoimmunity, Immunizations, and Immunosuppression."
+KALYDECO,adverse reactions,"Transaminase Elevations, headache, oropharyngeal pain, upper respiratory tract infection, nasal congestion, abdominal pain, nasopharyngitis, diarrhea, rash, nausea, dizziness, arthralgia, bacteria in sputum, blood glucose increased, musculoskeletal chest pain, myalgia, sinus headache, pharyngeal erythema, pleuritic pain, sinus congestion, wheezing, acne"
+KALYDECO,warnings and precautions,"Elevated transaminases, ALT, AST, Cataracts, Lens opacities"
+FULYZAQ,adverse reactions,"upper respiratory tract infection, bronchitis, cough, flatulence, increased bilirubin, nausea, back pain, arthralgia, urinary tract infection, nasopharyngitis, musculoskeletal pain, hemorrhoids, giardiasis, anxiety, increased alanine aminotransferase, abdominal distension, abdominal pain, acne, increased aspartate aminotransferase, increased conjugated bilirubin, increased unconjugated blood bilirubin, constipation, depression, dermatitis, dizziness, dry mouth, dyspepsia, gastroenteritis, herpes zoster, nephrolithiasis, pain in extremity, pollakiuria, procedural pain, seasonal allergy, sinusitis, decreased white blood cell count"
+FULYZAQ,warnings and precautions,"infectious diarrhea, inappropriate therapy, worsen"
+QUTENZA,adverse reactions,"The adverse drug event terms in the text are:
+
+- Application-Associated Pain
+- Increase in Blood Pressure
+- application site erythema
+- application site pain
+- application site pruritus
+- application site papules
+- application site edema
+- application site swelling
+- application site dryness
+- Nasopharyngitis
+- Bronchitis
+- Sinusitis
+- Nausea
+- Vomiting
+- Pruritus
+- Hypertension
+- Application site urticaria
+- Application site paresthesia
+- Application site dermatitis
+- Application site hyperesthesia
+- Application site excoriation
+- Application site warmth
+- Application site anesthesia
+- Application site bruising
+- Application site inflammation
+- Application site exfoliation
+- Peripheral edema
+- Headache
+- Burning sensation
+- Peripheral sensory neuropathy
+- Dizziness
+- Dysgeusia
+- Hyperesthesia
+- Hypoesthesia
+- Cough
+- Throat irritation
+- Abnormal skin odor"
+QUTENZA,warnings and precautions,"eye irritation, mucous membrane irritation, coughing, sneezing, increased blood pressure, skin exposure"
+GRANIX,adverse reactions,"Splenic Rupture, Acute Respiratory Distress Syndrome, Serious Allergic Reactions, Use in Patients with Sickle Cell Disease, Capillary Leak Syndrome, Potential for Tumor Growth Stimulatory Effects on Malignant Cells, bone pain, leukocytosis, myalgia, headache, vomiting, Sweet's syndrome, cutaneous vasculitis, thrombocytopenia"
+GRANIX,warnings and precautions,"splenic rupture,acute respiratory distress syndrome,allergic reactions,sickle cell crisis,capillary leak syndrome"
+COARTEM,adverse reactions,"headache, anorexia, dizziness, asthenia, arthralgia, myalgia, pyrexia, cough, vomiting, chills, fatigue, malaise, nausea, abdominal pain, diarrhea, sleep disorder, insomnia, palpitations, hepatomegaly, splenomegaly, anemia, pruritus, rash, vertigo, malaria, nasopharyngitis, eosinophilia, tinnitus, conjunctivitis, constipation, dyspepsia, dysphagia, peptic ulcer, gait disturbance, abscess, acrodermatitis, bronchitis, ear infection, gastroenteritis, helminthic infection, hookworm infection, impetigo, influenza, lower respiratory tract infection, oral herpes, pneumonia, respiratory tract infection, subcutaneous abscess, upper respiratory tract infection, urinary tract infection, alanine aminotransferase increased, aspartate aminotransferase increased, hematocrit decreased, lymphocyte morphology abnormal, platelet count decreased, platelet count increased, white blood cell count decreased, white blood cell count increased, hypokalemia, back pain, ataxia, clonus, fine motor delay, hyperreflexia, hypoesthesia, nystagmus, tremor, agitation, mood swings, hematuria, proteinuria, asthma, pharyngo-laryngeal pain, urticaria, anaphylaxis, angioedema, bullous eruption."
+COARTEM,warnings and precautions,"QT prolongation, hypokalemia, hypomagnesemia, arrhythmias, bradycardia, electrolyte imbalance, antipsychotics, antidepressants, antibiotics, CYP3A4 substrates, CYP3A4 inhibitors, CYP3A4 inducers, antiretroviral drugs, hormonal contraceptives, CYP2D6 substrates, hepatic impairment, renal impairment."
+APTIOM,adverse reactions,"suicidal behavior, ideation, serious dermatologic reactions, drug reaction with eosinophilia and systemic symptoms, DRESS, multiorgan hypersensitivity, anaphylactic reactions, angioedema, hyponatremia, neurological adverse reactions, drug induced liver injury, abnormal thyroid function tests, dizziness, somnolence, nausea, headache, diplopia, vomiting, fatigue, vertigo, ataxia, blurred vision, tremor, hemoglobin, hematocrit, total cholesterol, triglycerides, LDL, creatine phosphokinase"
+APTIOM,warnings and precautions,"suicidal thoughts, suicidal behavior, dermatologic reactions, Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS), Anaphylactic Reactions, Angioedema, Hyponatremia, Neurological Adverse Reactions, withdrawal, Drug Induced Liver Injury"
+PROLIA,adverse reactions,"hypocalcemia, serious infections, dermatologic adverse reactions, osteonecrosis of the jaw, atypical subtrochanteric and diaphyseal femoral fractures, back pain, pain in extremity, musculoskeletal pain, hypercholesterolemia, cystitis, arthralgia, nasopharyngitis, constipation, pancreatitis, anemia, angina pectoris, atrial fibrillation, vertigo, abdominal pain upper, flatulence, gastroesophageal reflux disease, edema peripheral, asthenia, upper respiratory tract infection, pneumonia, pharyngitis, herpes zoster, myalgia, spinal osteoarthritis, sciatica, insomnia, rash, pruritus, vertebral osteomyelitis, cellulitis, new malignancies, urticaria, facial swelling, erythema, marked elevation in serum PTH, immunogenicity, anaphylaxis, severe symptomatic hypocalcemia."
+PROLIA,warnings and precautions,"anaphylactic reactions, hypersensitivity, hypocalcemia, osteonecrosis of the jaw, atypical femoral fractures, serious infections, dermatologic reactions, musculoskeletal pain, bone turnover suppression"
+BLINCYTO,adverse reactions,"Cytokine Release Syndrome, Neurological Toxicities, Infections, Tumor Lysis Syndrome, Neutropenia, Febrile Neutropenia, Elevated Liver Enzymes, Leukoencephalopathy, Hypokalemia, Tremor, Rash, Constipation, Pyrexia, Peripheral edema, Nausea, Hypokalemia, Febrile neutropenia, Constipation, Headache, Leukocytosis, Lymphopenia, Tachycardia, Edema, Cytokine storm, Decreased immunoglobulins, Increased blood bilirubin, Increased gamma-glutamyl-transferase, Increased liver enzymes, Tumor lysis syndrome, Encephalopathy, Paresthesia, Aphasia, Convulsion, Memory impairment, Cognitive disorder, Speech disorder, Confusion, Disorientation, Capillary leak syndrome, Hypersensitivity, Bronchospasm."
+BLINCYTO,boxed warnings,"CYTOKINE RELEASE SYNDROME, NEUROLOGICAL TOXICITIES"
+BLINCYTO,warnings and precautions,"Cytokine Release Syndrome, infusion reactions, pyrexia, headache, nausea, asthenia, hypotension, increased alanine aminotransferase, increased aspartate aminotransferase, increased total bilirubin, disseminated intravascular coagulation (DIC), capillary leak syndrome (CLS), hemophagocytic lymphohistiocytosis/macrophage activation syndrome (HLH/MAS), neurological toxicities, encephalopathy, convulsions, speech disorders, disturbances in consciousness, confusion, coordination and balance disorders, serious infections, sepsis, pneumonia, bacteremia, opportunistic infections, catheter-site infections, Tumor Lysis Syndrome (TLS), Neutropenia, febrile neutropenia, elevated liver enzymes, liver enzymes, alanine aminotransferase (ALT), aspartate aminotransferase (AST), gamma-glutamyl transferase (GGT), total blood bilirubin, Leukoencephalopathy, Preparation and Administration Errors."
+STENDRA,adverse reactions,"headache, flushing, nasal congestion, nasopharyngitis, back pain, upper respiratory infection, bronchitis, influenza, sinusitis, sinus congestion, hypertension, dyspepsia, nausea, constipation, rash, dizziness, arthralgia, diarrhea, edema peripheral, fatigue, angina, unstable angina, deep vein thrombosis, palpitations, gastritis, gastroesophageal reflux disease, hypoglycemia, blood glucose increased, alanine aminotransferase increased, oropharyngeal pain, stomach discomfort, vomiting, muscle spasms, musculoskeletal pain, myalgia, pain in extremity, depression, insomnia, somnolence, vertigo, cough, dyspnea exertional, epistaxis, wheezing, pruritus, balanitis, erection increased, hematuria, nephrolithiasis, pollakiuria, urinary tract infection, electrocardiogram abnormal, gastroenteritis viral, change in color vision, Non-arteritic anterior ischemic optic neuropathy"
+STENDRA,warnings and precautions,"adverse event, cardiovascular risk, hypotension, erection, vision loss, hearing loss, alcohol, bleeding"
+XIAFLEX,adverse reactions,"tendon ruptures, severe injury, corporal rupture, penile fracture, penile hematoma, penile ecchymoses, sudden penile detumescence, penile ""popping"" sound or sensation, edema peripheral, swelling of the injected hand, contusion, injection site hemorrhage, injection site reaction, pain in the injected extremity, pruritus, lymphadenopathy, axillary mass"
+XIAFLEX,boxed warnings,"corporal rupture, penile fracture, penile injury, penile ecchymoses, penile hematoma, penile detumescence"
+XIAFLEX,warnings and precautions,"Tendon rupture, serious injury, skin laceration, hypersensitivity reactions, anaphylaxis, abnormal coagulation, coropral rupture, penile fracture, penile hematoma."
+XEOMIN,adverse reactions,"hypersensitivity, dysphagia, breathing difficulties, neck pain, muscle weakness, injection site pain, musculoskeletal pain, eyelid ptosis, dry eye, dry mouth, diarrhea, headache, visual impairment, dyspnea, nasopharyngitis, respiratory tract infection, facial paresis, injection site hematoma, eyelid edema, eye swelling, nausea, flu-like symptoms, injection site reaction, allergic dermatitis, localized allergic reactions, swelling, edema, erythema, pruritus, rash, herpes zoster, muscular weakness, muscle spasm, dysarthria, myalgia"
+XEOMIN,boxed warnings,"asthenia, generalized muscle weakness, diplopia, blurred vision, ptosis, dysphagia, dysphonia, dysarthria, urinary incontinence, breathing difficulties"
+XEOMIN,warnings and precautions,"respiratory difficulties, dysphagia, dysphonia, dysarthria, asthenia, generalized muscle weakness, diplopia, blurred vision, ptosis, hypersensitivity reactions, anaphylaxis, serum sickness, urticaria, soft tissue edema, an extremely remote risk for transmission of viral diseases, Creutzfeldt-Jakob disease (CJD)"
+GILOTRIF,adverse reactions,"Diarrhea, Bullous and Exfoliative Skin Disorders, Interstitial Lung Disease, Hepatic Toxicity, Keratitis, Rash/Dermatitis acneiform, Stomatitis, Paronychia, Dry skin, Decreased appetite, Nausea, Vomiting, Pruritus, Dyspnea, Fatigue, Hypokalemia, Pulmonary toxicity/ILD-like adverse reactions, Sepsis, Pneumonia, IlD, Ventricular dysfunction, Stomatitis, Aphthous stomatitis, Mucosal inflammation, Mouth ulceration, Oral mucosa erosion, Mucosal erosion, Mucosal ulceration, Cheilitis, Paronychia, Nail infection, Nail bed infection, Nausea, Vomiting, Stomatitis, Rash/Dermatitis acneiform, Pruritus, Dry skin, Paronychia, Cystitis, Decreased appetite, Epistaxis, Rhinorrhea, Weight Decreased, Pyrexia, Conjunctivitis, Alanine aminotransferase increased, Hypokalemia, Aspartate aminotransferase increased, Pancreatitis"
+GILOTRIF,warnings and precautions,"Diarrhea, dehydration, renal failure, bullous, blistering, exfoliating lesions, cutaneous reactions, interstitial lung disease, ILD, hepatic toxicity, liver testing, keratitis, ulcerative keratitis, embryofetal toxicity, fetal harm, contraception, pregnancy."
+TREANDA,adverse reactions,"Myelosuppression, Infections, Anaphylaxis, Infusion Reactions, Tumor Lysis Syndrome, Skin Reactions, Other Malignancies, Extravasation injury, pyrexia, nausea, vomiting, lymphopenia, anemia, leukopenia, thrombocytopenia, neutropenia, asthenia, fatigue, malaise, weakness, dry mouth, somnolence, cough, constipation, headache, mucosal inflammation, stomatitis, worsening hypertension, hypertensive crisis, hypersensitivity, bilirubin elevations, AST and ALT elevations, creatinine levels changes, tachycardia, diarrhea, abdominal pain, chills, edema, chest pain, pneumonia, febrile neutropenia, dehydration, weight decreased, hyperuricemia, rash, pruritus, back pain, arthralgia, bone pain, dizziness, dysgeusia, insomnia, anxiety, depression, pharyngolaryngeal pain, wheezing, nasal congestion, dry skin, night sweats, hyperhidrosis, hypotension, hyperglycemia, elevated creatinine, hyponatremia, hypocalcemia, acute renal failure, cardiac failure, pulmonary fibrosis, myelodysplastic syndrome, hemolysis, taste disorder, atypical pneumonia, sepsis, erythema, dermatitis, skin necrosis, anaphylaxis, phlebitis, pruritus, irritation, pain, swelling, pneumocystis jiroveci pneumonia, pneumonitis, Stevens-Johnson Syndrome (SJS), Toxic Epidermal Necrolysis (TEN)."
+TREANDA,warnings and precautions,"Myelosuppression, myelosuppression-related adverse reactions, infections, anaphylaxis, infusion reactions, tumor lysis syndrome, skin reactions, SJS, TEN, other malignancies, extravasation, embryo-fetal toxicity"
+CHOLINE,adverse reactions,"injection site reaction, adverse reactions"
+CHOLINE,warnings and precautions,"Imaging errors, Allergic reactions, Radiation risk"
+ERWINAZE,adverse reactions,"hypersensitivity reactions, pancreatitis, glucose intolerance, thrombosis, hemorrhage, hyperglycemia, transaminases abnormal, fever, local reactions, vomiting, nausea, hyperbilirubinemia, abdominal pain/discomfort, diarrhea"
+ERWINAZE,warnings and precautions,"anaphylaxis, hypersensitivity reactions, pancreatitis, glucose intolerance, thrombosis, hemorrhage"
+TRULICITY,adverse reactions,"Thyroid C-cell Tumors, Pancreatitis, Hypoglycemia, Hypersensitivity reactions, Renal impairment, Severe Gastrointestinal Disease, Nausea, Diarrhea, Vomiting, Abdominal Pain, Decreased Appetite, Dyspepsia, Fatigue, Constipation, Flatulence, Abdominal distension, Gastroesophageal reflux disease, Eructation, Hypoglycemia, Heart Rate Increase, Tachycardia, Immunogenicity, Hypersensitivity, Injection-site Reactions, PR Interval Prolongation, First Degree Atrioventricular Block, Amylase and Lipase Increase"
+TRULICITY,boxed warnings,"thyroid C-cell tumors, adenomas, carcinomas, medullary thyroid carcinoma (MTC), Multiple Endocrine Neoplasia syndrome type 2 (MEN 2)"
+TRULICITY,warnings and precautions,"Thyroid C-cell Tumors, Pancreatitis, Hypoglycemia, Hypersensitivity Reactions, Renal Impairment, Severe Gastrointestinal Disease, Macrovascular Outcomes"
+ADREVIEW,adverse reactions,"hypersensitivity reactions, dizziness, rash, pruritis, flushing, headache, injection site hemorrhage"
+ADREVIEW,warnings and precautions,"hypersensitivity reactions, anaphylactic, benzyl alcohol, toxicity, renal impairment, radiation exposure, thyroid accumulation"
+DOTAREM,adverse reactions,"The adverse drug event terms found in the text are:
+
+NSF, bradycardia, tachycardia, arrhythmia, hypersensitivity, anaphylactoid reactions, cardiac arrest, respiratory arrest, cyanosis, pharyngeal edema, laryngospasm, bronchospasm, angioedema, conjunctivitis, ocular hyperemia, eyelid edema, lacrimation increased, hyperhidrosis, urticaria, coma, convulsion, syncope, presyncope, parosmia, tremor, muscle contracture, muscle weakness, diarrhea, salivary hypersecretion, malaise, fever, skin and subcutaneous tissue disorders, superficial phlebitis."
+DOTAREM,boxed warnings,"NEPHROGENIC SYSTEMIC FIBROSIS, NSF, Gadolinium-based contrast agents, GBCAs, impaired elimination, chronic kidney disease, severe kidney disease, GFR, acute kidney injury, reduced renal function."
+DOTAREM,warnings and precautions,"Nephrogenic Systemic Fibrosis, Hypersensitivity, Anaphylactoid/anaphylactic reactions, cardiovascular, respiratory, cutaneous manifestations, chronic, severe kidney disease, acute kidney injury, fatal, debilitating fibrosis, acute kidney injury, acute kidney injury, renal impairment, extravsation, injection site reactions"
+PRADAXA,adverse reactions,"bleeding, gastrointestinal symptoms, dyspepsia, nausea, upper abdominal pain, gastrointestinal hemorrhage, diarrhea, urticaria, rash, pruritus, allergic edema, anaphylactic reaction, anaphylactic shock, angioedema, thrombocytopenia"
+PRADAXA,boxed warnings,"thrombotic events, spinal/epidural hematoma, premature discontinuation, pathological bleeding, neuraxial anesthesia, spinal puncture, indwelling epidural catheters, NSAIDs, platelet inhibitors, anticoagulants, neurological impairment, paralysis, hemostasis, anticoagulated"
+PRADAXA,warnings and precautions,"risk of bleeding, fatal bleeding, thrombotic events, pathological bleeding, blood loss, hypotension, risk factors for bleeding, reversal of anticoagulant effect, hematoma, major bleeding, pericardial effusions, systemic embolism, deep venous thrombosis, pulmonary embolism"
+ELIQUIS,adverse reactions,"thrombotic events, bleeding, spinal/epidural anesthesia, major bleeding, intracranial bleed, hemorrhagic stroke, gastrointestinal bleed, fatal bleeding, hypotension, epistaxis, hematemesis, melena, hematuria, rectal hemorrhage, gingival bleeding, hemoptysis"
+ELIQUIS,boxed warnings,"thrombotic events, spinal/epidural hematoma"
+ELIQUIS,warnings and precautions,"bleeding, thrombotic events, pathological bleeding, blood loss, epidural hematoma, neurological impairment, prosthetic heart valves"
+ZERBAXA,adverse reactions,"Hypersensitivity reactions, Clostridium difficile-associated diarrhea, nausea, diarrhea, headache, pyrexia, constipation, insomnia, vomiting, hypokalemia, ALT increased, AST increased, anemia, thrombocytosis, abdominal pain, anxiety, dizziness, hypotension, atrial fibrillation, rash, increased mortality, tachycardia, angina pectoris, ileus, gastritis, abdominal distension, dyspepsia, flatulence, ileus paralytic, infusion site reactions, candidiasis, oropharyngeal, fungal urinary tract infection, increased serum gamma-glutamyl transpeptidase (GGT), increased serum alkaline phosphatase, positive Coombs test, hyperglycemia, hypomagnesemia, hypophosphatemia, ischemic stroke, renal impairment, renal failure, dyspnea, urticaria, venous thrombosis."
+ZERBAXA,warnings and precautions,"decreased efficacy, serious hypersensitivity reactions, anaphylactic, clostridium difficile-associated diarrhea, development of drug-resistant bacteria"
+FERRIPROX,adverse reactions,"chromaturia, nausea, vomiting, abdominal pain, alanine aminotransferase increased, arthralgia, neutropenia, agranulocytosis, decreased plasma zinc concentrations, diarrhea, dyspepsia, weight increased, aspartate aminotransferase increased, back pain, pain in extremity, arthropathy, headache, neutrophil count decreased, increased appetite, decreased appetite, thrombocytosis, pancytopenia, atrial fibrillation, cardiac failure, hypospadias, diplopia, papilledema, retinal toxicity, enterocolitis, rectal hemorrhage, gastric ulcer, pancreatitis, parotid gland enlargement, chills, pyrexia, edema peripheral, multi-organ failure, jaundice, hepatomegaly, anaphylactic shock, hypersensitivity, cryptococcal cutaneous infection, enteroviral encephalitis, pharyngitis, pneumonia, sepsis, furuncle, infectious hepatitis, rash pustular, subcutaneous abscess, blood bilirubin increased, blood creatinine phosphokinase increased, metabolic acidosis, dehydration, myositis, chondropathy, trismus, cerebellar syndrome, cerebral hemorrhage, convulsion, gait disturbance, intracranial pressure increased, psychomotor skills impaired, pyramidal tract syndrome, somnolence, bruxism, depression, obsessive-compulsive disorder, glycosuria, hemoglobinuria, acute respiratory distress syndrome, epistaxis, hemoptysis, pulmonary embolism, hyperhidrosis, periorbital edema, photosensitivity reaction, pruritis, urticaria, rash, Henoch-Schonlein purpura, hypotension, hypertension"
+FERRIPROX,boxed warnings,"agranulocytosis, neutropenia, infections, death"
+FERRIPROX,warnings and precautions,"agranulocytosis, neutropenia, fetal harm, embryofetal toxicity, serum liver enzyme activities"
+DALVANCE,adverse reactions,"nausea, headache, diarrhea, vomiting, rash, pruritus, anemia, hemorrhagic anemia, leucopenia, neutropenia, thrombocytopenia, petechiae, eosinophilia, thrombocytosis, gastrointestinal hemorrhage, melena, hematochezia, abdominal pain, infusion-related reactions, hepatotoxicity, anaphylactoid reaction, Clostridium difficile colitis, oral candidiasis, vulvovaginal mycotic infection, hepatic transaminases increased, blood alkaline phosphatase increased, international normalized ratio increased, hypoglycemia, dizziness, bronchospasm, urticaria, flushing, phlebitis, wound hemorrhage, spontaneous hematoma, alanine aminotransferase (ALT) elevations"
+DALVANCE,warnings and precautions,"hypersensitivity, anaphylactic, skin reactions, infusion-related reactions, ALT elevations, Clostridium difficile-associated diarrhea, CDAD, drug-resistant bacteria"
+ARCAPTA,adverse reactions,"asthma-related death, cough, oropharyngeal pain, nasopharyngitis, headache, nausea, COPD exacerbation, pneumonia, angina pectoris, atrial fibrillation, muscle spasm, musculoskeletal pain, edema peripheral, diabetes mellitus, hyperglycemia, sinusitis, upper respiratory tract infection, cough, respiratory-related deaths, serious adverse reactions, paradoxical bronchospasm, tachycardia/heart rate increase/palpitations, pruritus/rash, dizziness"
+ARCAPTA,boxed warnings,"Asthma-related death, Long-acting beta2-adrenergic agonist, LABA, Salmeterol, Indacaterol, ARCAPTA NEOHALER."
+ARCAPTA,warnings and precautions,"The adverse drug event terms in the provided drug label excerpt are:
+- Acute bronchospasm
+- Hypersensitivity reactions
+- Paradoxical bronchospasm
+- Cardiovascular effects
+- Convulsive disorders
+- Hyperglycemia"
+CERDELGA,adverse reactions,"fatigue, headache, nausea, diarrhea, back pain, pain in extremities, upper abdominal pain, arthralgia, migraine, flatulence, oropharyngeal pain, dizziness, asthenia, cough, dyspepsia, gastroesophageal reflux disease, constipation, palpitations, rash"
+CERDELGA,warnings and precautions,"cardiac arrhythmias, long QT syndrome, PR interval prolongation, QTc interval prolongation, QRS interval prolongation"
+GADAVIST,adverse reactions,"Nephrogenic Systemic Fibrosis, Hypersensitivity reactions, headache, nausea, dizziness, dysgeusia, feeling hot, injection site reactions, vomiting, rash, pruritus, erythema, dyspnea, paresthesia, loss of consciousness, convulsion, parosmia, tachycardia, palpitation, dry mouth, malaise, feeling cold, cardiac arrest, anaphylactic shock, circulatory collapse, respiratory arrest, pulmonary edema, bronchospasm, cyanosis, oropharyngeal swelling, laryngeal edema, blood pressure increased, chest pain, angioedema, conjunctivitis, hyperhidrosis, cough, sneezing, burning sensation, pallor"
+GADAVIST,boxed warnings,"- NEPHROGENIC SYSTEMIC FIBROSIS, 
+- NSF, 
+- chronic kidney disease, 
+- GFR, 
+- acute kidney injury, 
+- renal function"
+GADAVIST,warnings and precautions,"Nephrogenic Systemic Fibrosis, Anaphylactic, hypersensitivity reactions, acute kidney injury, Extravasation, Injection Site Reactions, Overestimation"
+ZYKADIA,adverse reactions,"Severe or Persistent Gastrointestinal Toxicity, Hepatotoxicity, Interstitial Lung Disease/Pneumonitis, QT Interval Prolongation, Hyperglycemia, Bradycardia, Pancreatitis, diarrhea, nausea, elevated transaminases, vomiting, abdominal pain, fatigue, decreased appetite, constipation, increased ALT, increased AST, serious adverse drug reactions, convulsion, pneumonia, ILD/pneumonitis, dyspnea, dehydration, hyperglycemia, fatal adverse reactions, respiratory failure, pneumothorax, gastric hemorrhage, physical health deterioration, pulmonary tuberculosis, cardiac tamponade, sepsis, decreased appetite, rash, neuropathy, vision disorder, prolonged QT interval, bradycardia, Hemoglobin decreased, Alanine transaminase (ALT) increased, Aspartate transaminase (AST) increased, Creatinine increased, Glucose increased, Phosphate decreased, Lipase increased, Bilirubin (total) increased"
+ZYKADIA,warnings and precautions,"gastrointestinal toxicity, hepatotoxicity, interstitial lung disease, pneumonitis, QT interval prolongation, hyperglycemia, bradycardia, pancreatitis, embryofetal toxicity"
+XALKORI,adverse reactions,"hepatotoxicity, interstitial lung disease, pneumonitis, QT interval prolongation, bradycardia, severe visual loss, vision disorders, diarrhea, nausea, vomiting, constipation, edema, elevated transaminases, upper respiratory infection, decreased appetite, dysgeusia, dyspnea, pulmonary embolism, fatal adverse events, dose reduction, permanent discontinuation, laboratory abnormalities, neutropenia, lymphopenia, ALT elevation, AST elevation, hypophosphatemia."
+XALKORI,warnings and precautions,"Hepatotoxicity, Interstitial Lung Disease, Pneumonitis, QT Interval Prolongation, Bradycardia, Severe Visual Loss, Embryofetal Toxicity"
+BEPREVE,adverse reactions,"taste, eye irritation, headache, nasopharyngitis, hypersensitivity, itching, body rash, swelling"
+BEPREVE,warnings and precautions,"contamination, irritation, contact lens-related, red eye"
+EDARBI,adverse reactions,"diarrhea, nausea, asthenia, fatigue, muscle spasm, dizziness, postural dizziness, cough, low hemoglobin, low hematocrit, low RBC counts, rash, pruritus, angioedema"
+EDARBI,boxed warnings,"FETAL TOXICITY, pregnancy, renin-angiotensin system"
+EDARBI,warnings and precautions,"Fetal toxicity, oligohydramnios, neonatal adverse effects, skull hypoplasia, anuria, hypotension, renal failure, hypotension, impaired renal function, oliguria, progressive azotemia, acute renal failure."
+POTIGA,adverse reactions,"Retinal abnormalities, potential vision loss, urinary retention, skin discoloration, neuropsychiatric symptoms, dizziness, somnolence, QT interval effect, suicidal behavior, ideation, withdrawal seizures, fatigue, confusional state, vertigo, tremor, abnormal coordination, diplopia, disturbance in attention, memory impairment, asthenia, blurred vision, gait disturbance, aphasia, dysarthria, balance disorder, increased appetite, hallucinations, myoclonus, peripheral edema, hypokinesia, dry mouth, dysphagia, hyperhydrosis, malaise, increased liver enzymes, weight gain, rash, nystagmus, dyspnea, leukopenia, muscle spasms, alopecia, nephrolithiasis, syncope, neutropenia, thrombocytopenia, euphoric mood, renal colic, coma, encephalopathy."
+POTIGA,boxed warnings,"retinal abnormalities, vision loss, visual acuity, photoreceptors, retinal pigmentary abnormalities, fluorescein angiograms, optical coherence tomography, perimetry, electroretinograms"
+POTIGA,warnings and precautions,"Urinary retention, skin discoloration, neuropsychiatric symptoms, dizziness, somnolence, QT prolongation, suicidal behavior, withdrawal seizures."
+TUDORZA,adverse reactions,"Paradoxical bronchospasm, worsening of narrow-angle glaucoma, worsening of urinary retention, immediate hypersensitivity reactions, headache, nasopharyngitis, cough, diarrhea, sinusitis, rhinitis, toothache, fall, vomiting, diabetes mellitus, dry mouth, 1st degree AV block, osteoarthritis, cardiac failure, cardio-respiratory arrest, anaphylaxis, angioedema, urticaria, rash, itching."
+TUDORZA,warnings and precautions,"paradoxical bronchospasm, worsening of narrow-angle glaucoma, worsening of urinary retention, immediate hypersensitivity reactions, angioedema, bronchospasm, anaphylaxis"
+PROMACTA,adverse reactions,"Hepatic Decompensation, Hepatotoxicity, Thrombotic/Thromboembolic Complications, Cataracts, Nausea, Diarrhea, Upper respiratory tract infection, Vomiting, Increased ALT, Myalgia, Urinary tract infection, Anemia, Pyrexia, Fatigue, Headache, Decreased appetite, Influenza-like illness, Asthenia, Insomnia, Cough, Pruritus, Chills, Alopecia, Peripheral edema, Hyperbilirubinemia, Serum liver test abnormalities, Portal vein thromboses, Abdominal pain, Rhinitis, Toothache, Vitamin D deficiency, Transaminases increased, Arthralgia, Conjunctival hemorrhage, Thrombotic microangiopathy with acute renal failure."
+PROMACTA,boxed warnings,"hepatic decompensation, chronic hepatitis C"
+PROMACTA,warnings and precautions,"hepatotoxicity, thrombotic event, thromboembolic complications, ascites, encephalopathy, liver enzyme elevations, hyperbilirubinemia, thrombotic complications, portal vein thrombosis, cataracts"
+INLYTA,adverse reactions,"hemorrhage, hypertension, arterial thromboembolic events, venous thromboembolic events, cardiac failure, gastrointestinal perforation, fistula formation, thyroid dysfunction, wound healing complications, RPLS, proteinuria, elevation of liver enzymes, hepatic impairment"
+INLYTA,warnings and precautions,"hypertension, hypertensive crisis, thrombotic events, hemorrhagic events, cardiac failure, gastrointestinal perforation, fistula, hypothyroidism, reversible posterior leukoencephalopathy syndrome, proteinuria, liver enzyme elevation, hepatic impairment, pregnancy"
+NORTHERA,adverse reactions,"Supine Hypertension, Hyperpyrexia, Confusion, exacerbate existing ischemic heart disease, arrhythmias, congestive heart failure, Headache, dizziness, nausea, hypertension, fatigue, Parkinson's disease, multiple system atrophy, pure autonomic failure, dopamine beta-hydroxylase deficiency, non-diabetic autonomic neuropathy, falls, urinary tract infections, syncope."
+NORTHERA,boxed warnings,"SUPINE HYPERTENSION, WARNING"
+NORTHERA,warnings and precautions,"supine hypertension, cardiovascular events, hyperpyrexia, confusion, neuroleptic malignant syndrome, ischemic heart disease, arrhythmias, congestive heart failure, allergic reactions"
+JARDIANCE,adverse reactions,"Hypotension, Renal Function Impairment, Hypoglycemia, Genital Mycotic Infections, Urinary Tract Infections, Increased Low-Density Lipoprotein Cholesterol (LDL-C), Volume Depletion, Increased Urination, Impairment in Renal Function"
+JARDIANCE,warnings and precautions,"Hypotension, Impairment in renal function, Hypoglycemia, Genital mycotic infections, Urinary tract infections, Increased LDL-C"
+FANAPT,adverse reactions,"dizziness, dry mouth, fatigue, nasal congestion, orthostatic hypotension, somnolence, tachycardia, weight increased, Arthralgia, Musculoskeletal Stiffness, Nausea, Diarrhea, Abdominal Discomfort, Nasopharyngitis, Upper Respiratory Tract Infection, Dizziness, Somnolence, Extrapyramidal Disorder, Tremor, Lethargy, Ejaculation Failure, Nasal Congestion, Vision Blurred, Rash, Orthostatic Hypotension, Hypotension, akathisia, Bradykinesia, Dyskinesia, Dystonia, Parkinsonism, Tremor, palpitations, arrhythmia, atrioventricular block first degree, anemia, iron deficiency anemia, leukopenia, vertigo, tinnitus, hypothyroidism, conjunctivitis, dry eye, blepharitis, eyelid edema, eye swelling, lenticular opacities, cataract, hyperemia, gastritis, salivary hypersecretion, fecal incontinence, mouth ulceration, aphthous stomatitis, duodenal ulcer, hiatus hernia, hyperchlorhydria, lip ulceration, reflux esophagitis, stomatitis, edema, difficulty in walking, thirst, hyperthermia, cholelithiasis, weight decreased, hemoglobin decreased, neutrophil count increased, hematocrit decreased, increased appetite, dehydration, hypokalemia, fluid retention, myalgia, muscle spasms, torticollis, paresthesia, psychomotor hyperactivity, restlessness, amnesia, nystagmus, restless legs syndrome, restlessness, aggression, delusion, hostility, libido decreased, paranoia, anorgasmia, confusional state, mania, catatonia, mood swings, panic attack, obsessive-compulsive disorder, bulimia nervosa, delirium, polydipsia psychogenic, impulse-control disorder, major depression, urinary incontinence, dysuria, pollakiuria, enuresis, nephrolithiasis, urinary retention, renal failure acute, erectile dysfunction, testicular pain, amenorrhea, breast pain, menstruation irregular, gynecomastia, menorrhagia, metrorrhagia, postmenopausal hemorrhage, prostatitis, epistaxis, asthma, rhinorrhea, sinus congestion, nasal dryness, dry throat, sleep apnea syndrome, dyspnea exertional, retrograde ejaculation."
+FANAPT,boxed warnings,"mortality, death, cardiovascular, heart failure, sudden death, infectious, pneumonia, observational studies"
+FANAPT,warnings and precautions,"death, cerebrovascular-related adverse events, stroke, QT prolongation, arrhythmia, sudden death, Neuroleptic Malignant Syndrome, Tardive dyskinesia, Hyperglycemia, diabetes mellitus, dyslipidemia, Weight Gain, Metabolic Changes, Seizures, Orthostatic hypotension, Leukopenia, Neutropenia, Agranulocytosis, Suicide, Priapism, Cognitive and Motor Impairment"
+TANZEUM,adverse reactions,"Thyroid C-cell Tumors, Acute Pancreatitis, Hypoglycemia, Hypersensitivity Reactions, Renal Impairment, Upper respiratory tract infection, Diarrhea, Nausea, Injection site reaction, Cough, Back pain, Arthralgia, Sinusitis, Influenza, Vomiting, Gastroesophageal reflux disease, Dyspepsia, Constipation, Injection site hematoma, Injection site erythema, Injection site rash, Injection site hypersensitivity, Injection site hemorrhage, Injection site pruritus, Pneumonia, Atrial Fibrillation, Atrial Flutter, Appendicitis, Immunogenicity, Liver Enzyme Abnormalities, Alanine aminotransferase (ALT) increase, Gamma Glutamyltransferase (GGT) Increase, Heart Rate Increase"
+TANZEUM,boxed warnings,"thyroid C-cell tumors, medullary thyroid carcinoma (MTC)"
+TANZEUM,warnings and precautions,"Thyroid C-cell Tumors, Pancreatitis, Hypoglycemia, Hypersensitivity Reactions, Renal Impairment, Macrovascular Outcomes"
+EYLEA,adverse reactions,"Endophthalmitis, retinal detachments, increased intraocular pressure, thromboembolic events, conjunctival hemorrhage, eye pain, cataract, vitreous floaters, vitreous detachment, ocular hyperemia, corneal epithelium defect, detachment of the retinal pigment epithelium, injection site pain, foreign body sensation in eyes, lacrimation increased, vision blurred, intraocular inflammation, retinal pigment epithelium tear, eyelid edema, corneal edema, hypersensitivity, retinal tear, and injection site hemorrhage."
+EYLEA,warnings and precautions,"Endophthalmitis, retinal detachments, increases in intraocular pressure, thromboembolic events"
+JEVTANA,adverse reactions,"Bone Marrow Suppression, Hypersensitivity Reactions, Gastrointestinal Adverse Reactions, Renal Failure, Embryo-Fetal Toxicity, neutropenia, anemia, leukopenia, thrombocytopenia, diarrhea, fatigue, nausea, vomiting, constipation, asthenia, abdominal pain, hematuria, back pain, anorexia, peripheral neuropathy, pyrexia, dyspnea, dysgeusia, cough, arthralgia, alopecia, infections, ventricular fibrillation, cerebral hemorrhage, fatigue, febrile neutropenia, arrhythmia, mucosal inflammation, weight decreased, dehydration, muscle spasms, dizziness, headache, dysuria, sepsis, septic shock, increased AST, increased ALT, increased bilirubin, and gastritis."
+JEVTANA,boxed warnings,"neutropenia, hypersensitivity, generalized rash/erythema, hypotension, bronchospasm"
+JEVTANA,warnings and precautions,"neutropenia, febrile neutropenia, hypersensitivity, nausea, vomiting, diarrhea, gastrointestinal hemorrhage, perforation, renal failure, hepatic impairment, embryo-fetal toxicity"
+YERVOY,adverse reactions,"Enterocolitis, hepatitis, dermatitis, neuropathies, endocrinopathies, ocular manifestations, fatigue, diarrhea, pruritus, rash, colitis, urticaria, large intestinal ulcer, esophagitis, acute respiratory distress syndrome, renal failure, infusion reaction, DRESS syndrome."
+YERVOY,boxed warnings,"immune-mediated adverse reactions, enterocolitis, hepatitis, dermatitis, toxic epidermal necrolysis, neuropathy, endocrinopathy, severe immune-mediated reactions"
+YERVOY,warnings and precautions,"severe adverse reactions, fatal immune-mediated reactions, T-cell activation, immune-mediated enterocolitis, hepatotoxicity, immune-mediated dermatitis, neuropathies, immune-mediated endocrinopathies, nephritis, pneumonitis, meningitis, pericarditis, uveitis, iritis, hemolytic anemia, myocarditis, angiopathy, temporal arteritis, vasculitis, polymyalgia rheumatica, conjunctivitis, blepharitis, episcleritis, scleritis, leukocytoclastic vasculitis, erythema multiforme, psoriasis, pancreatitis, arthritis, sarcoidosis, neurosensory hypoacusis, autoimmune central neuropathy, myositis, polymyositis, ocular myositis"
+FARXIGA,adverse reactions,"Hypotension, Impairment in Renal Function, Hypoglycemia, Genital Mycotic Infections, Increases in Low-Density Lipoprotein Cholesterol (LDL-C), Bladder Cancer, Back pain, Increased urination, Male genital mycotic infections, Nausea, Influenza, Dyslipidemia, Constipation, Discomfort with urination, Pain in extremity, Volume Depletion, Hypoglycemia, Hypersensitivity Reactions"
+FARXIGA,warnings and precautions,"hypotension, impairment in renal function, hypoglycemia, genital mycotic infections, increases in low-density lipoprotein cholesterol (LDL-C), bladder cancer, macrovascular outcomes"
+PICATO,adverse reactions,"Ophthalmic Adverse Reaction, Hypersensitivity Reactions, local skin reactions, application site pain, application site pruritus, application site irritation, application site infection, periorbital edema, nasopharyngitis, headache, erythema, flaking/scaling, crusting, swelling, vesiculation/pustulation, erosion/ulceration, eyelid edema, eye pain, conjunctivitis, hypersensitivity, allergic contact dermatitis, herpes zoster, chemical conjunctivitis, corneal burn."
+PICATO,warnings and precautions,"severe eye pain, chemical conjunctivitis, corneal burn, eyelid edema, eyelid ptosis, periorbital edema, vesiculation/pustulation, erosion/ulceration, hypersensitivity reactions, anaphylaxis, allergic contact dermatitis, erythema, crusting, swelling"
+PRISTIQ,adverse reactions,"Hypersensitivity, Suicidal Thoughts, Serotonin Syndrome, Elevated Blood Pressure, Abnormal Bleeding, Angle Closure Glaucoma, Activation of Mania/Hypomania, Discontinuation Syndrome, Seizure, Hyponatremia, Interstitial Lung Disease, Eosinophilic Pneumonia, Nausea, Dizziness, Insomnia, Hyperhidrosis, Constipation, Somnolence, Decreased Appetite, Anxiety, Male Sexual Function Disorders, Dry Mouth, Vomiting, Fatigue, Chills, Vision Blurred, Mydriasis, Vertigo, Tinnitus, Dysgeusia, Hot Flush, Anorgasmia, Libido Decreased, Orgasm Abnormal, Ejaculation Delayed, Erectile Dysfunction, Ejaculation Disorder, Ejaculation Failure, Sexual Dysfunction, Asthenia, Weight Increased, Liver Function Test Abnormal, Blood Prolactin Increased, Musculoskeletal Stiffness, Syncope, Convulsion, Dystonia, Depersonalization, Bruxism, Urinary Retention, Rash, Alopecia, Photosensitivity Reaction, Angioedema, Myocardial Ischemia, Myocardial Infarction, Coronary Occlusion, Tachycardia, Proteinuria, Yawning, Disturbance in Attention, Feeling Jittery, Nervousness, Abnormal Dreams."
+PRISTIQ,boxed warnings,"suicidal thoughts, behaviors, antidepressant use"
+PRISTIQ,warnings and precautions,"There are several adverse drug events mentioned in the drug label excerpt. Here are the terms:
+
+- Suicidal ideation
+- Serotonin syndrome
+- Elevated blood pressure
+- Abnormal bleeding
+- Angle closure glaucoma
+- Activation of mania/hypomania
+- Discontinuation syndrome
+- Seizure
+- Hyponatremia
+- Interstitial lung disease and eosinophilic pneumonia"
+STRIBILD,adverse reactions,"Lactic Acidosis, Severe Hepatomegaly with Steatosis, Severe Acute Exacerbations of Hepatitis B, New Onset or Worsening Renal Impairment, Bone Effects of Tenofovir DF, Immune Reconstitution Syndrome, nausea, diarrhea, ocular icterus, flatulence, fatigue, jaundice, somnolence, headache, dizziness, insomnia, abnormal dreams, rash, suicidal ideation, suicide attempt, depression, abdominal pain, dyspepsia, vomiting, fever, pain, nasopharyngitis, pneumonia, sinusitis, upper respiratory tract infection, arthralgia, back pain, myalgia, paresthesia, peripheral neuropathy, anxiety, increased cough, rhinitis, proteinuria, asthenia, dyspnea, pancreatitis, increased amylase, increased liver enzymes (most commonly AST, ALT gamma GT), rhabdomyolysis, osteomalacia, muscular weakness, myopathy, acute renal failure, renal failure, acute tubular necrosis, Fanconi syndrome, interstitial nephritis, nephrogenic diabetes insipidus, renal insufficiency, increased creatinine, polyuria."
+STRIBILD,boxed warnings,"Lactic acidosis, severe hepatomegaly with steatosis, acute exacerbation of hepatitis B"
+STRIBILD,warnings and precautions,"renal impairment, acute renal failure, Fanconi syndrome, lactic acidosis, severe hepatomegaly, steatosis, bone mineral density, osteoporosis, bone loss, body fat redistribution, immune reconstitution syndrome"
+NULOJIX,adverse reactions,"The adverse drug event terms in the text are:
+
+- PTLD
+- CNS PTLD
+- malignancies
+- serious infections
+- JC virus-associated PML
+- polyoma virus nephropathy
+- anemia
+- diarrhea
+- urinary tract infection
+- peripheral edema
+- constipation
+- hypertension
+- pyrexia
+- graft dysfunction
+- cough
+- nausea
+- vomiting
+- headache
+- hypokalemia
+- hyperkalemia
+- leukopenia
+- cytomegalovirus infection
+- complications of transplanted kidney
+- progressive multifocal leukoencephalopathy
+- fungal infections
+- cryptococcal meningitis
+- infusion reactions
+- proteinuria
+- new-onset diabetes after transplantation
+- dyslipidemia
+- Guillain-Barre syndrome
+- stomatitis
+- chronic allograft nephropathy
+- neutropenia
+- renal impairment
+
+These terms are summarized as a comma-separated list."
+NULOJIX,boxed warnings,"post-transplant lymphoproliferative disorder, other malignancies, serious infections, immunosuppression"
+NULOJIX,warnings and precautions,"post-transplant lymphoproliferative disorder, PTLD, malignancies, progressive multifocal leukoencephalopathy, PML, serious infections, opportunistic infections, polyoma virus-associated nephropathy"
+LUMIZYME,adverse reactions,"anaphylaxis, rash, pyrexia, flushing/feeling hot, urticaria, headache, hyperhidrosis, nausea, cough, decreased oxygen saturation, tachycardia, tachypnea, chest discomfort, dizziness, muscle twitching, agitation, cyanosis, erythema, hypertension/increased blood pressure, pallor, rigors, tremor, vomiting, fatigue, myalgia, angioedema, throat tightness, acute cardiorespiratory failure, livedo reticularis, irritability, retching, increased lacrimation, ventricular extrasystoles, nodal rhythm, rales, respiratory tract irritation, cold sweat, hyperhidrosis, paresthesia, local swelling, pruritus, throat tightness, edema, muscle spasm, conjunctivitis, proteinuria, nephrotic syndrome, membranous glomerulonephritis, necrotizing skin lesions"
+LUMIZYME,boxed warnings,"anaphylaxis, hypersensitivity reactions, immune-mediated reactions, cardiorespiratory failure, respiratory distress, hypoxia, apnea, dyspnea, bradycardia, tachycardia, bronchospasm, throat tightness, hypotension, angioedema, urticaria, proteinuria, nephrotic syndrome, necrotizing skin lesions, fluid overload"
+LUMIZYME,warnings and precautions,"anaphylaxis, hypersensitivity reactions, immune-mediated reactions, acute cardiorespiratory failure, cardiac arrhythmia, sudden cardiac death, antibody development"
+EOVIST,adverse reactions,"Nephrogenic systemic fibrosis, Hypersensitivity reactions, Nausea, Headache, Feeling hot, Dizziness, Back pain, Vomiting, Blood pressure increased, Injection site reactions, Dysgeusia, Paresthesia, Flushing, Parosmia, Pruritus, Rash, Respiratory disorders, Fatigue, Chest pain, Vertigo, Dry mouth, Chills, Feeling abnormal, Tremor, Akathisia, Bundle branch block, Palpitation, Oral discomfort, Salivary hypersecretion, Maculopapular rash, Hyperhidrosis, Discomfort, Malaise, Tachycardia, Restlessness"
+EOVIST,boxed warnings,"Nephrogenic Systemic Fibrosis, NSF, chronic kidney disease, acute kidney injury, impaired elimination, glomerular filtration rate, GFR, gadolinium-based contrast agents."
+EOVIST,warnings and precautions,"Nephrogenic Systemic Fibrosis, Hypersensitivity, anaphylactoid reactions, hypersensitivity reactions, cardiovascular manifestations, respiratory manifestations, cutaneous manifestations, shock, Acute Kidney Injury, Extravasation, Injection Site Reactions, Interference with Laboratory Tests, Interference with Visualization of Liver Lesions"
+BELEODAQ,adverse reactions,"Hematologic Toxicity, Infection, Hepatotoxicity, Tumor Lysis Syndrome, Gastrointestinal Toxicity, nausea, fatigue, pyrexia, anemia, vomiting, diarrhea, dyspnea, rash, peripheral edema, cough, thrombocytopenia, pruritus, chills, increased blood lactate dehydrogenase, decreased appetite, headache, infusion site pain, hypokalemia, prolonged QT, abdominal pain, hypotension, phlebitis, dizziness, pneumonia, infection, increased creatinine, multi-organ failure, febrile neutropenia"
+BELEODAQ,warnings and precautions,"thrombocytopenia, leukopenia, neutropenia, lymphopenia, anemia, infection, hepatotoxicity, tumor lysis syndrome, embryo-fetal toxicity"
+VICTRELIS,adverse reactions,"anemia, nausea, headache, dysgeusia, fatigue, neutropenia, pancytopenia, hypersensitivity, chills, asthenia, alopecia, dry skin, rash, insomnia, irritability, dyspnea, stomatitis, pneumonia, sepsis, angioedema, urticaria"
+VICTRELIS,warnings and precautions,"Embryofetal Toxicity, Anemia, Neutropenia, Hypersensitivity"
+VIMIZIM,adverse reactions,"anaphylaxis, hypersensitivity reactions, pyrexia, vomiting, headache, nausea, abdominal pain, chills, fatigue, anti-drug antibodies, neutralizing antibodies"
+VIMIZIM,boxed warnings,"anaphylaxis, cough, erythema, throat tightness, urticaria, flushing, cyanosis, hypotension, rash, dyspnea, chest discomfort, gastrointestinal symptoms, nausea, abdominal pain, retching, vomiting, acute respiratory illness, hypersensitivity reactions"
+VIMIZIM,warnings and precautions,"Anaphylaxis, hypersensitivity reactions, acute respiratory complications"
+SIRTURO,adverse reactions,"mortality, QT prolongation, hepatotoxicity, drug interactions, nausea, arthralgia, headache, hemoptysis, chest pain, anorexia, transaminases increased, rash, blood amylase increased, aminotransferase elevations, increased mortality"
+SIRTURO,boxed warnings,"increased mortality, QT prolongation"
+SIRTURO,warnings and precautions,"QT prolongation, ventricular arrhythmia, Hepatotoxicity, liver injury, Mortality, Torsade de Pointes, long QT syndrome, hypothyroidism, bradyarrhythmias, heart failure, bedaquiline, aminotransferase elevations, CYP3A4 inducers/inhibitors"
+NEURACEQ,adverse reactions,"erythema, irritation, pain"
+NEURACEQ,warnings and precautions,"Image interpretation errors, false positives, long-term cumulative radiation exposure, unintentional radiation exposure, risk for image misinterpretation and other errors, errors, severe brain atrophy, motion artifacts, radiation risk, cumulative radiation exposure, increased risk of cancer, unintentional radiation exposure"
+COMETRIQ,adverse reactions,"Perforations, Fistula, Hemorrhage, Thromboembolic Events, Wound Complications, Hypertension, Osteonecrosis of the Jaw, Palmar-plantar erythrodysesthesia syndrome, Proteinuria, Reversible Posterior Leukoencephalopathy Syndrome, diarrhea, stomatitis, palmar-plantar erythrodysesthesia syndrome (PPES), decreased weight, decreased appetite, nausea, fatigue, oral pain, hair color changes, dysgeusia, hypertension, abdominal pain, constipation, increased AST, increased ALT, lymphopenia, increased alkaline phosphatase, hypocalcemia, neutropenia, thrombocytopenia, hypophosphatemia, hyperbilirubinemia, increased lipase, pancreatitis, tracheal fistula formation, vomiting, thyroid stimulating hormone (TSH), dehydration."
+COMETRIQ,boxed warnings,"perforations, fistulas, hemorrhage, hemoptysis, gastrointestinal hemorrhage"
+COMETRIQ,warnings and precautions,"Thrombotic Events, Wound Complications, Hypertension, Osteonecrosis of the Jaw, Palmar-plantar Erythrodysesthesia syndrome (PPES), Proteinuria, Reversible posterior leukoencephalopathy syndrome (RPLS), Embryo-fetal Toxicity, Perforations, Fistulas, Hemorrhage, Drug Interactions, Hepatic Impairment"
+AFINITOR,adverse reactions,"Non-infectious pneumonitis, infections, angioedema, oral ulceration, renal failure, impaired wound healing, stomatitis, rash, fatigue, diarrhea, edema, abdominal pain, nausea, fever, asthenia, cough, headache, decreased appetite, hyperglycemia, dyspnea, pneumonia, hypercholesterolemia, increased aspartate transaminase (AST), anemia, leukopenia, thrombocytopenia, lymphopenia, increased alanine transaminase (ALT), hypertriglyceridemia, lymphopenia, decreased potassium, thrombotic events, acute respiratory failure, sepsis, acute renal failure, gastrointestinal disorders, vomiting, constipation, dry mouth, weight decreased, arthralgia, back pain, pain in extremity, dysgeusia, insomnia, dry skin, hot flush, irregular menstruation, decreased appetite, diabetes mellitus, exacerbation of pre-existing diabetes mellitus, renal failure, chest pain, chills, impaired wound healing, pharyngolaryngeal pain, rhinorrhea, pleural effusion, pulmonary embolism, hypertension, nail disorders, hot flush, pancreatitis, cholecystitis, cholelithiasis, arterial thrombotic events, reflex sympathetic dystrophy."
+AFINITOR,warnings and precautions,"Non-infectious pneumonitis, Infections, Angioedema, Oral ulceration, Renal failure, Impaired wound healing, Laboratory test alterations, Vaccinations, Embryo-fetal toxicity"
+BREO,adverse reactions,"The adverse drug event terms in the provided drug label excerpt are:
+
+- Asthma-related death
+- Asthma-related hospitalization
+- Candida albicans infection
+- Pneumonia
+- Immunosuppression
+- Hypercorticism
+- Adrenal suppression
+- Reduction in bone mineral density
+- Nasopharyngitis
+- Upper respiratory tract infection
+- Headache
+- Oral candidiasis
+- Influenza
+- Bronchitis
+- Sinusitis
+- Oropharyngeal pain
+- Dysphonia
+- Cough
+- Back pain
+- Viral respiratory tract infection
+- Pharyngitis
+- Pyrexia
+- Arthralgia
+- Supraventricular extrasystoles
+- Ventricular extrasystoles
+- Acute sinusitis
+- Palpitations
+- Tachycardia
+- Hypersensitivity reactions
+- Anaphylaxis
+- Angioedema
+- Rash
+- Urticaria
+- Muscle spasms
+- Tremor
+- Nervousness"
+BREO,boxed warnings,"asthma-related death, LABA, vilanterol, salmeterol, inhaled corticosteroids, ICS, asthma-related hospitalization"
+BREO,warnings and precautions,"LabA, asthma-related death, asthma-related hospitalizations, deteriorating COPD, acute symptoms, overdose, candida albicans infection, pneumonia, infections (tuberculosis, fungal, bacterial, viral, parasitic infections, ocular herpes simplex), impaired adrenal function, hypercorticism, adrenal suppression, paradoxical bronchospasm, cardiovascular disorders, decrease in bone mineral density, glaucoma, cataracts, convulsive disorders, thyrotoxicosis, diabetes mellitus, ketoacidosis, hypokalemia, hyperglycemia, adrenal insufficiency, hypersensitivity reactions, anaphylaxis, cardiovascular effects, reduction in bone mineral density, effect on growth."
+FIRAZYR,adverse reactions,"injection site reactions, pyrexia, transaminase increase, dizziness, rash, nausea, headache"
+FIRAZYR,warnings and precautions,"laryngeal attacks, airway obstruction, medical attention"
+INVOKANA,adverse reactions,"Hypotension, Impairment in Renal Function, Hyperkalemia, Hypoglycemia, Genital Mycotic Infections, Hypersensitivity Reactions, Bone Fracture, Increases in Low-Density Lipoprotein (LDL-C), Urinary tract infections, Increased urination, Male genital mycotic infections, Vulvovaginal pruritus, Thirst, Constipation, Nausea, Abdominal pain, Fatigue, Loss of strength or energy, Pancreatitis, Volume Depletion-Related Adverse Reactions, Falls, Increases in Serum Potassium, Increases in Serum Magnesium, Increases in Serum Phosphate, Increases in Low-Density Lipoprotein Cholesterol (LDL-C) and non-High-Density Lipoprotein Cholesterol (non-HDL-C), Increases in Hemoglobin, Decreases in Bone Mineral Density."
+INVOKANA,warnings and precautions,"hypotension, impairment in Renal Function, hyperkalemia, Hypoglycemia, Genital Mycotic Infections, Hypersensitivity Reactions, Bone Fracture, Increases in Low-Density Lipoprotein (LDL-C)"
+VORAXAZE,adverse reactions,"anaphylactic reactions, paraesthesia, flushing, nausea, vomiting, hypotension, headache, myelosuppression, mucositis, acute hepatitis, renal dysfunction, renal failure, flushing, feeling hot, burning sensation, paresthesias, blurred vision, diarrhea, hypersensitivity, hypertension, rash, throat irritation, throat tightness, tremor"
+VORAXAZE,warnings and precautions,"allergic reactions, anaphylactic reactions, drug interactions, adverse reactions, serious allergic reactions"
+NESINA,adverse reactions,"nasopharyngitis, headache, upper respiratory tract infection, pancreatitis, hypersensitivity reactions, hypoglycemia, anaphylaxis, angioedema, rash, urticaria, severe cutaneous adverse reactions, Stevens-Johnson syndrome, hepatic enzyme elevations, fulminant hepatic failure, severe and disabling arthralgia, acute pancreatitis"
+NESINA,warnings and precautions,"Acute pancreatitis, Hypersensitivity reactions, Anaphylaxis, Angioedema, Severe cutaneous adverse reactions, Hepatic effects, Hepatic failure, Hypoglycemia, Arthralgia, Macrovascular outcomes"
+GILENYA,adverse reactions,"Bradyarrhythmia, atrioventricular blocks, infections, progressive multifocal leukoencephalopathy, macular edema, posterior reversible encephalopathy syndrome, respiratory effects, liver injury, headache, liver transaminase elevation, diarrhea, cough, influenza, sinusitis, back pain, abdominal pain, pain in extremity, serum transaminase elevations, basal cell carcinoma, nausea, asthenia, alopecia, actinic keratosis, blurred vision, hypertension, lymphopenia, leukopenia, skin papilloma, dizziness, pneumonia, eczema, pruritus, vascular events, ischemic and hemorrhagic strokes, peripheral arterial occlusive disease, lymphomas"
+GILENYA,warnings and precautions,"bradycardia, atrioventricular conduction, infections, PML, macular edema, posterior reversible encephalopathy syndrome, respiratory effects, liver injury, fetal risk, blood pressure effects"
+HALAVEN,adverse reactions,"neutropenia, anemia, asthenia/fatigue, alopecia, peripheral neuropathy, nausea, constipation, febrile neutropenia, thrombocytopenia, granulocyte colony-stimulating factor, liver function test abnormalities, eye disorders, gastrointestinal disorders, muscle spasms, nervous system disorders, psychiatric disorders, skin and subcutaneous tissue disorders, lymphopenia, pancreatitis, hepatotoxicity, drug hypersensitivity, pneumonia, sepsis/neutropenic sepsis, hypomagnesemia, dehydration, interstitial lung disease, pruritus"
+HALAVEN,warnings and precautions,"neutropenia, peripheral neuropathy, embryo-fetal toxicity, QT prolongation"
+INTELENCE,adverse reactions,"skin rash, peripheral neuropathy, diarrhea, Stevens-Johnson syndrome, drug hypersensitivity reaction, erythema multiforme, myocardial infarction, angina pectoris, atrial fibrillation, vertigo, blurred vision, gastroesophageal reflux disease, flatulence, gastritis, abdominal distension, pancreatitis, constipation, dry mouth, hematemesis, retching, stomatitis, sluggishness, hemolytic anemia, hepatic failure, hepatomegaly, cytolytic hepatitis, hepatic steatosis, hepatitis, immune reconstitution syndrome, diabetes mellitus, anorexia, dyslipidemia, paraesthesia, somnolence, convulsion, hypoesthesia, amnesia, syncope, disturbance in attention, hypersomnia, tremor, anxiety, sleep disorders, abnormal dreams, confusional state, disorientation, nervousness, nightmares, acute renal failure, gynecomastia, exertional dyspnea, lipohypertrophy, prurigo, hyperhidrosis, dry skin, swelling face, acquired lipodystrophy, angioneurotic edema, haemorrhagic stroke, pancreatitis, decreased hemoglobin, white blood cell count abnormality, neutrophils abnormality, platelet count abnormality, total cholesterol abnormality, low-density lipoprotein abnormality, triglycerides abnormality, glucose abnormality, alanine aminotransferase abnormality, aspartate aminotransferase abnormality, rhabdomyolysis, toxic epidermal necrolysis"
+INTELENCE,warnings and precautions,"skin reactions, Stevens-Johnson syndrome, hypersensitivity reaction, toxic epidermal necrolysis, erythema multiforme, rash, liver transaminase elevations, Drug Rash with Eosinophilia and Systemic Symptoms (DRESS), rash, hepatic failure, rashes, fever, malaise, fatigue, muscle aches, joint aches, blisters, oral lesions, conjunctivitis, facial edema, angioedema"
+AMYVID,adverse reactions,"headache, musculoskeletal pain, blood pressure increased, nausea, fatigue, injection site reaction, anxiety, back pain, claustrophobia, dizziness, feeling cold, insomnia, neck pain, infusion site rash, dysgeusia, pruritis, urticaria, flushing"
+AMYVID,warnings and precautions,"Image interpretation errors, Radiation risk, unintentional radiation exposure, Errors in interpretation, radiation exposure, increased risk of cancer"
+ULESFIA,adverse reactions,"ocualar irritation, application site irritation, application site anesthesia, hypoesthesia, pain, pruritus, erythema, pyoderma, application site dryness, application site excoriation, paraesthesia, application site dermatitis, excoriation, thermal burn, dandruff, rash, skin exfoliation"
+ULESFIA,warnings and precautions,"Neonatal toxicity, Eye irritation, Contact dermatitis, Use in children"
+OTEZLA,adverse reactions,"diarrhea, nausea, headache, upper respiratory tract infection, tension headache, vomiting, nasopharyngitis, abdominal pain upper, weight decrease, frequent bowel movement, gastroesophageal reflux disease, dyspepsia, decreased appetite, migraine, cough, rash"
+OTEZLA,warnings and precautions,"Depression, suicide, weight decrease, drug interactions, suicidal thoughts, suicidal behavior, suicidal ideation"
+ILARIS,adverse reactions,"infections, nasopharyngitis, diarrhea, influenza, headache, nausea, abdominal pain, injection site reactions, vertigo, bronchitis, gastroenteritis, pharyngitis, rhinitis, weight increased, musculoskeletal pain, anaphylactic reactions, hypersensitivity, antibodies, laboratory findings, hematology, white blood cells, neutrophils, platelets, transaminases, ALT, AST, bilirubin"
+ILARIS,warnings and precautions,"serious infections, immunosuppressants, malignancies, hypersensitivity, immunizations"
+NATAZIA,adverse reactions,"serious cardiovascular events, stroke, vascular events, liver disease, irregular uterine bleeding, nausea, breast tenderness, headache, migraine, menstrual disorders, acne, mood changes, weight increased, myocardial infarction, ruptured ovarian cyst, deep vein thrombosis, focal nodular hyperplasia of the liver, uterine leiomyoma, acute cholecystitis, chronic acalculous cholecystitis, venous and arterial thromboembolic events, hypertension, gallbladder disease, hepatitis, hypersensitivity, fluid retention, hypertriglyceridemia, dizziness, chloasma, angioedema, erythema nodosum, erythema multiforme, gastrointestinal symptoms, vulvovaginal candidiasis"
+NATAZIA,boxed warnings,"Cigarette smoking, serious cardiovascular events, risk, combination oral contraceptives, COC use, contraindications"
+NATAZIA,warnings and precautions,"thrombotic event, jaundice, high blood pressure, headache, irregular bleeding, CYP3A4 induction"
+DIFICID,adverse reactions,"The adverse drug event terms in the provided text are:
+nausea, vomiting, abdominal pain, gastrointestinal hemorrhage, anemia, neutropenia, AR, anemia, neutropenia, nausea, vomiting, abdominal pain, gastrointestinal hemorrhage, abdominal distension, abdominal tenderness, dyspepsia, dysphagia, flatulence, intestinal obstruction, megacolon, increased blood alkaline phosphatase, decreased blood bicarbonate, increased hepatic enzymes, decreased platelet count, hyperglycemia, metabolic acidosis, drug eruption, pruritus, rash, dyspnea, angioedema, rash"
+DIFICID,warnings and precautions,"hypersensitivity reactions, acute hypersensitivity reactions, angioedema, dyspnea, pruritus, rash, drug-resistant bacteria"
+ONFI,adverse reactions,"somnolence, sedation, potentiation of sedation, withdrawal symptoms, serious dermatological reactions, physical dependence, psychological dependence, suicidal behavior, ideation, constipation, pyrexia, lethargy, drooling, ataxia, aggression, fatigue, insomnia, vomiting, dysphagia, irritability, upper respiratory tract infection, pneumonia, urinary tract infection, bronchitis, decreased appetite, increased appetite, somnolence, sedation, lethargy, drooling, ataxia, psychomotor hyperactivity, dysarthria, aggression, insomnia, cough, anemia, eosinophilia, leukopenia, thrombocytopenia, diplopia, blurred vision, abdominal distention, hypothermia, increased hepatic enzymes, muscle spasms, agitation, anxiety, apathy, confusion, depression, delirium, delusion, hallucination, urinary retention, aspiration, respiratory depression, rash, urticaria, angioedema, facial edema, lip edema"
+ONFI,warnings and precautions,"Somnolence, sedation, Withdrawal Symptoms, Serious Dermatological Reactions, Physical and Psychological Dependence, Suicidal Behavior, Suicidal Ideation"
+TECFIDERA,adverse reactions,"Anaphylaxis, Angioedema, Progressive multifocal leukoencephalopathy, Lymphopenia, Flushing, Abdominal pain, Diarrhea, Nausea, Vomiting, Pruritus, Rash, Albumin urine present, Erythema, Dyspepsia, Aspartate aminotransferase increased, Gastrointestinal, Hepatic Transaminases, Eosinophilia"
+TECFIDERA,warnings and precautions,"Anaphylaxis, angioedema, Progressive multifocal leukoencephalopathy (PML), Lymphopenia, Flushing"
+DYSPORT,adverse reactions,"Toxin Effect,Distant Spread of Toxin Effect,Interchangeability between Botulinum Toxin Products,Spread of Effects from Toxin,Dysphagia,Breathing Difficulties,Facial Anatomy in the Treatment of Glabellar Lines,Pre-existing Neuromuscular Disorders,Human Albumin,Intradermal Immune Reaction,Muscular weakness,dysphagia,dry mouth,injection site discomfort,fatigue,headache,neck pain,musculoskeletal pain,dysphonia,injection site pain,eye disorders,nasopharyngitis,upper respiratory tract infection,eyelid edema,eyelid ptosis,sinusitis,nausea,urinary tract infection,dizziness,fall,depression,muscle atrophy,breathing difficulty,blood glucose increase,ECG changes,eyelid ptosis,muscle atrophy,breathing difficulty,blood glucose increase,ECG changes,vertigo,photophobia,influenza-like illness,amyotrophy,burning sensation,excessive granulation tissue."
+DYSPORT,boxed warnings,"diplopia, blurred vision, ptosis, dysphagia, dysphonia, dysarthria, urinary incontinence, asthenia, generalized muscle weakness, breathing difficulties, death"
+DYSPORT,warnings and precautions,"respiratory difficulties, speech difficulties, swallowing difficulties, dysphagia, dysphonia, dysarthria, neuromuscular disorder, asthenia, generalized muscle weakness, diplopia, blurred vision, ptosis, urinary incontinence, breathing difficulties, cervical dystonia, severe dysphagia, aspiration, respiratory failure, neuromuscular disorders, amyotrophic lateral sclerosis, myasthenia gravis, Lambert-Eaton syndrome, Creutzfeldt-Jakob disease"
+ZYTIGA,adverse reactions,"Hypertension, Hypokalemia, Fluid Retention, Adrenocortical Insufficiency, Hepatotoxicity, fatigue, joint swelling or discomfort, edema, hot flush, diarrhea, vomiting, cough, dyspnea, urinary tract infection, contusion, anemia, elevated alkaline phosphatase, hypertriglyceridemia, lymphopenia, hypercholesterolemia, hyperglycemia, elevated AST, hypophosphatemia, elevated ALT, low serum phosphorus, low potassium, cardiac failure, arrhythmia, sudden death, cardiorespiratory arrest, myocardial ischemia, myocardial infarction, non-infectious pneumonitis, myopathy, rhabdomyolysis."
+ZYTIGA,warnings and precautions,"hypertension, hypokalemia, fluid retention, adrenocortical insufficiency, hepatotoxicity, ALT, AST, LVEF, NYHA Class, ULN"
+DUAVEE,adverse reactions,"muscle spasms, nausea, diarrhea, dyspepsia, abdominal pain upper, oropharyngeal pain, dizziness, neck pain"
+DUAVEE,boxed warnings,"Adverse drug event terms in the text are: 
+- Endometrial cancer
+- Cardiovascular disorders
+- Dementia
+- Blood clots
+- Stroke
+- Heart attack
+- Breast cancer
+- Ovarian cancer
+- Gallbladder problems
+- Loss of vision
+- High blood pressure
+- Increased fats in your blood
+- Liver problems
+- Thyroid problems
+- Fluid retention
+- Low calcium
+- Swelling of your mouth or tongue"
+DUAVEE,warnings and precautions,"venous thromboembolism, pulmonary embolism, stroke, retinal vascular thrombosis, endometrial cancer, breast cancer, ovarian cancer, gallbladder disease, loss of vision, severe hypertriglyceridemia, cholestatic jaundice, hypothyroidism, fluid retention"
+SAPHRIS,adverse reactions,"akathisia, oral hypoesthesia, tardive dyskinesia, metabolic changes, hypersensitivity reactions, application site reactions, orthostatic hypotension, syncope, leukopenia, neutropenia, agranulocytosis, QT interval prolongation, hyperprolactinemia, seizures, cognitive impairment, motor impairment, dysphagia, schyzophrenia, bipolar disorder"
+SAPHRIS,boxed warnings,"increased mortality, elderly patients, dementia-related psychosis, antipsychotic drugs, increased risk of death"
+SAPHRIS,warnings and precautions,"cerebrovascular adverse events, stroke, transient ischemic attack, neuroleptic malignant syndrome, tardive dyskinesia, metabolic changes, hyperglycemia, dyslipidemia, weight gain, hypersensitivity reactions, anaphylaxis, angioedema, orthostatic hypotension, syncope, leukopenia, neutropenia, agranulocytosis, QT prolongation, seizures, potential for cognitive and motor impairment, suicide, dysphagia"
+DUREZOL,adverse reactions,"elevated intraocular pressure, optic nerve damage, visual acuity and field defects, posterior subcapsular cataract formation, secondary ocular infection, herpes simplex, perforation of the globe, corneal edema, ciliary and conjunctival hyperemia, eye pain, photophobia, posterior capsule opacification, anterior chamber cells, anterior chamber flare, conjunctival edema, blepharitis, reduced visual acuity, punctate keratitis, eye inflammation, iritis, application site discomfort or irritation, corneal pigmentation and striae, episcleritis, eye pruritis, eyelid irritation and crusting, foreign body sensation, increased lacrimation, macular edema, sclera hyperemia, uveitis, blurred vision, headache, dry eye, iridocyclitis."
+DUREZOL,warnings and precautions,"IOP increase, Cataracts, Delayed healing, Bacterial infections, Viral infections, Fungal infections"
+ZYDELIG,adverse reactions,"The adverse drug event terms in the provided text are:
+
+- Hepatotoxicity
+- Severe Diarrhea or Colitis
+- Pneumonitis
+- Intestinal Perforation
+- Severe Cutaneous Reactions
+- Anaphylaxis
+- Neutropenia
+- Diarrhea
+- Pyrexia
+- Fatigue
+- Nausea
+- Cough
+- Pneumonia
+- Abdominal pain
+- Chills
+- Rash
+- Neutropenia
+- Hypertriglyceridemia
+- Hyperglycemia
+- ALT elevations
+- AST elevations"
+ZYDELIG,boxed warnings,"Hepatic Toxicity, Severe Diarrhea, Colitis, Pneumonitis, Intestinal Perforation"
+ZYDELIG,warnings and precautions,"hepatotoxicity, anaphylaxis, neutropenia, embryo-fetal toxicity, severe cutaneous reactions"
+KALBITOR,adverse reactions,"anaphylaxis, headache, nausea, diarrhea, pyrexia, injection site reactions, nasopharyngitis, fatigue, upper respiratory tract infection, vomiting, pruritus, upper abdominal pain, erythema, pain, irritation, urticaria, bruising, seroconversion, anti-ecallantide antibodies, neutralizing antibodies, IgE antibodies, postmarketing adverse reactions"
+KALBITOR,boxed warnings,"anaphylaxis, hypersensitivity reactions"
+KALBITOR,warnings and precautions,"anaphylaxis, hypersensitivity reactions, chest discomfort, flushing, pharyngeal edema, pruritus, rhinorrhea, sneezing, nasal congestion, throat irritation, urticaria, wheezing, hypotension, rash"
+ADCETRIS,adverse reactions,"The adverse drug event terms in the provided drug label excerpt are:
+Peripheral Neuropathy, Anaphylaxis, Infusion Reactions, Hematologic Toxicities, Serious Infections, Opportunistic Infections, Tumor Lysis Syndrome, Increased Toxicity, Severe Renal Impairment, Moderate or Severe Hepatic Impairment, Hepatotoxicity, Progressive Multifocal Leukoencephalopathy, Pulmonary Toxicity, Serious Dermatologic Reactions, Neutropenia, Peripheral Sensory Neuropathy, Fatigue, Nausea, Anemia, Upper Respiratory Tract Infection, Diarrhea, Pyrexia, Rash, Thrombocytopenia, Cough, Vomiting, Motor Neuropathy, Abdominal Pain, Pneumonitis, Interstitial Lung Disease, and Infusion Related Reactions."
+ADCETRIS,boxed warnings,"""PROGRESSIVE MULTIFOCAL LEUKOENCEPHALOPATHY (PML)"", ""JC virus infection"", ""PML"", ""death"""
+ADCETRIS,warnings and precautions,"Peripheral neuropathy, Anaphylaxis, Infusion reactions, Hematologic toxicities, Serious infections, Opportunistic infections, Tumor lysis syndrome, Hepatotoxicity, Pulmonary toxicity, Dermatologic reactions, Embryo-fetal toxicity"
+BESIVANCE,adverse reactions,"conjunctival redness, blurred vision, eye pain, eye irritation, eye pruritus, headache"
+BESIVANCE,warnings and precautions,"resistant, resistant organisms, bacterial conjunctivitis, super-infection"
+CLEVIPREX,adverse reactions,"Hypotension, reflex tachycardia, headache, nausea, vomiting, acute renal failure, atrial fibrillation, myocardial infarction, cardiac arrest, syncope, dyspnea, increased blood triglycerides, ileus, hypersensitivity, decreased oxygen saturation"
+CLEVIPREX,warnings and precautions,"hypotension, reflex tachycardia, negative inotropic effects, heart failure, rebound hypertension"
+XTANDI,adverse reactions,"seizure, asthenia/fatigue, back pain, decreased appetite, constipation, arthralgia, diarrhea, hot flush, upper respiratory tract infection, peripheral edema, dyspnea, musculoskeletal pain, weight decreased, headache, hypertension, dizziness/vertigo, spinal cord compression, cauda equina syndrome, paresthesia, mental impairment disorders, hypoesthesia, nasopharyngitis, sinusitis, rhinitis, pneumonia, lower respiratory tract infection, bronchitis, lung infection, insomnia, anxiety, hematuria, pollakiuria, fall, non-pathologic fractures, pruritus, dry skin, epistaxis, dysgeusia, restless legs syndrome, gynecomastia, neutropenia, thrombocytopenia, elevations in ALT, elevations in bilirubin, infections or sepsis, fall-related injuries, joint injuries, hematomas, hypertensive crisis, hypertension, hypertensive crisis"
+XTANDI,warnings and precautions,"seizure, loss of consciousness, cerebral vascular accident, brain metastases, brain injury"
+BOSULIF,adverse reactions,"gastrointestinal toxicity, myelosuppression, hepatotoxicity, fluid retention, renal toxicity, anaphylactic shock, diarrhea, nausea, thrombocytopenia, vomiting, abdominal pain, rash, anemia, pyrexia, fatigue, increased alanine aminotransferase, headache, cough, increased aspartate aminotransferase, neutropenia, edema, arthralgia, decreased appetite, respiratory tract infection, nasopharyngitis, back pain, asthenia, pruritus, dizziness, dyspnea, QTcF interval, febrile neutropenia, pericardial effusion, pericarditis, tinnitus, gastritis, acute pancreatitis, gastrointestinal hemorrhage, chest pain, pain, hepatotoxicity, toxic hepatitis, cytolytic hepatitis, abnormal hepatic function, liver injury, drug hypersensitivity, anaphylactic shock, pneumonia, bronchitis, electrocardiogram QT prolonged, increased blood creatine phosphokinase, increased blood creatinine, hyperkalemia, dehydration, myalgia, dysgeusia, acute renal failure, renal failure, pleural effusion, acute pulmonary edema, respiratory failure, pulmonary hypertension, urticaria, pruritus, acne, erythema multiforme, exfoliative rash, drug eruption"
+BOSULIF,warnings and precautions,"The adverse drug event terms in the given text are as follows:
+- Gastrointestinal Toxicity
+- Diarrhea
+- Nausea
+- Vomiting
+- Abdominal pain
+- Myelosuppression
+- Thrombocytopenia
+- Anemia
+- Neutropenia
+- Hepatic Toxicity
+- Liver injury
+- ALT elevation
+- AST elevation
+- Fluid Retention
+- Pericardial effusion
+- Pleural effusion
+- Pulmonary edema
+- Peripheral edema
+- Renal Toxicity
+- Decline in estimated glomerular filtration rate (eGFR)
+- Embryofetal Toxicity
+- Fetal harm
+- Embryofetal toxicities
+- Pregnancy
+- Pregnant woman
+- Females of reproductive potential
+- Hazard to the fetus"
+CARBAGLU,adverse reactions,"infections, vomiting, abdominal pain, pyrexia, tonsilitis, anemia, ear infection, diarrhea, nasopharyngitis, headache"
+CARBAGLU,warnings and precautions,"Hyperammonemia, injury to the brain, death, plasma ammonia levels, age, protein restriction, NAGS deficiency, dialysis, hemodialysis, brain injury, brain damage, metabolic disorders, neurological status, laboratory tests, clinical responses, nutritional management, protein catabolism, caloric supplementation, catabolism, nitrogen turnover"
+SIMPONI,adverse reactions,"upper respiratory tract infection, viral infection, bronchitis, hypertension, rash, serious infection, malignancy, liver enzyme elevations, autoimmune disorders and autoantibodies, administration reactions, immunogenicity, pyrexia, leukopenia, superficial fungal infection, sinusitis, abscess, lower respiratory tract infection (pneumonia), pyelonephritis, dizziness, paresthesia, constipation, melanoma, serious systemic hypersensitivity reactions (including anaphylactic reaction), sarcoidosis, interstitial lung disease, skin exfoliation, bullous skin reactions"
+SIMPONI,boxed warnings,"infections, tuberculosis, bacterial sepsis, invasive fungal, histoplasmosis, opportunistic infections, lymphoma, malignancies"
+SIMPONI,warnings and precautions,"I found the following adverse drug event terms in the text:
+
+- Serious infections
+- Opportunistic infections
+- Bacterial infections
+- Mycobacterial infections
+- Invasive fungal infections
+- Viral infections
+- Parasitic infections
+- Aspergillosis
+- Blastomycosis
+- Candidiasis
+- Coccidioidomycosis
+- Histoplasmosis
+- Legionellosis
+- Listeriosis
+- Pneumocystosis
+- Tuberculosis
+- Hepatitis B reactivation
+- Malignancies
+- Lymphoma
+- Heart failure
+- Demyelinating disease
+- Hypersensitivity reactions
+
+These are the adverse drug event terms found in the provided text."
+BENLYSTA,adverse reactions,"Mortality, Serious Infections, Malignancy, Hypersensitivity Reactions, Anaphylaxis, Infusion Reactions, Depression, Nausea, Diarrhea, Pyrexia, Nasopharyngitis, Bronchitis, Insomnia, Pain in extremity, Migraine, Pharyngitis, Cystitis, Leukopenia, Gastroenteritis viral, Fatal anaphylaxis"
+BENLYSTA,warnings and precautions,"deaths, Serious Infections, Hypersensitivity Reactions, Anaphylaxis, Depression, Immunization"
+TOVIAZ,adverse reactions,"dry mouth, constipation, angina, chest pain, gastroenteritis, QT prolongation, dyspepsia, nausea, abdominal pain, dry eyes, dysuria, urinary retention, cough, dry throat, edema peripheral, back pain, insomnia, rash, blurred vision, palpitations, hypersensitivity reactions, angioedema, face edema, dizziness, headache, somnolence, urticaria, pruritus"
+TOVIAZ,warnings and precautions,"angioedema, urinary retention, decreased gastrointestinal motility, narrow-angle glaucoma, somnolence, myasthenia gravis"
+ENTEREG,adverse reactions,The adverse drug event terms in the text are: dyspepsia
+ENTEREG,boxed warnings,"myocardial infarction, increased risk, adverse event"
+ENTEREG,warnings and precautions,"Myocardial infarctions, abdominal pain, nausea, vomiting, diarrhea, severe hepatic impairment, end-stage renal disease, complete gastrointestinal obstruction, surgery, pancreatic anastomosis, gastric anastomosis"
+VIZAMYL,adverse reactions,"flushing, headache, increased blood pressure, nausea, dizziness, hypersensitivity reaction, dyspnea, chest pressure"
+VIZAMYL,warnings and precautions,"hypersensitivity reactions, flushing, dyspnea, image interpretation errors, false positives, radiation risk"
+AMPYRA,adverse reactions,"Seizures, Anaphylaxis, Urinary Tract Infections, Insomnia, Dizziness, Headache, Nausea, Asthenia, Back Pain, Balance Disorder, Multiple Sclerosis Relapse, Paresthesia, Nasopharyngitis, Constipation, Dyspepsia, Pharyngolaryngeal Pain"
+AMPYRA,warnings and precautions,"seizures, anaphylaxis, urinary tract infections"

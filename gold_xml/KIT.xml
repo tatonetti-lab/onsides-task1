@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Label drug="kit" track="TAC2017_ADR">
+  <Text>
+    <Section name="adverse reactions" id="S1">    6 ADVERSE REACTIONS
+
+  EXCERPT:   The most common adverse reactions (incidence &lt; 1%) are injection site irritation and/or pain.  (  6.1  )
+
+
+
+   To report SUSPECTED ADVERSE REACTIONS, contact Navidea Biopharmaceuticals, Inc.  at 1-800-476-5270 or www.lymphoseek.com or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch  
+
+
+
+ 
+
+  6.1 Clinical Trials Experience
+
+  Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice.
+
+
+
+ In open label, single arm clinical trials, 553 patients with either breast cancer, malanoma, or squamous cell carcinoma of the oral cavity, skin, and lip received Lymphoseek.  No patients experienced serious adverse reactions.  Injection site irritation (4 patients; 0.7%) and pain (1 patient; 0.2%) were reported.
+</Section>
+    <Section name="warnings and precautions" id="S2">    5 WARNINGS AND PRECAUTIONS
+
+
+
+  EXCERPT:    Hypersensitivity: Ask patients about prior reactions to drugs, especially dextran or modified forms of dextran.  Observe for hypersensitivity signs and symptoms following Lymphoseek injection.  Have resuscitation equipment and trained personnel immediately available. (  5.1  )  
+
+
+
+ 
+
+
+
+   5.1 Hypersensitivity Reactions
+
+
+
+   Lymphoseek may pose a risk of hypersensitivity reactions due to its chemical similarity to dextran [see  Description (11)  ]  .  Serious hypersensitivity reactions have been associated with dextran and modified forms of dextran (such as iron dextran drugs).  
+
+
+
+ Before administering Lymphoseek, ask patients about prior hypersensitivity reactions to drugs, especially to dextran and modified forms of dextran.  Have resuscitation equipment and trained personnel immediately available at the time of Lymphoseek administration.
+
+
+
+    5.2 Radiation Risks
+
+
+
+   Any radiation-emitting product may increase the risk for cancer, especially in pediatric patients.  Adhere to the dose recommendations and ensure safe handling to minimize the risk for excessive radiation exposure to either patients or health care workers.  
+</Section>
+  </Text>
+  <Mentions>
+    <Mention id="M1" section="S1" type="AdverseReaction" start="93" len="25" str="injection site irritation" />
+    <Mention id="M2" section="S1" type="AdverseReaction" start="93,126" len="14,4" str="injection site pain" />
+    <Mention id="M3" section="S1" type="AdverseReaction" start="859" len="25" str="Injection site irritation" />
+    <Mention id="M4" section="S1" type="AdverseReaction" start="859,908" len="14,4" str="Injection site pain" />
+    <Mention id="M5" section="S2" type="AdverseReaction" start="48" len="16" str="Hypersensitivity" />
+    <Mention id="M6" section="S2" type="Factor" start="398" len="4" str="risk" />
+    <Mention id="M7" section="S2" type="AdverseReaction" start="406" len="26" str="hypersensitivity reactions" />
+  </Mentions>
+  <Relations>
+    <Relation id="RL1" type="Hypothetical" arg1="M7" arg2="M6" />
+  </Relations>
+  <Reactions>
+    <Reaction id="AR1" str="injection site irritation">
+      <Normalization id="AR1.N1" meddra_pt="Injection site irritation" meddra_pt_id="10022079" />
+    </Reaction>
+    <Reaction id="AR2" str="injection site pain">
+      <Normalization id="AR2.N1" meddra_pt="Injection site pain" meddra_pt_id="10022086" />
+    </Reaction>
+    <Reaction id="AR3" str="hypersensitivity">
+      <Normalization id="AR3.N1" meddra_pt="Hypersensitivity" meddra_pt_id="10020751" />
+    </Reaction>
+    <Reaction id="AR4" str="hypersensitivity reactions">
+      <Normalization id="AR4.N1" meddra_pt="Hypersensitivity" meddra_pt_id="10020751" meddra_llt="Hypersensitivity reaction" meddra_llt_id="10020756" />
+    </Reaction>
+  </Reactions>
+</Label>

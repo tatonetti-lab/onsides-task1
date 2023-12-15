@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Label drug="asclera" track="TAC2017_ADR">
+  <Text>
+    <Section name="adverse reactions" id="S1">    6 ADVERSE REACTIONS
+
+  EXCERPT:   The most common adverse reactions occurring at least 3% more frequently than on placebo are mild local reactions at the site of injection. (  6  )
+
+
+
+   To report SUSPECTED ADVERSE REACTIONS, contact Merz North America, Inc. at 1-866-862-1211 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.  
+
+
+
+ 
+
+  6.1 Clinical Study Experience
+
+  Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice.
+
+
+
+ In 5 controlled randomized clinical trials, Asclera has been administered to 401 patients with small or very small varicose veins (reticular and spider veins) and compared with another sclerosing agent and with placebo. Patients were 18 to 70 years old. The patient population was predominately female and consisted of Caucasian and Asian patients.
+
+
+
+ Table 1 shows adverse events more common with Asclera or sodium tetradecyl sulfate (STS) 1% than with placebo by at least 3% in the placebo- controlled EASI study  (see  Clinical Studies [14]  )  . All of these were injection site reactions and most were mild.
+
+
+
+ Table 1: Adverse Reactions in EASI-study 
+                                  ASCLERA (180 patients)    STS 1% (105 patients)    Placebo (53 patients)    
+  
+ Injection site haematoma                  42%                       65%                      19%             
+ Injection site irritation                 41%                       73%                      30%             
+ Injection site discoloration              38%                       74%                      4%              
+ Injection site pain                       24%                       31%                      9%              
+ Injection site pruritus                   19%                       27%                      4%              
+ Injection site warmth                     16%                       21%                      6%              
+ Neovascularisation                         8%                       20%                      4%              
+ Injection site thrombosis                  6%                       1%                       0%              
+          Ultrasound examinations at one week (+/-3 days) and 12 weeks (+/-2 weeks) after treatment did not reveal deep vein thrombosis in any treatment group.
+ 
+
+   6.2 Post-marketing Safety Experience
+
+  The following adverse reactions have been reported during use of polidocanol in world-wide experience; in some of these cases these adverse events have been serious or troublesome. Because these reactions are reported voluntarily from a population of uncertain size and without a control group, it is not possible to estimate their frequency reliably or to establish a causal relationship to drug exposure.
+
+
+
+   Immune system disorders:  Anaphylactic shock, angioedema, urticaria generalized, asthma
+
+
+
+   Nervous system disorders:  Cerebrovascular accident, migraine, paresthesia (local), loss of consciousness, confusional state, dizziness
+
+
+
+   Cardiac disorders:  Cardiac arrest, palpitations
+
+
+
+   Vascular disorders:  Deep vein thrombosis, pulmonary embolism, syncope vasovagal, circulatory collapse, vasculitis
+
+
+
+   Respiratory, thoracic and mediastinal disorders:  Dyspnea
+
+
+
+   Skin and subcutaneous tissue disorders  : Skin hyperpigmentation, dermatitis allergic, hypertrichosis (in the area of sclerotherapy)
+
+
+
+   General disorders and injection site conditions  : Injection site necrosis, pyrexia, hot flush
+
+
+
+   Injury, poisoning and procedural complications  : Nerve injury
+</Section>
+    <Section name="warnings and precautions" id="S2">    5 WARNINGS AND PRECAUTIONS
+
+
+
+   EXCERPT:    *  Be prepared to treat anaphylaxis. (  5.1  ) 
+ *  Do not inject intra-arterially. (  5.2  ) 
+ *  Do not inject intra-perivascularily. (  5.3  ) 
+    
+ 
+
+   5.1 Anaphylaxis
+
+
+
+   Severe allergic reactions have been reported following polidocanol use, including anaphylactic reactions, some of them fatal. Severe reactions are more frequent with use of larger volumes (&gt; 3 mL). The dose of polidocanol should therefore be minimized. Be prepared to treat anaphylaxis appropriately.  
+
+
+
+ Severe adverse local effects, including tissue necrosis, may occur following extravasation; therefore, care should be taken in intravenous needle placement and the smallest effective volume at each injection site should be used.
+
+
+
+ After the injection session is completed, apply compression with a stocking or bandage, and have the patient walk for 15-20 minutes. Keep the patient under supervision during this period to treat any anaphylactic or allergic reaction (see  Dosage and Administration [2]  )  .
+
+
+
+    5.2 Accidental Intra-arterial Injection
+
+
+
+  Intra-arterial injection can cause severe necrosis, ischemia or gangrene. If this occurs consult a vascular surgeon immediately.
+
+
+
+    5.3 Inadvertent Perivascular Injection
+
+
+
+  Inadvertent perivascular injection of Asclera can cause pain. If pain is severe, a local anesthetic (without adrenaline) may be injected.
+</Section>
+  </Text>
+  <Mentions>
+    <Mention id="M1" section="S1" type="Severity" start="130" len="4" str="mild" />
+    <Mention id="M2" section="S1" type="AdverseReaction" start="135" len="40" str="local reactions at the site of injection" />
+    <Mention id="M3" section="S1" type="AdverseReaction" start="1211" len="24" str="injection site reactions" />
+    <Mention id="M4" section="S1" type="AdverseReaction" start="1211" len="24" str="injection site reactions" />
+    <Mention id="M5" section="S1" type="Severity" start="1250" len="4" str="mild" />
+    <Mention id="M6" section="S1" type="AdverseReaction" start="1417" len="24" str="Injection site haematoma" />
+    <Mention id="M7" section="S1" type="AdverseReaction" start="1528" len="25" str="Injection site irritation" />
+    <Mention id="M8" section="S1" type="AdverseReaction" start="1639" len="28" str="Injection site discoloration" />
+    <Mention id="M9" section="S1" type="AdverseReaction" start="1750" len="19" str="Injection site pain" />
+    <Mention id="M10" section="S1" type="AdverseReaction" start="1861" len="23" str="Injection site pruritus" />
+    <Mention id="M11" section="S1" type="AdverseReaction" start="1972" len="21" str="Injection site warmth" />
+    <Mention id="M12" section="S1" type="AdverseReaction" start="2083" len="18" str="Neovascularisation" />
+    <Mention id="M13" section="S1" type="AdverseReaction" start="2194" len="25" str="Injection site thrombosis" />
+    <Mention id="M14" section="S1" type="Negation" start="2408" len="3" str="not" />
+    <Mention id="M15" section="S1" type="AdverseReaction" start="2419" len="20" str="deep vein thrombosis" />
+    <Mention id="M16" section="S1" type="AdverseReaction" start="2949" len="18" str="Anaphylactic shock" />
+    <Mention id="M17" section="S1" type="AdverseReaction" start="2969" len="10" str="angioedema" />
+    <Mention id="M18" section="S1" type="AdverseReaction" start="2981" len="21" str="urticaria generalized" />
+    <Mention id="M19" section="S1" type="AdverseReaction" start="3004" len="6" str="asthma" />
+    <Mention id="M20" section="S1" type="AdverseReaction" start="3044" len="24" str="Cerebrovascular accident" />
+    <Mention id="M21" section="S1" type="AdverseReaction" start="3070" len="8" str="migraine" />
+    <Mention id="M22" section="S1" type="AdverseReaction" start="3080,3093" len="11,5" str="paresthesia local" />
+    <Mention id="M23" section="S1" type="AdverseReaction" start="3101" len="21" str="loss of consciousness" />
+    <Mention id="M24" section="S1" type="AdverseReaction" start="3124" len="17" str="confusional state" />
+    <Mention id="M25" section="S1" type="AdverseReaction" start="3143" len="9" str="dizziness" />
+    <Mention id="M26" section="S1" type="AdverseReaction" start="3179" len="14" str="Cardiac arrest" />
+    <Mention id="M27" section="S1" type="AdverseReaction" start="3195" len="12" str="palpitations" />
+    <Mention id="M28" section="S1" type="AdverseReaction" start="3235" len="20" str="Deep vein thrombosis" />
+    <Mention id="M29" section="S1" type="AdverseReaction" start="3257" len="18" str="pulmonary embolism" />
+    <Mention id="M30" section="S1" type="AdverseReaction" start="3277" len="17" str="syncope vasovagal" />
+    <Mention id="M31" section="S1" type="AdverseReaction" start="3296" len="20" str="circulatory collapse" />
+    <Mention id="M32" section="S1" type="AdverseReaction" start="3318" len="10" str="vasculitis" />
+    <Mention id="M33" section="S1" type="AdverseReaction" start="3385" len="7" str="Dyspnea" />
+    <Mention id="M34" section="S1" type="AdverseReaction" start="3441" len="22" str="Skin hyperpigmentation" />
+    <Mention id="M35" section="S1" type="AdverseReaction" start="3465" len="19" str="dermatitis allergic" />
+    <Mention id="M36" section="S1" type="AdverseReaction" start="3486,3502" len="14,28" str="hypertrichosis in the area of sclerotherapy" />
+    <Mention id="M37" section="S1" type="AdverseReaction" start="3589" len="23" str="Injection site necrosis" />
+    <Mention id="M38" section="S1" type="AdverseReaction" start="3614" len="7" str="pyrexia" />
+    <Mention id="M39" section="S1" type="AdverseReaction" start="3623" len="9" str="hot flush" />
+    <Mention id="M40" section="S1" type="AdverseReaction" start="3689" len="12" str="Nerve injury" />
+    <Mention id="M41" section="S2" type="Severity" start="229" len="6" str="Severe" />
+    <Mention id="M42" section="S2" type="AdverseReaction" start="236" len="18" str="allergic reactions" />
+    <Mention id="M43" section="S2" type="AdverseReaction" start="311" len="22" str="anaphylactic reactions" />
+    <Mention id="M44" section="S2" type="AdverseReaction" start="348" len="5" str="fatal" />
+    <Mention id="M45" section="S2" type="Severity" start="536" len="6" str="Severe" />
+    <Mention id="M46" section="S2" type="AdverseReaction" start="543" len="21" str="adverse local effects" />
+    <Mention id="M47" section="S2" type="AdverseReaction" start="551,576" len="5,15" str="local tissue necrosis" />
+    <Mention id="M48" section="S2" type="Factor" start="593" len="3" str="may" />
+  </Mentions>
+  <Relations>
+    <Relation id="RL1" type="Effect" arg1="M2" arg2="M1" />
+    <Relation id="RL2" type="Effect" arg1="M4" arg2="M5" />
+    <Relation id="RL3" type="Negated" arg1="M15" arg2="M14" />
+    <Relation id="RL4" type="Effect" arg1="M42" arg2="M41" />
+    <Relation id="RL5" type="Effect" arg1="M46" arg2="M45" />
+    <Relation id="RL6" type="Hypothetical" arg1="M46" arg2="M48" />
+  </Relations>
+  <Reactions>
+    <Reaction id="AR1" str="local reactions at the site of injection">
+      <Normalization id="AR1.N1" meddra_pt="Injection site reaction" meddra_pt_id="10022095" />
+    </Reaction>
+    <Reaction id="AR2" str="injection site reactions">
+      <Normalization id="AR2.N1" meddra_pt="Injection site reaction" meddra_pt_id="10022095" />
+    </Reaction>
+    <Reaction id="AR3" str="injection site haematoma">
+      <Normalization id="AR3.N1" meddra_pt="Injection site haematoma" meddra_pt_id="10022066" />
+    </Reaction>
+    <Reaction id="AR4" str="injection site irritation">
+      <Normalization id="AR4.N1" meddra_pt="Injection site irritation" meddra_pt_id="10022079" />
+    </Reaction>
+    <Reaction id="AR5" str="injection site discoloration">
+      <Normalization id="AR5.N1" meddra_pt="Injection site discolouration" meddra_pt_id="10051572" meddra_llt="Injection site discoloration" meddra_llt_id="10055530" />
+    </Reaction>
+    <Reaction id="AR6" str="injection site pain">
+      <Normalization id="AR6.N1" meddra_pt="Injection site pain" meddra_pt_id="10022086" />
+    </Reaction>
+    <Reaction id="AR7" str="injection site pruritus">
+      <Normalization id="AR7.N1" meddra_pt="Injection site pruritus" meddra_pt_id="10022093" />
+    </Reaction>
+    <Reaction id="AR8" str="injection site warmth">
+      <Normalization id="AR8.N1" meddra_pt="Injection site warmth" meddra_pt_id="10022112" />
+    </Reaction>
+    <Reaction id="AR9" str="neovascularisation">
+      <Normalization id="AR9.N1" meddra_pt="Neovascularisation" meddra_pt_id="10029113" />
+    </Reaction>
+    <Reaction id="AR10" str="injection site thrombosis">
+      <Normalization id="AR10.N1" meddra_pt="Injection site thrombosis" meddra_pt_id="10022104" />
+    </Reaction>
+    <Reaction id="AR11" str="anaphylactic shock">
+      <Normalization id="AR11.N1" meddra_pt="Anaphylactic shock" meddra_pt_id="10002199" />
+    </Reaction>
+    <Reaction id="AR12" str="angioedema">
+      <Normalization id="AR12.N1" meddra_pt="Angioedema" meddra_pt_id="10002424" />
+    </Reaction>
+    <Reaction id="AR13" str="urticaria generalized">
+      <Normalization id="AR13.N1" meddra_pt="Urticaria" meddra_pt_id="10046735" meddra_llt="Generalized urticaria" meddra_llt_id="10049198" />
+    </Reaction>
+    <Reaction id="AR14" str="asthma">
+      <Normalization id="AR14.N1" meddra_pt="Asthma" meddra_pt_id="10003553" />
+    </Reaction>
+    <Reaction id="AR15" str="cerebrovascular accident">
+      <Normalization id="AR15.N1" meddra_pt="Cerebrovascular accident" meddra_pt_id="10008190" />
+    </Reaction>
+    <Reaction id="AR16" str="migraine">
+      <Normalization id="AR16.N1" meddra_pt="Migraine" meddra_pt_id="10027599" />
+    </Reaction>
+    <Reaction id="AR17" str="paresthesia local">
+      <Normalization id="AR17.N1" meddra_pt="Paraesthesia" meddra_pt_id="10033775" meddra_llt="Paresthesia" meddra_llt_id="10033987" />
+    </Reaction>
+    <Reaction id="AR18" str="loss of consciousness">
+      <Normalization id="AR18.N1" meddra_pt="Loss of consciousness" meddra_pt_id="10024855" />
+    </Reaction>
+    <Reaction id="AR19" str="confusional state">
+      <Normalization id="AR19.N1" meddra_pt="Confusional state" meddra_pt_id="10010305" />
+    </Reaction>
+    <Reaction id="AR20" str="dizziness">
+      <Normalization id="AR20.N1" meddra_pt="Dizziness" meddra_pt_id="10013573" />
+    </Reaction>
+    <Reaction id="AR21" str="cardiac arrest">
+      <Normalization id="AR21.N1" meddra_pt="Cardiac arrest" meddra_pt_id="10007515" />
+    </Reaction>
+    <Reaction id="AR22" str="palpitations">
+      <Normalization id="AR22.N1" meddra_pt="Palpitations" meddra_pt_id="10033557" />
+    </Reaction>
+    <Reaction id="AR23" str="deep vein thrombosis">
+      <Normalization id="AR23.N1" meddra_pt="Deep vein thrombosis" meddra_pt_id="10051055" />
+    </Reaction>
+    <Reaction id="AR24" str="pulmonary embolism">
+      <Normalization id="AR24.N1" meddra_pt="Pulmonary embolism" meddra_pt_id="10037377" />
+    </Reaction>
+    <Reaction id="AR25" str="syncope vasovagal">
+      <Normalization id="AR25.N1" meddra_pt="Syncope" meddra_pt_id="10042772" meddra_llt="Syncope vasovagal" meddra_llt_id="10042777" />
+    </Reaction>
+    <Reaction id="AR26" str="circulatory collapse">
+      <Normalization id="AR26.N1" meddra_pt="Circulatory collapse" meddra_pt_id="10009192" />
+    </Reaction>
+    <Reaction id="AR27" str="vasculitis">
+      <Normalization id="AR27.N1" meddra_pt="Vasculitis" meddra_pt_id="10047115" />
+    </Reaction>
+    <Reaction id="AR28" str="dyspnea">
+      <Normalization id="AR28.N1" meddra_pt="Dyspnoea" meddra_pt_id="10013968" meddra_llt="Dyspnea" meddra_llt_id="10013963" />
+    </Reaction>
+    <Reaction id="AR29" str="skin hyperpigmentation">
+      <Normalization id="AR29.N1" meddra_pt="Skin hyperpigmentation" meddra_pt_id="10040865" />
+    </Reaction>
+    <Reaction id="AR30" str="dermatitis allergic">
+      <Normalization id="AR30.N1" meddra_pt="Dermatitis allergic" meddra_pt_id="10012434" />
+    </Reaction>
+    <Reaction id="AR31" str="hypertrichosis in the area of sclerotherapy">
+      <Normalization id="AR31.N1" meddra_pt="Application site hypertrichosis" meddra_pt_id="10075546" />
+    </Reaction>
+    <Reaction id="AR32" str="injection site necrosis">
+      <Normalization id="AR32.N1" meddra_pt="Injection site necrosis" meddra_pt_id="10022082" />
+    </Reaction>
+    <Reaction id="AR33" str="pyrexia">
+      <Normalization id="AR33.N1" meddra_pt="Pyrexia" meddra_pt_id="10037660" />
+    </Reaction>
+    <Reaction id="AR34" str="hot flush">
+      <Normalization id="AR34.N1" meddra_pt="Hot flush" meddra_pt_id="10060800" />
+    </Reaction>
+    <Reaction id="AR35" str="nerve injury">
+      <Normalization id="AR35.N1" meddra_pt="Nerve injury" meddra_pt_id="10052897" />
+    </Reaction>
+    <Reaction id="AR36" str="allergic reactions">
+      <Normalization id="AR36.N1" meddra_pt="Hypersensitivity" meddra_pt_id="10020751" meddra_llt="Allergic reaction" meddra_llt_id="10001718" />
+    </Reaction>
+    <Reaction id="AR37" str="anaphylactic reactions">
+      <Normalization id="AR37.N1" meddra_pt="Anaphylactic reaction" meddra_pt_id="10002198" />
+    </Reaction>
+    <Reaction id="AR38" str="fatal">
+      <Normalization id="AR38.N1" meddra_pt="Death" meddra_pt_id="10011906" />
+    </Reaction>
+    <Reaction id="AR39" str="adverse local effects">
+      <Normalization id="AR39.N1" meddra_pt="Local reaction" meddra_pt_id="10024769" />
+    </Reaction>
+    <Reaction id="AR40" str="local tissue necrosis">
+      <Normalization id="AR40.N1" meddra_pt="Skin necrosis" meddra_pt_id="10040893" />
+    </Reaction>
+  </Reactions>
+</Label>
