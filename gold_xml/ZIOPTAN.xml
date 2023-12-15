@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Label drug="zioptan" track="TAC2017_ADR">
+  <Text>
+    <Section name="adverse reactions" id="S1">    6 ADVERSE REACTIONS
+
+   EXCERPT:    *  Most common ocular adverse reaction is conjunctival hyperemia (range 4% to 20%). (  6.1  ) 
+      To report SUSPECTED ADVERSE REACTIONS, contact Akorn, Inc. at 1-800-932-5676 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.  
+ 
+
+ 
+
+  6.1 Clinical Studies Experience
+
+  Because clinical studies are conducted under widely varying conditions, adverse reaction rates observed in the clinical studies of a drug cannot be directly compared to rates in the clinical studies of another drug and may not reflect the rates observed in practice.
+
+
+
+ Preservative-containing or preservative-free tafluprost 0.0015% was evaluated in 905 patients in five controlled clinical studies of up to 24-months duration. The most common adverse reaction observed in patients treated with tafluprost was conjunctival hyperemia which was reported in a range of 4% to 20% of patients. Approximately 1% of patients discontinued therapy due to ocular adverse reactions.
+
+
+
+ Ocular adverse reactions reported at an incidence of &gt;=2% in these clinical studies included ocular stinging/irritation (7%), ocular pruritus including allergic conjunctivitis (5%), cataract (3%), dry eye (3%), ocular pain (3%), eyelash darkening (2%), growth of eyelashes (2%) and vision blurred (2%).
+
+
+
+ Nonocular adverse reactions reported at an incidence of 2% to 6% in these clinical studies in patients treated with tafluprost 0.0015% were headache (6%), common cold (4%), cough (3%) and urinary tract infection (2%).
+
+
+
+   6.2 Postmarketing Experience
+
+  The following adverse reactions have been identified during postapproval use of tafluprost. Because postapproval adverse reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure.
+
+
+
+   Respiratory disorders:  exacerbation of asthma, dyspnea
+
+
+
+   Eye disorders:  iritis/uveitis
+
+
+
+ In postmarketing use with prostaglandin analogs, periorbital and lid changes including deepening of the eyelid sulcus have been observed.
+</Section>
+    <Section name="warnings and precautions" id="S2">    5 WARNINGS AND PRECAUTIONS
+
+
+
+   EXCERPT:    *  Pigmentation 
+    Pigmentation of the iris, periorbital tissue (eyelid) and eyelashes can occur. Iris pigmentation is likely to be permanent. (  5.1  )
+ 
+
+ *  Eyelash Changes 
+    Gradual changes to eyelashes including increased length, thickness and number of lashes. Usually reversible. (  5.2  )
+ 
+
+ 
+
+
+
+   5.1 Pigmentation
+
+
+
+  Tafluprost ophthalmic solution has been reported to cause changes to pigmented tissues. The most frequently reported changes have been increased pigmentation of the iris, periorbital tissue (eyelid) and eyelashes. Pigmentation is expected to increase as long as tafluprost is administered. The pigmentation change is due to increased melanin content in the melanocytes rather than to an increase in the number of melanocytes. After discontinuation of tafluprost, pigmentation of the iris is likely to be permanent, while pigmentation of the periorbital tissue and eyelash changes have been reported to be reversible in some patients. Patients who receive treatment should be informed of the possibility of increased pigmentation. The long term effects of increased pigmentation are not known.
+
+
+
+ Iris color change may not be noticeable for several months to years. Typically, the brown pigmentation around the pupil spreads concentrically towards the periphery of the iris and the entire iris or parts of the iris become more brownish. Neither nevi nor freckles of the iris appear to be affected by treatment. While treatment with ZIOPTAN  (r)  can be continued in patients who develop noticeably increased iris pigmentation, these patients should be examined regularly. [See Patient Counseling Information (  17.3  )].  
+
+
+
+    5.2 Eyelash Changes
+
+
+
+  ZIOPTAN  (r)  may gradually change eyelashes and vellus hair in the treated eye. These changes include increased length, color, thickness, shape and number of lashes. Eyelash changes are usually reversible upon discontinuation of treatment.
+
+
+
+    5.3 Intraocular Inflammation
+
+
+
+  ZIOPTAN  (r)  should be used with caution in patients with active intraocular inflammation (e.g., iritis/uveitis) because the inflammation may be exacerbated.
+
+
+
+    5.4 Macular Edema
+
+
+
+  Macular edema, including cystoid macular edema, has been reported during treatment with prostaglandin F2alpha analogs. ZIOPTAN  (r)  should be used with caution in aphakic patients, in pseudophakic patients with a torn posterior lens capsule, or in patients with known risk factors for macular edema.
+</Section>
+  </Text>
+  <Mentions>
+    <Mention id="M1" section="S1" type="AdverseReaction" start="55" len="23" str="ocular adverse reaction" />
+    <Mention id="M2" section="S1" type="AdverseReaction" start="82" len="22" str="conjunctival hyperemia" />
+    <Mention id="M3" section="S1" type="AdverseReaction" start="825" len="22" str="conjunctival hyperemia" />
+    <Mention id="M4" section="S1" type="AdverseReaction" start="961" len="24" str="ocular adverse reactions" />
+    <Mention id="M5" section="S1" type="AdverseReaction" start="991" len="24" str="Ocular adverse reactions" />
+    <Mention id="M6" section="S1" type="AdverseReaction" start="1084" len="15" str="ocular stinging" />
+    <Mention id="M7" section="S1" type="AdverseReaction" start="1084,1100" len="6,10" str="ocular irritation" />
+    <Mention id="M8" section="S1" type="AdverseReaction" start="1117" len="15" str="ocular pruritus" />
+    <Mention id="M9" section="S1" type="AdverseReaction" start="1143" len="23" str="allergic conjunctivitis" />
+    <Mention id="M10" section="S1" type="AdverseReaction" start="1173" len="8" str="cataract" />
+    <Mention id="M11" section="S1" type="AdverseReaction" start="1188" len="7" str="dry eye" />
+    <Mention id="M12" section="S1" type="AdverseReaction" start="1202" len="11" str="ocular pain" />
+    <Mention id="M13" section="S1" type="AdverseReaction" start="1220" len="17" str="eyelash darkening" />
+    <Mention id="M14" section="S1" type="AdverseReaction" start="1244" len="19" str="growth of eyelashes" />
+    <Mention id="M15" section="S1" type="AdverseReaction" start="1273" len="14" str="vision blurred" />
+    <Mention id="M16" section="S1" type="AdverseReaction" start="1438" len="8" str="headache" />
+    <Mention id="M17" section="S1" type="AdverseReaction" start="1453" len="11" str="common cold" />
+    <Mention id="M18" section="S1" type="AdverseReaction" start="1471" len="5" str="cough" />
+    <Mention id="M19" section="S1" type="AdverseReaction" start="1486" len="23" str="urinary tract infection" />
+    <Mention id="M20" section="S1" type="AdverseReaction" start="1893" len="22" str="exacerbation of asthma" />
+    <Mention id="M21" section="S1" type="AdverseReaction" start="1917" len="7" str="dyspnea" />
+    <Mention id="M22" section="S1" type="AdverseReaction" start="1947" len="6" str="iritis" />
+    <Mention id="M23" section="S1" type="AdverseReaction" start="1954" len="7" str="uveitis" />
+    <Mention id="M24" section="S1" type="DrugClass" start="1992" len="21" str="prostaglandin analogs" />
+    <Mention id="M25" section="S1" type="AdverseReaction" start="2015,2035" len="11,7" str="periorbital changes" />
+    <Mention id="M26" section="S1" type="AdverseReaction" start="2031" len="11" str="lid changes" />
+    <Mention id="M27" section="S1" type="AdverseReaction" start="2053" len="30" str="deepening of the eyelid sulcus" />
+    <Mention id="M28" section="S2" type="AdverseReaction" start="70" len="24" str="Pigmentation of the iris" />
+    <Mention id="M29" section="S2" type="AdverseReaction" start="70,96" len="12,18" str="Pigmentation periorbital tissue" />
+    <Mention id="M30" section="S2" type="AdverseReaction" start="70,116" len="12,6" str="Pigmentation eyelid" />
+    <Mention id="M31" section="S2" type="AdverseReaction" start="70,128" len="12,9" str="Pigmentation eyelashes" />
+    <Mention id="M32" section="S2" type="Factor" start="138" len="3" str="can" />
+    <Mention id="M33" section="S2" type="AdverseReaction" start="240" len="20" str="changes to eyelashes" />
+    <Mention id="M34" section="S2" type="AdverseReaction" start="251,271" len="9,16" str="eyelashes increased length" />
+    <Mention id="M35" section="S2" type="AdverseReaction" start="251,271,289" len="9,9,9" str="eyelashes increased thickness" />
+    <Mention id="M36" section="S2" type="AdverseReaction" start="271,303" len="9,16" str="increased number of lashes" />
+    <Mention id="M37" section="S2" type="AdverseReaction" start="442" len="28" str="changes to pigmented tissues" />
+    <Mention id="M38" section="S2" type="AdverseReaction" start="519" len="34" str="increased pigmentation of the iris" />
+    <Mention id="M39" section="S2" type="AdverseReaction" start="519,555" len="29,18" str="increased pigmentation of the periorbital tissue" />
+    <Mention id="M40" section="S2" type="AdverseReaction" start="519,575" len="29,6" str="increased pigmentation of the eyelid" />
+    <Mention id="M41" section="S2" type="AdverseReaction" start="519,587" len="29,9" str="increased pigmentation of the eyelashes" />
+    <Mention id="M42" section="S2" type="AdverseReaction" start="847" len="24" str="pigmentation of the iris" />
+    <Mention id="M43" section="S2" type="Severity" start="888" len="9" str="permanent" />
+    <Mention id="M44" section="S2" type="AdverseReaction" start="905" len="38" str="pigmentation of the periorbital tissue" />
+    <Mention id="M45" section="S2" type="AdverseReaction" start="948" len="15" str="eyelash changes" />
+    <Mention id="M46" section="S2" type="Severity" start="989" len="10" str="reversible" />
+    <Mention id="M47" section="S2" type="AdverseReaction" start="1181" len="17" str="Iris color change" />
+    <Mention id="M48" section="S2" type="Negation" start="1421" len="7" str="Neither" />
+    <Mention id="M49" section="S2" type="AdverseReaction" start="1429,1447,1472" len="4,11,8" str="nevi of the iris affected" />
+    <Mention id="M50" section="S2" type="Negation" start="1434" len="3" str="nor" />
+    <Mention id="M51" section="S2" type="AdverseReaction" start="1438,1472" len="20,8" str="freckles of the iris affected" />
+    <Mention id="M52" section="S2" type="Factor" start="1753" len="3" str="may" />
+    <Mention id="M53" section="S2" type="AdverseReaction" start="1767" len="16" str="change eyelashes" />
+    <Mention id="M54" section="S2" type="AdverseReaction" start="1767,1788,1815" len="6,11,3" str="change vellus hair eye" />
+    <Mention id="M55" section="S2" type="AdverseReaction" start="1826,1860,1895" len="7,5,9" str="changes color of lashes" />
+    <Mention id="M56" section="S2" type="AdverseReaction" start="1826,1867,1895" len="7,9,9" str="changes thickness of lashes" />
+    <Mention id="M57" section="S2" type="AdverseReaction" start="1826,1878,1895" len="7,5,9" str="changes shape of lashes" />
+    <Mention id="M58" section="S2" type="AdverseReaction" start="1826,1888" len="7,16" str="changes number of lashes" />
+    <Mention id="M59" section="S2" type="AdverseReaction" start="1842,1895" len="16,9" str="increased length of lashes" />
+    <Mention id="M60" section="S2" type="AdverseReaction" start="1906" len="15" str="Eyelash changes" />
+    <Mention id="M61" section="S2" type="Severity" start="1934" len="10" str="reversible" />
+    <Mention id="M62" section="S2" type="AdverseReaction" start="2210" len="13" str="Macular edema" />
+    <Mention id="M63" section="S2" type="AdverseReaction" start="2235" len="21" str="cystoid macular edema" />
+    <Mention id="M64" section="S2" type="DrugClass" start="2298" len="29" str="prostaglandin F2alpha analogs" />
+  </Mentions>
+  <Relations>
+    <Relation id="RL1" type="Hypothetical" arg1="M25" arg2="M24" />
+    <Relation id="RL2" type="Hypothetical" arg1="M26" arg2="M24" />
+    <Relation id="RL3" type="Hypothetical" arg1="M27" arg2="M24" />
+    <Relation id="RL4" type="Hypothetical" arg1="M28" arg2="M32" />
+    <Relation id="RL5" type="Hypothetical" arg1="M29" arg2="M32" />
+    <Relation id="RL6" type="Hypothetical" arg1="M30" arg2="M32" />
+    <Relation id="RL7" type="Hypothetical" arg1="M31" arg2="M32" />
+    <Relation id="RL8" type="Effect" arg1="M42" arg2="M43" />
+    <Relation id="RL9" type="Effect" arg1="M44" arg2="M46" />
+    <Relation id="RL10" type="Effect" arg1="M45" arg2="M46" />
+    <Relation id="RL11" type="Negated" arg1="M49" arg2="M48" />
+    <Relation id="RL12" type="Negated" arg1="M51" arg2="M50" />
+    <Relation id="RL13" type="Hypothetical" arg1="M53" arg2="M52" />
+    <Relation id="RL14" type="Hypothetical" arg1="M54" arg2="M52" />
+    <Relation id="RL15" type="Effect" arg1="M60" arg2="M61" />
+    <Relation id="RL16" type="Hypothetical" arg1="M62" arg2="M64" />
+    <Relation id="RL17" type="Hypothetical" arg1="M63" arg2="M64" />
+  </Relations>
+  <Reactions>
+    <Reaction id="AR1" str="ocular adverse reaction">
+      <Normalization id="AR1.N1" meddra_pt="Eye symptom" meddra_pt_id="10075536" />
+    </Reaction>
+    <Reaction id="AR2" str="conjunctival hyperemia">
+      <Normalization id="AR2.N1" meddra_pt="Conjunctival hyperaemia" meddra_pt_id="10051625" meddra_llt="Conjunctival hyperemia" meddra_llt_id="10054364" />
+    </Reaction>
+    <Reaction id="AR3" str="ocular adverse reactions">
+      <Normalization id="AR3.N1" meddra_pt="Eye symptom" meddra_pt_id="10075536" />
+    </Reaction>
+    <Reaction id="AR4" str="ocular stinging">
+      <Normalization id="AR4.N1" meddra_pt="Eye pain" meddra_pt_id="10015958" meddra_llt="Ocular stinging" meddra_llt_id="10030065" />
+    </Reaction>
+    <Reaction id="AR5" str="ocular irritation">
+      <Normalization id="AR5.N1" meddra_pt="Eye irritation" meddra_pt_id="10015946" />
+    </Reaction>
+    <Reaction id="AR6" str="ocular pruritus">
+      <Normalization id="AR6.N1" meddra_pt="Eye pruritus" meddra_pt_id="10052140" />
+    </Reaction>
+    <Reaction id="AR7" str="allergic conjunctivitis">
+      <Normalization id="AR7.N1" meddra_pt="Conjunctivitis allergic" meddra_pt_id="10010744" meddra_llt="Allergic conjunctivitis" meddra_llt_id="10001709" />
+    </Reaction>
+    <Reaction id="AR8" str="cataract">
+      <Normalization id="AR8.N1" meddra_pt="Cataract" meddra_pt_id="10007739" />
+    </Reaction>
+    <Reaction id="AR9" str="dry eye">
+      <Normalization id="AR9.N1" meddra_pt="Dry eye" meddra_pt_id="10013774" />
+    </Reaction>
+    <Reaction id="AR10" str="ocular pain">
+      <Normalization id="AR10.N1" meddra_pt="Eye pain" meddra_pt_id="10015958" meddra_llt="Ocular pain" meddra_llt_id="10067261" />
+    </Reaction>
+    <Reaction id="AR11" str="eyelash darkening">
+      <Normalization id="AR11.N1" meddra_pt="Eyelash hyperpigmentation" meddra_pt_id="10064121" meddra_llt="Eyelash darkening" meddra_llt_id="10064122" />
+    </Reaction>
+    <Reaction id="AR12" str="growth of eyelashes">
+      <Normalization id="AR12.N1" meddra_pt="Growth of eyelashes" meddra_pt_id="10048462" />
+    </Reaction>
+    <Reaction id="AR13" str="vision blurred">
+      <Normalization id="AR13.N1" meddra_pt="Vision blurred" meddra_pt_id="10047513" />
+    </Reaction>
+    <Reaction id="AR14" str="headache">
+      <Normalization id="AR14.N1" meddra_pt="Headache" meddra_pt_id="10019211" />
+    </Reaction>
+    <Reaction id="AR15" str="common cold">
+      <Normalization id="AR15.N1" meddra_pt="Nasopharyngitis" meddra_pt_id="10028810" meddra_llt="Common cold" meddra_llt_id="10010106" />
+    </Reaction>
+    <Reaction id="AR16" str="cough">
+      <Normalization id="AR16.N1" meddra_pt="Cough" meddra_pt_id="10011224" />
+    </Reaction>
+    <Reaction id="AR17" str="urinary tract infection">
+      <Normalization id="AR17.N1" meddra_pt="Urinary tract infection" meddra_pt_id="10046571" />
+    </Reaction>
+    <Reaction id="AR18" str="exacerbation of asthma">
+      <Normalization id="AR18.N1" meddra_pt="Asthma" meddra_pt_id="10003553" meddra_llt="Exacerbation of asthma" meddra_llt_id="10015575" />
+    </Reaction>
+    <Reaction id="AR19" str="dyspnea">
+      <Normalization id="AR19.N1" meddra_pt="Dyspnoea" meddra_pt_id="10013968" meddra_llt="Dyspnea" meddra_llt_id="10013963" />
+    </Reaction>
+    <Reaction id="AR20" str="iritis">
+      <Normalization id="AR20.N1" meddra_pt="Iritis" meddra_pt_id="10022955" />
+    </Reaction>
+    <Reaction id="AR21" str="uveitis">
+      <Normalization id="AR21.N1" meddra_pt="Uveitis" meddra_pt_id="10046851" />
+    </Reaction>
+    <Reaction id="AR22" str="pigmentation of the iris">
+      <Normalization id="AR22.N1" meddra_pt="Iris hyperpigmentation" meddra_pt_id="10049758" />
+    </Reaction>
+    <Reaction id="AR23" str="pigmentation periorbital tissue">
+      <Normalization id="AR23.N1" meddra_pt="Blepharal pigmentation" meddra_pt_id="10005147" meddra_llt="Hyperpigmentation of eyelid" meddra_llt_id="10020714" />
+    </Reaction>
+    <Reaction id="AR24" str="pigmentation eyelid">
+      <Normalization id="AR24.N1" meddra_pt="Blepharal pigmentation" meddra_pt_id="10005147" meddra_llt="Hyperpigmentation of eyelid" meddra_llt_id="10020714" />
+    </Reaction>
+    <Reaction id="AR25" str="pigmentation eyelashes">
+      <Normalization id="AR25.N1" meddra_pt="Eyelash hyperpigmentation" meddra_pt_id="10064121" meddra_llt="Eyelash darkening" meddra_llt_id="10064122" />
+    </Reaction>
+    <Reaction id="AR26" str="changes to eyelashes">
+      <Normalization id="AR26.N1" flag="unmapped" />
+    </Reaction>
+    <Reaction id="AR27" str="eyelashes increased length">
+      <Normalization id="AR27.N1" meddra_pt="Growth of eyelashes" meddra_pt_id="10048462" />
+    </Reaction>
+    <Reaction id="AR28" str="eyelashes increased thickness">
+      <Normalization id="AR28.N1" meddra_pt="Eyelash thickening" meddra_pt_id="10058810" />
+    </Reaction>
+    <Reaction id="AR29" str="increased number of lashes">
+      <Normalization id="AR29.N1" meddra_pt="Growth of eyelashes" meddra_pt_id="10048462" flag="underspecified" />
+    </Reaction>
+    <Reaction id="AR30" str="changes to pigmented tissues">
+      <Normalization id="AR30.N1" meddra_pt="Pigmentation disorder" meddra_pt_id="10062080" meddra_llt="Abnormal pigmentation" meddra_llt_id="10000165" />
+    </Reaction>
+    <Reaction id="AR31" str="increased pigmentation of the iris">
+      <Normalization id="AR31.N1" meddra_pt="Iris hyperpigmentation" meddra_pt_id="10049758" />
+    </Reaction>
+    <Reaction id="AR32" str="increased pigmentation of the periorbital tissue">
+      <Normalization id="AR32.N1" meddra_pt="Skin hyperpigmentation" meddra_pt_id="10040865" meddra_llt="Hyperpigmentation skin" meddra_llt_id="10020715" />
+      <Normalization id="AR32.N2" meddra_pt="Periorbital disorder" meddra_pt_id="10057425" />
+    </Reaction>
+    <Reaction id="AR33" str="increased pigmentation of the eyelid">
+      <Normalization id="AR33.N1" meddra_pt="Blepharal pigmentation" meddra_pt_id="10005147" meddra_llt="Hyperpigmentation of eyelid" meddra_llt_id="10020714" />
+    </Reaction>
+    <Reaction id="AR34" str="increased pigmentation of the eyelashes">
+      <Normalization id="AR34.N1" meddra_pt="Eyelash hyperpigmentation" meddra_pt_id="10064121" />
+    </Reaction>
+    <Reaction id="AR35" str="pigmentation of the periorbital tissue">
+      <Normalization id="AR35.N1" meddra_pt="Blepharal pigmentation" meddra_pt_id="10005147" meddra_llt="Hyperpigmentation of eyelid" meddra_llt_id="10020714" />
+    </Reaction>
+    <Reaction id="AR36" str="eyelash changes">
+      <Normalization id="AR36.N1" flag="unmapped" />
+    </Reaction>
+    <Reaction id="AR37" str="iris color change">
+      <Normalization id="AR37.N1" meddra_pt="Eye colour change" meddra_pt_id="10072289" meddra_llt="Eye color change" meddra_llt_id="10072295" />
+    </Reaction>
+    <Reaction id="AR38" str="change eyelashes">
+      <Normalization id="AR38.N1" flag="unmapped" />
+    </Reaction>
+    <Reaction id="AR39" str="change vellus hair eye">
+      <Normalization id="AR39.N1" flag="unmapped" />
+    </Reaction>
+    <Reaction id="AR40" str="changes color of lashes">
+      <Normalization id="AR40.N1" meddra_pt="Eyelash discolouration" meddra_pt_id="10058809" meddra_llt="Eyelash discoloration" meddra_llt_id="10058812" />
+    </Reaction>
+    <Reaction id="AR41" str="changes thickness of lashes">
+      <Normalization id="AR41.N1" meddra_pt="Eyelash thickening" meddra_pt_id="10058810" />
+    </Reaction>
+    <Reaction id="AR42" str="changes shape of lashes">
+      <Normalization id="AR42.N1" flag="unmapped" />
+    </Reaction>
+    <Reaction id="AR43" str="changes number of lashes">
+      <Normalization id="AR43.N1" meddra_pt="Growth of eyelashes" meddra_pt_id="10048462" />
+    </Reaction>
+    <Reaction id="AR44" str="increased length of lashes">
+      <Normalization id="AR44.N1" meddra_pt="Growth of eyelashes" meddra_pt_id="10048462" />
+    </Reaction>
+  </Reactions>
+</Label>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Label drug="movantik" track="TAC2017_ADR">
+  <Text>
+    <Section name="adverse reactions" id="S1">    6 ADVERSE REACTIONS
+
+  Serious and important adverse reactions described elsewhere in labeling include:
+
+
+
+ *    Gastrointestinal perforation [ see  Warnings and Precautions (5.1)   ] 
+ *    Opioid withdrawal [ see    Warnings and Precautions (5.2)   ] 
+      EXCERPT:   The most common adverse reactions in clinical trials (&gt;= 3%) are: abdominal pain, diarrhea, nausea, flatulence, vomiting, and headache  (6.1)  
+ 
+
+ To report SUSPECTED ADVERSE REACTIONS, contact AstraZeneca at 1-800-236-9933 or FDA at 1-800-FDA-1088 or  www.fda.gov/medwatch.  
+
+
+
+ 
+
+  6.1 Clinical Trials Experience
+
+  Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice.
+
+
+
+ The data described below reflect exposure to MOVANTIK in 1497 patients in clinical trials, including 537 patients exposed for greater than six months, and 320 patients exposed for 12 months.
+
+
+
+ The safety data described in Table 1 are derived from two double-blind, placebo-controlled trials (Studies 1 and 2) in patients with OIC and non-cancer related pain [  see      Clinical Studies (14)    ].
+
+
+
+ Study 3 (n=302) was a safety extension study that allowed patients from Study 1 to continue the same blinded treatment for an additional 12 weeks. Safety data for patients in Study 3 are similar to those listed in Table 1.
+
+
+
+ Study 4 (n=844) was a Phase 3, 52-week, multi-center, open-label, randomized, parallel group, safety and tolerability study of naloxegol versus usual care treatment for OIC (as determined by the investigator and excluding peripheral opioid antagonists) in patients with non-cancer related pain. The population enrolled in Study 4 was similar to that of the other studies. Eligible patients were randomized in a 2:1 ratio to receive either naloxegol 25 mg once daily or usual care treatment for OIC. The most commonly used laxatives in the usual care group were rectal stimulants (e.g., bisacodyl), oral stimulants (e.g., senna), and oral osmotics (e.g., macrogol, magnesium). Safety data for patients in Study 4 are similar to those listed in Table 1.
+
+
+
+ Table 1 lists adverse reactions in pooled Studies 1 and 2 occurring in &gt;= 3% of patients receiving MOVANTIK 12.5 mg or 25 mg and at an incidence greater than placebo.
+
+
+
+ Table 1. Adverse ReactionsAdverse reactions occurring in &gt;=3% of patients receiving MOVANTIK 12.5 mg or 25 mg and at an incidence greater than placebo. in Patients with OIC and Non-Cancer Pain (Studies 1 and 2) 
+                                Adverse Reaction            
+                                                              MOVANTIK 25 mg  (n=446)    MOVANTIK 12.5 mg  (n=441)    Placebo  (n=444)         
+                               Abdominal Pain               
+                                                              21%                      12%                      7%                       
+                               Diarrhea                     
+                                                              9%                       6%                       5%                       
+                               Nausea                       
+                                                              8%                       7%                       5%                       
+                               Flatulence                   
+                                                              6%                       3%                       3%                       
+                               Vomiting                     
+                                                              5%                       3%                       4%                       
+                               Headache                     
+                                                              4%                       4%                       3%                       
+                               Hyperhidrosis                
+                                                              3%                       &lt;1%                      &lt;1%                      
+            Opioid Withdrawal  
+ 
+
+ Possible opioid withdrawal, defined as at least three adverse reactions potentially related to opioid withdrawal that occurred on the same day and were not all related to the gastrointestinal system, occurred in less than 1% (1/444) of placebo subjects, 1% (5/441) receiving MOVANTIK 12.5 mg, and 3% (14/446) receiving MOVANTIK 25 mg in Studies 1 and 2 regardless of maintenance opioid treatment. Symptoms included but were not limited to hyperhidrosis, chills, diarrhea, abdominal pain, anxiety, irritability, and yawning. Patients receiving methadone as therapy for their pain condition were observed in Studies 1 and 2 to have a higher frequency of gastrointestinal adverse reactions than patients receiving other opioids [39% (7/18) vs. 26% (110/423) in the 12.5 mg group; 75% (24/32) vs. 34% (142/414) in the 25 mg group].
+</Section>
+    <Section name="warnings and precautions" id="S2">    5 WARNINGS AND PRECAUTIONS
+
+
+
+   EXCERPT:    *     Gastrointestinal perforation : Consider the overall risk benefit in patients with known or suspected lesions of the GI tract. Monitor for severe, persistent or worsening abdominal pain; discontinue if development of symptoms  (5.1)   
+ *     Opioid withdrawal : Consider the overall risk benefit in patients with disruptions to the blood-brain barrier. Monitor for symptoms of opioid withdrawal  (5.2)   
+    
+ 
+
+   5.1 Gastrointestinal Perforation
+
+
+
+  Cases of gastrointestinal perforation have been reported with use of another peripherally acting opioid antagonist in patients with conditions that may be associated with localized or diffuse reduction of structural integrity in the wall of the gastrointestinal tract (e.g., peptic ulcer disease, Ogilvie's syndrome, diverticular disease, infiltrative gastrointestinal tract malignancies or peritoneal metastases). Take into account the overall risk-benefit profile when using MOVANTIK in patients with these conditions or other conditions which might result in impaired integrity of the gastrointestinal tract wall (e.g., Crohn's disease). Monitor for the development of severe, persistent or worsening abdominal pain; discontinue MOVANTIK in patients who develop this symptom [ see     Contraindications (4)    ].
+
+
+
+    5.2 Opioid Withdrawal
+
+
+
+  Clusters of symptoms consistent with opioid withdrawal, including hyperhidrosis, chills, diarrhea, abdominal pain, anxiety, irritability, and yawning have occurred in patients treated with MOVANTIK [ see     Adverse Reactions (6.1)    ]. In addition, patients receiving methadone as therapy for their pain condition were observed in clinical trials to have a higher frequency of gastrointestinal adverse reactions that may have been related to opioid withdrawal than patients receiving other opioids [ see     Adverse Reactions (6.1)    ]. Patients having disruptions to the blood-brain barrier may be at increased risk for opioid withdrawal or reduced analgesia. Take into account the overall risk-benefit profile when using MOVANTIK in such patients. Monitor for symptoms of opioid withdrawal in such patients.
+</Section>
+  </Text>
+  <Mentions>
+    <Mention id="M1" section="S1" type="AdverseReaction" start="117" len="28" str="Gastrointestinal perforation" />
+    <Mention id="M2" section="S1" type="AdverseReaction" start="195" len="17" str="Opioid withdrawal" />
+    <Mention id="M3" section="S1" type="AdverseReaction" start="341" len="14" str="abdominal pain" />
+    <Mention id="M4" section="S1" type="AdverseReaction" start="357" len="8" str="diarrhea" />
+    <Mention id="M5" section="S1" type="AdverseReaction" start="367" len="6" str="nausea" />
+    <Mention id="M6" section="S1" type="AdverseReaction" start="375" len="10" str="flatulence" />
+    <Mention id="M7" section="S1" type="AdverseReaction" start="387" len="8" str="vomiting" />
+    <Mention id="M8" section="S1" type="AdverseReaction" start="401" len="8" str="headache" />
+    <Mention id="M9" section="S1" type="AdverseReaction" start="2869" len="14" str="Abdominal Pain" />
+    <Mention id="M10" section="S1" type="AdverseReaction" start="3068" len="8" str="Diarrhea" />
+    <Mention id="M11" section="S1" type="AdverseReaction" start="3267" len="6" str="Nausea" />
+    <Mention id="M12" section="S1" type="AdverseReaction" start="3466" len="10" str="Flatulence" />
+    <Mention id="M13" section="S1" type="AdverseReaction" start="3665" len="8" str="Vomiting" />
+    <Mention id="M14" section="S1" type="AdverseReaction" start="3864" len="8" str="Headache" />
+    <Mention id="M15" section="S1" type="AdverseReaction" start="4063" len="13" str="Hyperhidrosis" />
+    <Mention id="M16" section="S1" type="Factor" start="4267" len="8" str="Possible" />
+    <Mention id="M17" section="S1" type="AdverseReaction" start="4276" len="17" str="opioid withdrawal" />
+    <Mention id="M18" section="S1" type="AdverseReaction" start="4706" len="13" str="hyperhidrosis" />
+    <Mention id="M19" section="S1" type="AdverseReaction" start="4721" len="6" str="chills" />
+    <Mention id="M20" section="S1" type="AdverseReaction" start="4729" len="8" str="diarrhea" />
+    <Mention id="M21" section="S1" type="AdverseReaction" start="4739" len="14" str="abdominal pain" />
+    <Mention id="M22" section="S1" type="AdverseReaction" start="4755" len="7" str="anxiety" />
+    <Mention id="M23" section="S1" type="AdverseReaction" start="4764" len="12" str="irritability" />
+    <Mention id="M24" section="S1" type="AdverseReaction" start="4782" len="7" str="yawning" />
+    <Mention id="M25" section="S1" type="AdverseReaction" start="4919" len="34" str="gastrointestinal adverse reactions" />
+    <Mention id="M26" section="S2" type="AdverseReaction" start="55" len="28" str="Gastrointestinal perforation" />
+    <Mention id="M27" section="S2" type="AdverseReaction" start="518" len="28" str="gastrointestinal perforation" />
+    <Mention id="M28" section="S2" type="DrugClass" start="586" len="37" str="peripherally acting opioid antagonist" />
+  </Mentions>
+  <Relations>
+    <Relation id="RL1" type="Hypothetical" arg1="M17" arg2="M16" />
+    <Relation id="RL2" type="Hypothetical" arg1="M27" arg2="M28" />
+  </Relations>
+  <Reactions>
+    <Reaction id="AR1" str="gastrointestinal perforation">
+      <Normalization id="AR1.N1" meddra_pt="Gastrointestinal perforation" meddra_pt_id="10018001" />
+    </Reaction>
+    <Reaction id="AR2" str="opioid withdrawal">
+      <Normalization id="AR2.N1" meddra_pt="Drug withdrawal syndrome" meddra_pt_id="10013754" meddra_llt="Opiate withdrawal symptoms" meddra_llt_id="10030882" />
+    </Reaction>
+    <Reaction id="AR3" str="abdominal pain">
+      <Normalization id="AR3.N1" meddra_pt="Abdominal pain" meddra_pt_id="10000081" />
+    </Reaction>
+    <Reaction id="AR4" str="diarrhea">
+      <Normalization id="AR4.N1" meddra_pt="Diarrhoea" meddra_pt_id="10012735" meddra_llt="Diarrhea" meddra_llt_id="10012727" />
+    </Reaction>
+    <Reaction id="AR5" str="nausea">
+      <Normalization id="AR5.N1" meddra_pt="Nausea" meddra_pt_id="10028813" />
+    </Reaction>
+    <Reaction id="AR6" str="flatulence">
+      <Normalization id="AR6.N1" meddra_pt="Flatulence" meddra_pt_id="10016766" />
+    </Reaction>
+    <Reaction id="AR7" str="vomiting">
+      <Normalization id="AR7.N1" meddra_pt="Vomiting" meddra_pt_id="10047700" />
+    </Reaction>
+    <Reaction id="AR8" str="headache">
+      <Normalization id="AR8.N1" meddra_pt="Headache" meddra_pt_id="10019211" />
+    </Reaction>
+    <Reaction id="AR9" str="hyperhidrosis">
+      <Normalization id="AR9.N1" meddra_pt="Hyperhidrosis" meddra_pt_id="10020642" />
+    </Reaction>
+    <Reaction id="AR10" str="chills">
+      <Normalization id="AR10.N1" meddra_pt="Chills" meddra_pt_id="10008531" />
+    </Reaction>
+    <Reaction id="AR11" str="anxiety">
+      <Normalization id="AR11.N1" meddra_pt="Anxiety" meddra_pt_id="10002855" />
+    </Reaction>
+    <Reaction id="AR12" str="irritability">
+      <Normalization id="AR12.N1" meddra_pt="Irritability" meddra_pt_id="10022998" />
+    </Reaction>
+    <Reaction id="AR13" str="yawning">
+      <Normalization id="AR13.N1" meddra_pt="Yawning" meddra_pt_id="10048232" />
+    </Reaction>
+    <Reaction id="AR14" str="gastrointestinal adverse reactions">
+      <Normalization id="AR14.N1" meddra_pt="Gastrointestinal disorder" meddra_pt_id="10017944" meddra_llt="Gastrointestinal symptom NOS" meddra_llt_id="10018011" />
+    </Reaction>
+  </Reactions>
+</Label>

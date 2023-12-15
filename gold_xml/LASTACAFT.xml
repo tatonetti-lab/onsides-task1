@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Label drug="lastacaft" track="TAC2017_ADR">
+  <Text>
+    <Section name="adverse reactions" id="S1">    6 ADVERSE REACTIONS
+
+  Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in clinical practice.
+
+
+
+   EXCERPT:   The most common ocular adverse reactions, occurring in less than 4% of eyes treated with LASTACAFT  (r)  , were eye irritation, burning and/or stinging on instillation, eye redness, and eye pruritus. (  6.1  )
+
+
+
+   To report SUSPECTED ADVERSE REACTIONS, contact Allergan at 1-800-433-8871 or FDA at 1-800-FDA-1088 or    www.fda.gov/medwatch.  
+
+
+
+ 
+
+  6.1 Clinical Studies Experience
+
+  The most frequent ocular adverse reactions, occurring in less than 4% of eyes treated with LASTACAFT  (r)  , were eye irritation, burning and/or stinging upon instillation, eye redness and eye pruritus.
+
+
+
+   6.2 Non-ocular Adverse Reactions
+
+  The most frequent non-ocular adverse reactions, occurring in less than 3% of subjects with eyes treated with LASTACAFT  (r)  , were nasopharyngitis and headache. Some of these events were similar to the underlying disease being studied.
+
+
+
+   6.3 Postmarketing Experience
+
+  The following adverse reactions have been identified during postmarketing use of LASTACAFT  (r)  in clinical practice. Because they are reported voluntarily from a population of unknown size, estimates of frequency cannot be made. These reactions include: eye discharge, eye swelling, erythema of eyelid, eyelid edema, hypersensitivity, and somnolence.
+</Section>
+    <Section name="warnings and precautions" id="S2">    5 WARNINGS AND PRECAUTIONS
+
+
+
+   EXCERPT:    *  To minimize the risk of eye injury and contamination, do not touch dropper tip to eyelids and surrounding areas, or any other surface. Keep bottle tightly closed when not in use. (  5.1  ) 
+ *  LASTACAFT  (r)  should not be used to treat contact lens-related irritation. (  5.2  ) 
+ *  Remove contact lenses prior to instillation of LASTACAFT  (r)  . (  5.2  ) 
+    
+ 
+
+   5.1 Potential for Eye Injury and Contamination
+
+
+
+  To minimize eye injury and contamination of the dropper tip and solution, care should be taken not to touch the eyelids or surrounding areas with the dropper tip of the bottle. Keep bottle tightly closed when not in use.
+
+
+
+    5.2 Contact Lens Use
+
+
+
+  Patients should be advised not to wear a contact lens if their eye is red.
+
+
+
+ LASTACAFT  (r)  should not be used to treat contact lens-related irritation.
+
+
+
+ LASTACAFT  (r)  should not be instilled while wearing contact lenses. Remove contact lenses prior to instillation of LASTACAFT  (r)  . The preservative in LASTACAFT  (r)  , benzalkonium chloride, may be absorbed by soft contact lenses. Lenses may be reinserted after 10 minutes following administration of LASTACAFT  (r)  .
+
+
+
+    5.3 Topical Ophthalmic Use Only
+
+
+
+  LASTACAFT  (r)  is for topical ophthalmic use only.
+</Section>
+  </Text>
+  <Mentions>
+    <Mention id="M1" section="S1" type="AdverseReaction" start="333" len="24" str="ocular adverse reactions" />
+    <Mention id="M2" section="S1" type="AdverseReaction" start="429" len="14" str="eye irritation" />
+    <Mention id="M3" section="S1" type="AdverseReaction" start="429,445,469" len="3,7,15" str="eye burning on instillation" />
+    <Mention id="M4" section="S1" type="AdverseReaction" start="429,460" len="3,24" str="eye stinging on instillation" />
+    <Mention id="M5" section="S1" type="AdverseReaction" start="486" len="11" str="eye redness" />
+    <Mention id="M6" section="S1" type="AdverseReaction" start="503" len="12" str="eye pruritus" />
+    <Mention id="M7" section="S1" type="AdverseReaction" start="723" len="24" str="ocular adverse reactions" />
+    <Mention id="M8" section="S1" type="AdverseReaction" start="819" len="14" str="eye irritation" />
+    <Mention id="M9" section="S1" type="AdverseReaction" start="819,835,859" len="3,7,17" str="eye burning upon instillation" />
+    <Mention id="M10" section="S1" type="AdverseReaction" start="819,850" len="3,26" str="eye stinging upon instillation" />
+    <Mention id="M11" section="S1" type="AdverseReaction" start="878" len="11" str="eye redness" />
+    <Mention id="M12" section="S1" type="AdverseReaction" start="894" len="12" str="eye pruritus" />
+    <Mention id="M13" section="S1" type="AdverseReaction" start="1082" len="15" str="nasopharyngitis" />
+    <Mention id="M14" section="S1" type="AdverseReaction" start="1102" len="8" str="headache" />
+    <Mention id="M15" section="S1" type="AdverseReaction" start="1481" len="13" str="eye discharge" />
+    <Mention id="M16" section="S1" type="AdverseReaction" start="1496" len="12" str="eye swelling" />
+    <Mention id="M17" section="S1" type="AdverseReaction" start="1510" len="18" str="erythema of eyelid" />
+    <Mention id="M18" section="S1" type="AdverseReaction" start="1530" len="12" str="eyelid edema" />
+    <Mention id="M19" section="S1" type="AdverseReaction" start="1544" len="16" str="hypersensitivity" />
+    <Mention id="M20" section="S1" type="AdverseReaction" start="1566" len="10" str="somnolence" />
+  </Mentions>
+  <Relations />
+  <Reactions>
+    <Reaction id="AR1" str="ocular adverse reactions">
+      <Normalization id="AR1.N1" meddra_pt="Eye symptom" meddra_pt_id="10075536" />
+    </Reaction>
+    <Reaction id="AR2" str="eye irritation">
+      <Normalization id="AR2.N1" meddra_pt="Eye irritation" meddra_pt_id="10015946" />
+    </Reaction>
+    <Reaction id="AR3" str="eye burning on instillation">
+      <Normalization id="AR3.N1" meddra_pt="Eye irritation" meddra_pt_id="10015946" meddra_llt="Burning sensation in eye" meddra_llt_id="10006786" />
+      <Normalization id="AR3.N2" meddra_pt="Instillation site pain" meddra_pt_id="10022459" meddra_llt="Instillation site burning" meddra_llt_id="10052063" />
+    </Reaction>
+    <Reaction id="AR4" str="eye stinging on instillation">
+      <Normalization id="AR4.N1" meddra_pt="Eye pain" meddra_pt_id="10015958" meddra_llt="Stinging sensation in eyes" meddra_llt_id="10042068" />
+      <Normalization id="AR4.N2" meddra_pt="Instillation site pain" meddra_pt_id="10022459" meddra_llt="Instillation site stinging" meddra_llt_id="10052064" />
+    </Reaction>
+    <Reaction id="AR5" str="eye redness">
+      <Normalization id="AR5.N1" meddra_pt="Ocular hyperaemia" meddra_pt_id="10030041" meddra_llt="Eye redness" meddra_llt_id="10015963" />
+    </Reaction>
+    <Reaction id="AR6" str="eye pruritus">
+      <Normalization id="AR6.N1" meddra_pt="Eye pruritus" meddra_pt_id="10052140" />
+    </Reaction>
+    <Reaction id="AR7" str="eye burning upon instillation">
+      <Normalization id="AR7.N1" meddra_pt="Eye irritation" meddra_pt_id="10015946" meddra_llt="Burning sensation in eye" meddra_llt_id="10006786" />
+      <Normalization id="AR7.N2" meddra_pt="Instillation site pain" meddra_pt_id="10022459" meddra_llt="Instillation site burning" meddra_llt_id="10052063" />
+    </Reaction>
+    <Reaction id="AR8" str="eye stinging upon instillation">
+      <Normalization id="AR8.N1" meddra_pt="Eye pain" meddra_pt_id="10015958" meddra_llt="Stinging sensation in eyes" meddra_llt_id="10042068" />
+      <Normalization id="AR8.N2" meddra_pt="Instillation site pain" meddra_pt_id="10022459" meddra_llt="Instillation site stinging" meddra_llt_id="10052064" />
+    </Reaction>
+    <Reaction id="AR9" str="nasopharyngitis">
+      <Normalization id="AR9.N1" meddra_pt="Nasopharyngitis" meddra_pt_id="10028810" />
+    </Reaction>
+    <Reaction id="AR10" str="headache">
+      <Normalization id="AR10.N1" meddra_pt="Headache" meddra_pt_id="10019211" />
+    </Reaction>
+    <Reaction id="AR11" str="eye discharge">
+      <Normalization id="AR11.N1" meddra_pt="Eye discharge" meddra_pt_id="10015915" />
+    </Reaction>
+    <Reaction id="AR12" str="eye swelling">
+      <Normalization id="AR12.N1" meddra_pt="Eye swelling" meddra_pt_id="10015967" />
+    </Reaction>
+    <Reaction id="AR13" str="erythema of eyelid">
+      <Normalization id="AR13.N1" meddra_pt="Erythema of eyelid" meddra_pt_id="10015237" />
+    </Reaction>
+    <Reaction id="AR14" str="eyelid edema">
+      <Normalization id="AR14.N1" meddra_pt="Eyelid oedema" meddra_pt_id="10015993" meddra_llt="Eyelid edema" meddra_llt_id="10015985" />
+    </Reaction>
+    <Reaction id="AR15" str="hypersensitivity">
+      <Normalization id="AR15.N1" meddra_pt="Hypersensitivity" meddra_pt_id="10020751" />
+    </Reaction>
+    <Reaction id="AR16" str="somnolence">
+      <Normalization id="AR16.N1" meddra_pt="Somnolence" meddra_pt_id="10041349" />
+    </Reaction>
+  </Reactions>
+</Label>
