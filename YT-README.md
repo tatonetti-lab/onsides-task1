@@ -23,7 +23,7 @@
 - code
     - `1.extract_data.ipynb` : for ease of use, we build a dataframe of drug label text extracted from the 200 drug labels.
         - input : `train/gold_xml`
-        - output : `train/test_drug_label_text.csv`
+        - output : `train/test_drug_label_text.csv`, `train/test_drug_label_text_manual_ades.csv`
     - `2.run_gpt.ipynb` : we run gpt3.5 / gpt4 on each row of the extracted dataframe.
         - input : `train/test_drug_label_text.csv`
         - output : `train/test_drug_label_gpt35/4_output.csv`
