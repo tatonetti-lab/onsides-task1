@@ -31,6 +31,8 @@ def common_lenient_performance(gpt_output: list, manual_output: list) -> list:
     FN = 0
     FP = 0
     for gpt_out in gpt_output:
+        if gpt_out == '':
+            continue
         if gpt_out in manual_output:
             TP += 1
         elif any([longest_common_substring_percentage(gpt_out, x) > 0.8 for x in manual_output]):
