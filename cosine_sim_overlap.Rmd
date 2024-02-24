@@ -1,0 +1,81 @@
+---
+title: "Cosine_Similarity_Overlap"
+author: "undina"
+date: "2024-02-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+library(caret)
+library(tidymodels)
+library(ggpubr)
+options()
+```
+
+## Load in dataset
+
+
+
+```{r overlap}
+overlap_data <- read_csv('data/overlap_data_w_similarity.csv') %>%
+    mutate(is_overlapping = factor(is_overlapping, levels = c('1', '0')))
+overlap_data %>% head()
+str(overlap_data)
+```
+
+## Calculate metrics to get best threshold
+
+```{r}
+pr_results <- overlap_data %>%
+    pr_curve(is_overlapping, similarity)
+
+pr_plot <- pr_results %>%
+  ggplot(aes(x = recall, y = precision)) +
+  geom_path() +
+  coord_equal() +
+  theme_bw() +
+  coord_fixed(ratio = 2)
+```
+
+
+
+```{r metrics}
+roc_results <- overlap_data %>%
+  roc_curve(is_overlapping, similarity)
+roc_plot <- roc_results %>% 
+  ggplot(aes(x = 1 - specificity, y = sensitivity)) +
+  geom_path() +
+  geom_abline(lty = 3) +
+  coord_equal() +
+  theme_bw()
+roc_plot
+roc_results$specificity <- 1 - roc_results$specificity
+colnames(roc_results) <- c('threshold', 'tpr', 'fpr')
+```
+
+```{r}
+pr_plot +  coord_fixed(ratio = 2)
+
+```
+
+
+```{r fig1, fig.height = 3, fig.width = 8}
+ggarrange(
+  roc_plot, pr_plot, labels = c("A", "B"),
+  nrow = 1, ncol = 2
+  )
+```
+
+```{r}
+pr_results %>%
+  mutate(f1 = 2 * (precision * recall) / (precision + recall)) %>%
+  filter(f1 == max(f1))
+```
+
+
+
+
+
