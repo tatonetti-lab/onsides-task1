@@ -12,6 +12,7 @@ library(ggplot2)
 library(caret)
 library(tidymodels)
 library(ggpubr)
+library(cowplot)
 options()
 ```
 
@@ -21,6 +22,10 @@ options()
 
 ```{r overlap}
 overlap_data <- read_csv('data/overlap_data_w_similarity.csv') %>%
+    rowwise() %>%
+    mutate(split = length(strsplit(comp_term, ' ')[[1]])) %>%
+    ungroup() %>%
+    filter(split < 4) %>%
     mutate(is_overlapping = factor(is_overlapping, levels = c('1', '0')))
 overlap_data %>% head()
 str(overlap_data)
@@ -74,8 +79,65 @@ pr_results %>%
   mutate(f1 = 2 * (precision * recall) / (precision + recall)) %>%
   filter(f1 == max(f1))
 ```
+```{r}
+threshold = 0.6681796
+```
+
+```{r}
+overlap_data %>%
+    filter(is_overlapping == '1', similarity > 0.668)
+```
+
+## Plotting F1 score
+
+```{r}
+section_length <- read_csv('data/section_char_count.csv')
+section_length %>% head
+```
 
 
+
+```{r}
+granular_results_lenient <- read_csv('results/OpenAI_gpt-4-1106-preview_fatal-prompt-v2_no-system-prompt_temp0_train_run0_lenient_granular.csv')
+granular_results_lenient %>% 
+    inner_join(section_length %>% filter(section == 'adverse reactions'),
+               by = c('drug_name')) %>%
+ggplot(mapping = aes(x = num_char, y = recall, color = ade_type, group = ade_type)) +
+ geom_smooth(method = 'lm', se = F) +
+  geom_point() + 
+  theme_cowplot()
+```
+
+```{r}
+all_data <- granular_results_lenient %>% 
+    inner_join(section_length %>% 
+              filter(section == 'adverse reactions'),
+               by = c('drug_name')) %>%
+  filter(ade_type == 'all')
+
+ann_text <- all_data %>%
+  pivot_longer('precision':'f1', names_to = 'metric', values_to = 'val') %>%
+  mutate(metric = str_to_title(metric)) %>% 
+  group_by(metric) %>%
+  summarise(label = str_glue('R = {signif(cor(val, num_char), digits = 2)}')) %>%
+  mutate(x = 20000,
+         y = 0.5)
+
+all_data %>%
+  pivot_longer('precision':'f1', names_to = 'metric', values_to = 'val') %>%
+  mutate(metric = str_to_title(metric)) %>% 
+ggplot(mapping = aes(x = num_char/1000, y = val, color = metric)) +
+ geom_smooth(method = 'lm', se = F) +
+  geom_point(alpha = 0.7) +
+theme_cowplot() +
+  theme(legend.position = '',
+        strip.background=element_rect(colour="white",
+                                      fill="white")) +
+  facet_wrap(~metric, nrow =  1) +
+  xlab('Drug Label Character Length (in thousands)') +
+  ylab('') +
+  geom_text(data = ann_text, mapping = aes(x = x/1000, y = y, label = label))
+```
 
 
 
