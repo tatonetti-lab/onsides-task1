@@ -18,7 +18,9 @@ options()
 
 ## Load in dataset
 
-
+Tested 3 different models c('WhereIsAI/UAE-Large-V1',
+'llmrails/ember-v1',
+'Salesforce/SFR-Embedding-Mistral')
 
 ```{r overlap}
 overlap_data <- read_csv('data/overlap_data_w_similarity.csv') %>%
@@ -26,7 +28,8 @@ overlap_data <- read_csv('data/overlap_data_w_similarity.csv') %>%
     mutate(split = length(strsplit(comp_term, ' ')[[1]])) %>%
     ungroup() %>%
     filter(split < 4) %>%
-    mutate(is_overlapping = factor(is_overlapping, levels = c('1', '0')))
+    mutate(is_overlapping = factor(is_overlapping, levels = c('1', '0')),
+           model = 'llmrails/ember-v1')
 overlap_data %>% head()
 str(overlap_data)
 ```
@@ -35,7 +38,8 @@ str(overlap_data)
 
 ```{r}
 pr_results <- overlap_data %>%
-    pr_curve(is_overlapping, similarity)
+    pr_curve(is_overlapping, similarity) %>%
+    mutate(model = 'llmrails/ember-v1')
 
 pr_plot <- pr_results %>%
   ggplot(aes(x = recall, y = precision)) +
@@ -49,7 +53,9 @@ pr_plot <- pr_results %>%
 
 ```{r metrics}
 roc_results <- overlap_data %>%
-  roc_curve(is_overlapping, similarity)
+  roc_curve(is_overlapping, similarity) %>%
+  mutate(model = 'llmrails/ember-v1')
+
 roc_plot <- roc_results %>% 
   ggplot(aes(x = 1 - specificity, y = sensitivity)) +
   geom_path() +
@@ -60,12 +66,6 @@ roc_plot
 roc_results$specificity <- 1 - roc_results$specificity
 colnames(roc_results) <- c('threshold', 'tpr', 'fpr')
 ```
-
-```{r}
-pr_plot +  coord_fixed(ratio = 2)
-
-```
-
 
 ```{r fig1, fig.height = 3, fig.width = 8}
 ggarrange(
@@ -84,9 +84,124 @@ threshold = 0.6681796
 ```
 
 ```{r}
-overlap_data %>%
-    filter(is_overlapping == '1', similarity > 0.668)
+overlap_data_uae <- read_csv('data/overlap_data_w_similarity_modeluae.csv') %>%
+    rowwise() %>%
+    mutate(split = length(strsplit(comp_term, ' ')[[1]])) %>%
+    ungroup() %>%
+    filter(split < 4) %>%
+    mutate(is_overlapping = factor(is_overlapping, levels = c('1', '0')))
+overlap_data_uae %>% head()
 ```
+
+```{r}
+pr_results_uae <- overlap_data_uae %>%
+    pr_curve(is_overlapping, similarity) %>%
+    mutate(model = 'WhereIsAI/UAE-Large-V1')
+
+pr_plot <- pr_results %>%
+  ggplot(aes(x = recall, y = precision)) +
+  geom_path() +
+  coord_equal() +
+  theme_bw() +
+  coord_fixed(ratio = 2)
+
+roc_results_aue <- overlap_data_uae %>%
+  roc_curve(is_overlapping, similarity) %>%
+  mutate(model = 'WhereIsAI/UAE-Large-V1')
+
+roc_plot <- roc_results %>% 
+  ggplot(aes(x = 1 - specificity, y = sensitivity)) +
+  geom_path() +
+  geom_abline(lty = 3) +
+  coord_equal() +
+  theme_bw()
+
+ggarrange(
+  roc_plot, pr_plot, labels = c("A", "B"),
+  nrow = 1, ncol = 2
+  )
+```
+
+```{r}
+max_f1_ember <- pr_results %>%
+  mutate(f1 = 2 * (precision * recall) / (precision + recall)) %>%
+  filter(f1 == max(f1))
+max_f1_uae <- pr_results_uae %>%
+  mutate(f1 = 2 * (precision * recall) / (precision + recall)) %>%
+  filter(f1 == max(f1))
+```
+
+
+```{r}
+pr_plot <- ggplot(data = pr_results, mapping = aes(x = recall, y = precision, color = model)) +
+              geom_path(linewidth = 1) +
+              geom_point(data = max_f1_ember, mapping = aes(x = recall, y = precision),
+                         color = '#D81B60', size = 3) + 
+              geom_text(data = max_f1_ember,
+                        mapping = aes(x = recall,
+                                      y = precision,
+                                      label = str_glue('F1 = {signif(f1, digits = 3)}')),
+                        hjust = 0, nudge_x = -0.35, color = '#D81B60') +
+              geom_path(data = pr_results_uae,
+                        mapping = aes(x = recall, y = precision, color = model),
+                        linewidth = 1) +
+              geom_point(data = max_f1_uae, mapping = aes(x = recall, y = precision),
+                         color = '#1E88E5', size = 3) +
+              geom_text(data = max_f1_uae,
+                        mapping = aes(x = recall,
+                                      y = precision,
+                                      label = str_glue('F1 = {signif(f1, digits = 3)}')),
+                        hjust = 0, nudge_x = 0.05, color = '#1E88E5') +
+              theme_cowplot() + 
+              theme(legend.position = c(0.05, 0.1),
+                    legend.title = element_blank(),
+                    aspect.ratio = 1) +
+              # coord_fixed(ratio = 1.5) +
+              scale_color_manual(values = c('#D81B60','#1E88E5')) +
+              xlab('Recall') + 
+              ylab('Precision')
+            
+pr_plot 
+```
+
+```{r}
+auroc_plot <- ggplot(data = roc_results, mapping = aes(y = sensitivity,
+                                                       x = 1-specificity,
+                                                       color = model)) +
+              geom_abline(linetype = 'dashed', color = 'gray') + 
+              geom_path(linewidth = 1) +
+              geom_path(data = roc_results_aue,
+                        mapping = aes(y = sensitivity,
+                                      x = 1-specificity,
+                                      color = model),
+                        linewidth = 1) +
+              theme_cowplot() + 
+              theme(legend.position = c(0.4, 0.1),
+                    legend.title = element_blank()) +
+              # coord_fixed(ratio = 1) +
+              scale_color_manual(values = c('#D81B60','#1E88E5')) +
+              xlab('1-Specificity') + 
+              ylab('Sensitivity') + 
+              theme(legend.position = c(0.2, 0.1),
+                    aspect.ratio = 1)
+            
+auroc_plot
+```
+
+```{r}
+plot_grid(auroc_plot,
+          pr_plot,
+          labels = c("A", "B" ),
+          ncol = 2, nrow = 1,
+          rel_widths = c(1,1),
+          align="hv")
+
+
+ggsave('figures/embeds_performance.png', dpi = 1200,
+       width = 8, height = 4, bg = 'white')
+```
+
+
 
 ## Plotting F1 score
 
@@ -99,6 +214,10 @@ section_length %>% head
 
 ```{r}
 granular_results_lenient <- read_csv('results/OpenAI_gpt-4-1106-preview_fatal-prompt-v2_no-system-prompt_temp0_train_run0_lenient_granular.csv')
+granular_results_lenient_35 <- read_csv('results/OpenAI_gpt-3.5-turbo-0125_fatal-prompt-v2_no-system-prompt_temp0_train_run0_lenient_granular.csv') %>%
+  rename('index' = `...1`) %>%
+  select(-index)
+
 granular_results_lenient %>% 
     inner_join(section_length %>% filter(section == 'adverse reactions'),
                by = c('drug_name')) %>%
@@ -109,35 +228,61 @@ ggplot(mapping = aes(x = num_char, y = recall, color = ade_type, group = ade_typ
 ```
 
 ```{r}
+gran35_data <- granular_results_lenient_35 %>%
+  filter(ade_type == 'all') %>%
+  select(-n_manual, -n_gpt, -tp, -fp, -fn) %>%
+  pivot_longer('precision':'f1', names_to = 'metric', values_to = 'GPT3.5') %>%
+  mutate(metric = str_to_title(metric))
+```
+
+
+```{r}
 all_data <- granular_results_lenient %>% 
     inner_join(section_length %>% 
               filter(section == 'adverse reactions'),
                by = c('drug_name')) %>%
-  filter(ade_type == 'all')
+  filter(ade_type == 'all') %>%
+  select(-n_manual, -n_gpt, -tp, -fp, -fn) %>%
+  pivot_longer('precision':'f1', names_to = 'metric', values_to = 'GPT4') %>%
+  mutate(metric = str_to_title(metric)) %>%
+  inner_join(gran35_data) %>%
+  pivot_longer('GPT3.5':'GPT4', names_to = 'model', values_to = 'val')
+
 
 ann_text <- all_data %>%
-  pivot_longer('precision':'f1', names_to = 'metric', values_to = 'val') %>%
-  mutate(metric = str_to_title(metric)) %>% 
-  group_by(metric) %>%
+  group_by(metric, model) %>%
   summarise(label = str_glue('R = {signif(cor(val, num_char), digits = 2)}')) %>%
-  mutate(x = 20000,
-         y = 0.5)
+  ungroup() %>%
+  mutate(x = 40000,
+         y = rep(c(0.05, 0.10), 3))
 
-all_data %>%
-  pivot_longer('precision':'f1', names_to = 'metric', values_to = 'val') %>%
-  mutate(metric = str_to_title(metric)) %>% 
-ggplot(mapping = aes(x = num_char/1000, y = val, color = metric)) +
- geom_smooth(method = 'lm', se = F) +
-  geom_point(alpha = 0.7) +
+all_data %>% 
+ggplot(mapping = aes(x = num_char/1000, y = val, color = model)) +
+  geom_point(alpha = 0.35) +
 theme_cowplot() +
-  theme(legend.position = '',
+  theme(legend.position = c(0.85,0.9),
+        legend.title = element_blank(),
         strip.background=element_rect(colour="white",
-                                      fill="white")) +
+                                      fill="white"),
+        legend.box.background = element_rect(colour = "darkgray"),
+        legend.text = element_text(
+    margin = margin(r = 3, unit = "pt"))) +
   facet_wrap(~metric, nrow =  1) +
   xlab('Drug Label Character Length (in thousands)') +
   ylab('') +
-  geom_text(data = ann_text, mapping = aes(x = x/1000, y = y, label = label))
+  geom_text(data = ann_text, mapping = aes(x = x/1000, y = y, label = label),
+            show.legend = FALSE) +
+  geom_smooth(method = 'lm', se = F, show.legend = FALSE) +
+  scale_color_manual(values = c('#D81B60', '#1E88E5')) +
+  ylim(c(0, 1))
+
+ggsave('figures/label_length_performance.png', dpi = 1200,
+       width = 7, height = 5, bg = 'white')
 ```
+
+
+
+
 
 
 
