@@ -45,17 +45,4 @@ def common_lenient_performance(gpt_output: list, manual_output: list) -> list:
     
     TP = len(manual_output) - FN
     
-    if TP == 0 and FP == 0:
-        precision = np.NAN
-    else:
-        precision = TP/(TP+FP)
-    if TP == 0 and FN == 0:
-        recall = np.NAN
-    else:
-        recall = TP/(TP+FN)
-    if precision != 0 and recall != 0:
-        f1 = (2 * precision * recall)/(precision + recall)# 2*TP/(2*TP+FP+FN)
-    else:
-        f1 = np.NAN
-    
-    return [TP, FP, FN, precision, recall, f1]
+    return [TP, FP, FN]
