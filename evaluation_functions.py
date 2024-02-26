@@ -9,10 +9,14 @@ def get_manual_data(manual_ades, drug, section='adverse reactions', subtype='all
     Get the subset of the manual annotation appropriate for the evaluation
     """
 
-    if not section in ('adverse reactions', 'boxed warnings', 'warnings and precautions'):
+    if not section in ('adverse reactions', 'boxed warnings', 'warnings and precautions', 'all-concat'):
         raise Exception(f"Unexpected section, {section}, provided.")
     
-    drug_df = manual_ades.query("(drug_name == '{}') & (section_name == '{}')".format(drug, section))
+    if section == 'all-concat':
+        drug_df = manual_ades.query("drug_name == '{}'".format(drug))
+    else:
+        drug_df = manual_ades.query("(drug_name == '{}') & (section_name == '{}')".format(drug, section))
+    
     if subtype == 'all':
         pass
     elif subtype == 'exact-meddra': 
@@ -72,7 +76,7 @@ def evaluation_subtype(manual, gpt_output, drug, section='adverse reactions', su
     except:
         return [drug, section, subtype, len(manual), len(gpt_drug), np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
         
-    if eval_method == 'strict':    
+    if eval_method == 'strict':
         TP = len(manual.intersection(gpt_drug))
         FP = len(gpt_drug.difference(manual))
         FN = len(manual.difference(gpt_drug))
@@ -107,7 +111,8 @@ def evaluation_granular(manual_ades, gpt_output, eval_method='strict', embed_mod
     results = []
 
     for drug in tqdm(drugs):
-        for section in ['adverse reactions', 'warnings and precautions','boxed warnings']:
+        for section in ['adverse reactions', 'warnings and precautions','boxed 
+warnings', 'all-concat']:
             for subtype in ['all', 'exact-meddra', 'non-meddra', 'negated', 'discontinuous']:
                 manual_data = get_manual_data(manual_ades, drug, section=section, subtype=subtype)
                 gpt_data = subset_gpt_data(gpt_output, drug, section=section, subtype=subtype, eval_method=eval_method)
@@ -144,12 +149,12 @@ def evaluate(outputs, manual_ades, eval_method='strict', embed_model_name=None):
         overall_results['macro_recall'] = macro_results['recall']
         overall_results['macro_f1'] = macro_results['f1']
 
-        allsections_results = results_granular.groupby(['ade_type'])[['tp', 'fp', 'fn']].sum(min_count = 1).reset_index().query("ade_type == 'all'")
+        allsections_results = results_granular.query("section != 'all-concat'").groupby(['ade_type'])[['tp', 'fp', 'fn']].sum(min_count = 1).reset_index().query("ade_type == 'all'")
         allsections_results['micro_precision'] = allsections_results['tp']/(allsections_results['tp']+allsections_results['fp'])
         allsections_results['micro_recall'] = allsections_results['tp']/(allsections_results['tp']+allsections_results['fn'])
         allsections_results['micro_f1'] = (2 * allsections_results['micro_precision'] * allsections_results['micro_recall'])/(allsections_results['micro_precision'] + overall_results['micro_recall']) # 2*tp_total/(2*tp_total+fp_total+fn_total)
         
-        allsections_macro_results = results_granular.groupby(['ade_type'])[['precision', 'recall', 'f1']].mean(numeric_only=True).reset_index().query("ade_type == 'all'")
+        allsections_macro_results = results_granular.query("section != 'all-concat'").groupby(['ade_type'])[['precision', 'recall', 'f1']].mean(numeric_only=True).reset_index().query("ade_type == 'all'")
         allsections_results['macro_precision'] = allsections_macro_results['precision']
         allsections_results['macro_recall'] = allsections_macro_results['recall']
         allsections_results['macro_f1'] = allsections_macro_results['f1']
