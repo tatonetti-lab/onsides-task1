@@ -2,7 +2,10 @@
 config.json
 
 # ignore the embed files
-data/drug_ade_embed*
+data/drug_ade_embed.pkl
+data/drug_ade_embed_modeluae.pkl
+data/drug_ade_embed.json
+data/drug_ade_embed_modeluae.json
 
 # DSstore
 .DS_Store
