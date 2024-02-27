@@ -1,6 +1,12 @@
 # ignore the api keys
 config.json
 
+# ignore the embed files
+data/drug_ade_embed*
+
+# DSstore
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
