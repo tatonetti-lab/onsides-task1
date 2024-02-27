@@ -113,20 +113,21 @@ def evaluation_granular(manual_ades, gpt_output, eval_method='strict', embed_mod
     for drug in tqdm(drugs):
         for section in ['adverse reactions', 'warnings and precautions', 'boxed warnings', 'all-concat']:
             # subset gpt data
-            sub_gpt = gpt_data.query("(drug_name == '{}') & (section_name == '{}')".format(drug, section)).drop_duplicates()
+            sub_gpt = gpt_data.query("(drug_name == '{}') & (section_name == '{}')".format(drug, section))
 
             if sub_gpt.shape[0] == 0:
                 continue
             
             if eval_method == 'embed':
-                gpt_vals = dict(zip(manual_data['reaction_string'], manual_data['embeds']))
+                gpt_vals = dict(zip(sub_gpt['gpt_output'], sub_gpt['embeds']))
             else:
                 gpt_vals = set(sub_gpt['gpt_output'])
             
             for subtype in ['all', 'exact-meddra', 'non-meddra', 'negated', 'discontinuous']:
                 # get manual data
                 manual_data = get_manual_data(manual_ades, drug, section=section, subtype=subtype)
-                if manual_data.shape == 0:
+                if manual_data.shape[0] == 0 or len(gpt_vals) == 0:
+                    results.append([drug, section, subtype, manual_data.shape[0], len(gpt_vals), np.nan, np.nan, np.nan, np.nan, np.nan, np.nan])
                     continue
                 if eval_method == 'embed':
                     man_vals = dict(zip(manual_data['reaction_string'], manual_data['embeds']))
@@ -146,10 +147,11 @@ def evaluate(outputs, manual_ades, eval_method='strict', embed_model_name=None, 
             granular_save_filename = 'results/{}_{}_granular.csv'.format(run_key, eval_method)
             overall_save_filename = 'results/{}_{}_overall.csv'.format(run_key, eval_method)
         else:
-            granular_save_filename = 'results/{}_{}_granular.csv'.format(run_key, embed_model_name)
-            overall_save_filename = 'results/{}_{}_overall.csv'.format(run_key, embed_model_name)
+            granular_save_filename = 'results/{}_{}_granular.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
+            overall_save_filename = 'results/{}_{}_overall.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
         
         print(run_key)
+        print(f'saving results to {granular_save_filename} and {overall_save_filename}')
         
         results_granular = evaluation_granular(manual_ades, output, eval_method=eval_method, embed_model = embed_model)
         overall_results = results_granular.groupby(['section','ade_type'])[['tp', 'fp', 'fn']].sum(min_count = 1).reset_index()
