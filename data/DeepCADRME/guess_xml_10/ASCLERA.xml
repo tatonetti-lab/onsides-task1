@@ -1,0 +1,120 @@
+<Label drug="asclera" track="TAC2017_ADR">
+  <Text>
+    <Section name="adverse reactions" id="S1">    6 ADVERSE REACTIONS
+
+  EXCERPT:   The most common adverse reactions occurring at least 3% more frequently than on placebo are mild local reactions at the site of injection. (  6  )
+
+
+
+   To report SUSPECTED ADVERSE REACTIONS, contact Merz North America, Inc. at 1-866-862-1211 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.  
+
+
+
+ 
+
+  6.1 Clinical Study Experience
+
+  Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice.
+
+
+
+ In 5 controlled randomized clinical trials, Asclera has been administered to 401 patients with small or very small varicose veins (reticular and spider veins) and compared with another sclerosing agent and with placebo. Patients were 18 to 70 years old. The patient population was predominately female and consisted of Caucasian and Asian patients.
+
+
+
+ Table 1 shows adverse events more common with Asclera or sodium tetradecyl sulfate (STS) 1% than with placebo by at least 3% in the placebo- controlled EASI study  (see  Clinical Studies [14]  )  . All of these were injection site reactions and most were mild.
+
+
+
+ Table 1: Adverse Reactions in EASI-study 
+                                  ASCLERA (180 patients)    STS 1% (105 patients)    Placebo (53 patients)    
+  
+ Injection site haematoma                  42%                       65%                      19%             
+ Injection site irritation                 41%                       73%                      30%             
+ Injection site discoloration              38%                       74%                      4%              
+ Injection site pain                       24%                       31%                      9%              
+ Injection site pruritus                   19%                       27%                      4%              
+ Injection site warmth                     16%                       21%                      6%              
+ Neovascularisation                         8%                       20%                      4%              
+ Injection site thrombosis                  6%                       1%                       0%              
+          Ultrasound examinations at one week (+/-3 days) and 12 weeks (+/-2 weeks) after treatment did not reveal deep vein thrombosis in any treatment group.
+ 
+
+   6.2 Post-marketing Safety Experience
+
+  The following adverse reactions have been reported during use of polidocanol in world-wide experience; in some of these cases these adverse events have been serious or troublesome. Because these reactions are reported voluntarily from a population of uncertain size and without a control group, it is not possible to estimate their frequency reliably or to establish a causal relationship to drug exposure.
+
+
+
+   Immune system disorders:  Anaphylactic shock, angioedema, urticaria generalized, asthma
+
+
+
+   Nervous system disorders:  Cerebrovascular accident, migraine, paresthesia (local), loss of consciousness, confusional state, dizziness
+
+
+
+   Cardiac disorders:  Cardiac arrest, palpitations
+
+
+
+   Vascular disorders:  Deep vein thrombosis, pulmonary embolism, syncope vasovagal, circulatory collapse, vasculitis
+
+
+
+   Respiratory, thoracic and mediastinal disorders:  Dyspnea
+
+
+
+   Skin and subcutaneous tissue disorders  : Skin hyperpigmentation, dermatitis allergic, hypertrichosis (in the area of sclerotherapy)
+
+
+
+   General disorders and injection site conditions  : Injection site necrosis, pyrexia, hot flush
+
+
+
+   Injury, poisoning and procedural complications  : Nerve injury
+</Section>
+    <Section name="warnings and precautions" id="S2">    5 WARNINGS AND PRECAUTIONS
+
+
+
+   EXCERPT:    *  Be prepared to treat anaphylaxis. (  5.1  ) 
+ *  Do not inject intra-arterially. (  5.2  ) 
+ *  Do not inject intra-perivascularily. (  5.3  ) 
+    
+ 
+
+   5.1 Anaphylaxis
+
+
+
+   Severe allergic reactions have been reported following polidocanol use, including anaphylactic reactions, some of them fatal. Severe reactions are more frequent with use of larger volumes (&gt; 3 mL). The dose of polidocanol should therefore be minimized. Be prepared to treat anaphylaxis appropriately.  
+
+
+
+ Severe adverse local effects, including tissue necrosis, may occur following extravasation; therefore, care should be taken in intravenous needle placement and the smallest effective volume at each injection site should be used.
+
+
+
+ After the injection session is completed, apply compression with a stocking or bandage, and have the patient walk for 15-20 minutes. Keep the patient under supervision during this period to treat any anaphylactic or allergic reaction (see  Dosage and Administration [2]  )  .
+
+
+
+    5.2 Accidental Intra-arterial Injection
+
+
+
+  Intra-arterial injection can cause severe necrosis, ischemia or gangrene. If this occurs consult a vascular surgeon immediately.
+
+
+
+    5.3 Inadvertent Perivascular Injection
+
+
+
+  Inadvertent perivascular injection of Asclera can cause pain. If pain is severe, a local anesthetic (without adrenaline) may be injected.
+</Section>
+  </Text>
+  <Mentions><Mention id="M1" section="S1" type="AdverseReaction" start="130" len="4" str="mild" /><Mention id="M2" section="S1" type="AdverseReaction" start="135" len="15" str="local reactions" /><Mention id="M3" section="S1" type="AdverseReaction" start="1211" len="24" str="injection site reactions" /><Mention id="M4" section="S1" type="AdverseReaction" start="1417" len="24" str="Injection site haematoma" /><Mention id="M5" section="S1" type="AdverseReaction" start="1528" len="25" str="Injection site irritation" /><Mention id="M6" section="S1" type="AdverseReaction" start="1639" len="28" str="Injection site discoloration" /><Mention id="M7" section="S1" type="AdverseReaction" start="1750" len="19" str="Injection site pain" /><Mention id="M8" section="S1" type="AdverseReaction" start="1861" len="23" str="Injection site pruritus" /><Mention id="M9" section="S1" type="AdverseReaction" start="1972" len="21" str="Injection site warmth" /><Mention id="M10" section="S1" type="AdverseReaction" start="2083" len="18" str="Neovascularisation" /><Mention id="M11" section="S1" type="AdverseReaction" start="2194" len="25" str="Injection site thrombosis" /><Mention id="M12" section="S1" type="AdverseReaction" start="2314" len="10" str="Ultrasound" /><Mention id="M13" section="S1" type="AdverseReaction" start="2419" len="20" str="deep vein thrombosis" /><Mention id="M14" section="S1" type="AdverseReaction" start="2949" len="18" str="Anaphylactic shock" /><Mention id="M15" section="S1" type="AdverseReaction" start="2969" len="10" str="angioedema" /><Mention id="M16" section="S1" type="AdverseReaction" start="2981" len="21" str="urticaria generalized" /><Mention id="M17" section="S1" type="AdverseReaction" start="3004" len="6" str="asthma" /><Mention id="M18" section="S1" type="AdverseReaction" start="3044" len="24" str="Cerebrovascular accident" /><Mention id="M19" section="S1" type="AdverseReaction" start="3070" len="8" str="migraine" /><Mention id="M20" section="S1" type="AdverseReaction" start="3080" len="11" str="paresthesia" /><Mention id="M21" section="S1" type="AdverseReaction" start="3101" len="21" str="loss of consciousness" /><Mention id="M22" section="S1" type="AdverseReaction" start="3124" len="17" str="confusional state" /><Mention id="M23" section="S1" type="AdverseReaction" start="3143" len="9" str="dizziness" /><Mention id="M24" section="S1" type="AdverseReaction" start="3179" len="14" str="Cardiac arrest" /><Mention id="M25" section="S1" type="AdverseReaction" start="3195" len="12" str="palpitations" /><Mention id="M26" section="S1" type="AdverseReaction" start="3235" len="20" str="Deep vein thrombosis" /><Mention id="M27" section="S1" type="AdverseReaction" start="3257" len="18" str="pulmonary embolism" /><Mention id="M28" section="S1" type="AdverseReaction" start="3277" len="7" str="syncope" /><Mention id="M29" section="S1" type="AdverseReaction" start="3285" len="9" str="vasovagal" /><Mention id="M30" section="S1" type="AdverseReaction" start="3296" len="20" str="circulatory collapse" /><Mention id="M31" section="S1" type="AdverseReaction" start="3318" len="10" str="vasculitis" /><Mention id="M32" section="S1" type="AdverseReaction" start="3385" len="7" str="Dyspnea" /><Mention id="M33" section="S1" type="AdverseReaction" start="3441" len="22" str="Skin hyperpigmentation" /><Mention id="M34" section="S1" type="AdverseReaction" start="3465" len="19" str="dermatitis allergic" /><Mention id="M35" section="S1" type="AdverseReaction" start="3486" len="14" str="hypertrichosis" /><Mention id="M36" section="S1" type="AdverseReaction" start="3589" len="23" str="Injection site necrosis" /><Mention id="M37" section="S1" type="AdverseReaction" start="3614" len="7" str="pyrexia" /><Mention id="M38" section="S1" type="AdverseReaction" start="3623" len="9" str="hot flush" /><Mention id="M39" section="S1" type="AdverseReaction" start="3647" len="9" str="poisoning" /><Mention id="M40" section="S1" type="AdverseReaction" start="3689" len="12" str="Nerve injury" /><Mention id="M41" section="S2" type="AdverseReaction" start="229" len="25" str="Severe allergic reactions" /><Mention id="M42" section="S2" type="AdverseReaction" start="311" len="22" str="anaphylactic reactions" /><Mention id="M43" section="S2" type="AdverseReaction" start="348" len="5" str="fatal" /><Mention id="M44" section="S2" type="Severity" start="536" len="6" str="Severe" /><Mention id="M45" section="S2" type="AdverseReaction" start="576" len="15" str="tissue necrosis" /><Mention id="M46" section="S2" type="Factor" start="593" len="3" str="may" /><Mention id="M47" section="S2" type="AdverseReaction" start="613" len="13" str="extravasation" /><Mention id="M48" section="S1" type="Severity" start="130" len="4" str="mild" /><Mention id="M49" section="S2" type="AdverseReaction" start="229" len="6" str="Severe" /><Mention id="M50" section="S2" type="AdverseReaction" start="236" len="18" str="allergic reactions" /><Mention id="M51" section="S1" type="AdverseReaction" start="3277" len="17" str="syncope vasovagal" /><Mention id="M52" section="S1" type="AdverseReaction" start="3560" len="9" str="injection" /></Mentions><Relations /><Reactions /></Label>
