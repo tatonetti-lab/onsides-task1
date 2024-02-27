@@ -49,6 +49,10 @@ pr_plot <- pr_results %>%
   coord_fixed(ratio = 2)
 ```
 
+```{r}
+pr_results %>% 
+  mutate(f1 = )
+```
 
 
 ```{r metrics}

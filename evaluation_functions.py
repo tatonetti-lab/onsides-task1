@@ -31,59 +31,54 @@ def get_manual_data(manual_ades, drug, section='adverse reactions', subtype='all
         raise Exception(f"Unexpected subtype, {subtype}, provided.")
     
 
-    return set(drug_df['reaction_string'].to_list())
-    
+    return drug_df
+
+def get_gpt_drug(gpt_output):
+    """
+    Get the subset of the GPT output appropriate for the evaluation
+    """
+    output = gpt_output[['drug_name', 'section_name', 'gpt_output']]
+    output['gpt_output'] = gpt_output['gpt_output'].str.lower().str.replace('.', '').str.replace('\n-', ', ').str.split(', ')
+    output = gpt_output.explode('gpt_output').reset_index(drop = True).drop_duplicates()
+    output['gpt_output'] = output['gpt_output'].str.strip()
+
+    return output
+
 def embed_evaluation(man_df, gpt_embeds, threshold = 0.6681796):
     TP, FN, FP = 0, 0, 0
     for (term, embed) in man_df.items():
-        sims = [float(cos_sim(embed, gpt_emb)) for gpt_emb in gpt_embeds]
+        sims = [float(cos_sim(embed, gpt_emb)) for (term,gpt_emb) in gpt_embeds.items()]
         try:
             if np.max(sims) > threshold:
                 TP += 1
             else:
                 FN += 1
         except:
-            raise Exception(len(gpt_emb), man_df.keys(), len(sims))
+            raise Exception('Error in embed_evaluation')
     
-    for gpt_emb in gpt_embeds:
+    for (term, gpt_emb) in gpt_embeds.items():
         sims = [float(cos_sim(gpt_emb, man_emb)) for (term, man_emb) in man_df.items()]
         try:
             if np.max(sims) < threshold:
                 FP += 1
         except:
-            raise Exception(len(gpt_emb), man_df.keys(), len(sims))
+            raise Exception('Error in embed_evaluation')
 
     return TP, FN, FP
 
-def evaluation_subtype(manual, gpt_output, drug, section='adverse reactions', subtype='all', eval_method='strict'):
+def evaluation_subtype(manual, gpt_vals, drug, section='adverse reactions', subtype='all', eval_method='strict'):
     '''
     For a given drug, evaluate the performance of GPT on a given subtype of ADEs. 
     '''
-
-    gpt_drug = (gpt_output[
-        (gpt_output['drug_name'] == drug)
-        &
-        (gpt_output['section_name'] == section)
-        ]["gpt_output"].astype(str)
-        .str.lower()
-        .str.replace('\n-', ', ')
-        .str.replace('<negated>', '')
-        .str.split(",").tolist())
-    
-    try:
-        gpt_drug = [x.strip() for x in gpt_drug[0] if x]
-        gpt_drug = set(gpt_drug)
-    except:
-        return [drug, section, subtype, len(manual), len(gpt_drug), np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
-        
+            
     if eval_method == 'strict':
-        TP = len(manual.intersection(gpt_drug))
-        FP = len(gpt_drug.difference(manual))
-        FN = len(manual.difference(gpt_drug))
+        TP = len(manual.intersection(gpt_vals))
+        FP = len(gpt_vals.difference(manual))
+        FN = len(manual.difference(gpt_vals))
     elif eval_method == 'lenient':
-        [TP, FP, FN] = common_lenient_performance(gpt_drug, manual)
+        [TP, FP, FN] = common_lenient_performance(gpt_vals, manual)
     elif eval_method == 'embed':
-        [TP, FP, FN] = [0,0,0]
+        [TP, FP, FN] = embed_evaluation(manual, gpt_vals, threshold = 0.6681796)
     
     if subtype != 'all':
             # these can't be computed for the subtypes
@@ -104,28 +99,46 @@ def evaluation_subtype(manual, gpt_output, drug, section='adverse reactions', su
         else:
             f1 = np.NAN
     
-    return [drug, section, subtype, len(manual), len(gpt_drug), TP, FP, FN, precision, recall, f1]
+    return [drug, section, subtype, len(manual), len(gpt_vals), TP, FP, FN, precision, recall, f1]
 
 def evaluation_granular(manual_ades, gpt_output, eval_method='strict', embed_model=None):
     drugs = gpt_output['drug_name'].unique()
     results = []
 
+    gpt_data = get_gpt_drug(gpt_output)
+    if eval_method == 'embed':
+        gpt_embeds = list(embed_model.encode(list(gpt_data.gpt_output)))
+        gpt_data['embeds'] = gpt_embeds
+
     for drug in tqdm(drugs):
-        for section in ['adverse reactions', 'warnings and precautions','boxed 
-warnings', 'all-concat']:
+        for section in ['adverse reactions', 'warnings and precautions', 'boxed warnings', 'all-concat']:
+            # subset gpt data
+            sub_gpt = gpt_data.query("(drug_name == '{}') & (section_name == '{}')".format(drug, section)).drop_duplicates()
+
+            if sub_gpt.shape[0] == 0:
+                continue
+            
+            if eval_method == 'embed':
+                gpt_vals = dict(zip(manual_data['reaction_string'], manual_data['embeds']))
+            else:
+                gpt_vals = set(sub_gpt['gpt_output'])
+            
             for subtype in ['all', 'exact-meddra', 'non-meddra', 'negated', 'discontinuous']:
+                # get manual data
                 manual_data = get_manual_data(manual_ades, drug, section=section, subtype=subtype)
-                gpt_data = subset_gpt_data(gpt_output, drug, section=section, subtype=subtype, eval_method=eval_method)
                 if manual_data.shape == 0:
                     continue
                 if eval_method == 'embed':
-                    man_embeds = dict(zip(drug_df['reaction_string'], drug_df['embeds']))
-                results.append(evaluation_subtype(manual_data, gpt_output, eval_method=eval_method))
+                    man_vals = dict(zip(manual_data['reaction_string'], manual_data['embeds']))
+                else:
+                    man_vals = set(manual_data['reaction_string'].to_list())
+                
+                results.append(evaluation_subtype(man_vals, gpt_vals, drug, eval_method=eval_method))
 
     results = pd.DataFrame(results, columns=['drug_name', 'section', 'ade_type', 'n_manual', 'n_gpt', 'tp', 'fp', 'fn', 'precision', 'recall', 'f1'])
     return results
 
-def evaluate(outputs, manual_ades, eval_method='strict', embed_model_name=None):
+def evaluate(outputs, manual_ades, eval_method='strict', embed_model_name=None, embed_model=None):
     print(f"Running {eval_method} evaluation and saving results to disk.")
 
     for run_key, output in outputs.items():
