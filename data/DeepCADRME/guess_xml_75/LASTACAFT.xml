@@ -1,0 +1,76 @@
+<Label drug="lastacaft" track="TAC2017_ADR">
+  <Text>
+    <Section name="adverse reactions" id="S1">    6 ADVERSE REACTIONS
+
+  Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in clinical practice.
+
+
+
+   EXCERPT:   The most common ocular adverse reactions, occurring in less than 4% of eyes treated with LASTACAFT  (r)  , were eye irritation, burning and/or stinging on instillation, eye redness, and eye pruritus. (  6.1  )
+
+
+
+   To report SUSPECTED ADVERSE REACTIONS, contact Allergan at 1-800-433-8871 or FDA at 1-800-FDA-1088 or    www.fda.gov/medwatch.  
+
+
+
+ 
+
+  6.1 Clinical Studies Experience
+
+  The most frequent ocular adverse reactions, occurring in less than 4% of eyes treated with LASTACAFT  (r)  , were eye irritation, burning and/or stinging upon instillation, eye redness and eye pruritus.
+
+
+
+   6.2 Non-ocular Adverse Reactions
+
+  The most frequent non-ocular adverse reactions, occurring in less than 3% of subjects with eyes treated with LASTACAFT  (r)  , were nasopharyngitis and headache. Some of these events were similar to the underlying disease being studied.
+
+
+
+   6.3 Postmarketing Experience
+
+  The following adverse reactions have been identified during postmarketing use of LASTACAFT  (r)  in clinical practice. Because they are reported voluntarily from a population of unknown size, estimates of frequency cannot be made. These reactions include: eye discharge, eye swelling, erythema of eyelid, eyelid edema, hypersensitivity, and somnolence.
+</Section>
+    <Section name="warnings and precautions" id="S2">    5 WARNINGS AND PRECAUTIONS
+
+
+
+   EXCERPT:    *  To minimize the risk of eye injury and contamination, do not touch dropper tip to eyelids and surrounding areas, or any other surface. Keep bottle tightly closed when not in use. (  5.1  ) 
+ *  LASTACAFT  (r)  should not be used to treat contact lens-related irritation. (  5.2  ) 
+ *  Remove contact lenses prior to instillation of LASTACAFT  (r)  . (  5.2  ) 
+    
+ 
+
+   5.1 Potential for Eye Injury and Contamination
+
+
+
+  To minimize eye injury and contamination of the dropper tip and solution, care should be taken not to touch the eyelids or surrounding areas with the dropper tip of the bottle. Keep bottle tightly closed when not in use.
+
+
+
+    5.2 Contact Lens Use
+
+
+
+  Patients should be advised not to wear a contact lens if their eye is red.
+
+
+
+ LASTACAFT  (r)  should not be used to treat contact lens-related irritation.
+
+
+
+ LASTACAFT  (r)  should not be instilled while wearing contact lenses. Remove contact lenses prior to instillation of LASTACAFT  (r)  . The preservative in LASTACAFT  (r)  , benzalkonium chloride, may be absorbed by soft contact lenses. Lenses may be reinserted after 10 minutes following administration of LASTACAFT  (r)  .
+
+
+
+    5.3 Topical Ophthalmic Use Only
+
+
+
+  LASTACAFT  (r)  is for topical ophthalmic use only.
+</Section>
+  </Text>
+  <Mentions><Mention id="M1" section="S1" type="AdverseReaction" start="333" len="24" str="ocular adverse reactions" /><Mention id="M2" section="S1" type="AdverseReaction" start="429" len="14" str="eye irritation" /><Mention id="M3" section="S1" type="AdverseReaction" start="445,460" len="7,8" str="burning stinging" /><Mention id="M4" section="S1" type="AdverseReaction" start="486" len="11" str="eye redness" /><Mention id="M5" section="S1" type="AdverseReaction" start="503" len="12" str="eye pruritus" /><Mention id="M6" section="S1" type="AdverseReaction" start="723" len="24" str="ocular adverse reactions" /><Mention id="M7" section="S1" type="AdverseReaction" start="819" len="14" str="eye irritation" /><Mention id="M8" section="S1" type="AdverseReaction" start="835,859" len="7,4" str="burning upon" /><Mention id="M9" section="S1" type="AdverseReaction" start="878" len="11" str="eye redness" /><Mention id="M10" section="S1" type="AdverseReaction" start="894" len="12" str="eye pruritus" /><Mention id="M11" section="S1" type="AdverseReaction" start="1082" len="15" str="nasopharyngitis" /><Mention id="M12" section="S1" type="AdverseReaction" start="1102" len="8" str="headache" /><Mention id="M13" section="S1" type="AdverseReaction" start="1481" len="13" str="eye discharge" /><Mention id="M14" section="S1" type="AdverseReaction" start="1496" len="12" str="eye swelling" /><Mention id="M15" section="S1" type="AdverseReaction" start="1510" len="18" str="erythema of eyelid" /><Mention id="M16" section="S1" type="AdverseReaction" start="1530" len="12" str="eyelid edema" /><Mention id="M17" section="S1" type="AdverseReaction" start="1544" len="16" str="hypersensitivity" /><Mention id="M18" section="S1" type="AdverseReaction" start="1566" len="10" str="somnolence" /><Mention id="M19" section="S1" type="AdverseReaction" start="445" len="7" str="burning" /><Mention id="M20" section="S1" type="AdverseReaction" start="835" len="7" str="burning" /><Mention id="M21" section="S1" type="AdverseReaction" start="968" len="18" str="non ocular adverse" /><Mention id="M22" section="S1" type="AdverseReaction" start="460" len="24" str="stinging on instillation" /><Mention id="M23" section="S1" type="AdverseReaction" start="850" len="26" str="stinging upon instillation" /></Mentions><Relations /><Reactions /></Label>
