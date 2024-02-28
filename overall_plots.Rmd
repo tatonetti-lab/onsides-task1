@@ -9,9 +9,52 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(ggplot2)
+library(cowplot)
+options()
+
 ```
 
 ```{r}
-overall <- read_csv('results/')
+overall <- read_csv('results/overall_results_across_models.csv')
+overall %>% head()
 ```
+
+
+```{r}
+results <- overall %>%
+  filter(ade_type == 'all', section == 'adverse reactions') %>%
+  pivot_longer(micro_precision:macro_f1, names_to = c('level', 'metric'),
+               names_sep = '_', values_to = 'value')
+results %>% head()
+```
+
+
+```{r, fig.height=6, fig.width=10}
+results %>% filter(ade_type == 'all',
+                   section == 'adverse reactions') %>%
+  group_by(llm_model, eval_method, level, metric) %>%
+  summarize(mean_val = mean(value), 
+            min_val = min(value),
+            max_val = max(value),
+           .groups = 'drop') %>% 
+  filter(level == 'macro', eval_method == 'lenient') %>%
+ggplot(mapping = aes(x = llm_model, y = mean_val, fill = llm_model,
+                     ymin=min_val, ymax =max_val)) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  geom_errorbar(width = 0.4) + 
+  theme_cowplot() +
+  theme(axis.text.x = element_text(angle = 90)) +
+  facet_wrap(~metric) +
+  theme_minimal() 
+```
+
+# Granular results
+
+```{r}
+granular <- read_csv('results/granular_results_across_models.csv')
+granular %>% head
+```
+
+
+
 
