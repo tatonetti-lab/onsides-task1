@@ -38,8 +38,8 @@ def get_gpt_drug(gpt_output):
     Get the subset of the GPT output appropriate for the evaluation
     """
     output = gpt_output[['drug_name', 'section_name', 'gpt_output']]
-    output['gpt_output'] = gpt_output['gpt_output'].str.lower().str.replace('.', '').str.replace('\n-', ', ').str.split(', ')
-    output = gpt_output.explode('gpt_output').reset_index(drop = True).drop_duplicates()
+    output['gpt_output'] = output['gpt_output'].str.lower().str.replace('.', '').str.replace('\n-', ', ').str.split(', ')
+    output = output.explode('gpt_output').reset_index(drop = True).drop_duplicates()
     output['gpt_output'] = output['gpt_output'].str.strip()
 
     return output
@@ -81,10 +81,13 @@ def evaluation_subtype(manual, gpt_vals, drug, section='adverse reactions', subt
         [TP, FP, FN] = embed_evaluation(manual, gpt_vals, threshold = 0.6681796)
     
     if subtype != 'all':
-            # these can't be computed for the subtypes
-            precision = np.nan
-            f1 = np.nan
-            FP = np.nan
+        precision = np.nan
+        f1 = np.nan
+        FP = np.nan
+        if TP == 0 and FN == 0:
+            recall = np.NAN
+        else:
+            recall = TP/(TP+FN)
     else:
         if TP == 0 and FP == 0:
             precision = np.NAN
@@ -126,15 +129,15 @@ def evaluation_granular(manual_ades, gpt_output, eval_method='strict', embed_mod
             for subtype in ['all', 'exact-meddra', 'non-meddra', 'negated', 'discontinuous']:
                 # get manual data
                 manual_data = get_manual_data(manual_ades, drug, section=section, subtype=subtype)
-                if manual_data.shape[0] == 0 or len(gpt_vals) == 0:
-                    results.append([drug, section, subtype, manual_data.shape[0], len(gpt_vals), np.nan, np.nan, np.nan, np.nan, np.nan, np.nan])
+                if manual_data.shape[0] == 0:
                     continue
                 if eval_method == 'embed':
                     man_vals = dict(zip(manual_data['reaction_string'], manual_data['embeds']))
                 else:
                     man_vals = set(manual_data['reaction_string'].to_list())
-                
-                results.append(evaluation_subtype(man_vals, gpt_vals, drug, eval_method=eval_method))
+
+                results.append(evaluation_subtype(man_vals, gpt_vals, drug,
+                                                   eval_method=eval_method, subtype=subtype, section = section))
 
     results = pd.DataFrame(results, columns=['drug_name', 'section', 'ade_type', 'n_manual', 'n_gpt', 'tp', 'fp', 'fn', 'precision', 'recall', 'f1'])
     return results

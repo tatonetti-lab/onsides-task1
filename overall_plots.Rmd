@@ -10,8 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(ggplot2)
 library(cowplot)
-options()
-
+options(fig.height=6, fig.width=10)
 ```
 
 ```{r}
@@ -43,18 +42,250 @@ ggplot(mapping = aes(x = llm_model, y = mean_val, fill = llm_model,
   geom_bar(stat = 'identity', position = 'dodge') +
   geom_errorbar(width = 0.4) + 
   theme_cowplot() +
-  theme(axis.text.x = element_text(angle = 90)) +
-  facet_wrap(~metric) +
-  theme_minimal() 
+  theme(axis.text.x = element_blank()) + # element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  ggtitle('Macro') +
+  facet_wrap(~metric)
+```
+
+
+```{r,fig.height=6, fig.width=10}
+results %>% filter(ade_type == 'all',
+                   section == 'adverse reactions') %>%
+  group_by(llm_model, eval_method, level, metric) %>%
+  summarize(mean_val = mean(value), 
+            min_val = min(value),
+            max_val = max(value),
+           .groups = 'drop') %>% 
+  filter(level == 'micro', eval_method == 'lenient') %>%
+ggplot(mapping = aes(x = llm_model, y = mean_val, fill = llm_model,
+                     ymin=min_val, ymax =max_val)) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  geom_errorbar(width = 0.4) + 
+  theme_cowplot() +
+  theme(axis.text.x = element_blank()) + # element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  ggtitle('Macro') +
+  facet_wrap(~metric)
 ```
 
 # Granular results
 
+
 ```{r}
 granular <- read_csv('results/granular_results_across_models.csv')
-granular %>% head
+granular %>% filter(llm_model == 'deepcadrme')
+```
+
+```{r}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test')) %>%
+  pivot_longer(precision:f1, names_to = 'metric', values_to = 'value') %>%
+ggplot(mapping = aes(x = llm_model, y = value, color = llm_model, fill = llm_model)) +
+  geom_boxplot() +
+  geom_jitter(alpha = 0.5) +
+  facet_wrap(~metric) +
+  theme_cowplot() +
+  theme(axis.text.x = element_blank())
 ```
 
 
+```{r, fig.height=8, fig.width=8}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview' , 'deepcadrme')) %>% 
+  select(drug_name, f1, llm_model) %>%
+  pivot_wider(names_from = llm_model, values_from = f1, values_fn = max)  %>%
+  group_by(drug_name) %>% 
+  mutate(gpt_better = `gpt-4-1106-preview` > deepcadrme) %>% 
+  filter(!is.na(deepcadrme)) %>% 
+ggplot(mapping = aes(x = `gpt-4-1106-preview`, y = deepcadrme,
+                     # ymin = deep_min, ymax = deep_max,
+                     color = gpt_better)) +
+  geom_point(alpha = 0.5) + 
+  scale_colour_discrete(guide = "none") +
+  geom_abline() +
+  theme_cowplot() +
+  ylim(0.5,1) + xlim(0.5,1) + 
+  theme(aspect.ratio = 1)
+```
+```{r, fig.width = 6, fig.height = 6}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview' , 'deepcadrme')) %>% 
+  select(drug_name, precision, llm_model) %>%
+  pivot_wider(names_from = llm_model, values_from = precision, values_fn = max)  %>%
+  group_by(drug_name) %>% 
+  mutate(gpt_better = `gpt-4-1106-preview` > deepcadrme) %>% 
+  filter(!is.na(deepcadrme)) %>% 
+ggplot(mapping = aes(x = `gpt-4-1106-preview`, y = deepcadrme,
+                     color = gpt_better)) +
+  geom_point(alpha = 0.5) + 
+  scale_colour_discrete(guide = "none") +
+  geom_abline() +
+  theme_cowplot() +
+  ylim(0.5,1) + xlim(0.5,1) + 
+  theme(aspect.ratio = 1) +
+  ggtitle('Precision')
+```
+
+```{r, fig.width = 6, fig.height = 6}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview' , 'deepcadrme')) %>% 
+  select(drug_name, recall, llm_model) %>%
+  pivot_wider(names_from = llm_model, values_from = recall, values_fn = max)  %>%
+  group_by(drug_name) %>% 
+  mutate(gpt_better = `gpt-4-1106-preview` > deepcadrme) %>% 
+  filter(!is.na(deepcadrme)) %>% 
+ggplot(mapping = aes(x = `gpt-4-1106-preview`, y = deepcadrme,
+                     color = gpt_better)) +
+  geom_point(alpha = 0.5) + 
+  scale_colour_discrete(guide = "none") +
+  geom_abline() +
+  theme_cowplot() +
+  ylim(0.5,1) + xlim(0.5,1) + 
+  theme(aspect.ratio = 1) +
+  ggtitle('Recall')
+```
+
+
+```{r}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview')) %>% 
+ggplot(mapping = aes(x = drug_name, y = f1, color = drug_name)) +
+  geom_point() +
+  theme_cowplot() +
+  scale_colour_discrete(guide = "none") +
+  theme(axis.text.x = element_blank()) + 
+  xlab('Drug')
+```
+```{r}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview')) %>% 
+ggplot(mapping = aes(x = drug_name, y = recall, color = drug_name)) +
+  geom_point(alpha = 0.5) +
+  theme_cowplot() +
+  scale_colour_discrete(guide = "none") +
+  theme(axis.text.x = element_blank()) + 
+  xlab('Drug')
+```
+
+
+
+```{r}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview')) %>% 
+  group_by(drug_name) %>%
+  summarise(mean_val = mean(precision),
+            min_val = min(precision),
+            max_val = max(precision)) %>% ungroup() %>%
+ggplot(mapping = aes(x = drug_name, y = mean_val, color = drug_name,
+                     ymin = min_val, ymax = max_val)) +
+  geom_point(alpha = 0.5) +
+  geom_errorbar() +
+  theme_cowplot() +
+  scale_colour_discrete(guide = "none") +
+  theme(axis.text.x = element_blank()) + 
+  xlab('Drug') +
+  ylim(0,1)
+```
+
+```{r}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview')) %>% group_by(prompt, system, temp) %>%
+  summarise(n())
+
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview'),
+         system %in% c('no-system-prompt','pharmexpert-v0')) %>% 
+  select(drug_name, system, run, precision:f1) %>%
+  pivot_longer(precision:f1, names_to = 'metric') %>% 
+  pivot_wider(names_from = system, values_from = value) %>% 
+ggplot(mapping = aes(x = `no-system-prompt`, y = `pharmexpert-v0`)) +
+  facet_wrap(~metric) +
+  geom_point() + 
+  theme_cowplot() +
+  theme(aspect.ratio = 1) +
+  labs(title = 'gpt-4-1106-preview_fatal-prompt-v2 -- System Prompt')
+```
+
+
+
+```{r, fig.height=6, fig.width=10}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview'),
+         temp == 'temp0') %>% 
+  select(drug_name, prompt, system, temp, precision:f1) %>%
+  pivot_longer(precision:f1, names_to = 'metric') %>% 
+  group_by(system, metric) %>%
+  summarise(mean_val = mean(value), 
+            min_val = min(value), 
+            max_val = max(value), .groups = 'drop') %>% 
+  # pivot_wider(names_from = system, values_from = mean_val,
+  #             ymin = min_val, ymax = max_val) %>% head
+ggplot(mapping = aes(x = system, y = mean_val,
+                     ymin = min_val, ymax = max_val)) +
+  geom_errorbar() + 
+  geom_point() + 
+  theme_cowplot() +
+  theme(aspect.ratio = 1,
+        axis.text.x = element_text(angle = 90)) +
+  facet_wrap(~metric) +
+  ylim(0,1) + 
+  labs(title = 'different system prompts') 
+```
+
+
+```{r}
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('gpt-4-1106-preview'),
+         temp == 'temp0') %>% 
+  select(drug_name, prompt, system, temp, precision:f1) %>%
+  pivot_longer(precision:f1, names_to = 'metric') %>% 
+  group_by(prompt, metric) %>%
+  summarise(mean_val = mean(value), 
+            min_val = min(value), 
+            max_val = max(value), .groups = 'drop') %>% 
+  # pivot_wider(names_from = system, values_from = mean_val,
+  #             ymin = min_val, ymax = max_val) %>% head
+ggplot(mapping = aes(x = prompt, y = mean_val,
+                     ymin = min_val, ymax = max_val)) +
+  geom_errorbar() + 
+  geom_point() + 
+  theme_cowplot() +
+  theme(aspect.ratio = 1,
+        axis.text.x = element_text(angle = 90)) +
+  facet_wrap(~metric) +
+  ylim(0,1) + 
+  labs(title = 'different system prompts') 
+```
 
 
