@@ -147,11 +147,11 @@ def evaluate(outputs, manual_ades, eval_method='strict', embed_model_name=None, 
 
     for run_key, output in outputs.items():
         if eval_method != 'embed':
-            granular_save_filename = 'results/{}_{}_granular.csv'.format(run_key, eval_method)
-            overall_save_filename = 'results/{}_{}_overall.csv'.format(run_key, eval_method)
+            granular_save_filename = 'results/evals/{}_{}_granular.csv'.format(run_key, eval_method)
+            overall_save_filename = 'results/evals/{}_{}_overall.csv'.format(run_key, eval_method)
         else:
-            granular_save_filename = 'results/{}_{}_granular.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
-            overall_save_filename = 'results/{}_{}_overall.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
+            granular_save_filename = 'results/evals/{}_{}_granular.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
+            overall_save_filename = 'results/evals/{}_{}_overall.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
         
         print(run_key)
         print(f'saving results to {granular_save_filename} and {overall_save_filename}')
