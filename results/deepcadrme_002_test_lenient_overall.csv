@@ -1,0 +1,14 @@
+,section,ade_type,tp,fp,fn,micro_precision,micro_recall,micro_f1,macro_precision,macro_recall,macro_f1
+0,adverse reactions,all,1355.0,96.0,11823.0,0.9338387319090282,0.10282288662923053,0.1852484790484654,0.8208955223880597,0.17000920513564596,0.3640512889416605
+1,adverse reactions,discontinuous,,,,,,,,,
+2,adverse reactions,negated,,,,,,,,,
+3,adverse reactions,non-meddra,,,,,,,,,
+4,boxed warnings,all,,,,,,,,,
+5,boxed warnings,discontinuous,,,,,,,,,
+6,boxed warnings,exact-meddra,,,,,,,,,
+7,boxed warnings,negated,,,,,,,,,
+8,boxed warnings,non-meddra,,,,,,,,,
+9,warnings and precautions,discontinuous,,,,,,,,,
+10,warnings and precautions,negated,,,,,,,,,
+11,warnings and precautions,non-meddra,,,,,,,,,
+0,all,all,1355.0,96.0,11823.0,0.9338387319090282,0.10282288662923053,0.1852484790484654,0.8208955223880597,0.17000920513564596,0.3640512889416605
