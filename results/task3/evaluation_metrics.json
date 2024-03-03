@@ -1,0 +1,122 @@
+{
+    "data/task3/grouped-mean-final-bydrug-PMB_14-AR-125-all_222_TAC_25_2.5e-05_256_32.csv": {
+        "flip_labels": true,
+        "TN": 2682.0,
+        "FP": 1984.0,
+        "FN": 11.0,
+        "TP": 66.0,
+        "specificity": 0.5747963994856408,
+        "sensitivity": 0.8571428571428571,
+        "fpr": 0.4252036005143592,
+        "precision": 0.03219512195121951,
+        "F1": 0.06205923836389281
+    },
+    "results/extract/deepcadrme_100_test.csv": {
+        "flip_labels": true,
+        "TN": 4488.0,
+        "FP": 178.0,
+        "FN": 72.0,
+        "TP": 5.0,
+        "specificity": 0.9618516930990142,
+        "sensitivity": 0.06493506493506493,
+        "fpr": 0.038148306900985855,
+        "precision": 0.0273224043715847,
+        "F1": 0.038461538461538464
+    },
+    "results/extract/OpenAI_gpt-4-1106-preview_gpt-written-prompt_pharmexpert-v0_temp0_test_run0.csv": {
+        "flip_labels": true,
+        "TN": 3611.0,
+        "FP": 1055.0,
+        "FN": 31.0,
+        "TP": 46.0,
+        "specificity": 0.7738962708958422,
+        "sensitivity": 0.5974025974025974,
+        "fpr": 0.22610372910415774,
+        "precision": 0.04178019981834696,
+        "F1": 0.07809847198641766
+    },
+    "results/extract/OpenAI_gpt-3.5-turbo-0125_fatal-prompt-v2_pharmexpert-v1_temp0_test_run2.csv": {
+        "flip_labels": true,
+        "TN": 2912.0,
+        "FP": 1754.0,
+        "FN": 30.0,
+        "TP": 47.0,
+        "specificity": 0.6240891555936562,
+        "sensitivity": 0.6103896103896104,
+        "fpr": 0.37591084440634376,
+        "precision": 0.02609661299278179,
+        "F1": 0.05005324813631523
+    },
+    "results/extract/OpenAI_gpt-4-1106-preview_fatal-prompt-v3_pharmexpert-v1_temp0_test_run0.csv": {
+        "flip_labels": true,
+        "TN": 3529.0,
+        "FP": 1137.0,
+        "FN": 31.0,
+        "TP": 46.0,
+        "specificity": 0.7563223317616803,
+        "sensitivity": 0.5974025974025974,
+        "fpr": 0.24367766823831977,
+        "precision": 0.03888419273034658,
+        "F1": 0.07301587301587302
+    },
+    "results/extract/OpenAI_gpt-3.5-turbo-0125_fatal-prompt-v2_pharmexpert-v1_temp0_test_run1.csv": {
+        "flip_labels": true,
+        "TN": 2967.0,
+        "FP": 1699.0,
+        "FN": 27.0,
+        "TP": 50.0,
+        "specificity": 0.635876553793399,
+        "sensitivity": 0.6493506493506493,
+        "fpr": 0.3641234462066009,
+        "precision": 0.02858776443682104,
+        "F1": 0.054764512595837894
+    },
+    "results/extract/OpenAI_gpt-3.5-turbo-0125_fatal-prompt-v2_pharmexpert-v1_temp0_test_run0.csv": {
+        "flip_labels": true,
+        "TN": 2940.0,
+        "FP": 1726.0,
+        "FN": 23.0,
+        "TP": 54.0,
+        "specificity": 0.6300900128589798,
+        "sensitivity": 0.7012987012987013,
+        "fpr": 0.36990998714102014,
+        "precision": 0.030337078651685393,
+        "F1": 0.05815831987075929
+    },
+    "results/extract/OpenAI_gpt-4-1106-preview_fatal-prompt-v2_pharmexpert-v1_temp0_test_run0.csv": {
+        "flip_labels": true,
+        "TN": 3310.0,
+        "FP": 1356.0,
+        "FN": 25.0,
+        "TP": 52.0,
+        "specificity": 0.7093870552936133,
+        "sensitivity": 0.6753246753246753,
+        "fpr": 0.2906129447063866,
+        "precision": 0.036931818181818184,
+        "F1": 0.07003367003367003
+    },
+    "results/extract/OpenAI_gpt-4-1106-preview_fatal-prompt-v2_pharmexpert-v1_temp0_test_run1.csv": {
+        "flip_labels": true,
+        "TN": 3356.0,
+        "FP": 1310.0,
+        "FN": 29.0,
+        "TP": 48.0,
+        "specificity": 0.7192456065152164,
+        "sensitivity": 0.6233766233766234,
+        "fpr": 0.28075439348478354,
+        "precision": 0.035346097201767304,
+        "F1": 0.06689895470383275
+    },
+    "results/extract/OpenAI_gpt-4-1106-preview_only-positives-v0_pharmexpert-v0_temp0_test_run0.csv": {
+        "flip_labels": true,
+        "TN": 3342.0,
+        "FP": 1324.0,
+        "FN": 22.0,
+        "TP": 55.0,
+        "specificity": 0.7162451778825546,
+        "sensitivity": 0.7142857142857143,
+        "fpr": 0.28375482211744535,
+        "precision": 0.03988397389412618,
+        "F1": 0.07554945054945054
+    }
+}
