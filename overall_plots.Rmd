@@ -270,14 +270,14 @@ granular %>%
          temp == 'temp0') %>% 
   select(drug_name, prompt, system, temp, precision:f1) %>%
   pivot_longer(precision:f1, names_to = 'metric') %>% 
-  group_by(prompt, metric) %>%
+  group_by(prompt, system, temp, metric) %>%
   summarise(mean_val = mean(value), 
             min_val = min(value), 
             max_val = max(value), .groups = 'drop') %>% 
   # pivot_wider(names_from = system, values_from = mean_val,
   #             ymin = min_val, ymax = max_val) %>% head
 ggplot(mapping = aes(x = prompt, y = mean_val,
-                     ymin = min_val, ymax = max_val)) +
+                     ymin = min_val, ymax = max_val, color = system)) +
   geom_errorbar() + 
   geom_point() + 
   theme_cowplot() +
@@ -287,5 +287,10 @@ ggplot(mapping = aes(x = prompt, y = mean_val,
   ylim(0,1) + 
   labs(title = 'different system prompts') 
 ```
+
+
+
+
+
 
 
