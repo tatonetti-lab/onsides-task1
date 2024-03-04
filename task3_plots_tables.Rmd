@@ -61,12 +61,13 @@ task3_df
 task3_df %>%
   mutate(model = case_when(grepl(pattern = 'gpt-4', x = filename) ~ 'GPT-4',
                            grepl(pattern = 'gpt-3', x = filename) ~ 'GPT-3',
-                           grepl(pattern = 'deep', x = filename) ~ 'deepcadrme')) %>%
+                           grepl(pattern = 'deep', x = filename) ~ 'deepcadrme',
+                           grepl(pattern = 'bydrug', x = filename) ~ 'OnSIDES-BERT')) %>%
   select(-c(filename, TN:TP)) %>% 
   pivot_longer(specificity:f1, names_to = 'metric', values_to = 'vals') %>% 
 ggplot(mapping = aes(x = model, y = vals, fill = model)) +
   geom_boxplot() +
-  facet_wrap(~metric, ncol = 1, axis.labels = 'margins') +
+  facet_wrap(~metric, ncol = 1, axis.labels = 'margins', scales = 'free_y') +
   theme_cowplot() +
   theme(axis.text.x = element_text(angle = 90))
 ```
