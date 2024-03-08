@@ -1,0 +1,99 @@
+---
+title: "task3_plots"
+author: "undina"
+date: "2024-03-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(jsonlite)
+library(cowplot)
+```
+
+## R Markdown
+
+```{r}
+task3_results = fromJSON('results/task3/evaluation_metrics.json',
+                         simplifyVector = TRUE)
+task3_df <- as_tibble(list(filename = attributes(task3_results)$names))
+task3_results$`data/task3/grouped-mean-final-bydrug-PMB_14-AR-125-all_222_TAC_25_2.5e-05_256_32.csv`
+
+flip_labels = list()
+TN = list()
+FP = list()
+FN = list()
+TP = list()
+specificity = list()
+sensitivity = list()
+fpr = list()
+precision = list()
+f1 = list()
+for (i in task3_results) {
+  flip_labels <- append(flip_labels, i$flip_labels %>% unlist())
+  TN <- append(TN, i$TN[[1]])
+  FP <- append(FP, i$FP[[1]])
+  FN <- append(FN, i$FN[[1]])
+  TP <- append(TP, i$TP[[1]])
+  specificity <- append(specificity, i$specificity[[1]])
+  sensitivity <- append(sensitivity, i$sensitivity[[1]])
+  fpr <- append(fpr, i$fpr[[1]])
+  precision <- append(precision, i$precision[[1]])
+  f1 <- append(f1, i$F1[[1]])
+}
+
+task3_df <- as_tibble(list(filename = attributes(task3_results)$names,
+                           flip_labels = flip_labels %>% unlist(),
+                           TN = TN %>% unlist(),
+                           FP = FP %>% unlist(),
+                           FN = FN %>% unlist(),
+                           TP = TP %>% unlist(),
+                           specificity = specificity %>% unlist(),
+                           sensitivity = sensitivity %>% unlist(),
+                           fpr = fpr %>% unlist(),
+                           precision = precision %>% unlist(),
+                           f1 = f1 %>% unlist()))
+task3_df
+```
+
+```{r, fig.height = 10, fig.width = 5}
+task3_df %>%
+  mutate(model = case_when(grepl(pattern = 'gpt-4', x = filename) ~ 'GPT-4',
+                           grepl(pattern = 'gpt-3', x = filename) ~ 'GPT-3',
+                           grepl(pattern = 'deep', x = filename) ~ 'deepcadrme',
+                           grepl(pattern = 'bydrug', x = filename) ~ 'OnSIDES-BERT')) %>%
+  select(-c(filename, TN:TP)) %>% 
+  pivot_longer(specificity:f1, names_to = 'metric', values_to = 'vals') %>% 
+ggplot(mapping = aes(x = model, y = vals, fill = model)) +
+  geom_boxplot() +
+  facet_wrap(~metric, ncol = 1, axis.labels = 'margins', scales = 'free_y') +
+  theme_cowplot() +
+  theme(axis.text.x = element_text(angle = 90))
+```
+
+
+```{r}
+task3_df %>%
+  mutate(model = case_when(grepl(pattern = 'gpt-4', x = filename) ~ 'GPT-4',
+                           grepl(pattern = 'gpt-3', x = filename) ~ 'GPT-3',
+                           grepl(pattern = 'deep', x = filename) ~ 'deepcadrme')) %>%
+  select(-c(filename, TN:TP)) %>% 
+  pivot_longer(specificity:f1, names_to = 'metric', values_to = 'vals') %>% 
+group_by(model, metric, .groups = 'drop') %>%
+  summarise(max_val = max(vals) %>% signif(., digits = 2),
+            min_val = min(vals) %>% signif(., digits = 2),
+            mean_val = mean(vals) %>% signif(., digits = 2)) %>%
+  mutate(results = str_glue('{mean_val} ({min_val}-{max_val})'),
+         flip_labels = TRUE) %>%
+  select(model, flip_labels, metric, results) %>%
+  pivot_wider(names_from = metric, values_from = results) %>%
+  arrange(desc(f1))
+```
+
+
+
+
+
+
+

@@ -1,0 +1,1342 @@
+,drug_name,section,ade_type,n_manual,n_gpt,tp,fp,fn,precision,recall,f1
+0,KYPROLIS,adverse reactions,all,128,102,124,4.0,0,0.96875,1.0,0.9841269841269841
+1,KYPROLIS,adverse reactions,exact-meddra,104,102,103,,0,,1.0,
+2,KYPROLIS,adverse reactions,non-meddra,25,102,22,,50,,0.3055555555555556,
+3,KYPROLIS,adverse reactions,discontinuous,3,102,2,,93,,0.021052631578947368,
+4,KYPROLIS,warnings and precautions,all,65,23,53,12.0,0,0.8153846153846154,1.0,0.8983050847457628
+5,KYPROLIS,warnings and precautions,exact-meddra,44,23,38,,1,,0.9743589743589743,
+6,KYPROLIS,warnings and precautions,non-meddra,22,23,15,,7,,0.6818181818181818,
+7,KYPROLIS,warnings and precautions,discontinuous,1,23,1,,21,,0.045454545454545456,
+8,KYPROLIS,all-concat,all,158,103,150,8.0,0,0.9493670886075949,1.0,0.974025974025974
+9,KYPROLIS,all-concat,exact-meddra,119,103,117,,1,,0.9915254237288136,
+10,KYPROLIS,all-concat,non-meddra,40,103,33,,48,,0.4074074074074074,
+11,KYPROLIS,all-concat,discontinuous,4,103,3,,93,,0.03125,
+12,MULTAQ,adverse reactions,all,39,29,39,0.0,0,1.0,1.0,1.0
+13,MULTAQ,adverse reactions,exact-meddra,26,29,26,,2,,0.9285714285714286,
+14,MULTAQ,adverse reactions,non-meddra,13,29,13,,13,,0.5,
+15,MULTAQ,adverse reactions,discontinuous,5,29,5,,24,,0.1724137931034483,
+16,MULTAQ,warnings and precautions,all,25,27,25,0.0,1,1.0,0.9615384615384616,0.9803921568627451
+17,MULTAQ,warnings and precautions,exact-meddra,13,27,13,,5,,0.7222222222222222,
+18,MULTAQ,warnings and precautions,non-meddra,12,27,12,,9,,0.5714285714285714,
+19,MULTAQ,warnings and precautions,discontinuous,3,27,3,,21,,0.125,
+20,MULTAQ,boxed warnings,all,3,8,3,0.0,2,1.0,0.6,0.7499999999999999
+21,MULTAQ,boxed warnings,exact-meddra,3,8,3,,2,,0.6,
+22,MULTAQ,all-concat,all,57,44,55,2.0,2,0.9649122807017544,0.9649122807017544,0.9649122807017544
+23,MULTAQ,all-concat,exact-meddra,32,44,32,,6,,0.8421052631578947,
+24,MULTAQ,all-concat,non-meddra,25,44,23,,16,,0.5897435897435898,
+25,MULTAQ,all-concat,discontinuous,8,44,7,,35,,0.16666666666666666,
+26,JUBLIA,adverse reactions,all,5,4,5,0.0,0,1.0,1.0,1.0
+27,JUBLIA,adverse reactions,exact-meddra,3,4,3,,1,,0.75,
+28,JUBLIA,adverse reactions,non-meddra,2,4,2,,3,,0.4,
+29,JUBLIA,all-concat,all,5,4,5,0.0,0,1.0,1.0,1.0
+30,JUBLIA,all-concat,exact-meddra,3,4,3,,1,,0.75,
+31,JUBLIA,all-concat,non-meddra,2,4,2,,3,,0.4,
+32,TEFLARO,adverse reactions,all,30,30,30,0.0,0,1.0,1.0,1.0
+33,TEFLARO,adverse reactions,exact-meddra,26,30,26,,2,,0.9285714285714286,
+34,TEFLARO,adverse reactions,non-meddra,4,30,4,,19,,0.17391304347826086,
+35,TEFLARO,warnings and precautions,all,12,8,11,1.0,1,0.9166666666666666,0.9166666666666666,0.9166666666666666
+36,TEFLARO,warnings and precautions,exact-meddra,2,8,1,,7,,0.125,
+37,TEFLARO,warnings and precautions,non-meddra,10,8,10,,1,,0.9090909090909091,
+38,TEFLARO,warnings and precautions,negated,1,8,1,,7,,0.125,
+39,TEFLARO,warnings and precautions,discontinuous,2,8,2,,6,,0.25,
+40,TEFLARO,all-concat,all,38,31,37,1.0,0,0.9736842105263158,1.0,0.9866666666666666
+41,TEFLARO,all-concat,exact-meddra,27,31,27,,2,,0.9310344827586207,
+42,TEFLARO,all-concat,non-meddra,11,31,10,,16,,0.38461538461538464,
+43,TEFLARO,all-concat,negated,1,31,1,,30,,0.03225806451612903,
+44,TEFLARO,all-concat,discontinuous,2,31,2,,25,,0.07407407407407407,
+45,DATSCAN,adverse reactions,all,11,10,11,0.0,0,1.0,1.0,1.0
+46,DATSCAN,adverse reactions,exact-meddra,8,10,8,,0,,1.0,
+47,DATSCAN,adverse reactions,non-meddra,3,10,3,,5,,0.375,
+48,DATSCAN,warnings and precautions,all,3,5,3,0.0,1,1.0,0.75,0.8571428571428571
+49,DATSCAN,warnings and precautions,exact-meddra,1,5,1,,3,,0.25,
+50,DATSCAN,warnings and precautions,non-meddra,2,5,2,,1,,0.6666666666666666,
+51,DATSCAN,all-concat,all,12,12,12,0.0,1,1.0,0.9230769230769231,0.9600000000000001
+52,DATSCAN,all-concat,exact-meddra,9,12,9,,1,,0.9,
+53,DATSCAN,all-concat,non-meddra,3,12,3,,6,,0.3333333333333333,
+54,TIVICAY,adverse reactions,all,45,45,45,0.0,0,1.0,1.0,1.0
+55,TIVICAY,adverse reactions,exact-meddra,30,45,30,,10,,0.75,
+56,TIVICAY,adverse reactions,non-meddra,15,45,15,,21,,0.4166666666666667,
+57,TIVICAY,adverse reactions,discontinuous,8,45,8,,27,,0.22857142857142856,
+58,TIVICAY,warnings and precautions,all,29,41,28,1.0,8,0.9655172413793104,0.7777777777777778,0.8615384615384615
+59,TIVICAY,warnings and precautions,exact-meddra,10,41,10,,17,,0.37037037037037035,
+60,TIVICAY,warnings and precautions,non-meddra,19,41,18,,16,,0.5294117647058824,
+61,TIVICAY,warnings and precautions,discontinuous,2,41,2,,37,,0.05128205128205128,
+62,TIVICAY,all-concat,all,71,85,66,5.0,7,0.9295774647887324,0.9041095890410958,0.9166666666666666
+63,TIVICAY,all-concat,exact-meddra,37,85,35,,25,,0.5833333333333334,
+64,TIVICAY,all-concat,non-meddra,34,85,31,,30,,0.5081967213114754,
+65,TIVICAY,all-concat,discontinuous,10,85,10,,56,,0.15151515151515152,
+66,TAFINLAR,adverse reactions,all,112,67,106,6.0,0,0.9464285714285714,1.0,0.9724770642201834
+67,TAFINLAR,adverse reactions,exact-meddra,94,67,90,,8,,0.9183673469387755,
+68,TAFINLAR,adverse reactions,non-meddra,18,67,16,,48,,0.25,
+69,TAFINLAR,warnings and precautions,all,63,30,52,11.0,0,0.8253968253968254,1.0,0.9043478260869565
+70,TAFINLAR,warnings and precautions,exact-meddra,28,30,24,,5,,0.8275862068965517,
+71,TAFINLAR,warnings and precautions,non-meddra,35,30,28,,3,,0.9032258064516129,
+72,TAFINLAR,warnings and precautions,discontinuous,2,30,2,,21,,0.08695652173913043,
+73,TAFINLAR,all-concat,all,158,103,150,8.0,0,0.9493670886075949,1.0,0.974025974025974
+74,TAFINLAR,all-concat,exact-meddra,110,103,108,,11,,0.907563025210084,
+75,TAFINLAR,all-concat,non-meddra,48,103,42,,45,,0.4827586206896552,
+76,TAFINLAR,all-concat,discontinuous,2,103,2,,84,,0.023255813953488372,
+77,HORIZANT,adverse reactions,all,27,28,27,0.0,2,1.0,0.9310344827586207,0.9642857142857143
+78,HORIZANT,adverse reactions,exact-meddra,26,28,26,,2,,0.9285714285714286,
+79,HORIZANT,adverse reactions,non-meddra,1,28,1,,26,,0.037037037037037035,
+80,HORIZANT,warnings and precautions,all,40,24,29,11.0,1,0.725,0.9666666666666667,0.8285714285714285
+81,HORIZANT,warnings and precautions,exact-meddra,17,24,16,,7,,0.6956521739130435,
+82,HORIZANT,warnings and precautions,non-meddra,23,24,13,,12,,0.52,
+83,HORIZANT,warnings and precautions,negated,2,24,2,,19,,0.09523809523809523,
+84,HORIZANT,warnings and precautions,discontinuous,12,24,5,,20,,0.2,
+85,HORIZANT,all-concat,all,62,39,51,11.0,1,0.8225806451612904,0.9807692307692307,0.8947368421052632
+86,HORIZANT,all-concat,exact-meddra,38,39,31,,8,,0.7948717948717948,
+87,HORIZANT,all-concat,non-meddra,24,39,20,,23,,0.46511627906976744,
+88,HORIZANT,all-concat,negated,2,39,2,,36,,0.05263157894736842,
+89,HORIZANT,all-concat,discontinuous,12,39,11,,29,,0.275,
+90,IMBRUVICA,adverse reactions,all,70,63,69,1.0,1,0.9857142857142858,0.9857142857142858,0.9857142857142858
+91,IMBRUVICA,adverse reactions,exact-meddra,55,63,55,,3,,0.9482758620689655,
+92,IMBRUVICA,adverse reactions,non-meddra,15,63,14,,35,,0.2857142857142857,
+93,IMBRUVICA,adverse reactions,discontinuous,2,63,2,,61,,0.031746031746031744,
+94,IMBRUVICA,warnings and precautions,all,32,32,31,1.0,1,0.96875,0.96875,0.96875
+95,IMBRUVICA,warnings and precautions,exact-meddra,16,32,16,,7,,0.6956521739130435,
+96,IMBRUVICA,warnings and precautions,non-meddra,16,32,15,,9,,0.625,
+97,IMBRUVICA,all-concat,all,89,68,86,3.0,1,0.9662921348314607,0.9885057471264368,0.9772727272727273
+98,IMBRUVICA,all-concat,exact-meddra,62,68,62,,2,,0.96875,
+99,IMBRUVICA,all-concat,non-meddra,27,68,24,,33,,0.42105263157894735,
+100,IMBRUVICA,all-concat,discontinuous,2,68,2,,66,,0.029411764705882353,
+101,ULORIC,adverse reactions,all,210,163,197,13.0,0,0.9380952380952381,1.0,0.9680589680589681
+102,ULORIC,adverse reactions,exact-meddra,187,163,177,,1,,0.9943820224719101,
+103,ULORIC,adverse reactions,non-meddra,23,163,20,,114,,0.14925373134328357,
+104,ULORIC,adverse reactions,discontinuous,18,163,16,,105,,0.1322314049586777,
+105,ULORIC,warnings and precautions,all,11,15,11,0.0,5,1.0,0.6875,0.8148148148148148
+106,ULORIC,warnings and precautions,exact-meddra,2,15,2,,11,,0.15384615384615385,
+107,ULORIC,warnings and precautions,non-meddra,9,15,9,,6,,0.6,
+108,ULORIC,all-concat,all,218,168,205,13.0,0,0.9403669724770642,1.0,0.9692671394799055
+109,ULORIC,all-concat,exact-meddra,188,168,178,,1,,0.994413407821229,
+110,ULORIC,all-concat,non-meddra,30,168,27,,96,,0.21951219512195122,
+111,ULORIC,all-concat,discontinuous,18,168,16,,110,,0.12698412698412698,
+112,CIMZIA,adverse reactions,all,107,65,97,10.0,0,0.9065420560747663,1.0,0.9509803921568627
+113,CIMZIA,adverse reactions,exact-meddra,76,65,71,,1,,0.9861111111111112,
+114,CIMZIA,adverse reactions,non-meddra,31,65,26,,24,,0.52,
+115,CIMZIA,adverse reactions,negated,1,65,1,,48,,0.02040816326530612,
+116,CIMZIA,adverse reactions,discontinuous,10,65,5,,47,,0.09615384615384616,
+117,CIMZIA,warnings and precautions,all,72,74,71,1.0,2,0.9861111111111112,0.9726027397260274,0.9793103448275863
+118,CIMZIA,warnings and precautions,exact-meddra,25,74,25,,11,,0.6944444444444444,
+119,CIMZIA,warnings and precautions,non-meddra,47,74,46,,10,,0.8214285714285714,
+120,CIMZIA,warnings and precautions,negated,2,74,2,,64,,0.030303030303030304,
+121,CIMZIA,warnings and precautions,discontinuous,10,74,10,,39,,0.20408163265306123,
+122,CIMZIA,boxed warnings,all,27,29,27,0.0,3,1.0,0.9,0.9473684210526316
+123,CIMZIA,boxed warnings,exact-meddra,13,29,13,,6,,0.6842105263157895,
+124,CIMZIA,boxed warnings,non-meddra,14,29,14,,5,,0.7368421052631579,
+125,CIMZIA,boxed warnings,discontinuous,8,29,8,,7,,0.5333333333333333,
+126,CIMZIA,all-concat,all,172,103,159,13.0,3,0.9244186046511628,0.9814814814814815,0.9520958083832335
+127,CIMZIA,all-concat,exact-meddra,92,103,88,,4,,0.9565217391304348,
+128,CIMZIA,all-concat,non-meddra,80,103,71,,26,,0.7319587628865979,
+129,CIMZIA,all-concat,negated,3,103,3,,66,,0.043478260869565216,
+130,CIMZIA,all-concat,discontinuous,27,103,22,,52,,0.2972972972972973,
+131,KALYDECO,adverse reactions,all,40,26,32,8.0,0,0.8,1.0,0.888888888888889
+132,KALYDECO,adverse reactions,exact-meddra,24,26,24,,1,,0.96,
+133,KALYDECO,adverse reactions,non-meddra,16,26,8,,21,,0.27586206896551724,
+134,KALYDECO,adverse reactions,discontinuous,10,26,3,,23,,0.11538461538461539,
+135,KALYDECO,warnings and precautions,all,6,7,6,0.0,0,1.0,1.0,1.0
+136,KALYDECO,warnings and precautions,exact-meddra,1,7,1,,5,,0.16666666666666666,
+137,KALYDECO,warnings and precautions,non-meddra,5,7,5,,0,,1.0,
+138,KALYDECO,warnings and precautions,discontinuous,3,7,3,,0,,1.0,
+139,KALYDECO,all-concat,all,45,27,37,8.0,0,0.8222222222222222,1.0,0.9024390243902439
+140,KALYDECO,all-concat,exact-meddra,25,27,25,,1,,0.9615384615384616,
+141,KALYDECO,all-concat,non-meddra,20,27,12,,21,,0.36363636363636365,
+142,KALYDECO,all-concat,discontinuous,13,27,6,,22,,0.21428571428571427,
+143,FULYZAQ,adverse reactions,all,36,36,36,0.0,0,1.0,1.0,1.0
+144,FULYZAQ,adverse reactions,exact-meddra,30,36,30,,6,,0.8333333333333334,
+145,FULYZAQ,adverse reactions,non-meddra,6,36,6,,30,,0.16666666666666666,
+146,FULYZAQ,all-concat,all,36,36,36,0.0,0,1.0,1.0,1.0
+147,FULYZAQ,all-concat,exact-meddra,30,36,30,,6,,0.8333333333333334,
+148,FULYZAQ,all-concat,non-meddra,6,36,6,,30,,0.16666666666666666,
+149,QUTENZA,adverse reactions,all,40,37,40,0.0,0,1.0,1.0,1.0
+150,QUTENZA,adverse reactions,exact-meddra,34,37,34,,1,,0.9714285714285714,
+151,QUTENZA,adverse reactions,non-meddra,6,37,6,,16,,0.2727272727272727,
+152,QUTENZA,warnings and precautions,all,6,9,6,0.0,1,1.0,0.8571428571428571,0.923076923076923
+153,QUTENZA,warnings and precautions,exact-meddra,3,9,3,,4,,0.42857142857142855,
+154,QUTENZA,warnings and precautions,non-meddra,3,9,3,,4,,0.42857142857142855,
+155,QUTENZA,all-concat,all,45,41,44,1.0,2,0.9777777777777777,0.9565217391304348,0.967032967032967
+156,QUTENZA,all-concat,exact-meddra,37,41,37,,3,,0.925,
+157,QUTENZA,all-concat,non-meddra,8,41,7,,18,,0.28,
+158,GRANIX,adverse reactions,all,15,13,14,1.0,0,0.9333333333333333,1.0,0.9655172413793104
+159,GRANIX,adverse reactions,exact-meddra,5,13,5,,7,,0.4166666666666667,
+160,GRANIX,adverse reactions,non-meddra,10,13,9,,4,,0.6923076923076923,
+161,GRANIX,warnings and precautions,all,24,17,21,3.0,0,0.875,1.0,0.9333333333333333
+162,GRANIX,warnings and precautions,exact-meddra,17,17,16,,0,,1.0,
+163,GRANIX,warnings and precautions,non-meddra,7,17,5,,6,,0.45454545454545453,
+164,GRANIX,warnings and precautions,discontinuous,1,17,0,,17,,0.0,
+165,GRANIX,all-concat,all,35,29,30,5.0,0,0.8571428571428571,1.0,0.923076923076923
+166,GRANIX,all-concat,exact-meddra,19,29,18,,4,,0.8181818181818182,
+167,GRANIX,all-concat,non-meddra,16,29,12,,8,,0.6,
+168,GRANIX,all-concat,discontinuous,1,29,0,,29,,0.0,
+169,COARTEM,adverse reactions,all,81,79,81,0.0,0,1.0,1.0,1.0
+170,COARTEM,adverse reactions,exact-meddra,78,79,78,,1,,0.9873417721518988,
+171,COARTEM,adverse reactions,non-meddra,3,79,3,,71,,0.04054054054054054,
+172,COARTEM,warnings and precautions,all,2,20,2,0.0,17,1.0,0.10526315789473684,0.1904761904761905
+173,COARTEM,warnings and precautions,non-meddra,2,20,2,,17,,0.10526315789473684,
+174,COARTEM,all-concat,all,83,80,83,0.0,0,1.0,1.0,1.0
+175,COARTEM,all-concat,exact-meddra,78,80,78,,2,,0.975,
+176,COARTEM,all-concat,non-meddra,5,80,5,,71,,0.06578947368421052,
+177,APTIOM,adverse reactions,all,42,59,41,1.0,11,0.9761904761904762,0.7884615384615384,0.8723404255319148
+178,APTIOM,adverse reactions,exact-meddra,34,59,34,,14,,0.7083333333333334,
+179,APTIOM,adverse reactions,non-meddra,8,59,7,,43,,0.14,
+180,APTIOM,adverse reactions,discontinuous,1,59,1,,57,,0.017241379310344827,
+181,APTIOM,warnings and precautions,all,86,63,81,5.0,0,0.9418604651162791,1.0,0.970059880239521
+182,APTIOM,warnings and precautions,exact-meddra,48,63,45,,8,,0.8490566037735849,
+183,APTIOM,warnings and precautions,non-meddra,38,63,36,,18,,0.6666666666666666,
+184,APTIOM,warnings and precautions,negated,9,63,9,,45,,0.16666666666666666,
+185,APTIOM,warnings and precautions,discontinuous,8,63,8,,50,,0.13793103448275862,
+186,APTIOM,all-concat,all,102,69,100,2.0,0,0.9803921568627451,1.0,0.99009900990099
+187,APTIOM,all-concat,exact-meddra,62,69,61,,6,,0.9104477611940298,
+188,APTIOM,all-concat,non-meddra,40,69,39,,24,,0.6190476190476191,
+189,APTIOM,all-concat,negated,9,69,9,,49,,0.15517241379310345,
+190,APTIOM,all-concat,discontinuous,8,69,8,,63,,0.11267605633802817,
+191,PROLIA,adverse reactions,all,70,45,69,1.0,0,0.9857142857142858,1.0,0.9928057553956835
+192,PROLIA,adverse reactions,exact-meddra,43,45,43,,5,,0.8958333333333334,
+193,PROLIA,adverse reactions,non-meddra,27,45,26,,18,,0.5909090909090909,
+194,PROLIA,adverse reactions,negated,3,45,2,,35,,0.05405405405405406,
+195,PROLIA,adverse reactions,discontinuous,8,45,8,,39,,0.1702127659574468,
+196,PROLIA,warnings and precautions,all,39,36,38,1.0,1,0.9743589743589743,0.9743589743589743,0.9743589743589743
+197,PROLIA,warnings and precautions,exact-meddra,14,36,14,,9,,0.6086956521739131,
+198,PROLIA,warnings and precautions,non-meddra,25,36,24,,4,,0.8571428571428571,
+199,PROLIA,warnings and precautions,discontinuous,9,36,9,,13,,0.4090909090909091,
+200,PROLIA,all-concat,all,92,44,87,5.0,1,0.9456521739130435,0.9886363636363636,0.9666666666666666
+201,PROLIA,all-concat,exact-meddra,49,44,48,,4,,0.9230769230769231,
+202,PROLIA,all-concat,non-meddra,43,44,39,,12,,0.7647058823529411,
+203,PROLIA,all-concat,negated,3,44,2,,34,,0.05555555555555555,
+204,PROLIA,all-concat,discontinuous,16,44,16,,27,,0.37209302325581395,
+205,BLINCYTO,adverse reactions,all,94,76,94,0.0,1,1.0,0.9894736842105263,0.9947089947089947
+206,BLINCYTO,adverse reactions,exact-meddra,78,76,78,,3,,0.9629629629629629,
+207,BLINCYTO,adverse reactions,non-meddra,16,76,16,,52,,0.23529411764705882,
+208,BLINCYTO,adverse reactions,negated,1,76,1,,73,,0.013513513513513514,
+209,BLINCYTO,adverse reactions,discontinuous,1,76,1,,75,,0.013157894736842105,
+210,BLINCYTO,warnings and precautions,all,46,35,44,2.0,2,0.9565217391304348,0.9565217391304348,0.9565217391304348
+211,BLINCYTO,warnings and precautions,exact-meddra,24,35,24,,15,,0.6153846153846154,
+212,BLINCYTO,warnings and precautions,non-meddra,22,35,20,,12,,0.625,
+213,BLINCYTO,warnings and precautions,negated,1,35,1,,32,,0.030303030303030304,
+214,BLINCYTO,warnings and precautions,discontinuous,2,35,2,,32,,0.058823529411764705,
+215,BLINCYTO,boxed warnings,all,4,7,4,0.0,0,1.0,1.0,1.0
+216,BLINCYTO,boxed warnings,exact-meddra,1,7,1,,6,,0.14285714285714285,
+217,BLINCYTO,boxed warnings,non-meddra,3,7,3,,1,,0.75,
+218,BLINCYTO,all-concat,all,118,76,109,9.0,1,0.923728813559322,0.990909090909091,0.956140350877193
+219,BLINCYTO,all-concat,exact-meddra,87,76,84,,3,,0.9655172413793104,
+220,BLINCYTO,all-concat,non-meddra,31,76,25,,46,,0.352112676056338,
+221,BLINCYTO,all-concat,negated,2,76,1,,73,,0.013513513513513514,
+222,BLINCYTO,all-concat,discontinuous,2,76,2,,73,,0.02666666666666667,
+223,STENDRA,adverse reactions,all,59,56,57,2.0,0,0.9661016949152542,1.0,0.9827586206896551
+224,STENDRA,adverse reactions,exact-meddra,53,56,53,,1,,0.9814814814814815,
+225,STENDRA,adverse reactions,non-meddra,6,56,4,,52,,0.07142857142857142,
+226,STENDRA,warnings and precautions,all,18,21,16,2.0,4,0.8888888888888888,0.8,0.8421052631578948
+227,STENDRA,warnings and precautions,exact-meddra,4,21,4,,13,,0.23529411764705882,
+228,STENDRA,warnings and precautions,non-meddra,14,21,12,,4,,0.75,
+229,STENDRA,warnings and precautions,discontinuous,1,21,1,,19,,0.05,
+230,STENDRA,all-concat,all,72,69,67,5.0,2,0.9305555555555556,0.9710144927536232,0.9503546099290779
+231,STENDRA,all-concat,exact-meddra,56,69,56,,4,,0.9333333333333333,
+232,STENDRA,all-concat,non-meddra,16,69,11,,49,,0.18333333333333332,
+233,STENDRA,all-concat,discontinuous,1,69,1,,68,,0.014492753623188406,
+234,XIAFLEX,adverse reactions,all,72,41,69,3.0,0,0.9583333333333334,1.0,0.9787234042553191
+235,XIAFLEX,adverse reactions,exact-meddra,48,41,47,,1,,0.9791666666666666,
+236,XIAFLEX,adverse reactions,non-meddra,24,41,22,,13,,0.6285714285714286,
+237,XIAFLEX,adverse reactions,negated,1,41,1,,33,,0.029411764705882353,
+238,XIAFLEX,adverse reactions,discontinuous,9,41,8,,27,,0.22857142857142856,
+239,XIAFLEX,warnings and precautions,all,34,30,34,0.0,1,1.0,0.9714285714285714,0.9855072463768115
+240,XIAFLEX,warnings and precautions,exact-meddra,13,30,13,,5,,0.7222222222222222,
+241,XIAFLEX,warnings and precautions,non-meddra,21,30,21,,3,,0.875,
+242,XIAFLEX,warnings and precautions,discontinuous,8,30,8,,10,,0.4444444444444444,
+243,XIAFLEX,boxed warnings,all,8,10,8,0.0,1,1.0,0.8888888888888888,0.9411764705882353
+244,XIAFLEX,boxed warnings,exact-meddra,1,10,1,,3,,0.25,
+245,XIAFLEX,boxed warnings,non-meddra,7,10,7,,2,,0.7777777777777778,
+246,XIAFLEX,boxed warnings,discontinuous,2,10,2,,2,,0.5,
+247,XIAFLEX,all-concat,all,95,52,93,2.0,0,0.9789473684210527,1.0,0.9893617021276596
+248,XIAFLEX,all-concat,exact-meddra,55,52,55,,2,,0.9649122807017544,
+249,XIAFLEX,all-concat,non-meddra,40,52,38,,13,,0.7450980392156863,
+250,XIAFLEX,all-concat,negated,1,52,1,,44,,0.022222222222222223,
+251,XIAFLEX,all-concat,discontinuous,15,52,13,,19,,0.40625,
+252,XEOMIN,adverse reactions,all,46,41,45,1.0,1,0.9782608695652174,0.9782608695652174,0.9782608695652174
+253,XEOMIN,adverse reactions,exact-meddra,40,41,40,,2,,0.9523809523809523,
+254,XEOMIN,adverse reactions,non-meddra,6,41,5,,27,,0.15625,
+255,XEOMIN,adverse reactions,negated,1,41,1,,36,,0.02702702702702703,
+256,XEOMIN,adverse reactions,discontinuous,5,41,5,,31,,0.1388888888888889,
+257,XEOMIN,warnings and precautions,all,35,44,30,5.0,12,0.8571428571428571,0.7142857142857143,0.7792207792207793
+258,XEOMIN,warnings and precautions,exact-meddra,16,44,15,,20,,0.42857142857142855,
+259,XEOMIN,warnings and precautions,non-meddra,19,44,15,,23,,0.39473684210526316,
+260,XEOMIN,warnings and precautions,discontinuous,5,44,4,,36,,0.1,
+261,XEOMIN,boxed warnings,all,16,11,12,4.0,0,0.75,1.0,0.8571428571428571
+262,XEOMIN,boxed warnings,exact-meddra,10,11,10,,1,,0.9090909090909091,
+263,XEOMIN,boxed warnings,non-meddra,6,11,2,,9,,0.18181818181818182,
+264,XEOMIN,boxed warnings,discontinuous,1,11,1,,9,,0.1,
+265,XEOMIN,all-concat,all,81,47,75,6.0,0,0.9259259259259259,1.0,0.9615384615384615
+266,XEOMIN,all-concat,exact-meddra,53,47,50,,1,,0.9803921568627451,
+267,XEOMIN,all-concat,non-meddra,28,47,25,,15,,0.625,
+268,XEOMIN,all-concat,negated,1,47,1,,41,,0.023809523809523808,
+269,XEOMIN,all-concat,discontinuous,10,47,10,,28,,0.2631578947368421,
+270,GILOTRIF,adverse reactions,all,49,35,46,3.0,0,0.9387755102040817,1.0,0.968421052631579
+271,GILOTRIF,adverse reactions,exact-meddra,42,35,39,,1,,0.975,
+272,GILOTRIF,adverse reactions,non-meddra,7,35,7,,22,,0.2413793103448276,
+273,GILOTRIF,adverse reactions,discontinuous,1,35,1,,32,,0.030303030303030304,
+274,GILOTRIF,warnings and precautions,all,39,28,37,2.0,0,0.9487179487179487,1.0,0.9736842105263158
+275,GILOTRIF,warnings and precautions,exact-meddra,20,28,18,,4,,0.8181818181818182,
+276,GILOTRIF,warnings and precautions,non-meddra,19,28,19,,7,,0.7307692307692307,
+277,GILOTRIF,warnings and precautions,discontinuous,6,28,6,,18,,0.25,
+278,GILOTRIF,all-concat,all,80,60,78,2.0,4,0.975,0.9512195121951219,0.9629629629629629
+279,GILOTRIF,all-concat,exact-meddra,58,60,57,,8,,0.8769230769230769,
+280,GILOTRIF,all-concat,non-meddra,22,60,21,,30,,0.4117647058823529,
+281,GILOTRIF,all-concat,discontinuous,7,60,7,,46,,0.1320754716981132,
+282,TREANDA,adverse reactions,all,123,104,123,0.0,0,1.0,1.0,1.0
+283,TREANDA,adverse reactions,exact-meddra,99,104,99,,7,,0.9339622641509434,
+284,TREANDA,adverse reactions,non-meddra,24,104,24,,57,,0.2962962962962963,
+285,TREANDA,adverse reactions,negated,1,104,1,,103,,0.009615384615384616,
+286,TREANDA,adverse reactions,discontinuous,14,104,14,,90,,0.1346153846153846,
+287,TREANDA,warnings and precautions,all,51,47,51,0.0,0,1.0,1.0,1.0
+288,TREANDA,warnings and precautions,exact-meddra,27,47,27,,9,,0.75,
+289,TREANDA,warnings and precautions,non-meddra,24,47,24,,5,,0.8275862068965517,
+290,TREANDA,warnings and precautions,discontinuous,4,47,4,,31,,0.11428571428571428,
+291,TREANDA,all-concat,all,154,78,147,7.0,0,0.9545454545454546,1.0,0.9767441860465117
+292,TREANDA,all-concat,exact-meddra,111,78,107,,6,,0.9469026548672567,
+293,TREANDA,all-concat,non-meddra,43,78,40,,26,,0.6060606060606061,
+294,TREANDA,all-concat,negated,1,78,1,,77,,0.01282051282051282,
+295,TREANDA,all-concat,discontinuous,18,78,17,,60,,0.22077922077922077,
+296,CHOLINE,adverse reactions,all,1,1,1,0.0,0,1.0,1.0,1.0
+297,CHOLINE,adverse reactions,exact-meddra,1,1,1,,0,,1.0,
+298,CHOLINE,warnings and precautions,all,4,11,4,0.0,7,1.0,0.36363636363636365,0.5333333333333333
+299,CHOLINE,warnings and precautions,exact-meddra,2,11,2,,8,,0.2,
+300,CHOLINE,warnings and precautions,non-meddra,2,11,2,,7,,0.2222222222222222,
+301,CHOLINE,all-concat,all,5,13,5,0.0,7,1.0,0.4166666666666667,0.5882352941176471
+302,CHOLINE,all-concat,exact-meddra,3,13,3,,8,,0.2727272727272727,
+303,CHOLINE,all-concat,non-meddra,2,13,2,,10,,0.16666666666666666,
+304,ERWINAZE,adverse reactions,all,32,23,32,0.0,1,1.0,0.9696969696969697,0.9846153846153847
+305,ERWINAZE,adverse reactions,exact-meddra,19,23,19,,2,,0.9047619047619048,
+306,ERWINAZE,adverse reactions,non-meddra,13,23,13,,9,,0.5909090909090909,
+307,ERWINAZE,adverse reactions,negated,6,23,6,,9,,0.4,
+308,ERWINAZE,adverse reactions,discontinuous,4,23,4,,18,,0.18181818181818182,
+309,ERWINAZE,warnings and precautions,all,15,14,15,0.0,0,1.0,1.0,1.0
+310,ERWINAZE,warnings and precautions,exact-meddra,8,14,8,,4,,0.6666666666666666,
+311,ERWINAZE,warnings and precautions,non-meddra,7,14,7,,4,,0.6363636363636364,
+312,ERWINAZE,warnings and precautions,discontinuous,5,14,5,,10,,0.3333333333333333,
+313,ERWINAZE,all-concat,all,41,30,37,4.0,0,0.9024390243902439,1.0,0.9487179487179488
+314,ERWINAZE,all-concat,exact-meddra,23,30,23,,1,,0.9583333333333334,
+315,ERWINAZE,all-concat,non-meddra,18,30,14,,9,,0.6086956521739131,
+316,ERWINAZE,all-concat,negated,6,30,6,,11,,0.35294117647058826,
+317,ERWINAZE,all-concat,discontinuous,9,30,5,,22,,0.18518518518518517,
+318,TRULICITY,adverse reactions,all,48,39,46,2.0,4,0.9583333333333334,0.92,0.9387755102040817
+319,TRULICITY,adverse reactions,exact-meddra,30,39,28,,11,,0.717948717948718,
+320,TRULICITY,adverse reactions,non-meddra,18,39,18,,12,,0.6,
+321,TRULICITY,adverse reactions,discontinuous,7,39,7,,27,,0.20588235294117646,
+322,TRULICITY,warnings and precautions,all,17,15,17,0.0,1,1.0,0.9444444444444444,0.9714285714285714
+323,TRULICITY,warnings and precautions,exact-meddra,8,15,8,,4,,0.6666666666666666,
+324,TRULICITY,warnings and precautions,non-meddra,9,15,9,,8,,0.5294117647058824,
+325,TRULICITY,warnings and precautions,discontinuous,2,15,2,,13,,0.13333333333333333,
+326,TRULICITY,boxed warnings,all,5,8,5,0.0,6,1.0,0.45454545454545453,0.625
+327,TRULICITY,boxed warnings,non-meddra,5,8,5,,6,,0.45454545454545453,
+328,TRULICITY,boxed warnings,discontinuous,2,8,2,,6,,0.25,
+329,TRULICITY,all-concat,all,55,40,53,2.0,4,0.9636363636363636,0.9298245614035088,0.9464285714285715
+330,TRULICITY,all-concat,exact-meddra,31,40,29,,12,,0.7073170731707317,
+331,TRULICITY,all-concat,non-meddra,24,40,24,,11,,0.6857142857142857,
+332,TRULICITY,all-concat,discontinuous,9,40,9,,26,,0.2571428571428571,
+333,ADREVIEW,adverse reactions,all,11,9,11,0.0,0,1.0,1.0,1.0
+334,ADREVIEW,adverse reactions,exact-meddra,8,9,8,,1,,0.8888888888888888,
+335,ADREVIEW,adverse reactions,non-meddra,3,9,3,,5,,0.375,
+336,ADREVIEW,adverse reactions,discontinuous,3,9,3,,6,,0.3333333333333333,
+337,ADREVIEW,warnings and precautions,all,4,17,4,0.0,10,1.0,0.2857142857142857,0.4444444444444445
+338,ADREVIEW,warnings and precautions,exact-meddra,1,17,1,,16,,0.058823529411764705,
+339,ADREVIEW,warnings and precautions,non-meddra,3,17,3,,11,,0.21428571428571427,
+340,ADREVIEW,all-concat,all,14,19,14,0.0,5,1.0,0.7368421052631579,0.8484848484848484
+341,ADREVIEW,all-concat,exact-meddra,9,19,9,,8,,0.5294117647058824,
+342,ADREVIEW,all-concat,non-meddra,5,19,5,,11,,0.3125,
+343,ADREVIEW,all-concat,discontinuous,3,19,3,,16,,0.15789473684210525,
+344,DOTAREM,adverse reactions,all,59,57,59,0.0,0,1.0,1.0,1.0
+345,DOTAREM,adverse reactions,exact-meddra,54,57,54,,2,,0.9642857142857143,
+346,DOTAREM,adverse reactions,non-meddra,5,57,5,,45,,0.1,
+347,DOTAREM,adverse reactions,negated,1,57,1,,56,,0.017543859649122806,
+348,DOTAREM,adverse reactions,discontinuous,4,57,4,,50,,0.07407407407407407,
+349,DOTAREM,warnings and precautions,all,16,24,16,0.0,3,1.0,0.8421052631578947,0.9142857142857143
+350,DOTAREM,warnings and precautions,exact-meddra,7,24,7,,8,,0.4666666666666667,
+351,DOTAREM,warnings and precautions,non-meddra,9,24,9,,11,,0.45,
+352,DOTAREM,warnings and precautions,discontinuous,5,24,5,,15,,0.25,
+353,DOTAREM,boxed warnings,all,4,12,4,0.0,4,1.0,0.5,0.6666666666666666
+354,DOTAREM,boxed warnings,exact-meddra,2,12,2,,6,,0.25,
+355,DOTAREM,boxed warnings,non-meddra,2,12,2,,9,,0.18181818181818182,
+356,DOTAREM,all-concat,all,71,58,68,3.0,0,0.9577464788732394,1.0,0.9784172661870503
+357,DOTAREM,all-concat,exact-meddra,59,58,59,,1,,0.9833333333333333,
+358,DOTAREM,all-concat,non-meddra,12,58,9,,41,,0.18,
+359,DOTAREM,all-concat,negated,1,58,1,,57,,0.017241379310344827,
+360,DOTAREM,all-concat,discontinuous,9,58,7,,46,,0.1320754716981132,
+361,PRADAXA,adverse reactions,all,59,44,55,4.0,0,0.9322033898305084,1.0,0.9649122807017544
+362,PRADAXA,adverse reactions,exact-meddra,35,44,35,,0,,1.0,
+363,PRADAXA,adverse reactions,non-meddra,24,44,20,,14,,0.5882352941176471,
+364,PRADAXA,adverse reactions,negated,1,44,1,,30,,0.03225806451612903,
+365,PRADAXA,adverse reactions,discontinuous,8,44,8,,26,,0.23529411764705882,
+366,PRADAXA,warnings and precautions,all,12,24,12,0.0,7,1.0,0.631578947368421,0.7741935483870968
+367,PRADAXA,warnings and precautions,exact-meddra,6,24,6,,10,,0.375,
+368,PRADAXA,warnings and precautions,non-meddra,6,24,6,,14,,0.3,
+369,PRADAXA,warnings and precautions,discontinuous,3,24,3,,18,,0.14285714285714285,
+370,PRADAXA,boxed warnings,all,7,6,7,0.0,3,1.0,0.7,0.8235294117647058
+371,PRADAXA,boxed warnings,exact-meddra,2,6,2,,5,,0.2857142857142857,
+372,PRADAXA,boxed warnings,non-meddra,5,6,5,,3,,0.625,
+373,PRADAXA,boxed warnings,discontinuous,3,6,3,,3,,0.5,
+374,PRADAXA,all-concat,all,72,34,62,10.0,0,0.8611111111111112,1.0,0.9253731343283582
+375,PRADAXA,all-concat,exact-meddra,39,34,38,,0,,1.0,
+376,PRADAXA,all-concat,non-meddra,33,34,24,,12,,0.6666666666666666,
+377,PRADAXA,all-concat,negated,1,34,1,,27,,0.03571428571428571,
+378,PRADAXA,all-concat,discontinuous,14,34,12,,22,,0.35294117647058826,
+379,ELIQUIS,adverse reactions,all,105,65,103,2.0,2,0.9809523809523809,0.9809523809523809,0.9809523809523809
+380,ELIQUIS,adverse reactions,exact-meddra,69,65,69,,2,,0.971830985915493,
+381,ELIQUIS,adverse reactions,non-meddra,36,65,34,,25,,0.576271186440678,
+382,ELIQUIS,adverse reactions,negated,1,65,1,,34,,0.02857142857142857,
+383,ELIQUIS,adverse reactions,discontinuous,15,65,15,,37,,0.28846153846153844,
+384,ELIQUIS,warnings and precautions,all,8,17,8,0.0,4,1.0,0.6666666666666666,0.8
+385,ELIQUIS,warnings and precautions,exact-meddra,4,17,4,,4,,0.5,
+386,ELIQUIS,warnings and precautions,non-meddra,4,17,4,,10,,0.2857142857142857,
+387,ELIQUIS,warnings and precautions,discontinuous,2,17,2,,14,,0.125,
+388,ELIQUIS,boxed warnings,all,8,6,8,0.0,2,1.0,0.8,0.888888888888889
+389,ELIQUIS,boxed warnings,exact-meddra,2,6,2,,4,,0.3333333333333333,
+390,ELIQUIS,boxed warnings,non-meddra,6,6,6,,2,,0.75,
+391,ELIQUIS,boxed warnings,discontinuous,3,6,3,,3,,0.5,
+392,ELIQUIS,all-concat,all,113,76,109,4.0,2,0.9646017699115044,0.9819819819819819,0.9732142857142857
+393,ELIQUIS,all-concat,exact-meddra,72,76,72,,2,,0.972972972972973,
+394,ELIQUIS,all-concat,non-meddra,41,76,37,,22,,0.6271186440677966,
+395,ELIQUIS,all-concat,negated,1,76,1,,39,,0.025,
+396,ELIQUIS,all-concat,discontinuous,19,76,18,,34,,0.34615384615384615,
+397,ZERBAXA,adverse reactions,all,48,56,48,0.0,6,1.0,0.8888888888888888,0.9411764705882353
+398,ZERBAXA,adverse reactions,exact-meddra,38,56,38,,10,,0.7916666666666666,
+399,ZERBAXA,adverse reactions,non-meddra,10,56,10,,42,,0.19230769230769232,
+400,ZERBAXA,adverse reactions,discontinuous,2,56,2,,53,,0.03636363636363636,
+401,ZERBAXA,warnings and precautions,all,7,7,7,0.0,1,1.0,0.875,0.9333333333333333
+402,ZERBAXA,warnings and precautions,exact-meddra,2,7,2,,5,,0.2857142857142857,
+403,ZERBAXA,warnings and precautions,non-meddra,5,7,5,,1,,0.8333333333333334,
+404,ZERBAXA,warnings and precautions,discontinuous,2,7,2,,5,,0.2857142857142857,
+405,ZERBAXA,all-concat,all,52,45,49,3.0,0,0.9423076923076923,1.0,0.9702970297029703
+406,ZERBAXA,all-concat,exact-meddra,39,45,39,,3,,0.9285714285714286,
+407,ZERBAXA,all-concat,non-meddra,13,45,10,,30,,0.25,
+408,ZERBAXA,all-concat,discontinuous,4,45,3,,39,,0.07142857142857142,
+409,FERRIPROX,adverse reactions,all,85,84,85,0.0,0,1.0,1.0,1.0
+410,FERRIPROX,adverse reactions,exact-meddra,80,84,80,,0,,1.0,
+411,FERRIPROX,adverse reactions,non-meddra,5,84,5,,65,,0.07142857142857142,
+412,FERRIPROX,adverse reactions,discontinuous,1,84,1,,80,,0.012345679012345678,
+413,FERRIPROX,warnings and precautions,all,14,11,13,1.0,2,0.9285714285714286,0.8666666666666667,0.896551724137931
+414,FERRIPROX,warnings and precautions,exact-meddra,3,11,3,,7,,0.3,
+415,FERRIPROX,warnings and precautions,non-meddra,11,11,10,,4,,0.7142857142857143,
+416,FERRIPROX,warnings and precautions,discontinuous,4,11,4,,6,,0.4,
+417,FERRIPROX,boxed warnings,all,4,5,4,0.0,0,1.0,1.0,1.0
+418,FERRIPROX,boxed warnings,exact-meddra,3,5,3,,2,,0.6,
+419,FERRIPROX,boxed warnings,non-meddra,1,5,1,,3,,0.25,
+420,FERRIPROX,all-concat,all,97,85,93,4.0,0,0.9587628865979382,1.0,0.9789473684210526
+421,FERRIPROX,all-concat,exact-meddra,81,85,81,,0,,1.0,
+422,FERRIPROX,all-concat,non-meddra,16,85,12,,59,,0.16901408450704225,
+423,FERRIPROX,all-concat,discontinuous,5,85,3,,74,,0.03896103896103896,
+424,DALVANCE,adverse reactions,all,38,35,35,3.0,0,0.9210526315789473,1.0,0.958904109589041
+425,DALVANCE,adverse reactions,exact-meddra,33,35,33,,0,,1.0,
+426,DALVANCE,adverse reactions,non-meddra,5,35,2,,31,,0.06060606060606061,
+427,DALVANCE,adverse reactions,negated,1,35,0,,35,,0.0,
+428,DALVANCE,warnings and precautions,all,20,24,19,1.0,4,0.95,0.8260869565217391,0.8837209302325583
+429,DALVANCE,warnings and precautions,exact-meddra,5,24,5,,15,,0.25,
+430,DALVANCE,warnings and precautions,non-meddra,15,24,14,,4,,0.7777777777777778,
+431,DALVANCE,warnings and precautions,discontinuous,8,24,7,,14,,0.3333333333333333,
+432,DALVANCE,all-concat,all,52,42,50,2.0,0,0.9615384615384616,1.0,0.9803921568627451
+433,DALVANCE,all-concat,exact-meddra,34,42,34,,3,,0.918918918918919,
+434,DALVANCE,all-concat,non-meddra,18,42,16,,24,,0.4,
+435,DALVANCE,all-concat,negated,1,42,1,,41,,0.023809523809523808,
+436,DALVANCE,all-concat,discontinuous,8,42,7,,32,,0.1794871794871795,
+437,ARCAPTA,adverse reactions,all,35,28,34,1.0,0,0.9714285714285714,1.0,0.9855072463768115
+438,ARCAPTA,adverse reactions,exact-meddra,26,28,26,,0,,1.0,
+439,ARCAPTA,adverse reactions,non-meddra,9,28,8,,18,,0.3076923076923077,
+440,ARCAPTA,adverse reactions,negated,5,28,4,,23,,0.14814814814814814,
+441,ARCAPTA,adverse reactions,discontinuous,2,28,2,,26,,0.07142857142857142,
+442,ARCAPTA,warnings and precautions,all,22,37,22,0.0,11,1.0,0.6666666666666666,0.8
+443,ARCAPTA,warnings and precautions,exact-meddra,2,37,2,,33,,0.05714285714285714,
+444,ARCAPTA,warnings and precautions,non-meddra,20,37,20,,13,,0.6060606060606061,
+445,ARCAPTA,warnings and precautions,discontinuous,3,37,3,,29,,0.09375,
+446,ARCAPTA,boxed warnings,all,2,2,2,0.0,0,1.0,1.0,1.0
+447,ARCAPTA,boxed warnings,exact-meddra,1,2,1,,1,,0.5,
+448,ARCAPTA,boxed warnings,non-meddra,1,2,1,,0,,1.0,
+449,ARCAPTA,all-concat,all,53,28,46,7.0,0,0.8679245283018868,1.0,0.9292929292929293
+450,ARCAPTA,all-concat,exact-meddra,26,28,26,,0,,1.0,
+451,ARCAPTA,all-concat,non-meddra,27,28,20,,17,,0.5405405405405406,
+452,ARCAPTA,all-concat,negated,5,28,4,,23,,0.14814814814814814,
+453,ARCAPTA,all-concat,discontinuous,5,28,4,,24,,0.14285714285714285,
+454,CERDELGA,adverse reactions,all,19,19,19,0.0,0,1.0,1.0,1.0
+455,CERDELGA,adverse reactions,exact-meddra,18,19,18,,0,,1.0,
+456,CERDELGA,adverse reactions,non-meddra,1,19,1,,16,,0.058823529411764705,
+457,CERDELGA,warnings and precautions,all,8,11,8,0.0,0,1.0,1.0,1.0
+458,CERDELGA,warnings and precautions,non-meddra,8,11,8,,0,,1.0,
+459,CERDELGA,warnings and precautions,discontinuous,6,11,6,,4,,0.6,
+460,CERDELGA,all-concat,all,27,24,27,0.0,0,1.0,1.0,1.0
+461,CERDELGA,all-concat,exact-meddra,18,24,18,,2,,0.9,
+462,CERDELGA,all-concat,non-meddra,9,24,9,,14,,0.391304347826087,
+463,CERDELGA,all-concat,discontinuous,6,24,6,,19,,0.24,
+464,GADAVIST,adverse reactions,all,54,42,53,1.0,0,0.9814814814814815,1.0,0.9906542056074767
+465,GADAVIST,adverse reactions,exact-meddra,49,42,48,,0,,1.0,
+466,GADAVIST,adverse reactions,non-meddra,5,42,5,,34,,0.1282051282051282,
+467,GADAVIST,adverse reactions,discontinuous,5,42,5,,39,,0.11363636363636363,
+468,GADAVIST,warnings and precautions,all,12,19,12,0.0,3,1.0,0.8,0.888888888888889
+469,GADAVIST,warnings and precautions,exact-meddra,3,19,3,,12,,0.2,
+470,GADAVIST,warnings and precautions,non-meddra,9,19,9,,6,,0.6,
+471,GADAVIST,warnings and precautions,discontinuous,4,19,4,,13,,0.23529411764705882,
+472,GADAVIST,boxed warnings,all,4,12,4,0.0,4,1.0,0.5,0.6666666666666666
+473,GADAVIST,boxed warnings,exact-meddra,2,12,2,,6,,0.25,
+474,GADAVIST,boxed warnings,non-meddra,2,12,2,,9,,0.18181818181818182,
+475,GADAVIST,all-concat,all,63,43,60,3.0,0,0.9523809523809523,1.0,0.975609756097561
+476,GADAVIST,all-concat,exact-meddra,51,43,50,,0,,1.0,
+477,GADAVIST,all-concat,non-meddra,12,43,10,,30,,0.25,
+478,GADAVIST,all-concat,discontinuous,9,43,7,,35,,0.16666666666666666,
+479,ZYKADIA,adverse reactions,all,72,39,63,9.0,0,0.875,1.0,0.9333333333333333
+480,ZYKADIA,adverse reactions,exact-meddra,59,39,51,,2,,0.9622641509433962,
+481,ZYKADIA,adverse reactions,non-meddra,13,39,12,,26,,0.3157894736842105,
+482,ZYKADIA,adverse reactions,discontinuous,5,39,5,,32,,0.13513513513513514,
+483,ZYKADIA,warnings and precautions,all,34,25,34,0.0,0,1.0,1.0,1.0
+484,ZYKADIA,warnings and precautions,exact-meddra,14,25,14,,7,,0.6666666666666666,
+485,ZYKADIA,warnings and precautions,non-meddra,20,25,20,,9,,0.6896551724137931,
+486,ZYKADIA,warnings and precautions,discontinuous,2,25,2,,20,,0.09090909090909091,
+487,ZYKADIA,all-concat,all,92,40,81,11.0,0,0.8804347826086957,1.0,0.9364161849710982
+488,ZYKADIA,all-concat,exact-meddra,63,40,55,,0,,1.0,
+489,ZYKADIA,all-concat,non-meddra,29,40,26,,25,,0.5098039215686274,
+490,ZYKADIA,all-concat,discontinuous,7,40,7,,33,,0.175,
+491,XALKORI,adverse reactions,all,81,51,75,6.0,0,0.9259259259259259,1.0,0.9615384615384615
+492,XALKORI,adverse reactions,exact-meddra,61,51,57,,4,,0.9344262295081968,
+493,XALKORI,adverse reactions,non-meddra,20,51,18,,35,,0.33962264150943394,
+494,XALKORI,adverse reactions,negated,1,51,1,,50,,0.0196078431372549,
+495,XALKORI,adverse reactions,discontinuous,6,51,6,,46,,0.11538461538461539,
+496,XALKORI,warnings and precautions,all,29,15,25,4.0,0,0.8620689655172413,1.0,0.9259259259259259
+497,XALKORI,warnings and precautions,exact-meddra,9,15,9,,5,,0.6428571428571429,
+498,XALKORI,warnings and precautions,non-meddra,20,15,16,,2,,0.8888888888888888,
+499,XALKORI,warnings and precautions,discontinuous,6,15,2,,13,,0.13333333333333333,
+500,XALKORI,all-concat,all,99,56,93,6.0,0,0.9393939393939394,1.0,0.96875
+501,XALKORI,all-concat,exact-meddra,65,56,63,,4,,0.9402985074626866,
+502,XALKORI,all-concat,non-meddra,34,56,30,,33,,0.47619047619047616,
+503,XALKORI,all-concat,negated,1,56,1,,55,,0.017857142857142856,
+504,XALKORI,all-concat,discontinuous,12,56,10,,45,,0.18181818181818182,
+505,BEPREVE,adverse reactions,all,10,10,10,0.0,0,1.0,1.0,1.0
+506,BEPREVE,adverse reactions,exact-meddra,6,10,6,,2,,0.75,
+507,BEPREVE,adverse reactions,non-meddra,4,10,4,,3,,0.5714285714285714,
+508,BEPREVE,adverse reactions,discontinuous,2,10,2,,7,,0.2222222222222222,
+509,BEPREVE,all-concat,all,10,10,10,0.0,0,1.0,1.0,1.0
+510,BEPREVE,all-concat,exact-meddra,6,10,6,,2,,0.75,
+511,BEPREVE,all-concat,non-meddra,4,10,4,,3,,0.5714285714285714,
+512,BEPREVE,all-concat,discontinuous,2,10,2,,7,,0.2222222222222222,
+513,EDARBI,adverse reactions,all,25,19,25,0.0,0,1.0,1.0,1.0
+514,EDARBI,adverse reactions,exact-meddra,14,19,14,,5,,0.7368421052631579,
+515,EDARBI,adverse reactions,non-meddra,11,19,11,,12,,0.4782608695652174,
+516,EDARBI,adverse reactions,discontinuous,8,19,8,,13,,0.38095238095238093,
+517,EDARBI,warnings and precautions,all,21,17,21,0.0,0,1.0,1.0,1.0
+518,EDARBI,warnings and precautions,exact-meddra,3,17,3,,11,,0.21428571428571427,
+519,EDARBI,warnings and precautions,non-meddra,18,17,18,,1,,0.9473684210526315,
+520,EDARBI,warnings and precautions,discontinuous,9,17,9,,3,,0.75,
+521,EDARBI,boxed warnings,all,3,3,3,0.0,1,1.0,0.75,0.8571428571428571
+522,EDARBI,boxed warnings,non-meddra,3,3,3,,1,,0.75,
+523,EDARBI,boxed warnings,discontinuous,1,3,1,,1,,0.5,
+524,EDARBI,all-concat,all,48,14,21,27.0,0,0.4375,1.0,0.6086956521739131
+525,EDARBI,all-concat,exact-meddra,17,14,15,,0,,1.0,
+526,EDARBI,all-concat,non-meddra,31,14,6,,10,,0.375,
+527,EDARBI,all-concat,discontinuous,18,14,4,,11,,0.26666666666666666,
+528,POTIGA,adverse reactions,all,66,64,66,0.0,0,1.0,1.0,1.0
+529,POTIGA,adverse reactions,exact-meddra,59,64,59,,3,,0.9516129032258065,
+530,POTIGA,adverse reactions,non-meddra,7,64,7,,51,,0.1206896551724138,
+531,POTIGA,adverse reactions,discontinuous,1,64,1,,62,,0.015873015873015872,
+532,POTIGA,warnings and precautions,all,52,47,52,0.0,2,1.0,0.9629629629629629,0.9811320754716981
+533,POTIGA,warnings and precautions,exact-meddra,19,47,19,,10,,0.6551724137931034,
+534,POTIGA,warnings and precautions,non-meddra,33,47,33,,10,,0.7674418604651163,
+535,POTIGA,warnings and precautions,negated,3,47,3,,30,,0.09090909090909091,
+536,POTIGA,warnings and precautions,discontinuous,15,47,15,,13,,0.5357142857142857,
+537,POTIGA,boxed warnings,all,8,8,8,0.0,0,1.0,1.0,1.0
+538,POTIGA,boxed warnings,exact-meddra,1,8,1,,1,,0.5,
+539,POTIGA,boxed warnings,non-meddra,7,8,7,,0,,1.0,
+540,POTIGA,boxed warnings,negated,1,8,1,,0,,1.0,
+541,POTIGA,boxed warnings,discontinuous,2,8,2,,3,,0.4,
+542,POTIGA,all-concat,all,108,64,108,0.0,0,1.0,1.0,1.0
+543,POTIGA,all-concat,exact-meddra,67,64,67,,3,,0.9571428571428572,
+544,POTIGA,all-concat,non-meddra,41,64,41,,41,,0.5,
+545,POTIGA,all-concat,negated,4,64,4,,56,,0.06666666666666667,
+546,POTIGA,all-concat,discontinuous,17,64,17,,57,,0.22972972972972974,
+547,TUDORZA,adverse reactions,all,28,26,25,3.0,0,0.8928571428571429,1.0,0.9433962264150945
+548,TUDORZA,adverse reactions,exact-meddra,22,26,22,,2,,0.9166666666666666,
+549,TUDORZA,adverse reactions,non-meddra,6,26,3,,22,,0.12,
+550,TUDORZA,adverse reactions,discontinuous,2,26,0,,26,,0.0,
+551,TUDORZA,warnings and precautions,all,14,23,14,0.0,5,1.0,0.7368421052631579,0.8484848484848484
+552,TUDORZA,warnings and precautions,exact-meddra,7,23,7,,13,,0.35,
+553,TUDORZA,warnings and precautions,non-meddra,7,23,7,,11,,0.3888888888888889,
+554,TUDORZA,warnings and precautions,discontinuous,2,23,2,,20,,0.09090909090909091,
+555,TUDORZA,all-concat,all,29,26,26,3.0,0,0.896551724137931,1.0,0.9454545454545454
+556,TUDORZA,all-concat,exact-meddra,22,26,22,,2,,0.9166666666666666,
+557,TUDORZA,all-concat,non-meddra,7,26,4,,20,,0.16666666666666666,
+558,TUDORZA,all-concat,discontinuous,2,26,0,,26,,0.0,
+559,PROMACTA,adverse reactions,all,66,51,63,3.0,0,0.9545454545454546,1.0,0.9767441860465117
+560,PROMACTA,adverse reactions,exact-meddra,52,51,51,,1,,0.9807692307692307,
+561,PROMACTA,adverse reactions,non-meddra,14,51,12,,39,,0.23529411764705882,
+562,PROMACTA,adverse reactions,discontinuous,2,51,2,,48,,0.04,
+563,PROMACTA,warnings and precautions,all,25,19,25,0.0,0,1.0,1.0,1.0
+564,PROMACTA,warnings and precautions,exact-meddra,11,19,11,,4,,0.7333333333333333,
+565,PROMACTA,warnings and precautions,non-meddra,14,19,14,,9,,0.6086956521739131,
+566,PROMACTA,warnings and precautions,negated,1,19,1,,17,,0.05555555555555555,
+567,PROMACTA,warnings and precautions,discontinuous,6,19,6,,14,,0.3,
+568,PROMACTA,boxed warnings,all,1,1,1,0.0,0,1.0,1.0,1.0
+569,PROMACTA,boxed warnings,exact-meddra,1,1,1,,0,,1.0,
+570,PROMACTA,all-concat,all,82,54,78,4.0,0,0.9512195121951219,1.0,0.975
+571,PROMACTA,all-concat,exact-meddra,56,54,55,,1,,0.9821428571428571,
+572,PROMACTA,all-concat,non-meddra,26,54,23,,41,,0.359375,
+573,PROMACTA,all-concat,negated,1,54,1,,52,,0.018867924528301886,
+574,PROMACTA,all-concat,discontinuous,7,54,7,,50,,0.12280701754385964,
+575,INLYTA,adverse reactions,all,79,78,79,0.0,1,1.0,0.9875,0.9937106918238994
+576,INLYTA,adverse reactions,exact-meddra,66,78,66,,4,,0.9428571428571428,
+577,INLYTA,adverse reactions,non-meddra,13,78,13,,44,,0.22807017543859648,
+578,INLYTA,adverse reactions,discontinuous,3,78,3,,74,,0.03896103896103896,
+579,INLYTA,warnings and precautions,all,52,15,40,12.0,0,0.7692307692307693,1.0,0.8695652173913044
+580,INLYTA,warnings and precautions,exact-meddra,31,15,22,,2,,0.9166666666666666,
+581,INLYTA,warnings and precautions,non-meddra,21,15,18,,4,,0.8181818181818182,
+582,INLYTA,warnings and precautions,discontinuous,6,15,4,,9,,0.3076923076923077,
+583,INLYTA,all-concat,all,116,81,108,8.0,0,0.9310344827586207,1.0,0.9642857142857143
+584,INLYTA,all-concat,exact-meddra,85,81,82,,3,,0.9647058823529412,
+585,INLYTA,all-concat,non-meddra,31,81,26,,35,,0.4262295081967213,
+586,INLYTA,all-concat,discontinuous,9,81,9,,62,,0.1267605633802817,
+587,NORTHERA,adverse reactions,all,15,15,15,0.0,0,1.0,1.0,1.0
+588,NORTHERA,adverse reactions,exact-meddra,9,15,9,,1,,0.9,
+589,NORTHERA,adverse reactions,non-meddra,6,15,6,,7,,0.46153846153846156,
+590,NORTHERA,adverse reactions,discontinuous,3,15,3,,12,,0.2,
+591,NORTHERA,warnings and precautions,all,18,19,18,0.0,1,1.0,0.9473684210526315,0.972972972972973
+592,NORTHERA,warnings and precautions,exact-meddra,8,19,8,,7,,0.5333333333333333,
+593,NORTHERA,warnings and precautions,non-meddra,10,19,10,,5,,0.6666666666666666,
+594,NORTHERA,warnings and precautions,discontinuous,3,19,3,,15,,0.16666666666666666,
+595,NORTHERA,boxed warnings,all,1,1,1,0.0,0,1.0,1.0,1.0
+596,NORTHERA,boxed warnings,non-meddra,1,1,1,,0,,1.0,
+597,NORTHERA,all-concat,all,27,16,20,7.0,0,0.7407407407407407,1.0,0.851063829787234
+598,NORTHERA,all-concat,exact-meddra,15,16,11,,1,,0.9166666666666666,
+599,NORTHERA,all-concat,non-meddra,12,16,9,,8,,0.5294117647058824,
+600,NORTHERA,all-concat,discontinuous,3,16,3,,13,,0.1875,
+601,JARDIANCE,adverse reactions,all,62,20,52,10.0,1,0.8387096774193549,0.9811320754716981,0.9043478260869565
+602,JARDIANCE,adverse reactions,exact-meddra,40,20,33,,2,,0.9428571428571428,
+603,JARDIANCE,adverse reactions,non-meddra,22,20,19,,6,,0.76,
+604,JARDIANCE,adverse reactions,negated,1,20,1,,19,,0.05,
+605,JARDIANCE,adverse reactions,discontinuous,3,20,3,,15,,0.16666666666666666,
+606,JARDIANCE,warnings and precautions,all,13,6,11,2.0,0,0.8461538461538461,1.0,0.9166666666666666
+607,JARDIANCE,warnings and precautions,exact-meddra,3,6,3,,3,,0.5,
+608,JARDIANCE,warnings and precautions,non-meddra,10,6,8,,1,,0.8888888888888888,
+609,JARDIANCE,all-concat,all,69,25,61,8.0,1,0.8840579710144928,0.9838709677419355,0.9312977099236642
+610,JARDIANCE,all-concat,exact-meddra,41,25,34,,1,,0.9714285714285714,
+611,JARDIANCE,all-concat,non-meddra,28,25,27,,5,,0.84375,
+612,JARDIANCE,all-concat,negated,1,25,1,,23,,0.041666666666666664,
+613,JARDIANCE,all-concat,discontinuous,3,25,3,,16,,0.15789473684210525,
+614,FANAPT,adverse reactions,all,131,119,128,3.0,0,0.9770992366412213,1.0,0.9884169884169884
+615,FANAPT,adverse reactions,exact-meddra,125,119,124,,0,,1.0,
+616,FANAPT,adverse reactions,non-meddra,6,119,4,,113,,0.03418803418803419,
+617,FANAPT,adverse reactions,discontinuous,7,119,7,,103,,0.06363636363636363,
+618,FANAPT,warnings and precautions,all,87,33,62,25.0,3,0.7126436781609196,0.9538461538461539,0.8157894736842106
+619,FANAPT,warnings and precautions,exact-meddra,38,33,29,,5,,0.8529411764705882,
+620,FANAPT,warnings and precautions,non-meddra,49,33,33,,9,,0.7857142857142857,
+621,FANAPT,warnings and precautions,negated,2,33,2,,26,,0.07142857142857142,
+622,FANAPT,warnings and precautions,discontinuous,8,33,7,,24,,0.22580645161290322,
+623,FANAPT,boxed warnings,all,6,8,6,0.0,2,1.0,0.75,0.8571428571428571
+624,FANAPT,boxed warnings,exact-meddra,4,8,4,,2,,0.6666666666666666,
+625,FANAPT,boxed warnings,non-meddra,2,8,2,,4,,0.3333333333333333,
+626,FANAPT,all-concat,all,214,118,185,29.0,0,0.8644859813084113,1.0,0.9273182957393484
+627,FANAPT,all-concat,exact-meddra,157,118,152,,0,,1.0,
+628,FANAPT,all-concat,non-meddra,57,118,33,,70,,0.32038834951456313,
+629,FANAPT,all-concat,negated,2,118,2,,103,,0.01904761904761905,
+630,FANAPT,all-concat,discontinuous,15,118,11,,95,,0.10377358490566038,
+631,TANZEUM,adverse reactions,all,45,32,45,0.0,0,1.0,1.0,1.0
+632,TANZEUM,adverse reactions,exact-meddra,29,32,29,,2,,0.9354838709677419,
+633,TANZEUM,adverse reactions,non-meddra,16,32,16,,14,,0.5333333333333333,
+634,TANZEUM,adverse reactions,negated,2,32,2,,23,,0.08,
+635,TANZEUM,adverse reactions,discontinuous,3,32,3,,29,,0.09375,
+636,TANZEUM,warnings and precautions,all,22,21,22,0.0,2,1.0,0.9166666666666666,0.9565217391304348
+637,TANZEUM,warnings and precautions,exact-meddra,12,21,12,,6,,0.6666666666666666,
+638,TANZEUM,warnings and precautions,non-meddra,10,21,10,,10,,0.5,
+639,TANZEUM,warnings and precautions,discontinuous,2,21,2,,17,,0.10526315789473684,
+640,TANZEUM,boxed warnings,all,4,7,4,0.0,5,1.0,0.4444444444444444,0.6153846153846153
+641,TANZEUM,boxed warnings,non-meddra,4,7,4,,5,,0.4444444444444444,
+642,TANZEUM,all-concat,all,60,35,59,1.0,2,0.9833333333333333,0.9672131147540983,0.9752066115702478
+643,TANZEUM,all-concat,exact-meddra,35,35,35,,5,,0.875,
+644,TANZEUM,all-concat,non-meddra,25,35,24,,13,,0.6486486486486487,
+645,TANZEUM,all-concat,negated,2,35,2,,26,,0.07142857142857142,
+646,TANZEUM,all-concat,discontinuous,5,35,5,,30,,0.14285714285714285,
+647,EYLEA,adverse reactions,all,25,24,25,0.0,1,1.0,0.9615384615384616,0.9803921568627451
+648,EYLEA,adverse reactions,exact-meddra,20,24,20,,2,,0.9090909090909091,
+649,EYLEA,adverse reactions,non-meddra,5,24,5,,7,,0.4166666666666667,
+650,EYLEA,warnings and precautions,all,8,8,7,1.0,3,0.875,0.7,0.7777777777777777
+651,EYLEA,warnings and precautions,exact-meddra,1,8,1,,7,,0.125,
+652,EYLEA,warnings and precautions,non-meddra,7,8,6,,4,,0.6,
+653,EYLEA,warnings and precautions,negated,1,8,1,,7,,0.125,
+654,EYLEA,all-concat,all,30,30,29,1.0,3,0.9666666666666667,0.90625,0.9354838709677419
+655,EYLEA,all-concat,exact-meddra,20,30,20,,6,,0.7692307692307693,
+656,EYLEA,all-concat,non-meddra,10,30,9,,8,,0.5294117647058824,
+657,EYLEA,all-concat,negated,1,30,1,,28,,0.034482758620689655,
+658,JEVTANA,adverse reactions,all,58,51,58,0.0,0,1.0,1.0,1.0
+659,JEVTANA,adverse reactions,exact-meddra,43,51,43,,6,,0.8775510204081632,
+660,JEVTANA,adverse reactions,non-meddra,15,51,15,,29,,0.3409090909090909,
+661,JEVTANA,adverse reactions,negated,1,51,1,,41,,0.023809523809523808,
+662,JEVTANA,warnings and precautions,all,41,35,40,1.0,2,0.975609756097561,0.9523809523809523,0.963855421686747
+663,JEVTANA,warnings and precautions,exact-meddra,27,35,27,,7,,0.7941176470588235,
+664,JEVTANA,warnings and precautions,non-meddra,14,35,13,,12,,0.52,
+665,JEVTANA,warnings and precautions,negated,1,35,1,,28,,0.034482758620689655,
+666,JEVTANA,warnings and precautions,discontinuous,2,35,2,,26,,0.07142857142857142,
+667,JEVTANA,boxed warnings,all,9,9,9,0.0,0,1.0,1.0,1.0
+668,JEVTANA,boxed warnings,exact-meddra,6,9,6,,0,,1.0,
+669,JEVTANA,boxed warnings,non-meddra,3,9,3,,4,,0.42857142857142855,
+670,JEVTANA,all-concat,all,80,56,76,4.0,0,0.95,1.0,0.9743589743589743
+671,JEVTANA,all-concat,exact-meddra,56,56,55,,2,,0.9649122807017544,
+672,JEVTANA,all-concat,non-meddra,24,56,21,,22,,0.4883720930232558,
+673,JEVTANA,all-concat,negated,1,56,1,,44,,0.022222222222222223,
+674,JEVTANA,all-concat,discontinuous,2,56,2,,42,,0.045454545454545456,
+675,YERVOY,adverse reactions,all,39,30,39,0.0,0,1.0,1.0,1.0
+676,YERVOY,adverse reactions,exact-meddra,25,30,25,,3,,0.8928571428571429,
+677,YERVOY,adverse reactions,non-meddra,14,30,14,,8,,0.6363636363636364,
+678,YERVOY,adverse reactions,negated,4,30,4,,18,,0.18181818181818182,
+679,YERVOY,adverse reactions,discontinuous,1,30,1,,29,,0.03333333333333333,
+680,YERVOY,warnings and precautions,all,76,76,64,12.0,4,0.8421052631578947,0.9411764705882353,0.8888888888888888
+681,YERVOY,warnings and precautions,exact-meddra,50,76,47,,7,,0.8703703703703703,
+682,YERVOY,warnings and precautions,non-meddra,26,76,17,,25,,0.40476190476190477,
+683,YERVOY,warnings and precautions,discontinuous,5,76,3,,70,,0.0410958904109589,
+684,YERVOY,boxed warnings,all,9,7,7,2.0,0,0.7777777777777778,1.0,0.8750000000000001
+685,YERVOY,boxed warnings,exact-meddra,5,7,5,,1,,0.8333333333333334,
+686,YERVOY,boxed warnings,non-meddra,4,7,2,,4,,0.3333333333333333,
+687,YERVOY,all-concat,all,96,60,84,12.0,0,0.875,1.0,0.9333333333333333
+688,YERVOY,all-concat,exact-meddra,63,60,61,,1,,0.9838709677419355,
+689,YERVOY,all-concat,non-meddra,33,60,23,,18,,0.5609756097560976,
+690,YERVOY,all-concat,negated,4,60,4,,44,,0.08333333333333333,
+691,YERVOY,all-concat,discontinuous,6,60,3,,57,,0.05,
+692,FARXIGA,adverse reactions,all,86,32,73,13.0,0,0.8488372093023255,1.0,0.9182389937106918
+693,FARXIGA,adverse reactions,exact-meddra,48,32,37,,0,,1.0,
+694,FARXIGA,adverse reactions,non-meddra,38,32,36,,5,,0.8780487804878049,
+695,FARXIGA,adverse reactions,discontinuous,11,32,10,,22,,0.3125,
+696,FARXIGA,warnings and precautions,all,13,6,11,2.0,0,0.8461538461538461,1.0,0.9166666666666666
+697,FARXIGA,warnings and precautions,exact-meddra,3,6,3,,3,,0.5,
+698,FARXIGA,warnings and precautions,non-meddra,10,6,8,,1,,0.8888888888888888,
+699,FARXIGA,warnings and precautions,discontinuous,1,6,1,,5,,0.16666666666666666,
+700,FARXIGA,all-concat,all,94,32,80,14.0,0,0.851063829787234,1.0,0.9195402298850576
+701,FARXIGA,all-concat,exact-meddra,48,32,37,,0,,1.0,
+702,FARXIGA,all-concat,non-meddra,46,32,43,,3,,0.9347826086956522,
+703,FARXIGA,all-concat,discontinuous,12,32,11,,21,,0.34375,
+704,PICATO,adverse reactions,all,36,24,36,0.0,0,1.0,1.0,1.0
+705,PICATO,adverse reactions,exact-meddra,19,24,19,,3,,0.8636363636363636,
+706,PICATO,adverse reactions,non-meddra,17,24,17,,7,,0.7083333333333334,
+707,PICATO,adverse reactions,discontinuous,18,24,18,,15,,0.5454545454545454,
+708,PICATO,warnings and precautions,all,23,15,22,1.0,0,0.9565217391304348,1.0,0.9777777777777777
+709,PICATO,warnings and precautions,exact-meddra,8,15,8,,3,,0.7272727272727273,
+710,PICATO,warnings and precautions,non-meddra,15,15,14,,6,,0.7,
+711,PICATO,warnings and precautions,discontinuous,11,15,11,,8,,0.5789473684210527,
+712,PICATO,all-concat,all,47,24,47,0.0,0,1.0,1.0,1.0
+713,PICATO,all-concat,exact-meddra,21,24,21,,3,,0.875,
+714,PICATO,all-concat,non-meddra,26,24,26,,7,,0.7878787878787878,
+715,PICATO,all-concat,discontinuous,25,24,25,,14,,0.6410256410256411,
+716,PRISTIQ,adverse reactions,all,88,71,86,2.0,0,0.9772727272727273,1.0,0.9885057471264368
+717,PRISTIQ,adverse reactions,exact-meddra,66,71,66,,2,,0.9705882352941176,
+718,PRISTIQ,adverse reactions,non-meddra,22,71,20,,52,,0.2777777777777778,
+719,PRISTIQ,adverse reactions,negated,2,71,2,,68,,0.02857142857142857,
+720,PRISTIQ,adverse reactions,discontinuous,10,71,8,,62,,0.11428571428571428,
+721,PRISTIQ,warnings and precautions,all,83,74,81,2.0,1,0.9759036144578314,0.9878048780487805,0.9818181818181818
+722,PRISTIQ,warnings and precautions,exact-meddra,46,74,45,,11,,0.8035714285714286,
+723,PRISTIQ,warnings and precautions,non-meddra,37,74,36,,32,,0.5294117647058824,
+724,PRISTIQ,warnings and precautions,negated,4,74,4,,63,,0.05970149253731343,
+725,PRISTIQ,warnings and precautions,discontinuous,4,74,3,,66,,0.043478260869565216,
+726,PRISTIQ,boxed warnings,all,4,5,4,0.0,0,1.0,1.0,1.0
+727,PRISTIQ,boxed warnings,non-meddra,4,5,4,,0,,1.0,
+728,PRISTIQ,boxed warnings,negated,2,5,2,,0,,1.0,
+729,PRISTIQ,boxed warnings,discontinuous,2,5,2,,0,,1.0,
+730,PRISTIQ,all-concat,all,148,77,131,17.0,1,0.8851351351351351,0.9924242424242424,0.9357142857142857
+731,PRISTIQ,all-concat,exact-meddra,92,77,87,,2,,0.9775280898876404,
+732,PRISTIQ,all-concat,non-meddra,56,77,44,,41,,0.5176470588235295,
+733,PRISTIQ,all-concat,negated,8,77,7,,66,,0.0958904109589041,
+734,PRISTIQ,all-concat,discontinuous,14,77,13,,62,,0.17333333333333334,
+735,STRIBILD,adverse reactions,all,100,78,92,8.0,0,0.92,1.0,0.9583333333333334
+736,STRIBILD,adverse reactions,exact-meddra,59,78,59,,8,,0.8805970149253731,
+737,STRIBILD,adverse reactions,non-meddra,41,78,33,,43,,0.4342105263157895,
+738,STRIBILD,adverse reactions,negated,1,78,1,,71,,0.013888888888888888,
+739,STRIBILD,adverse reactions,discontinuous,18,78,10,,54,,0.15625,
+740,STRIBILD,warnings and precautions,all,50,35,46,4.0,1,0.92,0.9787234042553191,0.9484536082474226
+741,STRIBILD,warnings and precautions,exact-meddra,22,35,21,,7,,0.75,
+742,STRIBILD,warnings and precautions,non-meddra,28,35,25,,5,,0.8333333333333334,
+743,STRIBILD,warnings and precautions,discontinuous,5,35,5,,24,,0.1724137931034483,
+744,STRIBILD,boxed warnings,all,6,5,6,0.0,0,1.0,1.0,1.0
+745,STRIBILD,boxed warnings,exact-meddra,2,5,2,,3,,0.4,
+746,STRIBILD,boxed warnings,non-meddra,4,5,4,,1,,0.8,
+747,STRIBILD,all-concat,all,136,91,124,12.0,1,0.9117647058823529,0.992,0.9501915708812262
+748,STRIBILD,all-concat,exact-meddra,73,91,72,,8,,0.9,
+749,STRIBILD,all-concat,non-meddra,63,91,52,,31,,0.6265060240963856,
+750,STRIBILD,all-concat,negated,1,91,1,,85,,0.011627906976744186,
+751,STRIBILD,all-concat,discontinuous,22,91,14,,56,,0.2,
+752,NULOJIX,adverse reactions,all,100,83,97,3.0,1,0.97,0.9897959183673469,0.9797979797979798
+753,NULOJIX,adverse reactions,exact-meddra,67,83,67,,10,,0.8701298701298701,
+754,NULOJIX,adverse reactions,non-meddra,33,83,30,,42,,0.4166666666666667,
+755,NULOJIX,adverse reactions,negated,6,83,5,,63,,0.07352941176470588,
+756,NULOJIX,adverse reactions,discontinuous,7,83,7,,69,,0.09210526315789473,
+757,NULOJIX,warnings and precautions,all,29,22,29,0.0,3,1.0,0.90625,0.9508196721311475
+758,NULOJIX,warnings and precautions,exact-meddra,6,22,6,,6,,0.5,
+759,NULOJIX,warnings and precautions,non-meddra,23,22,23,,3,,0.8846153846153846,
+760,NULOJIX,warnings and precautions,discontinuous,11,22,11,,6,,0.6470588235294118,
+761,NULOJIX,boxed warnings,all,5,7,5,0.0,3,1.0,0.625,0.7692307692307693
+762,NULOJIX,boxed warnings,non-meddra,5,7,5,,3,,0.625,
+763,NULOJIX,all-concat,all,118,97,113,5.0,2,0.9576271186440678,0.9826086956521739,0.9699570815450643
+764,NULOJIX,all-concat,exact-meddra,70,97,69,,13,,0.8414634146341463,
+765,NULOJIX,all-concat,non-meddra,48,97,44,,42,,0.5116279069767442,
+766,NULOJIX,all-concat,negated,6,97,5,,76,,0.06172839506172839,
+767,NULOJIX,all-concat,discontinuous,18,97,18,,63,,0.2222222222222222,
+768,LUMIZYME,adverse reactions,all,84,69,82,2.0,0,0.9761904761904762,1.0,0.9879518072289156
+769,LUMIZYME,adverse reactions,exact-meddra,72,69,71,,1,,0.9861111111111112,
+770,LUMIZYME,adverse reactions,non-meddra,12,69,11,,41,,0.21153846153846154,
+771,LUMIZYME,adverse reactions,discontinuous,3,69,3,,62,,0.046153846153846156,
+772,LUMIZYME,warnings and precautions,all,67,67,66,1.0,3,0.9850746268656716,0.9565217391304348,0.9705882352941176
+773,LUMIZYME,warnings and precautions,exact-meddra,47,67,47,,10,,0.8245614035087719,
+774,LUMIZYME,warnings and precautions,non-meddra,20,67,19,,27,,0.41304347826086957,
+775,LUMIZYME,warnings and precautions,discontinuous,4,67,4,,54,,0.06896551724137931,
+776,LUMIZYME,boxed warnings,all,27,25,27,0.0,0,1.0,1.0,1.0
+777,LUMIZYME,boxed warnings,exact-meddra,19,25,19,,2,,0.9047619047619048,
+778,LUMIZYME,boxed warnings,non-meddra,8,25,8,,7,,0.5333333333333333,
+779,LUMIZYME,boxed warnings,discontinuous,3,25,3,,18,,0.14285714285714285,
+780,LUMIZYME,all-concat,all,112,77,103,9.0,0,0.9196428571428571,1.0,0.9581395348837208
+781,LUMIZYME,all-concat,exact-meddra,83,77,83,,1,,0.9880952380952381,
+782,LUMIZYME,all-concat,non-meddra,29,77,20,,40,,0.3333333333333333,
+783,LUMIZYME,all-concat,discontinuous,9,77,8,,58,,0.12121212121212122,
+784,EOVIST,adverse reactions,all,58,58,58,0.0,0,1.0,1.0,1.0
+785,EOVIST,adverse reactions,exact-meddra,49,58,49,,0,,1.0,
+786,EOVIST,adverse reactions,non-meddra,9,58,9,,34,,0.20930232558139536,
+787,EOVIST,adverse reactions,discontinuous,8,58,8,,45,,0.1509433962264151,
+788,EOVIST,warnings and precautions,all,15,48,15,0.0,20,1.0,0.42857142857142855,0.6
+789,EOVIST,warnings and precautions,exact-meddra,5,48,5,,24,,0.1724137931034483,
+790,EOVIST,warnings and precautions,non-meddra,10,48,10,,32,,0.23809523809523808,
+791,EOVIST,warnings and precautions,discontinuous,6,48,6,,36,,0.14285714285714285,
+792,EOVIST,boxed warnings,all,4,10,4,0.0,3,1.0,0.5714285714285714,0.7272727272727273
+793,EOVIST,boxed warnings,exact-meddra,2,10,2,,5,,0.2857142857142857,
+794,EOVIST,boxed warnings,non-meddra,2,10,2,,7,,0.2222222222222222,
+795,EOVIST,all-concat,all,70,56,69,1.0,2,0.9857142857142858,0.971830985915493,0.9787234042553192
+796,EOVIST,all-concat,exact-meddra,53,56,53,,5,,0.9137931034482759,
+797,EOVIST,all-concat,non-meddra,17,56,16,,33,,0.32653061224489793,
+798,EOVIST,all-concat,discontinuous,14,56,13,,45,,0.22413793103448276,
+799,BELEODAQ,adverse reactions,all,38,36,38,0.0,0,1.0,1.0,1.0
+800,BELEODAQ,adverse reactions,exact-meddra,32,36,32,,2,,0.9411764705882353,
+801,BELEODAQ,adverse reactions,non-meddra,6,36,6,,29,,0.17142857142857143,
+802,BELEODAQ,adverse reactions,negated,1,36,1,,34,,0.02857142857142857,
+803,BELEODAQ,warnings and precautions,all,22,21,22,0.0,0,1.0,1.0,1.0
+804,BELEODAQ,warnings and precautions,exact-meddra,14,21,14,,1,,0.9333333333333333,
+805,BELEODAQ,warnings and precautions,non-meddra,8,21,8,,7,,0.5333333333333333,
+806,BELEODAQ,all-concat,all,51,43,51,0.0,0,1.0,1.0,1.0
+807,BELEODAQ,all-concat,exact-meddra,37,43,37,,3,,0.925,
+808,BELEODAQ,all-concat,non-meddra,14,43,14,,24,,0.3684210526315789,
+809,BELEODAQ,all-concat,negated,1,43,1,,42,,0.023255813953488372,
+810,VICTRELIS,adverse reactions,all,47,36,46,1.0,0,0.9787234042553191,1.0,0.989247311827957
+811,VICTRELIS,adverse reactions,exact-meddra,36,36,36,,0,,1.0,
+812,VICTRELIS,adverse reactions,non-meddra,11,36,10,,27,,0.2702702702702703,
+813,VICTRELIS,adverse reactions,discontinuous,7,36,7,,28,,0.2,
+814,VICTRELIS,warnings and precautions,all,24,24,24,0.0,0,1.0,1.0,1.0
+815,VICTRELIS,warnings and precautions,exact-meddra,12,24,12,,2,,0.8571428571428571,
+816,VICTRELIS,warnings and precautions,non-meddra,12,24,12,,8,,0.6,
+817,VICTRELIS,warnings and precautions,discontinuous,1,24,1,,22,,0.043478260869565216,
+818,VICTRELIS,all-concat,all,64,35,61,3.0,0,0.953125,1.0,0.976
+819,VICTRELIS,all-concat,exact-meddra,41,35,40,,0,,1.0,
+820,VICTRELIS,all-concat,non-meddra,23,35,21,,21,,0.5,
+821,VICTRELIS,all-concat,discontinuous,8,35,8,,27,,0.22857142857142856,
+822,VIMIZIM,adverse reactions,all,9,12,9,0.0,2,1.0,0.8181818181818182,0.9
+823,VIMIZIM,adverse reactions,exact-meddra,8,12,8,,3,,0.7272727272727273,
+824,VIMIZIM,adverse reactions,non-meddra,1,12,1,,9,,0.1,
+825,VIMIZIM,warnings and precautions,all,21,28,21,0.0,4,1.0,0.84,0.9130434782608696
+826,VIMIZIM,warnings and precautions,exact-meddra,17,28,17,,5,,0.7727272727272727,
+827,VIMIZIM,warnings and precautions,non-meddra,4,28,4,,19,,0.17391304347826086,
+828,VIMIZIM,boxed warnings,all,17,20,17,0.0,1,1.0,0.9444444444444444,0.9714285714285714
+829,VIMIZIM,boxed warnings,exact-meddra,15,20,15,,1,,0.9375,
+830,VIMIZIM,boxed warnings,non-meddra,2,20,2,,14,,0.125,
+831,VIMIZIM,all-concat,all,25,29,25,0.0,4,1.0,0.8620689655172413,0.9259259259259259
+832,VIMIZIM,all-concat,exact-meddra,21,29,21,,5,,0.8076923076923077,
+833,VIMIZIM,all-concat,non-meddra,4,29,4,,22,,0.15384615384615385,
+834,SIRTURO,adverse reactions,all,18,14,18,0.0,1,1.0,0.9473684210526315,0.972972972972973
+835,SIRTURO,adverse reactions,exact-meddra,11,14,11,,2,,0.8461538461538461,
+836,SIRTURO,adverse reactions,non-meddra,7,14,7,,9,,0.4375,
+837,SIRTURO,adverse reactions,negated,1,14,1,,13,,0.07142857142857142,
+838,SIRTURO,adverse reactions,discontinuous,2,14,2,,13,,0.13333333333333333,
+839,SIRTURO,warnings and precautions,all,6,34,6,0.0,24,1.0,0.2,0.33333333333333337
+840,SIRTURO,warnings and precautions,exact-meddra,2,34,2,,30,,0.0625,
+841,SIRTURO,warnings and precautions,non-meddra,4,34,4,,24,,0.14285714285714285,
+842,SIRTURO,boxed warnings,all,4,4,4,0.0,0,1.0,1.0,1.0
+843,SIRTURO,boxed warnings,exact-meddra,1,4,1,,3,,0.25,
+844,SIRTURO,boxed warnings,non-meddra,3,4,3,,1,,0.75,
+845,SIRTURO,all-concat,all,21,23,21,0.0,4,1.0,0.84,0.9130434782608696
+846,SIRTURO,all-concat,exact-meddra,11,23,11,,9,,0.55,
+847,SIRTURO,all-concat,non-meddra,10,23,10,,12,,0.45454545454545453,
+848,SIRTURO,all-concat,negated,1,23,1,,22,,0.043478260869565216,
+849,SIRTURO,all-concat,discontinuous,2,23,2,,21,,0.08695652173913043,
+850,NEURACEQ,adverse reactions,all,6,9,6,0.0,1,1.0,0.8571428571428571,0.923076923076923
+851,NEURACEQ,adverse reactions,exact-meddra,5,9,5,,2,,0.7142857142857143,
+852,NEURACEQ,adverse reactions,non-meddra,1,9,1,,4,,0.2,
+853,NEURACEQ,adverse reactions,discontinuous,3,9,3,,2,,0.6,
+854,NEURACEQ,warnings and precautions,all,2,10,2,0.0,7,1.0,0.2222222222222222,0.3636363636363636
+855,NEURACEQ,warnings and precautions,exact-meddra,1,10,1,,8,,0.1111111111111111,
+856,NEURACEQ,warnings and precautions,non-meddra,1,10,1,,8,,0.1111111111111111,
+857,NEURACEQ,all-concat,all,8,9,6,2.0,4,0.75,0.6,0.6666666666666665
+858,NEURACEQ,all-concat,exact-meddra,6,9,5,,4,,0.5555555555555556,
+859,NEURACEQ,all-concat,non-meddra,2,9,1,,8,,0.1111111111111111,
+860,NEURACEQ,all-concat,discontinuous,3,9,3,,6,,0.3333333333333333,
+861,COMETRIQ,adverse reactions,all,74,60,72,2.0,0,0.972972972972973,1.0,0.9863013698630138
+862,COMETRIQ,adverse reactions,exact-meddra,52,60,52,,7,,0.8813559322033898,
+863,COMETRIQ,adverse reactions,non-meddra,22,60,20,,40,,0.3333333333333333,
+864,COMETRIQ,adverse reactions,negated,5,60,4,,43,,0.0851063829787234,
+865,COMETRIQ,adverse reactions,discontinuous,2,60,2,,58,,0.03333333333333333,
+866,COMETRIQ,warnings and precautions,all,43,40,40,3.0,6,0.9302325581395349,0.8695652173913043,0.898876404494382
+867,COMETRIQ,warnings and precautions,exact-meddra,17,40,17,,20,,0.4594594594594595,
+868,COMETRIQ,warnings and precautions,non-meddra,26,40,23,,17,,0.575,
+869,COMETRIQ,warnings and precautions,discontinuous,11,40,11,,25,,0.3055555555555556,
+870,COMETRIQ,boxed warnings,all,8,8,8,0.0,0,1.0,1.0,1.0
+871,COMETRIQ,boxed warnings,exact-meddra,3,8,3,,1,,0.75,
+872,COMETRIQ,boxed warnings,non-meddra,5,8,5,,2,,0.7142857142857143,
+873,COMETRIQ,all-concat,all,111,71,101,10.0,1,0.9099099099099099,0.9901960784313726,0.9483568075117371
+874,COMETRIQ,all-concat,exact-meddra,66,71,64,,8,,0.8888888888888888,
+875,COMETRIQ,all-concat,non-meddra,45,71,37,,42,,0.46835443037974683,
+876,COMETRIQ,all-concat,negated,5,71,4,,52,,0.07142857142857142,
+877,COMETRIQ,all-concat,discontinuous,13,71,11,,59,,0.15714285714285714,
+878,AFINITOR,adverse reactions,all,222,154,217,5.0,0,0.9774774774774775,1.0,0.9886104783599089
+879,AFINITOR,adverse reactions,exact-meddra,174,154,170,,2,,0.9883720930232558,
+880,AFINITOR,adverse reactions,non-meddra,48,154,47,,53,,0.47,
+881,AFINITOR,adverse reactions,negated,2,154,2,,130,,0.015151515151515152,
+882,AFINITOR,adverse reactions,discontinuous,18,154,18,,116,,0.13432835820895522,
+883,AFINITOR,warnings and precautions,all,58,31,53,5.0,1,0.9137931034482759,0.9814814814814815,0.9464285714285714
+884,AFINITOR,warnings and precautions,exact-meddra,24,31,23,,6,,0.7931034482758621,
+885,AFINITOR,warnings and precautions,non-meddra,34,31,30,,7,,0.8108108108108109,
+886,AFINITOR,warnings and precautions,discontinuous,13,31,13,,14,,0.48148148148148145,
+887,AFINITOR,all-concat,all,261,169,251,10.0,1,0.9616858237547893,0.996031746031746,0.9785575048732943
+888,AFINITOR,all-concat,exact-meddra,184,169,177,,3,,0.9833333333333333,
+889,AFINITOR,all-concat,non-meddra,77,169,74,,48,,0.6065573770491803,
+890,AFINITOR,all-concat,negated,2,169,2,,133,,0.014814814814814815,
+891,AFINITOR,all-concat,discontinuous,31,169,31,,84,,0.26956521739130435,
+892,BREO,adverse reactions,all,44,42,44,0.0,1,1.0,0.9777777777777777,0.9887640449438202
+893,BREO,adverse reactions,exact-meddra,38,42,38,,4,,0.9047619047619048,
+894,BREO,adverse reactions,non-meddra,6,42,6,,21,,0.2222222222222222,
+895,BREO,adverse reactions,negated,1,42,1,,40,,0.024390243902439025,
+896,BREO,warnings and precautions,all,54,27,41,13.0,2,0.7592592592592593,0.9534883720930233,0.845360824742268
+897,BREO,warnings and precautions,exact-meddra,14,27,9,,12,,0.42857142857142855,
+898,BREO,warnings and precautions,non-meddra,40,27,32,,3,,0.9142857142857143,
+899,BREO,warnings and precautions,negated,3,27,3,,18,,0.14285714285714285,
+900,BREO,warnings and precautions,discontinuous,13,27,11,,17,,0.39285714285714285,
+901,BREO,boxed warnings,all,2,4,2,0.0,2,1.0,0.5,0.6666666666666666
+902,BREO,boxed warnings,exact-meddra,1,4,1,,3,,0.25,
+903,BREO,boxed warnings,non-meddra,1,4,1,,2,,0.3333333333333333,
+904,BREO,all-concat,all,87,43,72,15.0,0,0.8275862068965517,1.0,0.9056603773584906
+905,BREO,all-concat,exact-meddra,44,43,44,,3,,0.9361702127659575,
+906,BREO,all-concat,non-meddra,43,43,28,,13,,0.6829268292682927,
+907,BREO,all-concat,negated,4,43,4,,34,,0.10526315789473684,
+908,BREO,all-concat,discontinuous,13,43,4,,38,,0.09523809523809523,
+909,FIRAZYR,adverse reactions,all,11,7,11,0.0,0,1.0,1.0,1.0
+910,FIRAZYR,adverse reactions,exact-meddra,6,7,6,,1,,0.8571428571428571,
+911,FIRAZYR,adverse reactions,non-meddra,5,7,5,,4,,0.5555555555555556,
+912,FIRAZYR,adverse reactions,negated,2,7,2,,5,,0.2857142857142857,
+913,FIRAZYR,all-concat,all,11,8,11,0.0,1,1.0,0.9166666666666666,0.9565217391304348
+914,FIRAZYR,all-concat,exact-meddra,6,8,6,,2,,0.75,
+915,FIRAZYR,all-concat,non-meddra,5,8,5,,5,,0.5,
+916,FIRAZYR,all-concat,negated,2,8,2,,6,,0.25,
+917,INVOKANA,adverse reactions,all,89,51,84,5.0,0,0.9438202247191011,1.0,0.9710982658959537
+918,INVOKANA,adverse reactions,exact-meddra,34,51,34,,10,,0.7727272727272727,
+919,INVOKANA,adverse reactions,non-meddra,55,51,50,,10,,0.8333333333333334,
+920,INVOKANA,adverse reactions,discontinuous,16,51,14,,33,,0.2978723404255319,
+921,INVOKANA,warnings and precautions,all,15,8,12,3.0,0,0.8,1.0,0.888888888888889
+922,INVOKANA,warnings and precautions,exact-meddra,4,8,3,,4,,0.42857142857142855,
+923,INVOKANA,warnings and precautions,non-meddra,11,8,9,,1,,0.9,
+924,INVOKANA,all-concat,all,96,50,92,4.0,0,0.9583333333333334,1.0,0.9787234042553191
+925,INVOKANA,all-concat,exact-meddra,35,50,35,,10,,0.7777777777777778,
+926,INVOKANA,all-concat,non-meddra,61,50,57,,10,,0.8507462686567164,
+927,INVOKANA,all-concat,discontinuous,16,50,14,,33,,0.2978723404255319,
+928,VORAXAZE,adverse reactions,all,22,22,21,1.0,3,0.9545454545454546,0.875,0.9130434782608695
+929,VORAXAZE,adverse reactions,exact-meddra,17,22,16,,3,,0.8421052631578947,
+930,VORAXAZE,adverse reactions,non-meddra,5,22,5,,16,,0.23809523809523808,
+931,VORAXAZE,warnings and precautions,all,2,3,2,0.0,1,1.0,0.6666666666666666,0.8
+932,VORAXAZE,warnings and precautions,non-meddra,2,3,2,,1,,0.6666666666666666,
+933,VORAXAZE,all-concat,all,22,22,21,1.0,3,0.9545454545454546,0.875,0.9130434782608695
+934,VORAXAZE,all-concat,exact-meddra,17,22,16,,3,,0.8421052631578947,
+935,VORAXAZE,all-concat,non-meddra,5,22,5,,16,,0.23809523809523808,
+936,NESINA,adverse reactions,all,19,17,18,1.0,0,0.9473684210526315,1.0,0.972972972972973
+937,NESINA,adverse reactions,exact-meddra,14,17,14,,1,,0.9333333333333333,
+938,NESINA,adverse reactions,non-meddra,5,17,4,,7,,0.36363636363636365,
+939,NESINA,adverse reactions,negated,1,17,0,,17,,0.0,
+940,NESINA,warnings and precautions,all,14,17,13,1.0,4,0.9285714285714286,0.7647058823529411,0.8387096774193549
+941,NESINA,warnings and precautions,exact-meddra,8,17,8,,6,,0.5714285714285714,
+942,NESINA,warnings and precautions,non-meddra,6,17,5,,8,,0.38461538461538464,
+943,NESINA,warnings and precautions,discontinuous,2,17,1,,16,,0.058823529411764705,
+944,NESINA,all-concat,all,25,17,22,3.0,0,0.88,1.0,0.9361702127659575
+945,NESINA,all-concat,exact-meddra,16,17,16,,0,,1.0,
+946,NESINA,all-concat,non-meddra,9,17,6,,7,,0.46153846153846156,
+947,NESINA,all-concat,negated,1,17,0,,17,,0.0,
+948,NESINA,all-concat,discontinuous,2,17,1,,16,,0.058823529411764705,
+949,GILENYA,adverse reactions,all,48,43,45,3.0,0,0.9375,1.0,0.967741935483871
+950,GILENYA,adverse reactions,exact-meddra,36,43,36,,2,,0.9473684210526315,
+951,GILENYA,adverse reactions,non-meddra,12,43,9,,27,,0.25,
+952,GILENYA,adverse reactions,discontinuous,4,43,1,,39,,0.025,
+953,GILENYA,warnings and precautions,all,98,57,87,11.0,3,0.8877551020408163,0.9666666666666667,0.9255319148936171
+954,GILENYA,warnings and precautions,exact-meddra,36,57,34,,9,,0.7906976744186046,
+955,GILENYA,warnings and precautions,non-meddra,62,57,53,,13,,0.803030303030303,
+956,GILENYA,warnings and precautions,negated,3,57,3,,48,,0.058823529411764705,
+957,GILENYA,warnings and precautions,discontinuous,15,57,13,,37,,0.26,
+958,GILENYA,all-concat,all,130,66,106,24.0,0,0.8153846153846154,1.0,0.8983050847457628
+959,GILENYA,all-concat,exact-meddra,58,66,57,,6,,0.9047619047619048,
+960,GILENYA,all-concat,non-meddra,72,66,49,,22,,0.6901408450704225,
+961,GILENYA,all-concat,negated,3,66,3,,62,,0.046153846153846156,
+962,GILENYA,all-concat,discontinuous,19,66,8,,51,,0.13559322033898305,
+963,HALAVEN,adverse reactions,all,62,51,59,3.0,1,0.9516129032258065,0.9833333333333333,0.9672131147540983
+964,HALAVEN,adverse reactions,exact-meddra,54,51,54,,2,,0.9642857142857143,
+965,HALAVEN,adverse reactions,non-meddra,8,51,5,,46,,0.09803921568627451,
+966,HALAVEN,adverse reactions,discontinuous,1,51,0,,51,,0.0,
+967,HALAVEN,warnings and precautions,all,8,17,8,0.0,5,1.0,0.6153846153846154,0.761904761904762
+968,HALAVEN,warnings and precautions,exact-meddra,3,17,3,,8,,0.2727272727272727,
+969,HALAVEN,warnings and precautions,non-meddra,5,17,5,,9,,0.35714285714285715,
+970,HALAVEN,warnings and precautions,negated,1,17,1,,16,,0.058823529411764705,
+971,HALAVEN,all-concat,all,66,48,59,7.0,0,0.8939393939393939,1.0,0.944
+972,HALAVEN,all-concat,exact-meddra,54,48,54,,1,,0.9818181818181818,
+973,HALAVEN,all-concat,non-meddra,12,48,5,,44,,0.10204081632653061,
+974,HALAVEN,all-concat,negated,1,48,0,,48,,0.0,
+975,HALAVEN,all-concat,discontinuous,1,48,0,,48,,0.0,
+976,INTELENCE,adverse reactions,all,77,65,71,6.0,0,0.922077922077922,1.0,0.9594594594594594
+977,INTELENCE,adverse reactions,exact-meddra,64,65,64,,2,,0.9696969696969697,
+978,INTELENCE,adverse reactions,non-meddra,13,65,7,,51,,0.1206896551724138,
+979,INTELENCE,adverse reactions,discontinuous,7,65,3,,58,,0.04918032786885246,
+980,INTELENCE,warnings and precautions,all,34,46,32,2.0,6,0.9411764705882353,0.8421052631578947,0.8888888888888888
+981,INTELENCE,warnings and precautions,exact-meddra,17,46,17,,9,,0.6538461538461539,
+982,INTELENCE,warnings and precautions,non-meddra,17,46,15,,10,,0.6,
+983,INTELENCE,warnings and precautions,discontinuous,2,46,2,,43,,0.044444444444444446,
+984,INTELENCE,all-concat,all,101,67,89,12.0,0,0.8811881188118812,1.0,0.9368421052631579
+985,INTELENCE,all-concat,exact-meddra,75,67,72,,2,,0.972972972972973,
+986,INTELENCE,all-concat,non-meddra,26,67,17,,41,,0.29310344827586204,
+987,INTELENCE,all-concat,discontinuous,9,67,5,,57,,0.08064516129032258,
+988,AMYVID,adverse reactions,all,23,23,23,0.0,0,1.0,1.0,1.0
+989,AMYVID,adverse reactions,exact-meddra,22,23,22,,0,,1.0,
+990,AMYVID,adverse reactions,non-meddra,1,23,1,,20,,0.047619047619047616,
+991,AMYVID,warnings and precautions,all,3,9,3,0.0,6,1.0,0.3333333333333333,0.5
+992,AMYVID,warnings and precautions,exact-meddra,1,9,1,,8,,0.1111111111111111,
+993,AMYVID,warnings and precautions,non-meddra,2,9,2,,6,,0.25,
+994,AMYVID,all-concat,all,26,23,24,2.0,0,0.9230769230769231,1.0,0.9600000000000001
+995,AMYVID,all-concat,exact-meddra,23,23,23,,0,,1.0,
+996,AMYVID,all-concat,non-meddra,3,23,1,,20,,0.047619047619047616,
+997,ULESFIA,adverse reactions,all,17,17,17,0.0,0,1.0,1.0,1.0
+998,ULESFIA,adverse reactions,exact-meddra,16,17,16,,0,,1.0,
+999,ULESFIA,adverse reactions,non-meddra,1,17,1,,14,,0.06666666666666667,
+1000,ULESFIA,adverse reactions,discontinuous,1,17,1,,11,,0.08333333333333333,
+1001,ULESFIA,warnings and precautions,all,14,11,14,0.0,0,1.0,1.0,1.0
+1002,ULESFIA,warnings and precautions,exact-meddra,8,11,8,,3,,0.7272727272727273,
+1003,ULESFIA,warnings and precautions,non-meddra,6,11,6,,4,,0.6,
+1004,ULESFIA,warnings and precautions,discontinuous,1,11,1,,10,,0.09090909090909091,
+1005,ULESFIA,all-concat,all,31,30,31,0.0,0,1.0,1.0,1.0
+1006,ULESFIA,all-concat,exact-meddra,24,30,24,,3,,0.8888888888888888,
+1007,ULESFIA,all-concat,non-meddra,7,30,7,,12,,0.3684210526315789,
+1008,ULESFIA,all-concat,discontinuous,2,30,2,,17,,0.10526315789473684,
+1009,OTEZLA,adverse reactions,all,30,26,29,1.0,1,0.9666666666666667,0.9666666666666667,0.9666666666666667
+1010,OTEZLA,adverse reactions,exact-meddra,26,26,26,,1,,0.9629629629629629,
+1011,OTEZLA,adverse reactions,non-meddra,4,26,3,,22,,0.12,
+1012,OTEZLA,warnings and precautions,all,7,12,7,0.0,2,1.0,0.7777777777777778,0.8750000000000001
+1013,OTEZLA,warnings and precautions,exact-meddra,6,12,6,,2,,0.75,
+1014,OTEZLA,warnings and precautions,non-meddra,1,12,1,,6,,0.14285714285714285,
+1015,OTEZLA,warnings and precautions,negated,1,12,1,,6,,0.14285714285714285,
+1016,OTEZLA,warnings and precautions,discontinuous,1,12,1,,7,,0.125,
+1017,OTEZLA,all-concat,all,35,27,34,1.0,0,0.9714285714285714,1.0,0.9855072463768115
+1018,OTEZLA,all-concat,exact-meddra,30,27,30,,0,,1.0,
+1019,OTEZLA,all-concat,non-meddra,5,27,4,,17,,0.19047619047619047,
+1020,OTEZLA,all-concat,negated,1,27,1,,21,,0.045454545454545456,
+1021,OTEZLA,all-concat,discontinuous,1,27,1,,24,,0.04,
+1022,ILARIS,adverse reactions,all,52,36,51,1.0,0,0.9807692307692307,1.0,0.9902912621359222
+1023,ILARIS,adverse reactions,exact-meddra,28,36,28,,4,,0.875,
+1024,ILARIS,adverse reactions,non-meddra,24,36,23,,8,,0.7419354838709677,
+1025,ILARIS,adverse reactions,negated,3,36,3,,32,,0.08571428571428572,
+1026,ILARIS,adverse reactions,discontinuous,9,36,9,,20,,0.3103448275862069,
+1027,ILARIS,warnings and precautions,all,14,15,13,1.0,1,0.9285714285714286,0.9285714285714286,0.9285714285714286
+1028,ILARIS,warnings and precautions,exact-meddra,2,15,2,,8,,0.2,
+1029,ILARIS,warnings and precautions,non-meddra,12,15,11,,3,,0.7857142857142857,
+1030,ILARIS,warnings and precautions,negated,1,15,1,,13,,0.07142857142857142,
+1031,ILARIS,warnings and precautions,discontinuous,3,15,3,,10,,0.23076923076923078,
+1032,ILARIS,all-concat,all,61,42,59,2.0,1,0.9672131147540983,0.9833333333333333,0.9752066115702478
+1033,ILARIS,all-concat,exact-meddra,30,42,30,,6,,0.8333333333333334,
+1034,ILARIS,all-concat,non-meddra,31,42,29,,9,,0.7631578947368421,
+1035,ILARIS,all-concat,negated,3,42,3,,38,,0.07317073170731707,
+1036,ILARIS,all-concat,discontinuous,11,42,11,,24,,0.3142857142857143,
+1037,NATAZIA,adverse reactions,all,59,55,58,1.0,0,0.9830508474576272,1.0,0.9914529914529915
+1038,NATAZIA,adverse reactions,exact-meddra,43,55,42,,2,,0.9545454545454546,
+1039,NATAZIA,adverse reactions,non-meddra,16,55,16,,14,,0.5333333333333333,
+1040,NATAZIA,adverse reactions,discontinuous,4,55,4,,46,,0.08,
+1041,NATAZIA,warnings and precautions,all,49,37,43,6.0,0,0.8775510204081632,1.0,0.9347826086956522
+1042,NATAZIA,warnings and precautions,exact-meddra,11,37,11,,7,,0.6111111111111112,
+1043,NATAZIA,warnings and precautions,non-meddra,38,37,32,,4,,0.8888888888888888,
+1044,NATAZIA,warnings and precautions,negated,6,37,3,,23,,0.11538461538461539,
+1045,NATAZIA,warnings and precautions,discontinuous,6,37,5,,24,,0.1724137931034483,
+1046,NATAZIA,boxed warnings,all,1,1,1,0.0,0,1.0,1.0,1.0
+1047,NATAZIA,boxed warnings,non-meddra,1,1,1,,0,,1.0,
+1048,NATAZIA,all-concat,all,101,53,91,10.0,0,0.900990099009901,1.0,0.9479166666666667
+1049,NATAZIA,all-concat,exact-meddra,48,53,47,,2,,0.9591836734693877,
+1050,NATAZIA,all-concat,non-meddra,53,53,44,,12,,0.7857142857142857,
+1051,NATAZIA,all-concat,negated,6,53,4,,39,,0.09302325581395349,
+1052,NATAZIA,all-concat,discontinuous,10,53,8,,41,,0.16326530612244897,
+1053,DIFICID,adverse reactions,all,25,25,25,0.0,0,1.0,1.0,1.0
+1054,DIFICID,adverse reactions,exact-meddra,20,25,20,,3,,0.8695652173913043,
+1055,DIFICID,adverse reactions,non-meddra,5,25,5,,17,,0.22727272727272727,
+1056,DIFICID,warnings and precautions,all,9,6,9,0.0,1,1.0,0.9,0.9473684210526316
+1057,DIFICID,warnings and precautions,exact-meddra,4,6,4,,1,,0.8,
+1058,DIFICID,warnings and precautions,non-meddra,5,6,5,,4,,0.5555555555555556,
+1059,DIFICID,warnings and precautions,discontinuous,2,6,2,,5,,0.2857142857142857,
+1060,DIFICID,all-concat,all,29,25,29,0.0,0,1.0,1.0,1.0
+1061,DIFICID,all-concat,exact-meddra,20,25,20,,3,,0.8695652173913043,
+1062,DIFICID,all-concat,non-meddra,9,25,9,,17,,0.34615384615384615,
+1063,DIFICID,all-concat,discontinuous,2,25,2,,24,,0.07692307692307693,
+1064,ONFI,adverse reactions,all,54,52,54,0.0,0,1.0,1.0,1.0
+1065,ONFI,adverse reactions,exact-meddra,48,52,48,,2,,0.96,
+1066,ONFI,adverse reactions,non-meddra,6,52,6,,43,,0.12244897959183673,
+1067,ONFI,adverse reactions,discontinuous,3,52,3,,46,,0.061224489795918366,
+1068,ONFI,warnings and precautions,all,16,23,14,2.0,6,0.875,0.7,0.7777777777777777
+1069,ONFI,warnings and precautions,exact-meddra,8,23,7,,10,,0.4117647058823529,
+1070,ONFI,warnings and precautions,non-meddra,8,23,7,,13,,0.35,
+1071,ONFI,warnings and precautions,discontinuous,3,23,3,,14,,0.17647058823529413,
+1072,ONFI,all-concat,all,63,61,61,2.0,0,0.9682539682539683,1.0,0.9838709677419354
+1073,ONFI,all-concat,exact-meddra,52,61,51,,4,,0.9272727272727272,
+1074,ONFI,all-concat,non-meddra,11,61,10,,45,,0.18181818181818182,
+1075,ONFI,all-concat,discontinuous,4,61,4,,51,,0.07272727272727272,
+1076,TECFIDERA,adverse reactions,all,24,16,22,2.0,0,0.9166666666666666,1.0,0.9565217391304348
+1077,TECFIDERA,adverse reactions,exact-meddra,15,16,15,,0,,1.0,
+1078,TECFIDERA,adverse reactions,non-meddra,9,16,7,,14,,0.3333333333333333,
+1079,TECFIDERA,adverse reactions,negated,2,16,2,,15,,0.11764705882352941,
+1080,TECFIDERA,adverse reactions,discontinuous,1,16,1,,15,,0.0625,
+1081,TECFIDERA,warnings and precautions,all,22,22,22,0.0,7,1.0,0.7586206896551724,0.8627450980392156
+1082,TECFIDERA,warnings and precautions,exact-meddra,11,22,11,,10,,0.5238095238095238,
+1083,TECFIDERA,warnings and precautions,non-meddra,11,22,11,,15,,0.4230769230769231,
+1084,TECFIDERA,warnings and precautions,negated,1,22,1,,21,,0.045454545454545456,
+1085,TECFIDERA,warnings and precautions,discontinuous,3,22,3,,18,,0.14285714285714285,
+1086,TECFIDERA,all-concat,all,41,17,34,7.0,0,0.8292682926829268,1.0,0.9066666666666667
+1087,TECFIDERA,all-concat,exact-meddra,21,17,19,,1,,0.95,
+1088,TECFIDERA,all-concat,non-meddra,20,17,15,,11,,0.5769230769230769,
+1089,TECFIDERA,all-concat,negated,3,17,3,,16,,0.15789473684210525,
+1090,TECFIDERA,all-concat,discontinuous,4,17,3,,15,,0.16666666666666666,
+1091,DYSPORT,adverse reactions,all,84,85,83,1.0,5,0.9880952380952381,0.9431818181818182,0.9651162790697674
+1092,DYSPORT,adverse reactions,exact-meddra,70,85,70,,9,,0.8860759493670886,
+1093,DYSPORT,adverse reactions,non-meddra,14,85,13,,59,,0.18055555555555555,
+1094,DYSPORT,adverse reactions,discontinuous,17,85,17,,63,,0.2125,
+1095,DYSPORT,warnings and precautions,all,27,37,24,3.0,11,0.8888888888888888,0.6857142857142857,0.7741935483870968
+1096,DYSPORT,warnings and precautions,exact-meddra,15,37,15,,13,,0.5357142857142857,
+1097,DYSPORT,warnings and precautions,non-meddra,12,37,9,,23,,0.28125,
+1098,DYSPORT,warnings and precautions,negated,2,37,2,,35,,0.05405405405405406,
+1099,DYSPORT,warnings and precautions,discontinuous,4,37,4,,26,,0.13333333333333333,
+1100,DYSPORT,boxed warnings,all,14,11,12,2.0,0,0.8571428571428571,1.0,0.923076923076923
+1101,DYSPORT,boxed warnings,exact-meddra,10,11,10,,1,,0.9090909090909091,
+1102,DYSPORT,boxed warnings,non-meddra,4,11,2,,9,,0.18181818181818182,
+1103,DYSPORT,boxed warnings,discontinuous,2,11,1,,9,,0.1,
+1104,DYSPORT,all-concat,all,105,85,102,3.0,4,0.9714285714285714,0.9622641509433962,0.9668246445497629
+1105,DYSPORT,all-concat,exact-meddra,79,85,77,,7,,0.9166666666666666,
+1106,DYSPORT,all-concat,non-meddra,26,85,25,,50,,0.3333333333333333,
+1107,DYSPORT,all-concat,negated,2,85,1,,83,,0.011904761904761904,
+1108,DYSPORT,all-concat,discontinuous,22,85,22,,53,,0.29333333333333333,
+1109,ZYTIGA,adverse reactions,all,61,51,61,0.0,0,1.0,1.0,1.0
+1110,ZYTIGA,adverse reactions,exact-meddra,43,51,43,,7,,0.86,
+1111,ZYTIGA,adverse reactions,non-meddra,18,51,18,,26,,0.4090909090909091,
+1112,ZYTIGA,adverse reactions,negated,3,51,3,,33,,0.08333333333333333,
+1113,ZYTIGA,adverse reactions,discontinuous,1,51,1,,47,,0.020833333333333332,
+1114,ZYTIGA,warnings and precautions,all,15,49,14,1.0,13,0.9333333333333333,0.5185185185185185,0.6666666666666667
+1115,ZYTIGA,warnings and precautions,exact-meddra,6,49,6,,32,,0.15789473684210525,
+1116,ZYTIGA,warnings and precautions,non-meddra,9,49,8,,27,,0.22857142857142856,
+1117,ZYTIGA,warnings and precautions,negated,1,49,0,,49,,0.0,
+1118,ZYTIGA,warnings and precautions,discontinuous,1,49,1,,41,,0.023809523809523808,
+1119,ZYTIGA,all-concat,all,68,50,67,1.0,0,0.9852941176470589,1.0,0.9925925925925926
+1120,ZYTIGA,all-concat,exact-meddra,44,50,44,,5,,0.8979591836734694,
+1121,ZYTIGA,all-concat,non-meddra,24,50,23,,27,,0.46,
+1122,ZYTIGA,all-concat,negated,3,50,3,,32,,0.08571428571428572,
+1123,ZYTIGA,all-concat,discontinuous,2,50,2,,44,,0.043478260869565216,
+1124,DUAVEE,adverse reactions,all,18,17,17,1.0,0,0.9444444444444444,1.0,0.9714285714285714
+1125,DUAVEE,adverse reactions,exact-meddra,14,17,14,,1,,0.9333333333333333,
+1126,DUAVEE,adverse reactions,non-meddra,4,17,3,,9,,0.25,
+1127,DUAVEE,adverse reactions,negated,2,17,1,,11,,0.08333333333333333,
+1128,DUAVEE,warnings and precautions,all,77,31,39,38.0,3,0.5064935064935064,0.9285714285714286,0.6554621848739496
+1129,DUAVEE,warnings and precautions,exact-meddra,14,31,12,,14,,0.46153846153846156,
+1130,DUAVEE,warnings and precautions,non-meddra,63,31,27,,6,,0.8181818181818182,
+1131,DUAVEE,warnings and precautions,negated,3,31,3,,26,,0.10344827586206896,
+1132,DUAVEE,warnings and precautions,discontinuous,39,31,11,,19,,0.36666666666666664,
+1133,DUAVEE,boxed warnings,all,7,41,7,0.0,24,1.0,0.22580645161290322,0.3684210526315789
+1134,DUAVEE,boxed warnings,exact-meddra,3,41,3,,26,,0.10344827586206896,
+1135,DUAVEE,boxed warnings,non-meddra,4,41,4,,31,,0.11428571428571428,
+1136,DUAVEE,boxed warnings,negated,1,41,1,,38,,0.02564102564102564,
+1137,DUAVEE,all-concat,all,92,50,69,23.0,5,0.75,0.9324324324324325,0.8313253012048193
+1138,DUAVEE,all-concat,exact-meddra,25,50,23,,11,,0.6764705882352942,
+1139,DUAVEE,all-concat,non-meddra,67,50,46,,21,,0.6865671641791045,
+1140,DUAVEE,all-concat,negated,6,50,6,,31,,0.16216216216216217,
+1141,DUAVEE,all-concat,discontinuous,39,50,23,,42,,0.35384615384615387,
+1142,SAPHRIS,adverse reactions,all,140,85,131,9.0,2,0.9357142857142857,0.9849624060150376,0.9597069597069596
+1143,SAPHRIS,adverse reactions,exact-meddra,101,85,97,,4,,0.9603960396039604,
+1144,SAPHRIS,adverse reactions,non-meddra,39,85,34,,34,,0.5,
+1145,SAPHRIS,adverse reactions,negated,3,85,2,,75,,0.025974025974025976,
+1146,SAPHRIS,adverse reactions,discontinuous,10,85,10,,71,,0.12345679012345678,
+1147,SAPHRIS,warnings and precautions,all,103,101,100,3.0,9,0.970873786407767,0.9174311926605505,0.9433962264150944
+1148,SAPHRIS,warnings and precautions,exact-meddra,43,101,42,,26,,0.6176470588235294,
+1149,SAPHRIS,warnings and precautions,non-meddra,60,101,58,,25,,0.6987951807228916,
+1150,SAPHRIS,warnings and precautions,negated,6,101,5,,83,,0.056818181818181816,
+1151,SAPHRIS,warnings and precautions,discontinuous,6,101,6,,78,,0.07142857142857142,
+1152,SAPHRIS,boxed warnings,all,2,2,2,0.0,0,1.0,1.0,1.0
+1153,SAPHRIS,boxed warnings,exact-meddra,1,2,1,,1,,0.5,
+1154,SAPHRIS,boxed warnings,non-meddra,1,2,1,,1,,0.5,
+1155,SAPHRIS,all-concat,all,216,88,191,25.0,1,0.8842592592592593,0.9947916666666666,0.9362745098039216
+1156,SAPHRIS,all-concat,exact-meddra,122,88,112,,5,,0.9572649572649573,
+1157,SAPHRIS,all-concat,non-meddra,94,88,79,,23,,0.7745098039215687,
+1158,SAPHRIS,all-concat,negated,9,88,6,,68,,0.08108108108108109,
+1159,SAPHRIS,all-concat,discontinuous,15,88,15,,71,,0.1744186046511628,
+1160,DUREZOL,adverse reactions,all,43,43,43,0.0,0,1.0,1.0,1.0
+1161,DUREZOL,adverse reactions,exact-meddra,26,43,26,,4,,0.8666666666666667,
+1162,DUREZOL,adverse reactions,non-meddra,17,43,17,,7,,0.7083333333333334,
+1163,DUREZOL,adverse reactions,discontinuous,8,43,8,,13,,0.38095238095238093,
+1164,DUREZOL,warnings and precautions,all,15,21,14,1.0,3,0.9333333333333333,0.8235294117647058,0.8749999999999999
+1165,DUREZOL,warnings and precautions,non-meddra,15,21,14,,3,,0.8235294117647058,
+1166,DUREZOL,warnings and precautions,discontinuous,6,21,6,,12,,0.3333333333333333,
+1167,DUREZOL,all-concat,all,58,53,57,1.0,1,0.9827586206896551,0.9827586206896551,0.9827586206896551
+1168,DUREZOL,all-concat,exact-meddra,26,53,26,,10,,0.7222222222222222,
+1169,DUREZOL,all-concat,non-meddra,32,53,31,,6,,0.8378378378378378,
+1170,DUREZOL,all-concat,discontinuous,14,53,14,,18,,0.4375,
+1171,ZYDELIG,adverse reactions,all,51,47,51,0.0,0,1.0,1.0,1.0
+1172,ZYDELIG,adverse reactions,exact-meddra,46,47,46,,0,,1.0,
+1173,ZYDELIG,adverse reactions,non-meddra,5,47,5,,35,,0.125,
+1174,ZYDELIG,warnings and precautions,all,29,27,29,0.0,0,1.0,1.0,1.0
+1175,ZYDELIG,warnings and precautions,exact-meddra,18,27,18,,5,,0.782608695652174,
+1176,ZYDELIG,warnings and precautions,non-meddra,11,27,11,,9,,0.55,
+1177,ZYDELIG,warnings and precautions,discontinuous,3,27,3,,25,,0.10714285714285714,
+1178,ZYDELIG,boxed warnings,all,8,6,8,0.0,0,1.0,1.0,1.0
+1179,ZYDELIG,boxed warnings,exact-meddra,5,6,5,,1,,0.8333333333333334,
+1180,ZYDELIG,boxed warnings,non-meddra,3,6,3,,4,,0.42857142857142855,
+1181,ZYDELIG,boxed warnings,discontinuous,1,6,1,,5,,0.16666666666666666,
+1182,ZYDELIG,all-concat,all,73,49,68,5.0,0,0.9315068493150684,1.0,0.9645390070921985
+1183,ZYDELIG,all-concat,exact-meddra,56,49,54,,0,,1.0,
+1184,ZYDELIG,all-concat,non-meddra,17,49,14,,33,,0.2978723404255319,
+1185,ZYDELIG,all-concat,discontinuous,4,49,4,,46,,0.08,
+1186,KALBITOR,adverse reactions,all,19,22,19,0.0,4,1.0,0.8260869565217391,0.9047619047619047
+1187,KALBITOR,adverse reactions,exact-meddra,18,22,18,,4,,0.8181818181818182,
+1188,KALBITOR,adverse reactions,non-meddra,1,22,1,,20,,0.047619047619047616,
+1189,KALBITOR,adverse reactions,discontinuous,6,22,6,,15,,0.2857142857142857,
+1190,KALBITOR,warnings and precautions,all,15,14,15,0.0,0,1.0,1.0,1.0
+1191,KALBITOR,warnings and precautions,exact-meddra,14,14,14,,0,,1.0,
+1192,KALBITOR,warnings and precautions,non-meddra,1,14,1,,11,,0.08333333333333333,
+1193,KALBITOR,boxed warnings,all,1,3,1,0.0,1,1.0,0.5,0.6666666666666666
+1194,KALBITOR,boxed warnings,exact-meddra,1,3,1,,1,,0.5,
+1195,KALBITOR,all-concat,all,31,25,31,0.0,0,1.0,1.0,1.0
+1196,KALBITOR,all-concat,exact-meddra,29,25,29,,0,,1.0,
+1197,KALBITOR,all-concat,non-meddra,2,25,2,,21,,0.08695652173913043,
+1198,KALBITOR,all-concat,discontinuous,6,25,6,,21,,0.2222222222222222,
+1199,ADCETRIS,adverse reactions,all,75,58,72,3.0,3,0.96,0.96,0.96
+1200,ADCETRIS,adverse reactions,exact-meddra,58,58,58,,6,,0.90625,
+1201,ADCETRIS,adverse reactions,non-meddra,17,58,14,,36,,0.28,
+1202,ADCETRIS,adverse reactions,negated,1,58,1,,56,,0.017543859649122806,
+1203,ADCETRIS,adverse reactions,discontinuous,2,58,1,,56,,0.017543859649122806,
+1204,ADCETRIS,warnings and precautions,all,45,42,45,0.0,5,1.0,0.9,0.9473684210526316
+1205,ADCETRIS,warnings and precautions,exact-meddra,24,42,24,,13,,0.6486486486486487,
+1206,ADCETRIS,warnings and precautions,non-meddra,21,42,21,,18,,0.5384615384615384,
+1207,ADCETRIS,warnings and precautions,discontinuous,2,42,2,,37,,0.05128205128205128,
+1208,ADCETRIS,boxed warnings,all,4,3,4,0.0,0,1.0,1.0,1.0
+1209,ADCETRIS,boxed warnings,exact-meddra,3,3,3,,0,,1.0,
+1210,ADCETRIS,boxed warnings,non-meddra,1,3,1,,2,,0.3333333333333333,
+1211,ADCETRIS,all-concat,all,91,69,86,5.0,1,0.945054945054945,0.9885057471264368,0.9662921348314606
+1212,ADCETRIS,all-concat,exact-meddra,64,69,63,,5,,0.9264705882352942,
+1213,ADCETRIS,all-concat,non-meddra,27,69,23,,39,,0.3709677419354839,
+1214,ADCETRIS,all-concat,negated,1,69,1,,67,,0.014705882352941176,
+1215,ADCETRIS,all-concat,discontinuous,4,69,2,,64,,0.030303030303030304,
+1216,BESIVANCE,adverse reactions,all,7,6,7,0.0,0,1.0,1.0,1.0
+1217,BESIVANCE,adverse reactions,exact-meddra,6,6,6,,0,,1.0,
+1218,BESIVANCE,adverse reactions,non-meddra,1,6,1,,1,,0.5,
+1219,BESIVANCE,warnings and precautions,all,2,5,2,0.0,2,1.0,0.5,0.6666666666666666
+1220,BESIVANCE,warnings and precautions,non-meddra,2,5,2,,2,,0.5,
+1221,BESIVANCE,warnings and precautions,discontinuous,1,5,1,,2,,0.3333333333333333,
+1222,BESIVANCE,all-concat,all,9,6,7,2.0,0,0.7777777777777778,1.0,0.8750000000000001
+1223,BESIVANCE,all-concat,exact-meddra,6,6,6,,0,,1.0,
+1224,BESIVANCE,all-concat,non-meddra,3,6,1,,1,,0.5,
+1225,BESIVANCE,all-concat,discontinuous,1,6,0,,6,,0.0,
+1226,CLEVIPREX,adverse reactions,all,16,15,16,0.0,0,1.0,1.0,1.0
+1227,CLEVIPREX,adverse reactions,exact-meddra,13,15,13,,2,,0.8666666666666667,
+1228,CLEVIPREX,adverse reactions,non-meddra,3,15,3,,12,,0.2,
+1229,CLEVIPREX,warnings and precautions,all,5,6,5,0.0,2,1.0,0.7142857142857143,0.8333333333333333
+1230,CLEVIPREX,warnings and precautions,exact-meddra,2,6,2,,4,,0.3333333333333333,
+1231,CLEVIPREX,warnings and precautions,non-meddra,3,6,3,,3,,0.5,
+1232,CLEVIPREX,all-concat,all,19,18,17,2.0,1,0.8947368421052632,0.9444444444444444,0.918918918918919
+1233,CLEVIPREX,all-concat,exact-meddra,13,18,13,,3,,0.8125,
+1234,CLEVIPREX,all-concat,non-meddra,6,18,4,,12,,0.25,
+1235,XTANDI,adverse reactions,all,70,50,68,2.0,0,0.9714285714285714,1.0,0.9855072463768115
+1236,XTANDI,adverse reactions,exact-meddra,56,50,54,,5,,0.9152542372881356,
+1237,XTANDI,adverse reactions,non-meddra,14,50,14,,28,,0.3333333333333333,
+1238,XTANDI,adverse reactions,negated,3,50,3,,43,,0.06521739130434782,
+1239,XTANDI,adverse reactions,discontinuous,1,50,1,,45,,0.021739130434782608,
+1240,XTANDI,warnings and precautions,all,1,2,1,0.0,1,1.0,0.5,0.6666666666666666
+1241,XTANDI,warnings and precautions,exact-meddra,1,2,1,,1,,0.5,
+1242,XTANDI,warnings and precautions,negated,1,2,1,,1,,0.5,
+1243,XTANDI,all-concat,all,70,51,67,3.0,0,0.9571428571428572,1.0,0.9781021897810218
+1244,XTANDI,all-concat,exact-meddra,56,51,54,,5,,0.9152542372881356,
+1245,XTANDI,all-concat,non-meddra,14,51,13,,30,,0.3023255813953488,
+1246,XTANDI,all-concat,negated,3,51,3,,44,,0.06382978723404255,
+1247,XTANDI,all-concat,discontinuous,1,51,1,,46,,0.02127659574468085,
+1248,BOSULIF,adverse reactions,all,84,73,82,2.0,0,0.9761904761904762,1.0,0.9879518072289156
+1249,BOSULIF,adverse reactions,exact-meddra,67,73,67,,7,,0.9054054054054054,
+1250,BOSULIF,adverse reactions,non-meddra,17,73,15,,48,,0.23809523809523808,
+1251,BOSULIF,adverse reactions,discontinuous,5,73,5,,64,,0.07246376811594203,
+1252,BOSULIF,warnings and precautions,all,36,24,34,2.0,0,0.9444444444444444,1.0,0.9714285714285714
+1253,BOSULIF,warnings and precautions,exact-meddra,16,24,16,,6,,0.7272727272727273,
+1254,BOSULIF,warnings and precautions,non-meddra,20,24,18,,10,,0.6428571428571429,
+1255,BOSULIF,warnings and precautions,discontinuous,6,24,6,,16,,0.2727272727272727,
+1256,BOSULIF,all-concat,all,105,75,102,3.0,0,0.9714285714285714,1.0,0.9855072463768115
+1257,BOSULIF,all-concat,exact-meddra,70,75,70,,7,,0.9090909090909091,
+1258,BOSULIF,all-concat,non-meddra,35,75,32,,36,,0.47058823529411764,
+1259,BOSULIF,all-concat,discontinuous,11,75,11,,46,,0.19298245614035087,
+1260,CARBAGLU,adverse reactions,all,22,20,22,0.0,0,1.0,1.0,1.0
+1261,CARBAGLU,adverse reactions,exact-meddra,20,20,20,,0,,1.0,
+1262,CARBAGLU,adverse reactions,non-meddra,2,20,2,,13,,0.13333333333333333,
+1263,CARBAGLU,warnings and precautions,all,1,4,1,0.0,3,1.0,0.25,0.4
+1264,CARBAGLU,warnings and precautions,exact-meddra,1,4,1,,3,,0.25,
+1265,CARBAGLU,all-concat,all,23,23,23,0.0,2,1.0,0.92,0.9583333333333334
+1266,CARBAGLU,all-concat,exact-meddra,21,23,21,,2,,0.9130434782608695,
+1267,CARBAGLU,all-concat,non-meddra,2,23,2,,16,,0.1111111111111111,
+1268,SIMPONI,adverse reactions,all,60,55,56,4.0,4,0.9333333333333333,0.9333333333333333,0.9333333333333333
+1269,SIMPONI,adverse reactions,exact-meddra,34,55,33,,16,,0.673469387755102,
+1270,SIMPONI,adverse reactions,non-meddra,26,55,23,,13,,0.6388888888888888,
+1271,SIMPONI,adverse reactions,negated,2,55,2,,49,,0.0392156862745098,
+1272,SIMPONI,adverse reactions,discontinuous,2,55,2,,39,,0.04878048780487805,
+1273,SIMPONI,warnings and precautions,all,70,66,69,1.0,2,0.9857142857142858,0.971830985915493,0.9787234042553192
+1274,SIMPONI,warnings and precautions,exact-meddra,30,66,30,,9,,0.7692307692307693,
+1275,SIMPONI,warnings and precautions,non-meddra,40,66,39,,12,,0.7647058823529411,
+1276,SIMPONI,warnings and precautions,discontinuous,17,66,17,,24,,0.4146341463414634,
+1277,SIMPONI,boxed warnings,all,26,27,26,0.0,1,1.0,0.9629629629629629,0.9811320754716981
+1278,SIMPONI,boxed warnings,exact-meddra,12,27,12,,4,,0.75,
+1279,SIMPONI,boxed warnings,non-meddra,14,27,14,,3,,0.8235294117647058,
+1280,SIMPONI,boxed warnings,discontinuous,7,27,7,,4,,0.6363636363636364,
+1281,SIMPONI,all-concat,all,128,47,100,28.0,3,0.78125,0.970873786407767,0.8658008658008659
+1282,SIMPONI,all-concat,exact-meddra,61,47,53,,7,,0.8833333333333333,
+1283,SIMPONI,all-concat,non-meddra,67,47,47,,9,,0.8392857142857143,
+1284,SIMPONI,all-concat,negated,2,47,2,,40,,0.047619047619047616,
+1285,SIMPONI,all-concat,discontinuous,26,47,16,,25,,0.3902439024390244,
+1286,BENLYSTA,adverse reactions,all,26,21,25,1.0,0,0.9615384615384616,1.0,0.9803921568627451
+1287,BENLYSTA,adverse reactions,exact-meddra,20,21,19,,2,,0.9047619047619048,
+1288,BENLYSTA,adverse reactions,non-meddra,6,21,6,,8,,0.42857142857142855,
+1289,BENLYSTA,warnings and precautions,all,48,56,48,0.0,5,1.0,0.9056603773584906,0.9504950495049505
+1290,BENLYSTA,warnings and precautions,exact-meddra,29,56,29,,11,,0.725,
+1291,BENLYSTA,warnings and precautions,non-meddra,19,56,19,,15,,0.5588235294117647,
+1292,BENLYSTA,warnings and precautions,negated,2,56,2,,45,,0.0425531914893617,
+1293,BENLYSTA,all-concat,all,60,41,58,2.0,0,0.9666666666666667,1.0,0.983050847457627
+1294,BENLYSTA,all-concat,exact-meddra,40,41,40,,2,,0.9523809523809523,
+1295,BENLYSTA,all-concat,non-meddra,20,41,18,,11,,0.6206896551724138,
+1296,BENLYSTA,all-concat,negated,2,41,2,,35,,0.05405405405405406,
+1297,TOVIAZ,adverse reactions,all,37,35,37,0.0,0,1.0,1.0,1.0
+1298,TOVIAZ,adverse reactions,exact-meddra,33,35,33,,2,,0.9428571428571428,
+1299,TOVIAZ,adverse reactions,non-meddra,4,35,4,,30,,0.11764705882352941,
+1300,TOVIAZ,warnings and precautions,all,13,9,9,4.0,4,0.6923076923076923,0.6923076923076923,0.6923076923076923
+1301,TOVIAZ,warnings and precautions,exact-meddra,4,9,4,,5,,0.4444444444444444,
+1302,TOVIAZ,warnings and precautions,non-meddra,9,9,5,,7,,0.4166666666666667,
+1303,TOVIAZ,warnings and precautions,discontinuous,5,9,3,,7,,0.3,
+1304,TOVIAZ,all-concat,all,46,36,41,5.0,0,0.8913043478260869,1.0,0.9425287356321839
+1305,TOVIAZ,all-concat,exact-meddra,33,36,33,,2,,0.9428571428571428,
+1306,TOVIAZ,all-concat,non-meddra,13,36,8,,28,,0.2222222222222222,
+1307,TOVIAZ,all-concat,discontinuous,5,36,3,,33,,0.08333333333333333,
+1308,ENTEREG,adverse reactions,all,1,1,1,0.0,0,1.0,1.0,1.0
+1309,ENTEREG,adverse reactions,exact-meddra,1,1,1,,0,,1.0,
+1310,ENTEREG,warnings and precautions,all,6,8,5,1.0,3,0.8333333333333334,0.625,0.7142857142857143
+1311,ENTEREG,warnings and precautions,exact-meddra,4,8,4,,4,,0.5,
+1312,ENTEREG,warnings and precautions,non-meddra,2,8,1,,7,,0.125,
+1313,ENTEREG,warnings and precautions,discontinuous,1,8,0,,8,,0.0,
+1314,ENTEREG,boxed warnings,all,1,1,1,0.0,0,1.0,1.0,1.0
+1315,ENTEREG,boxed warnings,exact-meddra,1,1,1,,0,,1.0,
+1316,ENTEREG,boxed warnings,negated,1,1,1,,0,,1.0,
+1317,ENTEREG,all-concat,all,8,7,7,1.0,1,0.875,0.875,0.875
+1318,ENTEREG,all-concat,exact-meddra,6,7,6,,1,,0.8571428571428571,
+1319,ENTEREG,all-concat,non-meddra,2,7,1,,6,,0.14285714285714285,
+1320,ENTEREG,all-concat,negated,1,7,1,,6,,0.14285714285714285,
+1321,ENTEREG,all-concat,discontinuous,1,7,0,,7,,0.0,
+1322,VIZAMYL,adverse reactions,all,8,9,8,0.0,1,1.0,0.8888888888888888,0.9411764705882353
+1323,VIZAMYL,adverse reactions,exact-meddra,8,9,8,,1,,0.8888888888888888,
+1324,VIZAMYL,warnings and precautions,all,6,8,6,0.0,2,1.0,0.75,0.8571428571428571
+1325,VIZAMYL,warnings and precautions,exact-meddra,3,8,3,,5,,0.375,
+1326,VIZAMYL,warnings and precautions,non-meddra,3,8,3,,5,,0.375,
+1327,VIZAMYL,all-concat,all,12,11,12,0.0,0,1.0,1.0,1.0
+1328,VIZAMYL,all-concat,exact-meddra,9,11,9,,1,,0.9,
+1329,VIZAMYL,all-concat,non-meddra,3,11,3,,8,,0.2727272727272727,
+1330,AMPYRA,adverse reactions,all,18,17,18,0.0,0,1.0,1.0,1.0
+1331,AMPYRA,adverse reactions,exact-meddra,17,17,17,,0,,1.0,
+1332,AMPYRA,adverse reactions,non-meddra,1,17,1,,15,,0.0625,
+1333,AMPYRA,warnings and precautions,all,9,7,9,0.0,1,1.0,0.9,0.9473684210526316
+1334,AMPYRA,warnings and precautions,exact-meddra,3,7,3,,3,,0.5,
+1335,AMPYRA,warnings and precautions,non-meddra,6,7,6,,2,,0.75,
+1336,AMPYRA,warnings and precautions,discontinuous,1,7,1,,6,,0.14285714285714285,
+1337,AMPYRA,all-concat,all,24,18,21,3.0,1,0.875,0.9545454545454546,0.9130434782608695
+1338,AMPYRA,all-concat,exact-meddra,18,18,18,,1,,0.9473684210526315,
+1339,AMPYRA,all-concat,non-meddra,6,18,3,,15,,0.16666666666666666,
+1340,AMPYRA,all-concat,discontinuous,1,18,0,,18,,0.0,
