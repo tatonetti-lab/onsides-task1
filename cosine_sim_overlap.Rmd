@@ -102,7 +102,7 @@ pr_results_uae <- overlap_data_uae %>%
     pr_curve(is_overlapping, similarity) %>%
     mutate(model = 'WhereIsAI/UAE-Large-V1')
 
-pr_plot <- pr_results %>%
+pr_plot <- pr_results_uae %>%
   ggplot(aes(x = recall, y = precision)) +
   geom_path() +
   coord_equal() +
@@ -120,10 +120,10 @@ roc_plot <- roc_results %>%
   coord_equal() +
   theme_bw()
 
-ggarrange(
-  roc_plot, pr_plot, labels = c("A", "B"),
-  nrow = 1, ncol = 2
-  )
+# ggarrange(
+#   roc_plot, pr_plot, labels = c("A", "B"),
+#   nrow = 1, ncol = 2
+#   )
 ```
 
 ```{r}
@@ -169,6 +169,12 @@ pr_plot
 ```
 
 ```{r}
+roc_results %>% head
+```
+
+
+
+```{r}
 auroc_plot <- ggplot(data = roc_results, mapping = aes(y = sensitivity,
                                                        x = 1-specificity,
                                                        color = model)) +
@@ -182,7 +188,6 @@ auroc_plot <- ggplot(data = roc_results, mapping = aes(y = sensitivity,
               theme_cowplot() + 
               theme(legend.position = c(0.4, 0.1),
                     legend.title = element_blank()) +
-              # coord_fixed(ratio = 1) +
               scale_color_manual(values = c('#D81B60','#1E88E5')) +
               xlab('1-Specificity') + 
               ylab('Sensitivity') + 

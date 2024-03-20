@@ -14,33 +14,46 @@ options(fig.height=6, fig.width=10)
 ```
 
 ```{r}
-overall <- read_csv('results/overall_results_across_models.csv')
+overall <- read_csv('results/agg_evals/overall_results_across_models.csv')
 overall %>% head()
 ```
+```{r}
+overall %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method == 'lenient') %>% 
+  group_by(base_name) %>%
+  filter(macro_f1 == max(macro_f1))
+```
+
 
 
 ```{r}
 results <- overall %>%
-  filter(ade_type == 'all', section == 'adverse reactions') %>%
+  filter(ade_type == 'all', section == 'adverse reactions') %>% 
+  group_by(base_name, eval_method) %>%
+  filter(macro_f1 == max(macro_f1)) %>%
+  ungroup() %>%
   pivot_longer(micro_precision:macro_f1, names_to = c('level', 'metric'),
                names_sep = '_', values_to = 'value')
-results %>% head()
+# select(llm_model, level, metric, value)
+results %>% head(20)
 ```
 
 
 ```{r, fig.height=6, fig.width=10}
 results %>% filter(ade_type == 'all',
                    section == 'adverse reactions') %>%
-  group_by(llm_model, eval_method, level, metric) %>%
+  group_by(llm_model, eval_method, level, metric) %>% 
   summarize(mean_val = mean(value), 
             min_val = min(value),
             max_val = max(value),
-           .groups = 'drop') %>% 
-  filter(level == 'macro', eval_method == 'lenient') %>%
-ggplot(mapping = aes(x = llm_model, y = mean_val, fill = llm_model,
+           .groups = 'drop') %>%
+  filter(level == 'macro',  eval_method == 'lenient') %>% 
+  ggplot(mapping = aes(x = llm_model, y = mean_val, fill = llm_model,
                      ymin=min_val, ymax =max_val)) +
-  geom_bar(stat = 'identity', position = 'dodge') +
-  geom_errorbar(width = 0.4) + 
+  geom_bar(stat = 'identity')  + #, position = 'dodge') +
+  geom_errorbar(width = 0.4) +
   theme_cowplot() +
   theme(axis.text.x = element_blank()) + # element_text(angle = 90, vjust = 0.5, hjust=1)) +
   ggtitle('Macro') +
@@ -57,14 +70,17 @@ results %>% filter(ade_type == 'all',
             max_val = max(value),
            .groups = 'drop') %>% 
   filter(level == 'micro', eval_method == 'lenient') %>%
-ggplot(mapping = aes(x = llm_model, y = mean_val, fill = llm_model,
-                     ymin=min_val, ymax =max_val)) +
+ggplot(mapping = aes(x = llm_model, y = max_val, fill = llm_model)) +
+                     # ymin=min_val, ymax =max_val)) +
   geom_bar(stat = 'identity', position = 'dodge') +
-  geom_errorbar(width = 0.4) + 
+  # geom_errorbar(width = 0.4) + 
   theme_cowplot() +
   theme(axis.text.x = element_blank()) + # element_text(angle = 90, vjust = 0.5, hjust=1)) +
-  ggtitle('Macro') +
+  ggtitle('Micro') +
   facet_wrap(~metric)
+
+# ggsave('figures/embeds_performance.png', dpi = 1200,
+#        width = 8, height = 4, bg = 'white')
 ```
 
 # Granular results
@@ -72,21 +88,41 @@ ggplot(mapping = aes(x = llm_model, y = mean_val, fill = llm_model,
 
 ```{r}
 granular <- read_csv('results/granular_results_across_models.csv')
-granular %>% filter(llm_model == 'deepcadrme')
+granular %>% distinct(llm_model)
 ```
 
 ```{r}
 granular %>%
   filter(section == 'adverse reactions',
          ade_type == 'all',
-         eval_method %in% c('lenient', 'test')) %>%
+         eval_method %in% c('lenient', 'test'),
+         llm_model != 'gpt-4-turbo-preview') %>% 
+  group_by(base_name, run) %>%
+  mutate(mean_f1 = mean(f1, na.rm = T)) %>% ungroup() %>% group_by(base_name) %>%
+  filter(mean_f1 == max(mean_f1)) %>% ungroup() %>% 
   pivot_longer(precision:f1, names_to = 'metric', values_to = 'value') %>%
+  mutate(metric = metric %>%
+           str_to_sentence,
+         llm_model = llm_model %>%
+           factor(.,ordered = T,
+                  labels = c('exact', 'deepcadrme', 'code-llama-34b	',
+                             'gpt-3.5-turbo-0125', 'gpt-4-1106-preview')) ) %>%
 ggplot(mapping = aes(x = llm_model, y = value, color = llm_model, fill = llm_model)) +
-  geom_boxplot() +
-  geom_jitter(alpha = 0.5) +
+  geom_jitter(alpha = 0.2) +
+  geom_boxplot(colour = 'white') +
   facet_wrap(~metric) +
   theme_cowplot() +
-  theme(axis.text.x = element_blank())
+  xlab('') +
+  ylab('') + 
+  # labs(fill = 'Model', color = 'Model') +
+  scale_fill_manual(values=c("#3E0C48", "#33447D", "#00837F", "#44C15E", "#00A5F0")) + 
+  scale_color_manual(values=c("#3E0C48", "#33447D", "#00837F", "#44C15E", "#00A5F0")) + # "#56B4E9")) + 
+  theme(axis.text.x = element_blank(),
+        strip.background = element_rect(fill="white"),
+        legend.title = element_blank())
+
+ggsave('figures/granular_compare_extraction.png', dpi = 1200,
+       width = 8, height = 4, bg = 'white')
 ```
 
 
@@ -111,6 +147,8 @@ ggplot(mapping = aes(x = `gpt-4-1106-preview`, y = deepcadrme,
   ylim(0.5,1) + xlim(0.5,1) + 
   theme(aspect.ratio = 1)
 ```
+
+
 ```{r, fig.width = 6, fig.height = 6}
 granular %>%
   filter(section == 'adverse reactions',
