@@ -49,11 +49,6 @@ pr_plot <- pr_results %>%
   coord_fixed(ratio = 2)
 ```
 
-```{r}
-pr_results %>% 
-  mutate(f1 = )
-```
-
 
 ```{r metrics}
 roc_results <- overlap_data %>%
@@ -67,8 +62,8 @@ roc_plot <- roc_results %>%
   coord_equal() +
   theme_bw()
 roc_plot
-roc_results$specificity <- 1 - roc_results$specificity
-colnames(roc_results) <- c('threshold', 'tpr', 'fpr')
+# roc_results$specificity <- 1 - roc_results$specificity
+# colnames(roc_results) <- c('threshold', 'tpr', 'fpr')
 ```
 
 ```{r fig1, fig.height = 3, fig.width = 8}
@@ -222,51 +217,101 @@ section_length %>% head
 
 
 ```{r}
-granular_results_lenient <- read_csv('results/OpenAI_gpt-4-1106-preview_fatal-prompt-v2_no-system-prompt_temp0_train_run0_lenient_granular.csv')
-granular_results_lenient_35 <- read_csv('results/OpenAI_gpt-3.5-turbo-0125_fatal-prompt-v2_no-system-prompt_temp0_train_run0_lenient_granular.csv') %>%
-  rename('index' = `...1`) %>%
-  select(-index)
+granular_results_lenient <- read_csv('results/agg_evals/granular_results_across_models.csv') %>%
+                            rename('index' = `Unnamed: 0`) %>%
+                            select(-index)
 
 granular_results_lenient %>% 
-    inner_join(section_length %>% filter(section == 'adverse reactions'),
-               by = c('drug_name')) %>%
+    filter(llm_model == 'gpt-4-1106-preview',
+           eval_method == 'lenient') %>% 
+    group_by(run) %>% 
+    mutate(mean_f1 = mean(f1, na.rm=T)) %>%
+    ungroup() %>%
+    filter(max(mean_f1) == mean_f1) %>% 
+    inner_join(section_length %>% 
+                 filter(section == 'adverse reactions'),
+               by = c('drug_name', 'section')) %>% 
+    mutate(ade_type = ade_type %>% str_to_title()) %>%
+ggplot(mapping = aes(x = num_char, y = recall, color = ade_type, group = ade_type)) +
+ geom_smooth(method = 'lm', se = F) +
+  geom_point(alpha = 0.5) + 
+  theme_cowplot() +
+  theme(axis.text = element_text(size = 10),
+        legend.position =  c(0.7, 0.12),
+        legend.text = element_text(size=10),
+        legend.title = element_blank(),
+        legend.key.size = unit(0.5, "lines"),
+        legend.box.background = element_rect(colour = "gray"),
+        legend.margin=margin(c(1,3,3,1))) +
+    guides(color = guide_legend(override.aes = list(size = 0.5))) +
+  ylim(-0.05, 1) +
+  ylab('Recall') +
+  xlab('Drug Label Character Length')
+
+ggsave('figures/gpt-4_performance_ade-type.png', dpi = 1200,
+       width = 6, height = 4, bg = 'white')
+```
+
+
+```{r}
+## Get section counts for the test data set
+
+granular_results_lenient %>%
+    filter(llm_model == 'deepcadrme',
+           eval_method == 'lenient') %>%
+    group_by(run) %>% 
+    mutate(mean_f1 = mean(f1, na.rm=T)) %>%
+    ungroup() %>%
+    filter(max(mean_f1) == mean_f1) %>% head
+    inner_join(section_length,
+               by = c('drug_name')) %>% head
+    mutate(ade_type = ade_type %>% str_to_title()) %>% 
 ggplot(mapping = aes(x = num_char, y = recall, color = ade_type, group = ade_type)) +
  geom_smooth(method = 'lm', se = F) +
   geom_point() + 
-  theme_cowplot()
+  theme_cowplot() +
+  theme(legend.position =  c(0.7, 0.15),
+        legend.text = element_text(size=10),
+        legend.title = element_blank()) +
+  ylim(-0.05, 1)
 ```
 
+
 ```{r}
-gran35_data <- granular_results_lenient_35 %>%
-  filter(ade_type == 'all') %>%
-  select(-n_manual, -n_gpt, -tp, -fp, -fn) %>%
-  pivot_longer('precision':'f1', names_to = 'metric', values_to = 'GPT3.5') %>%
-  mutate(metric = str_to_title(metric))
+# gran35_data <- granular_results_lenient_35 %>%
+#   filter(ade_type == 'all') %>%
+#   select(-n_manual, -n_gpt, -tp, -fp, -fn) %>%
+#   pivot_longer('precision':'f1', names_to = 'metric', values_to = 'GPT3.5') %>%
+#   mutate(metric = str_to_title(metric))
+granular_results_lenient %>% distinct(llm_model)
 ```
 
 
 ```{r}
 all_data <- granular_results_lenient %>% 
-    inner_join(section_length %>% 
-              filter(section == 'adverse reactions'),
-               by = c('drug_name')) %>%
-  filter(ade_type == 'all') %>%
-  select(-n_manual, -n_gpt, -tp, -fp, -fn) %>%
-  pivot_longer('precision':'f1', names_to = 'metric', values_to = 'GPT4') %>%
-  mutate(metric = str_to_title(metric)) %>%
-  inner_join(gran35_data) %>%
-  pivot_longer('GPT3.5':'GPT4', names_to = 'model', values_to = 'val')
-
+  filter(ade_type == 'all',
+         section == 'adverse reactions',
+         eval_method == 'lenient',
+         llm_model != 'gpt-4-turbo-preview') %>%
+  select(-c(n_manual, n_gpt, tp, fp, fn)) %>% 
+  group_by(base_name, run) %>%
+  mutate(mean_f1 = mean(f1, na.rm = T)) %>%
+  ungroup() %>% group_by(llm_model) %>%
+  filter(mean_f1 == max(mean_f1)) %>% 
+  pivot_longer(precision:f1, names_to = 'metric', values_to = 'val') %>%
+  mutate(metric = metric %>% str_to_title()) %>%
+  inner_join(section_length, by = c('drug_name', 'section'))
 
 ann_text <- all_data %>%
-  group_by(metric, model) %>%
+  filter(!is.na(val)) %>%
+  group_by(metric, llm_model) %>%
   summarise(label = str_glue('R = {signif(cor(val, num_char), digits = 2)}')) %>%
   ungroup() %>%
-  mutate(x = 40000,
-         y = rep(c(0.05, 0.10), 3))
+  mutate(x = 0.9,
+         y = rep(c(0.05, 0.10, 0.15, 0.2), 3))
 
 all_data %>% 
-ggplot(mapping = aes(x = num_char/1000, y = val, color = model)) +
+ggplot(mapping = aes(x = num_char/1000, y = val, color = llm_model)) +
   geom_point(alpha = 0.35) +
 theme_cowplot() +
   theme(legend.position = c(0.85,0.9),
@@ -282,13 +327,70 @@ theme_cowplot() +
   geom_text(data = ann_text, mapping = aes(x = x/1000, y = y, label = label),
             show.legend = FALSE) +
   geom_smooth(method = 'lm', se = F, show.legend = FALSE) +
-  scale_color_manual(values = c('#D81B60', '#1E88E5')) +
+  # scale_color_manual(values = c('#D81B60', '#1E88E5')) +
   ylim(c(0, 1))
 
-ggsave('figures/label_length_performance.png', dpi = 1200,
-       width = 7, height = 5, bg = 'white')
+# ggsave('figures/label_length_performance.png', dpi = 1200,
+       # width = 7, height = 5, bg = 'white')
 ```
 
+```{r}
+quantile_df <- function(x, probs = c(0.25, 0.5, 0.75)) {
+  tibble(
+    value = quantile(x, probs, na.rm = TRUE),
+    prob = probs
+  )
+}
+```
+
+
+```{r}
+quantile_data <- all_data %>% 
+                  group_by(llm_model, metric) %>%
+                  mutate(x_quantile = ntile(num_char, 15)) %>%
+                  group_by(llm_model, metric, x_quantile) %>%
+                  summarize(x_mean = mean(num_char),
+                            y_mean = mean(val),
+                            y_sd = sd(val),
+                            y_min = y_mean - y_sd,
+                            y_max = y_mean + y_sd,
+                            .groups = 'drop')
+quantile_data
+# ann_text <- all_data %>%
+#   filter(!is.na(val)) %>%
+#   group_by(metric, llm_model) %>%
+#   summarise(label = str_glue('R = {signif(cor(val, num_char), digits = 2)}')) %>%
+#   ungroup() %>%
+#   mutate(x = 0.9,
+#          y = rep(c(0.05, 0.10, 0.15, 0.2), 3))
+
+quantile_data %>%
+  mutate(metric = as.factor(metric),
+         llm_model = as.factor(llm_model)) %>%
+ggplot(mapping = aes(x = x_mean,
+                     y = y_mean,
+                     ymax = y_max,
+                     ymin = y_min,
+                     color = llm_model)) +
+  geom_point(alpha = 0.7) +
+  geom_errorbar(alpha = 0.3) + 
+  theme_cowplot() +
+  theme(legend.title = element_blank(),
+        strip.background=element_rect(colour="white",
+                                      fill="white"),
+        legend.box.background = element_rect(colour = "darkgray"),
+        axis.text = element_text(size = 10),
+        legend.position =  c(0.4, 0.1),
+        legend.text = element_text(size=10),
+        legend.key.size = unit(0.5, "lines"),
+        legend.margin=margin(c(1,3,3,1))) +
+  facet_wrap(~metric, nrow =  1) +
+  xlab('Drug Label Character Length (in thousands)') +
+  ylab('') +
+  panel_border() +
+  geom_smooth(method = 'lm', se = F, show.legend = FALSE) +
+  ylim(c(0, 1))
+```
 
 
 

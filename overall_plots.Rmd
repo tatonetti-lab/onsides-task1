@@ -87,16 +87,15 @@ ggplot(mapping = aes(x = llm_model, y = max_val, fill = llm_model)) +
 
 
 ```{r}
-granular <- read_csv('results/granular_results_across_models.csv')
+granular <- read_csv('results/agg_evals/granular_results_across_models.csv')
 granular %>% distinct(llm_model)
 ```
-
 ```{r}
-granular %>%
-  filter(section == 'adverse reactions',
-         ade_type == 'all',
-         eval_method %in% c('lenient', 'test'),
-         llm_model != 'gpt-4-turbo-preview') %>% 
+selected_gran_results <- granular %>%
+  filter(section == 'adverse reactions',  # focus on ADR section
+         ade_type == 'all', # not consider ade_type
+         eval_method %in% c('lenient'), 
+         llm_model != 'gpt-4-turbo-preview') %>%
   group_by(base_name, run) %>%
   mutate(mean_f1 = mean(f1, na.rm = T)) %>% ungroup() %>% group_by(base_name) %>%
   filter(mean_f1 == max(mean_f1)) %>% ungroup() %>% 
@@ -106,7 +105,14 @@ granular %>%
          llm_model = llm_model %>%
            factor(.,ordered = T,
                   labels = c('exact', 'deepcadrme', 'code-llama-34b	',
-                             'gpt-3.5-turbo-0125', 'gpt-4-1106-preview')) ) %>%
+                             'gpt-3.5-turbo-0125', 'gpt-4-1106-preview')) )
+```
+
+
+## Granular Box Plot Overall Performance
+
+```{r}
+selected_gran_results %>%
 ggplot(mapping = aes(x = llm_model, y = value, color = llm_model, fill = llm_model)) +
   geom_jitter(alpha = 0.2) +
   geom_boxplot(colour = 'white') +
@@ -119,11 +125,174 @@ ggplot(mapping = aes(x = llm_model, y = value, color = llm_model, fill = llm_mod
   scale_color_manual(values=c("#3E0C48", "#33447D", "#00837F", "#44C15E", "#00A5F0")) + # "#56B4E9")) + 
   theme(axis.text.x = element_blank(),
         strip.background = element_rect(fill="white"),
-        legend.title = element_blank())
+        legend.title = element_blank()) +
+  panel_border()
 
 ggsave('figures/granular_compare_extraction.png', dpi = 1200,
        width = 8, height = 4, bg = 'white')
 ```
+
+## Granular Performance by Drug Label Length
+
+## Plotting F1 score
+
+```{r}
+section_length <- read_csv('data/section_char_count.csv')
+section_length %>% head
+```
+
+### DeepCadreMe does not have results on training
+
+```{r}
+
+ann_text <- selected_gran_results %>%
+  inner_join(section_length) %>%
+  filter(!is.na(value)) %>%
+  group_by(metric, llm_model) %>%
+  summarise(label = str_glue('R = {signif(cor(value, num_char), digits = 2)}')) %>%
+  ungroup() %>%
+  mutate(x = 0.9,
+         y = rep(c(0.05, 0.10, 0.15, 0.2), 3))
+
+selected_gran_results %>%
+  inner_join(section_length) %>%
+ggplot(mapping = aes(x = num_char/1000, y = value, color = llm_model)) +
+  geom_point(alpha = 0.35) +
+theme_cowplot() +
+  theme(legend.position = c(0.85,0.9),
+        legend.title = element_blank(),
+        strip.background=element_rect(colour="white",
+                                      fill="white"),
+        legend.box.background = element_rect(colour = "darkgray"),
+        legend.text = element_text(
+    margin = margin(r = 3, unit = "pt"))) +
+  facet_wrap(~metric, nrow =  1) +
+  xlab('Drug Label Character Length (in thousands)') +
+  ylab('') +
+  geom_text(data = ann_text, mapping = aes(x = x/1000, y = y, label = label),
+            show.legend = FALSE) +
+  geom_smooth(method = 'lm', se = F, show.legend = FALSE) +
+  scale_color_manual(values=c("#3E0C48", "#00837F", "#44C15E", "#00A5F0")) + # "#56B4E9")) + 
+  # scale_color_manual(values = c('#D81B60', '#1E88E5')) +
+  ylim(c(0, 1))
+
+# ggsave('figures/label_length_performance.png', dpi = 1200,
+       # width = 7, height = 5, bg = 'white')
+```
+
+
+
+```{r}
+quantile_data <- selected_gran_results %>%
+                  inner_join(section_length, by = c('drug_name', 'section')) %>%
+                  filter(!is.na(value)) %>%
+                  group_by(llm_model, metric) %>%
+                  mutate(x_quantile = ntile(num_char, 15)) %>%
+                  group_by(llm_model, metric, x_quantile) %>%
+                  summarize(x_mean = mean(num_char),
+                            y_mean = mean(value),
+                            y_sd = sd(value),
+                            y_min = y_mean - y_sd,
+                            y_max = min(y_mean + y_sd, 1),
+                            .groups = 'drop')
+
+ann_text <- selected_gran_results %>%
+  inner_join(section_length) %>%
+  group_by(llm_model, metric) %>%
+  summarise(label = str_glue('R = {signif(cor(value, num_char), digits = 2)}')) %>%
+  ungroup() %>%
+  mutate(x = 25,
+         y = rep(c(0.05, 0.10, 0.15, 0.2), 3) - 0.05)
+
+quantile_data %>%
+ggplot(mapping = aes(x = x_mean/1000,
+                     y = y_mean,
+                     color = factor(llm_model))) +
+  geom_point(alpha = 0.7) +
+  geom_errorbar(aes(ymax = y_max,
+                     ymin = y_min),
+                alpha = 0.2) + 
+  geom_smooth(method = 'lm', se = F, show.legend = FALSE) +
+  geom_text(data = ann_text,
+            mapping = aes(x = x, y = y, label = label),
+            show.legend = FALSE) + 
+  theme_cowplot() +
+  theme(legend.title = element_blank(),
+        strip.background=element_rect(colour="white",
+                                      fill="white"),
+        # legend.box.background = element_rect(colour = "darkgray"),
+        axis.text = element_text(size = 10),
+        legend.position =  'bottom', #c(0.75, 0.095),
+        legend.text = element_text(size=10),
+        legend.key.size = unit(0.5, "lines"),
+        legend.margin=margin(c(1,3,3,1))) +
+  scale_color_manual(values=c("#3E0C48", "#00837F", "#44C15E", "#00A5F0")) + # deepcadreme  "#33447D"
+  facet_wrap(~metric, nrow =  1) +
+  xlab('Drug Label Character Length (in thousands)') +
+  ylab('') +
+  panel_border() +
+  ylim(c(0, 1)) 
+
+ggsave('figures/granular_performance_label_length.png', dpi = 1200,
+       width = 8, height = 4, bg = 'white')
+```
+
+## Performance by label length and ADE Type
+
+```{r}
+ade_type_dat <- granular %>% 
+                filter(llm_model == 'gpt-4-1106-preview',
+                       eval_method == 'lenient',
+                       n_manual >= 3) %>% 
+                group_by(run) %>% 
+                mutate(mean_f1 = mean(f1, na.rm=T)) %>%
+                ungroup() %>%
+                filter(max(mean_f1) == mean_f1) %>% 
+                inner_join(section_length %>% 
+                             filter(section == 'adverse reactions'),
+                           by = c('drug_name', 'section')) %>% 
+                mutate(ade_type = ade_type %>% str_to_title())
+
+quant_ade_type <- ade_type_dat %>%
+                  group_by(llm_model,ade_type) %>%
+                  mutate(x_quantile = ntile(num_char, 15)) %>%
+                  group_by(llm_model,ade_type, x_quantile) %>%
+                  summarize(x_mean = mean(num_char),
+                            y_mean = mean(recall),
+                            y_sd = sd(recall),
+                            y_min = y_mean - y_sd,
+                            y_max = min(y_mean + y_sd, 1),
+                            .groups = 'drop')
+
+quant_ade_type %>%
+ggplot(mapping = aes(x = x_mean, y = y_mean, color = ade_type, group = ade_type)) +
+  geom_point(position=position_dodge(width=0.5), alpha = 0.7) +
+  geom_errorbar(aes(ymax = y_max,
+                     ymin = y_min),
+                alpha = 0.2,
+                width = 0.1,
+                position=position_dodge(width=0.5)) +
+  geom_smooth(method = 'lm', se = F) +
+  theme_cowplot() +
+  theme(axis.text = element_text(size = 10),
+        legend.position =  c(0.7, 0.12),
+        legend.text = element_text(size=10),
+        legend.title = element_blank(),
+        legend.key.size = unit(0.5, "lines"),
+        legend.box.background = element_rect(colour = "gray"),
+        legend.margin=margin(c(1,3,3,1))) +
+    guides(color = guide_legend(override.aes = list(size = 0.5))) +
+  scale_color_manual() +
+  ylim(-0.05, 1) +
+  ylab('Recall') +
+  xlab('Drug Label Character Length') 
+
+ggsave('figures/gpt-4_performance_ade-type.png', dpi = 1200,
+       width = 6, height = 4, bg = 'white')
+```
+
+
+
 
 
 ```{r, fig.height=8, fig.width=8}
