@@ -1,0 +1,107 @@
+---
+title: "getting hypothetical"
+author: "undina"
+date: "2024-04-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## load data
+
+```{r}
+folder <- 'Documents/Columbia/Tatonetti_Lab/llm_onsides/onsides-task1/data/TAC2017/'
+mentions_all <- read_csv(str_glue('{folder}train_drug_label_mentions.csv'),
+                         col_types = cols(.default = "?",
+                                          start = col_character(),
+                                          len = col_character()))
+relations_all <- read_csv(str_glue('{folder}train_drug_label_relations.csv'))
+drug_label_text_all <- read_csv(str_glue('{folder}train_drug_label_text_manual_ades.csv'))
+drug_label <- read_csv(str_glue('{folder}train_drug_label_text.csv'))
+```
+
+```{r}
+drug_label %>% filter(drug_name == 'ADCETRIS') %>% head
+  mutate(RL5 = substr(section_text, 17070, 17126),
+         no_rel = substr(section_text, 17170, 17178+50)) %>% select(-section_text) %>%
+  head()
+```
+
+```{r}
+mentions_all %>% filter(type == 'AdverseReaction') %>%
+  filter(grepl(pattern = ',', start)) %>%
+  mutate(start = str_split(start, ','),
+         len = str_split(len, ',')) %>%
+  unnest(c(start, len)) %>% 
+  mutate(start = as.integer(start),
+         len = as.integer(len)) %>%
+  group_by(drug_name, id, section, type, str) %>%
+  dplyr::summarise(start = min(start), 
+            end = max(start) + max(len)) %>%
+  inner_join(drug_label) %>% 
+  mutate(rel_section = substr(section_text, start - 10, end + 40)) %>%
+  select(-section_text)
+
+drug_label_text_all %>%
+  filter(discontinuous_term == 1) %>%
+  inner_join(mentions_all)
+```
+
+
+```{r}
+relations_all %>% filter(type == 'Hypothetical') %>%
+  left_join(mentions_all, by = c('drug_name', 'arg2'='id')) %>% 
+  left_join(mentions_all, by = c('drug_name', 'arg1'='id', 'section')) %>% 
+  inner_join(drug_label %>% mutate(section = case_when(section_name == 'adverse reactions' ~ 'S1',
+                                                       section_name == 'warnings and precautions' ~ 'S2',
+                                                       section_name == 'boxed warnings' ~ 'S3')),
+             by = c('drug_name','section')) %>% filter()
+    rowwise() %>%
+    mutate(first_start = min(start.x, start.y) - 20,
+           last_end = max(start.x+len.x, start.y+len.y) + 20,
+           relevent_section = substr(section_text, start = first_start, stop = last_end)) %>%
+  select(drug_name, section, str.x, str.y, first_start, last_end, relevent_section)
+```
+
+
+```{r}
+drug_label_text_all %>% distinct() %>% select(-meddra_llt_id, -meddra_llt) %>%
+group_by(drug_name, section_id, reaction_string, meddra_pt, section) %>%
+  filter(n() > 1)
+```
+
+```{r}
+mentions_all %>% filter(type == 'AdverseReaction') %>% distinct() %>% 
+  group_by(drug_name, section, str) %>% filter(n()>1) %>% arrange(drug_name, section, str)
+```
+
+
+```{r}
+mentions_all %>% distinct() %>%
+  right_join(drug_label_text_all %>% distinct(),
+             by = c('drug_name', 'section', 'str'), multiple = 'all') %>%
+  select(-discontinuous_term, -negated_term, -meddra_exact_term) %>%
+  # join on adverse events
+  left_join(relations_all %>% 
+              rename(RL_id = id, category = type) %>%
+              filter(category %in% c('Negated', 'Hypothetical')),
+            by = c('drug_name', 'id'='arg1')) %>%
+  # join ADE 
+  distinct() %>%
+  mutate(negated_term = (category == 'Negated') %>% as.integer(),
+         hypothetical_term = (category == 'Hypothetical') %>% as.integer(),
+         meddra_exact_term = (tolower(reaction_string) == tolower(meddra_pt)) %>% as.integer(),
+         has_meddra = (!is.na(meddra_pt)) %>% as.integer()) %>%
+  replace_na(list('meddra_exact_term' = 0,
+                   'has_meddra' = 0,
+                   'meddra_exact_term' = 0,
+                   'hypothetical_term' = 0,
+                  'negated_term' = 0)) %>%
+  select(-category, -id, -start) %>% distinct() %>%
+  group_by(drug_name, section, reaction_string) %>%
+  filter(n() > 1) %>% arrange(drug_name, section, reaction_string)
+```
+
