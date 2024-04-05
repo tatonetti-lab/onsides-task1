@@ -27,10 +27,11 @@ def get_manual_data(manual_ades, drug, section='adverse reactions', subtype='all
         drug_df = drug_df[drug_df.negated_term == 1]
     elif subtype == 'discontinuous': 
         drug_df = drug_df[drug_df.discontinuous_term == 1]
+    elif subtype == 'hypothetical': 
+        drug_df = drug_df[drug_df.hypothetical_term == 1]
     else:
         raise Exception(f"Unexpected subtype, {subtype}, provided.")
     
-
     return drug_df
 
 def get_gpt_drug(gpt_output):
@@ -126,7 +127,7 @@ def evaluation_granular(manual_ades, gpt_output, eval_method='strict', embed_mod
             else:
                 gpt_vals = set(sub_gpt['gpt_output'])
             
-            for subtype in ['all', 'exact-meddra', 'non-meddra', 'negated', 'discontinuous']:
+            for subtype in ['all', 'exact-meddra', 'non-meddra', 'negated', 'discontinuous', 'hypothetical']:
                 # get manual data
                 manual_data = get_manual_data(manual_ades, drug, section=section, subtype=subtype)
                 if manual_data.shape[0] == 0:
