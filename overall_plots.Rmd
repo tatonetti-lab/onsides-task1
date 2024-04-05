@@ -94,7 +94,7 @@ granular %>% distinct(llm_model)
 selected_gran_results <- granular %>%
   filter(section == 'adverse reactions',  # focus on ADR section
          ade_type == 'all', # not consider ade_type
-         eval_method %in% c('lenient'), 
+         eval_method %in% c('ember-v1'), 
          llm_model != 'gpt-4-turbo-preview') %>%
   group_by(base_name, run) %>%
   mutate(mean_f1 = mean(f1, na.rm = T)) %>% ungroup() %>% group_by(base_name) %>%
@@ -107,6 +107,42 @@ selected_gran_results <- granular %>%
                   labels = c('exact', 'deepcadrme', 'code-llama-34b	',
                              'gpt-3.5-turbo-0125', 'gpt-4-1106-preview')) )
 ```
+
+ precision = TP/(TP+FP)
+        if TP == 0 and FN == 0:
+            recall = np.NAN
+        else:
+            recall = TP/(TP+FN)
+        if precision != 0 and recall != 0:
+            f1 = (2 * precision * recall)/(precision + recall)# 2*TP/(2*TP+FP+FN)
+
+```{r}
+granular %>% 
+  filter(section == 'adverse reactions',  # focus on ADR section
+         ade_type == 'all', # not consider ade_type
+         eval_method %in% c( 'lenient'), 
+         llm_model != 'gpt-4-turbo-preview') %>%
+  group_by(base_name, run) %>%
+  mutate(mean_f1 = mean(f1, na.rm = T)) %>% ungroup() %>% group_by(base_name) %>%
+  filter(mean_f1 == max(mean_f1)) %>% ungroup() %>% 
+  group_by(llm_model) %>% 
+  summarise(tot_tp = sum(tp),
+            tot_fp = sum(fp),
+            tot_fn = sum(fn),
+            micro_precision = tot_tp/(tot_tp+tot_fp),
+            micro_recall = tot_tp/(tot_tp+tot_fn),
+            micro_f1 = 2*tot_tp/(2*tot_tp+tot_fp+tot_fn),
+            macro_precision = mean(precision, na.rm = T),
+            macro_recall = mean(recall, na.rm = T),
+            macro_f1 = mean(f1, na.rm = T)) %>%
+  select(-starts_with('tot')) %>% write_csv('results/agg_evals/agg_scores.csv')
+  pivot_longer(micro_precision:macro_f1,
+               names_sep = "_", names_to = c('level', 'metric'),
+               values_to = 'value') %>%
+  pivot_wider(names_from = level, values_from = value) %>%
+  head
+```
+
 
 
 ## Granular Box Plot Overall Performance
@@ -135,6 +171,8 @@ ggsave('figures/granular_compare_extraction.png', dpi = 1200,
 ## Granular Performance by Drug Label Length
 
 ## Plotting F1 score
+
+### Get section character length
 
 ```{r}
 section_length <- read_csv('data/section_char_count.csv')
@@ -180,7 +218,7 @@ theme_cowplot() +
        # width = 7, height = 5, bg = 'white')
 ```
 
-
+## Figure: Performance with Drug Label Length
 
 ```{r}
 quantile_data <- selected_gran_results %>%
@@ -237,14 +275,30 @@ ggsave('figures/granular_performance_label_length.png', dpi = 1200,
        width = 8, height = 4, bg = 'white')
 ```
 
-## Performance by label length and ADE Type
+## Figure: Performance by label length and ADE Type
+
+```{r}
+granular %>%
+                filter(llm_model == 'gpt-4-1106-preview',
+                       eval_method == 'lenient',
+                       n_manual >= 3) %>% 
+group_by(base_name, run) %>%
+  mutate(mean_f1 = mean(f1, na.rm = T)) %>%
+  ungroup() %>%
+  filter(max(mean_f1) == mean_f1) %>% distinct(base_name, run)
+                group_by(run, section) %>% 
+                mutate(mean_f1 = mean(f1, na.rm=T)) %>%
+                ungroup() %>%
+                filter(max(mean_f1) == mean_f1) %>% distinct(base_name)
+```
+
 
 ```{r}
 ade_type_dat <- granular %>% 
                 filter(llm_model == 'gpt-4-1106-preview',
                        eval_method == 'lenient',
                        n_manual >= 3) %>% 
-                group_by(run) %>% 
+                group_by(run, section) %>% 
                 mutate(mean_f1 = mean(f1, na.rm=T)) %>%
                 ungroup() %>%
                 filter(max(mean_f1) == mean_f1) %>% 
@@ -255,7 +309,8 @@ ade_type_dat <- granular %>%
 
 quant_ade_type <- ade_type_dat %>%
                   group_by(llm_model,ade_type) %>%
-                  mutate(x_quantile = ntile(num_char, 15)) %>%
+                  mutate(x_quantile = ntile(num_char, 15),
+                         ade_type = str_glue('{ade_type} (N = {n()})')) %>%
                   group_by(llm_model,ade_type, x_quantile) %>%
                   summarize(x_mean = mean(num_char),
                             y_mean = mean(recall),
@@ -265,7 +320,8 @@ quant_ade_type <- ade_type_dat %>%
                             .groups = 'drop')
 
 quant_ade_type %>%
-ggplot(mapping = aes(x = x_mean, y = y_mean, color = ade_type, group = ade_type)) +
+ggplot(mapping = aes(x = x_mean, y = y_mean, color = ade_type,
+                     group = ade_type, linetype = ade_type)) +
   geom_point(position=position_dodge(width=0.5), alpha = 0.7) +
   geom_errorbar(aes(ymax = y_max,
                      ymin = y_min),
@@ -282,7 +338,9 @@ ggplot(mapping = aes(x = x_mean, y = y_mean, color = ade_type, group = ade_type)
         legend.box.background = element_rect(colour = "gray"),
         legend.margin=margin(c(1,3,3,1))) +
     guides(color = guide_legend(override.aes = list(size = 0.5))) +
-  scale_color_manual() +
+  scale_color_manual(values = c('grey40', 'mediumpurple', 'aquamarine2', 'tomato2', 'royalblue')) +
+  scale_linetype_manual(values = c('longdash', 'solid', 'solid', 'solid', 'solid'),
+                 guide = F) +
   ylim(-0.05, 1) +
   ylab('Recall') +
   xlab('Drug Label Character Length') 
@@ -391,17 +449,43 @@ ggplot(mapping = aes(x = drug_name, y = recall, color = drug_name)) +
 ```
 
 
-
 ```{r}
-granular %>%
+granular %>% 
   filter(section == 'adverse reactions',
          ade_type == 'all',
          eval_method %in% c('lenient', 'test'),
-         llm_model %in% c('gpt-4-1106-preview')) %>% 
+         llm_model %in% c('gpt-4-1106-preview')) %>%
   group_by(drug_name) %>%
   summarise(mean_val = mean(precision),
             min_val = min(precision),
             max_val = max(precision)) %>% ungroup() %>%
+  arrange(mean_val)
+ggplot(mapping = aes(x = drug_name, y = mean_val, color = drug_name,
+                     ymin = min_val, ymax = max_val)) +
+  geom_point(alpha = 0.5) +
+  geom_errorbar() +
+  theme_cowplot() +
+  scale_colour_discrete(guide = "none") +
+  theme(axis.text.x = element_blank()) + 
+  xlab('Drug') +
+  ylim(0,1)
+```
+
+
+
+
+```{r}
+granular %>% 
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method %in% c('lenient', 'test'),
+         llm_model %in% c('deepcadrme'),
+         run == '025') %>%
+  group_by(drug_name) %>%
+  summarise(mean_val = mean(precision),
+            min_val = min(precision),
+            max_val = max(precision)) %>% ungroup() %>% 
+  arrange(mean_val)
 ggplot(mapping = aes(x = drug_name, y = mean_val, color = drug_name,
                      ymin = min_val, ymax = max_val)) +
   geom_point(alpha = 0.5) +
@@ -427,8 +511,8 @@ granular %>%
          eval_method %in% c('lenient', 'test'),
          llm_model %in% c('gpt-4-1106-preview'),
          system %in% c('no-system-prompt','pharmexpert-v0')) %>% 
-  select(drug_name, system, run, precision:f1) %>%
-  pivot_longer(precision:f1, names_to = 'metric') %>% 
+  select(drug_name, system, run, precision:f1) %>% head
+  pivot_longer(precision:f1, names_to = 'metric', values_to = 'value') %>% 
   pivot_wider(names_from = system, values_from = value) %>% 
 ggplot(mapping = aes(x = `no-system-prompt`, y = `pharmexpert-v0`)) +
   facet_wrap(~metric) +
@@ -438,7 +522,7 @@ ggplot(mapping = aes(x = `no-system-prompt`, y = `pharmexpert-v0`)) +
   labs(title = 'gpt-4-1106-preview_fatal-prompt-v2 -- System Prompt')
 ```
 
-
+## Figure: Impact of Prompt on perfromance GPT 4
 
 ```{r, fig.height=6, fig.width=10}
 granular %>%
@@ -485,8 +569,8 @@ granular %>%
   #             ymin = min_val, ymax = max_val) %>% head
 ggplot(mapping = aes(x = prompt, y = mean_val,
                      ymin = min_val, ymax = max_val, color = system)) +
-  geom_errorbar() + 
-  geom_point() + 
+  geom_errorbar(position=position_dodge(width=0.5)) + 
+  geom_point(position=position_dodge(width=0.5)) + 
   theme_cowplot() +
   theme(aspect.ratio = 1,
         axis.text.x = element_text(angle = 90)) +
@@ -495,7 +579,39 @@ ggplot(mapping = aes(x = prompt, y = mean_val,
   labs(title = 'different system prompts') 
 ```
 
+## Number of Tokens needed for Prompt + Response
 
+```{r}
+num_token_dat <- read_csv('data/num_tokens.csv') %>%
+  pivot_longer(drug_label:response) %>%
+  mutate(name = case_when(name == 'drug_label' ~ 'Drug Label',
+                          name == 'response' ~ 'Extracted ADEs'))
+xintercept = num_token_dat %>%
+              distinct(name) %>%
+              mutate(name = case_when(name == 'Drug Label' ~ 4096,
+                          name == 'Extracted ADEs' ~ NA))
+num_token_dat %>% head
+```
+
+```{r}
+num_token_dat %>%
+ggplot(mapping = aes(x = value, color = name, fill = name)) +
+  geom_histogram(alpha = 0.7) + 
+  geom_vline(aes(xintercept=intercept), color = 'red', linetype = 'dashed') +
+  geom_vline(aes(xintercept=intercept - 1029),
+             color = 'purple', linetype = 'dashed') +
+  facet_wrap(~name, scales = 'free') +
+  theme_cowplot() +
+  theme(legend.position = '',
+        strip.background = element_rect(fill="white")) +
+  xlab('Number of Tokens') +
+  ylab('Count') +
+  panel_border()
+
+ggsave('figures/num_tokens.png', dpi = 1200,
+       width = 8, height = 4, bg = 'white')
+
+```
 
 
 
