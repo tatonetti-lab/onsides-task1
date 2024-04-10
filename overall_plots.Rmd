@@ -25,6 +25,15 @@ overall %>%
   group_by(base_name) %>%
   filter(macro_f1 == max(macro_f1))
 ```
+```{r}
+overall %>% 
+  filter(ade_type == 'all',
+         section == 'boxed warnings',
+         eval_method == 'lenient') %>% 
+  group_by(base_name) %>%
+  select(base_name, eval_method, starts_with('macro'), starts_with('micro')) %>%
+  arrange(-macro_f1)
+```
 
 
 
@@ -37,7 +46,7 @@ results <- overall %>%
   pivot_longer(micro_precision:macro_f1, names_to = c('level', 'metric'),
                names_sep = '_', values_to = 'value')
 # select(llm_model, level, metric, value)
-results %>% head(20)
+results %>% arrange(level, metric, -value)
 ```
 
 
@@ -94,7 +103,7 @@ granular %>% distinct(llm_model)
 selected_gran_results <- granular %>%
   filter(section == 'adverse reactions',  # focus on ADR section
          ade_type == 'all', # not consider ade_type
-         eval_method %in% c('ember-v1'), 
+         eval_method %in% c('lenient'), 
          llm_model != 'gpt-4-turbo-preview') %>%
   group_by(base_name, run) %>%
   mutate(mean_f1 = mean(f1, na.rm = T)) %>% ungroup() %>% group_by(base_name) %>%
@@ -285,7 +294,7 @@ granular %>%
 group_by(base_name, run) %>%
   mutate(mean_f1 = mean(f1, na.rm = T)) %>%
   ungroup() %>%
-  filter(max(mean_f1) == mean_f1) %>% distinct(base_name, run)
+  filter(max(mean_f1) == mean_f1) %>%
                 group_by(run, section) %>% 
                 mutate(mean_f1 = mean(f1, na.rm=T)) %>%
                 ungroup() %>%
@@ -485,7 +494,7 @@ granular %>%
   summarise(mean_val = mean(precision),
             min_val = min(precision),
             max_val = max(precision)) %>% ungroup() %>% 
-  arrange(mean_val)
+  arrange(mean_val) %>%
 ggplot(mapping = aes(x = drug_name, y = mean_val, color = drug_name,
                      ymin = min_val, ymax = max_val)) +
   geom_point(alpha = 0.5) +
