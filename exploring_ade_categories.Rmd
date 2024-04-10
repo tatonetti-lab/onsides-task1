@@ -13,7 +13,7 @@ library(tidyverse)
 ## load data
 
 ```{r}
-folder <- 'Documents/Columbia/Tatonetti_Lab/llm_onsides/onsides-task1/data/TAC2017/'
+folder <- '~/Documents/Columbia/Tatonetti_Lab/llm_onsides/onsides-task1/data/TAC2017/'
 mentions_all <- read_csv(str_glue('{folder}train_drug_label_mentions.csv'),
                          col_types = cols(.default = "?",
                                           start = col_character(),
@@ -24,7 +24,7 @@ drug_label <- read_csv(str_glue('{folder}train_drug_label_text.csv'))
 ```
 
 ```{r}
-drug_label %>% filter(drug_name == 'ADCETRIS') %>% head
+drug_label %>% filter(drug_name == 'ADCETRIS') %>% 
   mutate(RL5 = substr(section_text, 17070, 17126),
          no_rel = substr(section_text, 17170, 17178+50)) %>% select(-section_text) %>%
   head()
@@ -104,4 +104,26 @@ mentions_all %>% distinct() %>%
   group_by(drug_name, section, reaction_string) %>%
   filter(n() > 1) %>% arrange(drug_name, section, reaction_string)
 ```
+
+
+
+
+```{r}
+mentions_all %>%
+  filter(drug_name == 'ADCETRIS',
+         type == 'AdverseReaction') %>% 
+  inner_join(drug_label %>% filter(section_name == 'warnings and precautions'),
+             multiple = 'all', by = 'drug_name') %>% filter(section == 'S3') %>%
+  head(5) %>%
+  dplyr::summarise(reaction_str = paste0(tolower(str), collapse = ', '),
+            min_start = min(as.integer(start)) - 5,
+            max_start = max(as.integer(start) + as.integer(len)) + 5,
+            sub_sect = substr(section_text, min_start, max_start),
+            .groups = 'drop') %>% distinct() %>%
+  ungroup() %>% select(sub_sect) %>% unlist()
+```
+
+
+
+
 

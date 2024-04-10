@@ -26,13 +26,14 @@ overall %>%
   filter(macro_f1 == max(macro_f1))
 ```
 ```{r}
+# drop gpt-4-turbo
+
 overall %>% 
   filter(ade_type == 'all',
-         section == 'boxed warnings',
          eval_method == 'lenient') %>% 
   group_by(base_name) %>%
   select(base_name, eval_method, starts_with('macro'), starts_with('micro')) %>%
-  arrange(-macro_f1)
+  arrange(-macro_f1) %>% distinct(base_name, macro_f1)
 ```
 
 
