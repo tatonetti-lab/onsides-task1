@@ -69,6 +69,9 @@ results %>% filter(ade_type == 'all',
   ggtitle('Macro') +
   facet_wrap(~metric)
 ```
+```{r}
+granular %>% filter(llm_model == 'deepcadrme') %>% distinct(eval_method)
+```
 
 
 ```{r,fig.height=6, fig.width=10}
@@ -98,14 +101,13 @@ ggplot(mapping = aes(x = llm_model, y = max_val, fill = llm_model)) +
 
 ```{r}
 granular <- read_csv('results/agg_evals/granular_results_across_models.csv')
-granular %>% distinct(llm_model)
+granular %>% distinct(base_name)
 ```
 ```{r}
 selected_gran_results <- granular %>%
   filter(section == 'adverse reactions',  # focus on ADR section
          ade_type == 'all', # not consider ade_type
-         eval_method %in% c('lenient'), 
-         llm_model != 'gpt-4-turbo-preview') %>%
+         eval_method %in% c('ember-v1')) %>%
   group_by(base_name, run) %>%
   mutate(mean_f1 = mean(f1, na.rm = T)) %>% ungroup() %>% group_by(base_name) %>%
   filter(mean_f1 == max(mean_f1)) %>% ungroup() %>% 
@@ -114,9 +116,13 @@ selected_gran_results <- granular %>%
            str_to_sentence,
          llm_model = llm_model %>%
            factor(.,ordered = T,
-                  labels = c('exact', 'deepcadrme', 'code-llama-34b	',
+                  levels = c('exact', 'deepcadrme', 'code-llama-34b',
+                             'Mixtral-8x7B-Instruct-v0.1',
                              'gpt-3.5-turbo-0125', 'gpt-4-1106-preview')) )
+selected_gran_results %>% filter(llm_model == 'deepcadrme')
 ```
+
+
 
  precision = TP/(TP+FP)
         if TP == 0 and FN == 0:
@@ -130,7 +136,7 @@ selected_gran_results <- granular %>%
 granular %>% 
   filter(section == 'adverse reactions',  # focus on ADR section
          ade_type == 'all', # not consider ade_type
-         eval_method %in% c( 'lenient'), 
+         eval_method %in% c( 'ember-v1'), 
          llm_model != 'gpt-4-turbo-preview') %>%
   group_by(base_name, run) %>%
   mutate(mean_f1 = mean(f1, na.rm = T)) %>% ungroup() %>% group_by(base_name) %>%
@@ -145,12 +151,11 @@ granular %>%
             macro_precision = mean(precision, na.rm = T),
             macro_recall = mean(recall, na.rm = T),
             macro_f1 = mean(f1, na.rm = T)) %>%
-  select(-starts_with('tot')) %>% write_csv('results/agg_evals/agg_scores.csv')
+  select(-starts_with('tot')) %>% # write_csv('results/agg_evals/agg_scores.csv')
   pivot_longer(micro_precision:macro_f1,
                names_sep = "_", names_to = c('level', 'metric'),
                values_to = 'value') %>%
-  pivot_wider(names_from = level, values_from = value) %>%
-  head
+  pivot_wider(names_from = level, values_from = value)
 ```
 
 
@@ -158,25 +163,92 @@ granular %>%
 ## Granular Box Plot Overall Performance
 
 ```{r}
-selected_gran_results %>%
-ggplot(mapping = aes(x = llm_model, y = value, color = llm_model, fill = llm_model)) +
-  geom_jitter(alpha = 0.2) +
-  geom_boxplot(colour = 'white') +
-  facet_wrap(~metric) +
+granular %>%
+  filter(section == 'adverse reactions',
+         ade_type == 'all',
+         eval_method == 'lenient',
+         llm_model == 'exact') %>% 
+ggplot(mapping = aes(x = llm_model, y = precision)) +
+  geom_boxplot() +
+  ylim(c(0,1))
+```
+
+```{r}
+table(granular$eval_method)
+```
+
+```{r}
+selected_top_gran <-
+  granular %>%
+  filter(section == 'adverse reactions',  # focus on ADR section
+         ade_type == 'all', # not consider ade_type
+         eval_method %in% c('ember-v1')) %>%
+  group_by(llm_model, dataset, base_name) %>% 
+  mutate(mean_f1 = mean(f1, na.rm = T)) %>%
+  ungroup() %>% group_by(llm_model, dataset) %>%
+  filter(mean_f1 == max(mean_f1)) %>% 
+  ungroup() %>% 
+  filter(startsWith(run, 'run') | startsWith(run, '0') | is.na(run) | startsWith(run, '1'),
+         ifelse(dataset == 'train' | llm_model == 'deepcadrme', TRUE, FALSE)) %>%
+  mutate(llm_model_name = case_when(llm_model == 'exact' ~ 'Exact MedDRA',
+                                    llm_model == 'deepcadrme' ~ 'DeepCADRME',
+                                    llm_model == 'code-llama-34b' ~ 'Llama 2',
+                                    grepl(pattern = 'Mixtral', llm_model) ~ 'Mixtral',
+                                    grepl(pattern = 'gpt-3.5', llm_model) ~ 'GPT-3.5',
+                                    grepl(pattern = 'gpt-4', llm_model) ~ 'GPT-4')) %>%
+  pivot_longer(precision:f1, names_to = 'metric', values_to = 'value') %>%
+  mutate(metric = metric %>%
+           str_to_sentence,
+         llm_model_name = llm_model_name %>%
+           factor(.,ordered = T,
+                  levels = c('Exact MedDRA', 'DeepCADRME', 'Llama 2',
+                             'Mixtral',
+                             'GPT-3.5', 'GPT-4')) )
+```
+
+
+```{r}
+selected_top_gran %>% 
+ggplot(mapping = aes(x = llm_model_name, y = value,
+                     color = llm_model_name, fill = llm_model_name)) +
+  geom_jitter(alpha = 0.5) +
+  geom_boxplot(color = 'white', aes(ymin=..lower.., ymax=..upper..),
+               outlier.shape = NA, alpha = 0.8) +
+    # geom_boxplot(colour = 'white', outlier.shape = NA) +
+
+  facet_wrap(~metric, nrow = 1) +
   theme_cowplot() +
   xlab('') +
   ylab('') + 
   # labs(fill = 'Model', color = 'Model') +
-  scale_fill_manual(values=c("#3E0C48", "#33447D", "#00837F", "#44C15E", "#00A5F0")) + 
-  scale_color_manual(values=c("#3E0C48", "#33447D", "#00837F", "#44C15E", "#00A5F0")) + # "#56B4E9")) + 
-  theme(axis.text.x = element_blank(),
+  scale_fill_manual(values=c("#1e4620", "#3E0C48", "#33447D", "#00837F",
+                             "#44C15E", "#00A5F0")) + 
+  scale_color_manual(values=c("#1e4620", "#3E0C48", "#33447D", "#00837F",
+                              "#44C15E", "#00A5F0")) + # "#56B4E9")) + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         strip.background = element_rect(fill="white"),
-        legend.title = element_blank()) +
-  panel_border()
+        legend.title = element_blank(),
+        legend.position = '') +
+  panel_border() 
+  # coord_flip()
 
-ggsave('figures/granular_compare_extraction.png', dpi = 1200,
-       width = 8, height = 4, bg = 'white')
+ggsave('figures/granular_embed_compare_extraction.png', dpi = 1200,
+       width = 8, height = 6, bg = 'white')
 ```
+
+```{r}
+granular %>%
+  filter(section == 'adverse reactions',  # focus on ADR section
+         ade_type == 'all', # not consider ade_type
+         eval_method %in% c('lenient'),
+         grepl('gpt-4', llm_model)) %>%
+ggplot(mapping = aes(x = prompt, y = f1)) +
+  geom_jitter(alpha = 0.2) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.5) +
+  coord_flip() + theme_cowplot()
+  
+```
+
 
 ## Granular Performance by Drug Label Length
 
@@ -199,7 +271,7 @@ ann_text <- selected_gran_results %>%
   group_by(metric, llm_model) %>%
   summarise(label = str_glue('R = {signif(cor(value, num_char), digits = 2)}')) %>%
   ungroup() %>%
-  mutate(x = 0.9,
+mutate(x = 0.9,
          y = rep(c(0.05, 0.10, 0.15, 0.2), 3))
 
 selected_gran_results %>%
@@ -250,7 +322,7 @@ ann_text <- selected_gran_results %>%
   summarise(label = str_glue('R = {signif(cor(value, num_char), digits = 2)}')) %>%
   ungroup() %>%
   mutate(x = 25,
-         y = rep(c(0.05, 0.10, 0.15, 0.2), 3) - 0.05)
+         y = rep(c(0.05, 0.10, 0.15, 0.2, 0,25), 3) - 0.05)
 
 quantile_data %>%
 ggplot(mapping = aes(x = x_mean/1000,
@@ -261,9 +333,9 @@ ggplot(mapping = aes(x = x_mean/1000,
                      ymin = y_min),
                 alpha = 0.2) + 
   geom_smooth(method = 'lm', se = F, show.legend = FALSE) +
-  geom_text(data = ann_text,
-            mapping = aes(x = x, y = y, label = label),
-            show.legend = FALSE) + 
+  # geom_text(data = ann_text,
+  #           mapping = aes(x = x, y = y, label = label),
+  #           show.legend = FALSE) + 
   theme_cowplot() +
   theme(legend.title = element_blank(),
         strip.background=element_rect(colour="white",
@@ -274,7 +346,9 @@ ggplot(mapping = aes(x = x_mean/1000,
         legend.text = element_text(size=10),
         legend.key.size = unit(0.5, "lines"),
         legend.margin=margin(c(1,3,3,1))) +
-  scale_color_manual(values=c("#3E0C48", "#00837F", "#44C15E", "#00A5F0")) + # deepcadreme  "#33447D"
+  scale_color_manual(values=c("#1e4620", "#3E0C48", "#33447D", "#00837F",
+                              "#44C15E", "#00A5F0")) + # "#56B4E9")) + 
+  # scale_color_manual(values=c("#3E0C48", "#00837F", "#44C15E", "#00A5F0")) + # deepcadreme  "#33447D"
   facet_wrap(~metric, nrow =  1) +
   xlab('Drug Label Character Length (in thousands)') +
   ylab('') +
@@ -282,7 +356,7 @@ ggplot(mapping = aes(x = x_mean/1000,
   ylim(c(0, 1)) 
 
 ggsave('figures/granular_performance_label_length.png', dpi = 1200,
-       width = 8, height = 4, bg = 'white')
+width = 8, height = 4, bg = 'white')
 ```
 
 ## Figure: Performance by label length and ADE Type
@@ -306,7 +380,7 @@ group_by(base_name, run) %>%
 ```{r}
 ade_type_dat <- granular %>% 
                 filter(llm_model == 'gpt-4-1106-preview',
-                       eval_method == 'lenient',
+                       eval_method == 'ember-v1',
                        n_manual >= 3) %>% 
                 group_by(run, section) %>% 
                 mutate(mean_f1 = mean(f1, na.rm=T)) %>%
@@ -563,7 +637,7 @@ ggplot(mapping = aes(x = system, y = mean_val,
 
 
 ```{r}
-granular %>%
+ %>%
   filter(section == 'adverse reactions',
          ade_type == 'all',
          eval_method %in% c('lenient', 'test'),
@@ -621,6 +695,186 @@ ggplot(mapping = aes(x = value, color = name, fill = name)) +
 ggsave('figures/num_tokens.png', dpi = 1200,
        width = 8, height = 4, bg = 'white')
 
+```
+
+
+```{r}
+selected_top_gran %>% distinct(base_name)
+```
+
+
+```{r}
+# granular %>% filter(grepl('gpt-4', base_name)) %>%
+#   group_by(base_name, run) %>% filter('hypothetical' %in% ade_type) %>%
+#   mutate(mean_recall = mean(recall)) %>%
+#   ungroup() %>% filter(max(mean_recall) == mean_recall)
+
+ade_type_dat <- granular %>% filter(grepl('gpt-4', base_name),
+                                    eval_method == 'ember-v1',
+                                    n_manual > 3) %>%
+                group_by(base_name, run) %>% filter('hypothetical' %in% ade_type) %>%
+                mutate(mean_recall = mean(recall)) %>%
+                ungroup() %>% filter(max(mean_recall) == mean_recall) %>%
+                inner_join(section_length %>% 
+                             filter(section == 'adverse reactions'),
+                           by = c('drug_name', 'section')) %>% 
+                mutate(ade_type = ade_type %>% str_to_title())
+
+quant_ade_type <- ade_type_dat %>%
+                  group_by(llm_model,ade_type) %>%
+                  mutate(x_quantile = ntile(num_char, 15),
+                         ade_type = str_glue('{ade_type} (N = {n()})')) %>%
+                  group_by(llm_model,ade_type, x_quantile) %>%
+                  summarize(x_mean = mean(num_char),
+                            y_mean = mean(recall),
+                            y_sd = sd(recall),
+                            y_min = y_mean - y_sd,
+                            y_max = min(y_mean + y_sd, 1),
+                            .groups = 'drop')
+
+quant_ade_type %>% 
+  mutate(ade_type = factor(ade_type, 
+                           levels = c('All (N = 99)',
+                                      'Exact-Meddra (N = 98)',
+                                      'Non-Meddra (N = 83)',
+                                      'Negated (N = 5)',
+                                      'Hypothetical (N = 7)',
+                                      'Discontinuous (N = 37)'
+                                      ),
+                           ordered = TRUE)) %>%
+ggplot(mapping = aes(x = x_mean, y = y_mean, color = ade_type,
+                     group = ade_type, linetype = ade_type)) +
+  geom_point(position=position_dodge(width=0.5), alpha = 0.7) +
+  geom_errorbar(aes(ymax = y_max,
+                     ymin = y_min),
+                alpha = 0.2,
+                width = 0.1,
+                position=position_dodge(width=0.5)) +
+  geom_smooth(method = 'lm', se = F) +
+  theme_cowplot() +
+  theme(axis.text = element_text(size = 10),
+        legend.position =  c(0.65, 0.15),
+        legend.text = element_text(size=10),
+        legend.title = element_blank(),
+        legend.key.size = unit(0.5, "lines"),
+        legend.box.background = element_rect(colour = "gray"),
+        legend.margin=margin(c(1,3,3,1))) +
+    guides(color = guide_legend(override.aes = list(size = 0.5))) +
+  scale_color_manual(values = c('grey40', 'aquamarine2', 'royalblue',
+                                'tomato2', '#FFA500', 'mediumpurple')) +
+  scale_linetype_manual(values = c('longdash', 'solid', 'solid', 'solid', 'solid', 'solid'),
+                 guide = F) +
+  # ylim(-0.05, 1) +
+  ylab('Recall') +
+  xlab('Character Length') 
+
+ggsave('figures/gpt-4_performance_ade-type.png', dpi = 1200,
+       width = 8, height = 4, bg = 'white')
+```
+
+```{r}
+quantile_data <- selected_top_gran %>%
+                  inner_join(section_length, by = c('drug_name', 'section')) %>%
+                  filter(!is.na(value)) %>%
+                  group_by(llm_model_name, metric) %>%
+                  mutate(x_quantile = ntile(num_char, 15)) %>%
+                  group_by(llm_model_name, metric, x_quantile) %>%
+                  summarize(x_mean = mean(num_char),
+                            y_mean = mean(value),
+                            y_sd = sd(value),
+                            y_min = y_mean - y_sd,
+                            y_max = min(y_mean + y_sd, 1),
+                            .groups = 'drop')
+
+ann_text <- selected_top_gran %>%
+  inner_join(section_length) %>%
+  group_by(llm_model_name, metric) %>%
+  summarise(label = str_glue('R = {signif(cor(value, num_char), digits = 2)}')) %>%
+  ungroup() %>%
+  mutate(x = 25,
+         y = rep(c(0.05, 0.10, 0.15, 0.2, 0.25), 3) - 0.05)
+
+ann_text
+
+quantile_data %>%
+ggplot(mapping = aes(x = x_mean/1000,
+                     y = y_mean,
+                     color = factor(llm_model_name))) +
+  geom_point(alpha = 0.7) +
+  geom_errorbar(aes(ymax = y_max,
+                     ymin = y_min),
+                alpha = 0.2) + 
+  geom_smooth(method = 'lm', se = F, show.legend = FALSE) +
+  geom_text(data = ann_text,
+            mapping = aes(x = x, y = y, label = label),
+            show.legend = FALSE) + 
+  theme_cowplot() +
+  theme(legend.title = element_blank(),
+        strip.background=element_rect(colour="white",
+                                      fill="white"),
+        # legend.box.background = element_rect(colour = "darkgray"),
+        axis.text = element_text(size = 10),
+        legend.position =  'bottom', #c(0.75, 0.095),
+        legend.text = element_text(size=10),
+        legend.key.size = unit(0.5, "lines"),
+        legend.margin=margin(c(1,3,3,1))) +
+  scale_color_manual(values=c("#1e4620", "#3E0C48", "#33447D", "#00837F",
+                              "#44C15E", "#00A5F0")) + # "#  facet_wrap(~metric, nrow =  1) +
+  xlab('Drug Label Character Length (in thousands)') +
+  ylab('') +
+  facet_wrap(~metric) + 
+  panel_border() +
+  ylim(c(0, 1)) 
+
+ggsave('figures/granular_performance_label_length.png', dpi = 1200,
+       width = 8, height = 4, bg = 'white')
+```
+```{r}
+selected_top_gran_sections <-
+  granular %>%
+  filter(ade_type == 'all', # not consider ade_type
+         eval_method %in% c('lenient')) %>%
+  group_by(llm_model, section, dataset, base_name) %>% 
+  mutate(mean_f1 = mean(f1, na.rm = T)) %>%
+  ungroup() %>% group_by(llm_model, section, dataset) %>%
+  filter(mean_f1 == max(mean_f1)) %>% 
+  ungroup() %>% 
+  filter(startsWith(run, 'run') | run == '100' | is.na(run),
+         ifelse(dataset == 'train' | llm_model == 'deepcadrme', TRUE, FALSE)) %>%
+  mutate(llm_model_name = case_when(llm_model == 'exact' ~ 'Exact MedDRA',
+                                    llm_model == 'deepcadrme' ~ 'DeepCADRME',
+                                    llm_model == 'code-llama-34b' ~ 'Llama 2',
+                                    grepl(pattern = 'Mixtral', llm_model) ~ 'Mixtral',
+                                    grepl(pattern = 'gpt-3.5', llm_model) ~ 'GPT-3.5',
+                                    grepl(pattern = 'gpt-4', llm_model) ~ 'GPT-4')) %>%
+  mutate(llm_model_name = llm_model_name %>%
+           factor(.,ordered = T,
+                  levels = c('Exact MedDRA', 'DeepCADRME', 'Llama 2',
+                             'Mixtral',
+                             'GPT-3.5', 'GPT-4')) )
+
+selected_top_gran_sections %>%
+  filter(section != 'all-concat') %>%
+  mutate(section = section %>% str_to_title()) %>%
+ggplot(mapping = aes(fill = llm_model_name, x = section, y = f1)) +
+  geom_boxplot(alpha = 0.8) +
+  theme_cowplot() +
+  coord_flip() +
+  xlab('') +
+  ylab('F1 Score') +
+  scale_fill_manual(values=c("#1e4620", "#3E0C48", "#33447D", "#00837F",
+                              "#44C15E", "#00A5F0")) 
+ggsave('figures/section_performance.png', dpi = 1200,
+       width = 8, height = 4, bg = 'white')
+```
+
+
+
+```{r}
+granular %>%
+  filter(grepl('gpt-4', llm_model),
+         grepl('fatal|shot', base_name)) %>%
+  
 ```
 
 
