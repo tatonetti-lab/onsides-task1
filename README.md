@@ -25,7 +25,7 @@ Evaluating the ability of generative models to extract adverse reaction terms fr
 - agg_evals/: aggregated results
 - evals: granular and overall results for each model and parameter set
 - extract: the extracted terms for each model and parameter set
-  - {model}_{user_prompt}_{system_prompt}_{other_params}_{dataset}_{run}.csv
+  - {model}\_{user_prompt}\_{system_prompt}\_{other_params}\_{dataset}_{run}.csv
     - columns: `drug_name`, `section_name`, `gpt_output` 
 
 **onsides-task1/**
