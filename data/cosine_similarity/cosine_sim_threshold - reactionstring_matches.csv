@@ -1,0 +1,502 @@
+ ,section_name,gpt_output,manual_output,similarity,discontinuous_term,negated_term,hypothetical_term,meddra_exact_term,sophia,uog,0/0,0/1,1/0,1/1
+IMPAVIDO,adverse reactions,nausea,nausea,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,vomiting,vomiting,1.000000119,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,diarrhea,diarrhea,0.9999999404,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,headache,headache,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,decreased appetite,decreased appetite,1.000000238,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,dizziness,dizziness,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,abdominal pain,abdominal pain,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,pruritus,pruritus,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,somnolence,somnolence,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,elevated transaminases,elevated transaminases,1,0,0,0,0,,,,,,
+IMPAVIDO,adverse reactions,elevated creatinine,elevated creatinine,1,0,0,0,0,,,,,,
+IMPAVIDO,adverse reactions,stevens-johnson syndrome,stevens-johnson syndrome,1.000000238,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,melena,melena,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,thrombocytopenia,thrombocytopenia,1.000000238,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,arthritis,arthritis,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,skin rash,skin rash,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,ctcae grade 4 diarrhea,diarrhea,0.6443705559,0,0,0,1,1,1,0,0,0,1
+IMPAVIDO,adverse reactions,ctcae grade 4 hyperbilirubinemia,hyperbilirubinemia,0.7316358089,0,0,0,1,1,1,0,0,0,1
+IMPAVIDO,adverse reactions,asthenia,asthenia,0.9999999404,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,motion sickness,motion sickness,1.000000119,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,malaise,malaise,1.000000238,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,pyrexia,pyrexia,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,lymphangitis,lymphangitis,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,anemia,anemia,1.000000238,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,lymphadenopathy,lymphadenopathy,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,abdominal distension,abdominal distension,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,constipation,constipation,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,dysphagia,dysphagia,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,flatulence,flatulence,0.9999998212,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,fatigue,fatigue,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,abscess,abscess,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,cellulitis,cellulitis,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,ecthyma,ecthyma,0.9999999404,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,paresthesia,paresthesia,1.000000119,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,testicular pain,testicular pain,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,testicular swelling,testicular swelling,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,urticaria,urticaria,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,rash,rash,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,pyoderma,pyoderma,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,agranulocytosis,agranulocytosis,0.9999999404,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,generalized edema,generalized edema,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,peripheral edema,peripheral edema,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,jaundice,jaundice,1,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,seizure,seizure,1.000000238,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,scrotal pain,scrotal pain,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,adverse reactions,decreased ejaculate volume,decreased ejaculate volume,0.9999998212,0,0,0,0,,,,,,
+IMPAVIDO,adverse reactions,absent ejaculation,absent ejaculation,1.000000119,0,0,0,0,,,,,,
+IMPAVIDO,adverse reactions,epistaxis,epistaxis,0.9999999404,0,0,0,1,,,,,,
+IMPAVIDO,boxed warnings,embryo-fetal toxicity,embryo-fetal toxicity,1.000000119,0,0,0,0,,,,,,
+IMPAVIDO,boxed warnings,fetal harm,fetal harm,1,0,0,1,0,,,,,,
+IMPAVIDO,boxed warnings,fetal death,fetal death,1,0,0,1,0,,,,,,
+IMPAVIDO,boxed warnings,teratogenicity,teratogenicity,1.000000238,0,0,1,0,,,,,,
+IMPAVIDO,warnings and precautions,embryo-fetal toxicity,embryo-fetal toxicity,1.000000119,0,0,1,0,,,,,,
+IMPAVIDO,warnings and precautions,testicular atrophy,testicular atrophy,1,0,0,1,0,,,,,,
+IMPAVIDO,warnings and precautions,impaired fertility in male rats,impaired fertility,0.8177553415,0,0,1,0,1,1,0,0,0,1
+IMPAVIDO,warnings and precautions,impaired fertility in female rats,impaired fertility,0.8268609047,0,0,1,0,1,1,0,0,0,1
+IMPAVIDO,warnings and precautions,serum creatinine elevations,elevations of serum creatinine,0.977742672,0,0,0,0,1,1,0,0,0,1
+IMPAVIDO,warnings and precautions,transaminases elevations,elevations in liver transaminases,0.9522922635,0,0,0,0,1,1,0,0,0,1
+IMPAVIDO,warnings and precautions,bilirubin elevations,elevations in bilirubin,0.9722172618,1,0,0,0,1,1,0,0,0,1
+IMPAVIDO,warnings and precautions,gastrointestinal effects,gastrointestinal effects,0.9999998808,0,0,0,0,,,,,,
+IMPAVIDO,warnings and precautions,thrombocytopenia,thrombocytopenia,1.000000238,0,0,0,1,,,,,,
+IMPAVIDO,warnings and precautions,vomiting,vomiting,1.000000119,0,0,0,1,,,,,,
+IMPAVIDO,warnings and precautions,diarrhea,diarrhea,0.9999999404,0,0,0,1,,,,,,
+IMPAVIDO,warnings and precautions,stevens-johnson syndrome,stevens-johnson syndrome,1.000000238,0,0,0,1,,,,,,
+IMPAVIDO,warnings and precautions,scrotal pain,scrotal pain,0.9999998808,0,0,0,1,,,,,,
+IMPAVIDO,warnings and precautions,decreased or absent ejaculation,decreased ejaculation,0.9086300731,1,0,0,0,1,1,0,0,0,1
+IMPAVIDO,warnings and precautions,reversible follicular atresia,follicular atresia,0.8611377478,0,0,1,0,1,1,0,0,0,1
+IMPAVIDO,warnings and precautions,diestrus,diestrus,0.9999998808,0,0,1,0,,,,,,
+IMPAVIDO,warnings and precautions,reduced viable sperm counts,reduced viable sperm counts,0.9999998808,0,0,1,0,,,,,,
+IMPAVIDO,warnings and precautions,elevations of serum creatinine,elevations of serum creatinine,1,0,0,0,0,,,,,,
+IMPAVIDO,warnings and precautions,elevations in liver transaminases (alt,elevations in liver transaminases,0.9246684313,0,0,0,0,1,1,0,0,0,1
+IMPAVIDO,warnings and precautions,ast),elevations in ast,0.7462304831,1,0,0,0,1,1,0,0,0,1
+IMPAVIDO,warnings and precautions,volume depletion,volume depletion,1,0,0,1,1,,,,,,
+LIVALO,adverse reactions,rhabdomyolysis with myoglobinuria and acute renal failure,acute renal failure,0.7847188115,0,0,0,1,1,1,0,0,0,1
+LIVALO,adverse reactions,myopathy (including myositis),myopathy,0.8529587388,0,0,0,1,1,1,0,0,0,1
+LIVALO,adverse reactions,liver enzyme abnormalities,liver enzyme abnormalities,1,0,0,0,0,,,,,,
+LIVALO,adverse reactions,myalgia,myalgia,0.9999999404,0,0,0,1,,,,,,
+LIVALO,adverse reactions,back pain,back pain,1.000000119,0,0,0,1,,,,,,
+LIVALO,adverse reactions,diarrhea,diarrhea,0.9999999404,0,0,0,1,,,,,,
+LIVALO,adverse reactions,constipation,constipation,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,pain in extremity,pain in extremity,0.999999702,0,0,0,1,,,,,,
+LIVALO,adverse reactions,arthralgia,arthralgia,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,headache,headache,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,influenza,influenza,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,nasopharyngitis,nasopharyngitis,1.000000119,0,0,0,1,,,,,,
+LIVALO,adverse reactions,elevated creatine phosphokinase,elevated creatine phosphokinase,1,0,0,0,0,,,,,,
+LIVALO,adverse reactions,transaminases,elevated transaminases,0.8064724207,1,0,0,0,1,1,0,0,0,1
+LIVALO,adverse reactions,alkaline phosphatase,elevated alkaline phosphatase,0.7987293005,1,0,0,0,1,1,0,0,0,1
+LIVALO,adverse reactions,bilirubin,elevated bilirubin,0.825748682,1,0,0,0,1,1,0,0,0,1
+LIVALO,adverse reactions,glucose,elevated glucose,0.7719835043,1,0,0,0,1,1,0,0,0,1
+LIVALO,adverse reactions,hypersensitivity reactions including rash,hypersensitivity reactions,0.8688772917,0,0,0,0,1,1,0,0,0,1
+LIVALO,adverse reactions,pruritus,pruritus,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,urticaria,urticaria,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,abdominal discomfort,abdominal discomfort,1.000000238,0,0,0,1,,,,,,
+LIVALO,adverse reactions,abdominal pain,abdominal pain,0.9999998808,0,0,0,1,,,,,,
+LIVALO,adverse reactions,dyspepsia,dyspepsia,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,nausea,nausea,0.9999998808,0,0,0,1,,,,,,
+LIVALO,adverse reactions,asthenia,asthenia,0.9999999404,0,0,0,1,,,,,,
+LIVALO,adverse reactions,fatigue,fatigue,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,malaise,malaise,1.000000238,0,0,0,1,,,,,,
+LIVALO,adverse reactions,hepatitis,hepatitis,1.000000119,0,0,0,1,,,,,,
+LIVALO,adverse reactions,jaundice,jaundice,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,fatal and non-fatal hepatic failure,hepatic failure,0.8505228758,0,0,0,1,1,1,0,0,0,1
+LIVALO,adverse reactions,dizziness,dizziness,0.9999998808,0,0,0,1,,,,,,
+LIVALO,adverse reactions,hypoesthesia,hypoesthesia,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,insomnia,insomnia,0.9999998212,0,0,0,1,,,,,,
+LIVALO,adverse reactions,depression,depression,0.9999998808,0,0,0,1,,,,,,
+LIVALO,adverse reactions,interstitial lung disease,interstitial lung disease,1,0,0,0,1,,,,,,
+LIVALO,adverse reactions,erectile dysfunction,erectile dysfunction,1.000000119,0,0,0,1,,,,,,
+LIVALO,adverse reactions,muscle spasms,muscle spasms,0.9999999404,0,0,0,1,,,,,,
+LIVALO,adverse reactions,cognitive impairment (eg,cognitive impairment,0.900711596,0,0,1,0,1,1,0,0,0,1
+LIVALO,adverse reactions,memory loss,memory loss,0.9999998212,0,0,1,0,,,,,,
+LIVALO,adverse reactions,forgetfulness,forgetfulness,0.9999998808,0,0,1,0,,,,,,
+LIVALO,adverse reactions,amnesia,amnesia,1.000000119,0,0,1,0,,,,,,
+LIVALO,adverse reactions,memory impairment,memory impairment,1.000000119,0,0,1,0,,,,,,
+LIVALO,adverse reactions,confusion),confusion,0.9330189228,0,0,1,0,1,1,0,0,0,1
+LIVALO,adverse reactions,immune-mediated necrotizing myopathy,immune-mediated necrotizing myopathy,1.000000119,0,0,1,0,,,,,,
+LIVALO,warnings and precautions,myopathy,myopathy,1,0,0,1,1,,,,,,
+LIVALO,warnings and precautions,rhabdomyolysis,rhabdomyolysis,1,0,0,1,1,,,,,,
+LIVALO,warnings and precautions,acute renal failure secondary to myoglobinuria,rhabdomyolysis with acute renal failure,0.8666380644,0,0,0,0,1,1,0,0,0,1
+LIVALO,warnings and precautions,liver enzyme abnormalities,elevations in hepatic transaminases,0.7675548792,0,0,1,0,1,1,0,0,0,1
+LIVALO,warnings and precautions,persistent elevations in hepatic transaminases,elevations in hepatic transaminases,0.9329316616,0,0,1,0,1,1,0,0,0,1
+LIVALO,warnings and precautions,immune-mediated necrotizing myopathy (imnm),immune-mediated necrotizing myopathy,0.9213311672,0,0,1,0,1,1,0,0,0,1
+LIVALO,warnings and precautions,proximal muscle weakness,rhabdomyolysis,0.6826006174,0,0,1,1,0,0,1,0,0,0
+LIVALO,warnings and precautions,elevated serum creatine kinase,increases in serum glutamic-pyruvic transaminase,0.7453087568,1,0,0,0,0,0,1,0,0,0
+LIVALO,warnings and precautions,muscle biopsy showing necrotizing myopathy without significant inflammation,immune-mediated necrotizing myopathy,0.7816056013,0,0,1,0,1,1,0,0,0,1
+LIVALO,warnings and precautions,markedly elevated creatine kinase (ck) levels,increases in serum glucose levels,0.6852326393,1,0,0,0,0,0,1,0,0,0
+LIVALO,warnings and precautions,unexplained muscle pain,skeletal muscle effects,0.6003590822,0,0,0,0,1,1,0,0,0,1
+LIVALO,warnings and precautions,tenderness,myopathy,0.6101227999,0,0,1,1,0,0,1,0,0,0
+LIVALO,warnings and precautions,weakness,myopathy,0.6507439613,0,0,1,1,1,0,0,0,1,0
+LIVALO,warnings and precautions,malaise,fatal,0.5898020267,0,0,0,0,0,0,1,0,0,0
+LIVALO,warnings and precautions,fever,fatal,0.628057003,0,0,0,0,0,0,1,0,0,0
+LIVALO,warnings and precautions,increases in serum transaminases (aspartate aminotransferase [ast]/serum glutamic-oxaloacetic transaminase,increases in serum glutamic-oxaloacetic transaminase,0.9458885193,1,0,0,0,1,1,0,0,0,1
+LIVALO,warnings and precautions,alanine aminotransferase [alt]/serum glutamic-pyruvic transaminase),increases in serum alanine aminotransferase,0.8142639995,1,0,0,0,1,1,0,0,0,1
+LIVALO,warnings and precautions,fatal and non-fatal hepatic failure,hepatic failure,0.8505228758,0,0,0,1,1,1,0,0,0,1
+LIVALO,warnings and precautions,serious liver injury with clinical symptoms and/or hyperbilirubinemia or jaundice,elevations in hepatic transaminases,0.6899750233,0,0,1,0,0,0,1,0,0,0
+LIVALO,warnings and precautions,increases in hba1c,increases in hba1c,1,0,0,0,0,,,,,,
+LIVALO,warnings and precautions,fasting serum glucose levels,increases in serum glucose levels,0.8481756449,1,0,0,0,1,1,0,0,0,1
+XENAZINE,adverse reactions,depression and suicidality,suicidality,0.8436019421,0,0,0,0,1,1,0,0,0,1
+XENAZINE,adverse reactions,akathisia,akathisia,0.9999999404,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,restlessness,restlessness,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,agitation,agitation,0.9999999404,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,parkinsonism,parkinsonism,0.9999999404,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,dysphagia,dysphagia,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,sedation and somnolence,somnolence,0.8204059601,0,0,0,1,1,1,0,0,0,1
+XENAZINE,adverse reactions,sedation/somnolence,sedation,0.8103119731,0,0,0,1,1,1,0,0,0,1
+XENAZINE,adverse reactions,fatigue,fatigue,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,insomnia,insomnia,0.9999998212,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,depression,depression,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,anxiety,anxiety,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,nausea,nausea,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,anxiety/anxiety aggravated,anxiety aggravated,0.9566324353,0,0,0,1,1,1,0,0,0,1
+XENAZINE,adverse reactions,irritability,irritability,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,decreased appetite,decreased appetite,1.000000238,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,obsessive reaction,obsessive reaction,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,balance difficulty,balance difficulty,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,parkinsonism/bradykinesia,bradykinesia,0.8541289568,0,0,0,1,1,1,0,0,0,1
+XENAZINE,adverse reactions,dizziness,dizziness,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,dysarthria,dysarthria,1.000000238,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,unsteady gait,unsteady gait,0.9999999404,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,headache,headache,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,vomiting,vomiting,1.000000119,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,fall,fall,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,laceration (head),laceration head,0.9480627775,1,0,0,0,1,1,0,0,0,1
+XENAZINE,adverse reactions,ecchymosis,ecchymosis,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,upper respiratory tract infection,upper respiratory tract infection,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,shortness of breath,shortness of breath,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,bronchitis,bronchitis,1,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,dysuria,dysuria,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,tremor,tremor,0.9999999404,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,confusion,confusion,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,worsening aggression,worsening aggression,1,0,0,0,0,,,,,,
+XENAZINE,adverse reactions,pneumonia,pneumonia,0.9999997616,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,hyperhidrosis,hyperhidrosis,1.000000119,0,0,0,1,,,,,,
+XENAZINE,adverse reactions,skin rash,skin rash,1,0,0,0,1,,,,,,
+XENAZINE,boxed warnings,depression,depression,0.9999998808,0,0,1,1,,,,,,
+XENAZINE,boxed warnings,suicidal thoughts and behavior (suicidality),suicidal behavior,0.8842196465,1,0,1,1,1,1,0,0,0,1
+XENAZINE,boxed warnings,worsening of depression,depression,0.7651052475,0,0,1,1,1,1,0,0,0,1
+XENAZINE,boxed warnings,unusual changes in behavior,suicidal behavior,0.6289082766,1,0,1,1,0,0,1,0,0,0
+XENAZINE,boxed warnings,prior suicide attempts or ideation,suicidal thoughts,0.766720295,0,0,1,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,worsening mood,worsening in mood,0.9861795902,0,0,0,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,cognition,worsening in cognition,0.7248888612,1,0,0,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,rigidity,rigidity,1,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,functional capacity,worsening in functional capacity,0.7821525335,1,0,0,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,strong cyp2d6 inhibitor,elevated creatinine phosphokinase,0.5999965668,0,0,1,0,0,0,1,0,0,0
+XENAZINE,warnings and precautions,neuroleptic malignant syndrome (nms),neuroleptic malignant syndrome,0.9064238667,0,0,0,1,1,1,0,0,0,1
+XENAZINE,warnings and precautions,restlessness,restlessness,1,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,agitation,agitation,0.9999999404,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,akathisia,akathisia,0.9999999404,0,1,1,1,,,,,,
+XENAZINE,warnings and precautions,parkinsonism,parkinsonism,0.9999999404,0,0,1,1,,,,,,
+XENAZINE,warnings and precautions,dysphagia,dysphagia,0.9999998808,0,0,1,1,,,,,,
+XENAZINE,warnings and precautions,aspiration pneumonia,aspiration pneumonia,1,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,sedation/somnolence,sedation,0.8103119731,0,0,0,1,1,1,0,0,0,1
+XENAZINE,warnings and precautions,qtc prolongation,qtc prolongation,0.9999998212,0,0,0,0,,,,,,
+XENAZINE,warnings and precautions,extrapyramidal disorders,extrapyramidal symptoms,0.86445117,0,0,1,1,1,1,0,0,0,1
+XENAZINE,warnings and precautions,depression,depression,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,cognitive decline,worsening in cognition,0.8202190399,1,0,0,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,disability,depression,0.6899775863,0,0,0,1,0,0,1,0,0,0
+XENAZINE,warnings and precautions,suicidal ideation,suicidal ideation,1,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,behaviors (suicidality),suicidality,0.8090060949,0,0,1,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,depression or worsening depression,worsening depression,0.9164378047,0,0,0,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,suicide,suicide,1.000000119,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,attempted suicide,attempted suicide,0.9999999404,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,hyperpyrexia,hyperpyrexia,1,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,muscle rigidity,muscle rigidity,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,altered mental status,altered mental status,1,0,0,0,0,,,,,,
+XENAZINE,warnings and precautions,autonomic instability,autonomic instability,1,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,irregular pulse,irregular pulse,1.000000238,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,blood pressure,irregular blood pressure,0.7232971191,1,0,0,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,tachycardia,tachycardia,1.000000119,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,diaphoresis,diaphoresis,0.9999999404,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,cardiac dysrhythmia,cardiac dysrhythmia,0.9999998808,0,0,0,0,,,,,,
+XENAZINE,warnings and precautions,elevated creatinine phosphokinase,elevated creatinine phosphokinase,1,0,0,1,0,,,,,,
+XENAZINE,warnings and precautions,myoglobinuria,myoglobinuria,0.9999998808,0,0,1,1,,,,,,
+XENAZINE,warnings and precautions,rhabdomyolysis,rhabdomyolysis,1,0,0,1,1,,,,,,
+XENAZINE,warnings and precautions,acute renal failure,acute renal failure,1.000000119,0,0,1,1,,,,,,
+XENAZINE,warnings and precautions,bradykinesia,bradykinesia,1,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,hypertonia,hypertonia,1,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,esophageal dysmotility,esophageal dysmotility,1,0,0,1,0,,,,,,
+XENAZINE,warnings and precautions,postural dizziness,postural dizziness,1.000000119,0,0,0,0,,,,,,
+XENAZINE,warnings and precautions,syncope,syncope,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,orthostasis,orthostasis,0.9999998212,0,0,0,0,,,,,,
+XENAZINE,warnings and precautions,dizziness,dizziness,0.9999998808,0,0,0,1,,,,,,
+XENAZINE,warnings and precautions,hypotension,syncope,0.7655465603,0,0,0,1,0,0,1,0,0,0
+XENAZINE,warnings and precautions,orthostatic hypotension,orthostasis,0.8503316641,0,0,0,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,hyperprolactinemia,plasma prolactin levels increased,0.7782777548,0,0,0,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,amenorrhea,tachycardia,0.6468218565,0,0,0,1,0,0,1,0,0,0
+XENAZINE,warnings and precautions,galactorrhea,elevates serum prolactin concentrations,0.599295795,0,0,0,0,0,1,0,1,0,0
+XENAZINE,warnings and precautions,gynecomastia,esophageal dysmotility,0.5874106884,0,0,1,0,0,0,1,0,0,0
+XENAZINE,warnings and precautions,impotence,tachycardia,0.6767465472,0,0,0,1,0,0,1,0,0,0
+XENAZINE,warnings and precautions,low levels of estrogen,plasma prolactin levels increased,0.6479103565,0,0,0,0,0,0,1,0,0,0
+XENAZINE,warnings and precautions,increased risk of osteoporosis,plasma prolactin levels increased,0.7151821256,0,0,0,0,0,1,0,1,0,0
+XENAZINE,warnings and precautions,tardive dyskinesia (td),tardive dyskinesia,0.8844944239,0,1,0,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,involuntary,involuntary movements,0.8422248363,1,0,0,0,0,1,0,1,0,0
+XENAZINE,warnings and precautions,dyskinetic movements,dyskinetic movements,1,0,0,0,0,,,,,,
+XENAZINE,warnings and precautions,vacuous chewing,vacuous chewing,0.9999998808,0,0,1,0,,,,,,
+XENAZINE,warnings and precautions,extrapyramidal symptoms,extrapyramidal symptoms,1,0,0,1,1,,,,,,
+XENAZINE,warnings and precautions,binding to melanin-containing tissues,muscle rigidity,0.6107285023,0,0,0,1,0,0,1,0,0,0
+XENAZINE,warnings and precautions,toxicity in melanin-containing tissues,toxicity,0.6902911663,0,0,1,0,1,1,0,0,0,1
+XENAZINE,warnings and precautions,long-term ophthalmologic effects,ophthalmologic injury,0.6764597893,1,0,1,0,1,1,0,0,0,1
+LINZESS,adverse reactions,diarrhea,diarrhea,0.9999999404,0,1,0,1,,,,,,
+LINZESS,adverse reactions,abdominal pain,abdominal pain,0.9999998808,0,1,0,1,,,,,,
+LINZESS,adverse reactions,flatulence,flatulence,0.9999998212,0,0,0,1,,,,,,
+LINZESS,adverse reactions,abdominal distension,abdominal distension,1,0,0,0,1,,,,,,
+LINZESS,adverse reactions,viral gastroenteritis,viral gastroenteritis,0.9999999404,0,0,0,1,,,,,,
+LINZESS,adverse reactions,headache,headache,1,0,0,0,1,,,,,,
+LINZESS,adverse reactions,fecal incontinence,fecal incontinence,1.000000119,0,0,0,1,,,,,,
+LINZESS,adverse reactions,dehydration,dehydration,1.000000238,0,0,0,1,,,,,,
+LINZESS,adverse reactions,gastroesophageal reflux disease,gastroesophageal reflux disease,1,0,0,0,1,,,,,,
+LINZESS,adverse reactions,vomiting,vomiting,1.000000119,0,0,0,1,,,,,,
+LINZESS,adverse reactions,fatigue,fatigue,1,0,0,0,1,,,,,,
+LINZESS,adverse reactions,upper respiratory tract infection,upper respiratory tract infection,1,0,0,0,1,,,,,,
+LINZESS,adverse reactions,sinusitis,sinusitis,0.9999997616,0,0,0,1,,,,,,
+LINZESS,adverse reactions,dyspepsia,dyspepsia,1,0,0,0,1,,,,,,
+LINZESS,adverse reactions,rectal hemorrhage,rectal hemorrhage,0.9999998808,0,0,0,1,,,,,,
+LINZESS,adverse reactions,hematochezia,hematochezia,1.000000238,0,0,0,1,,,,,,
+LINZESS,adverse reactions,melena,melena,1,0,1,0,1,,,,,,
+LINZESS,adverse reactions,allergic reactions,allergic reactions,1,0,0,0,0,,,,,,
+LINZESS,adverse reactions,urticaria,urticaria,1,0,0,0,1,,,,,,
+LINZESS,adverse reactions,hives,hives,0.9999998808,0,0,0,1,,,,,,
+LINZESS,boxed warnings,deaths due to dehydration in young juvenile mice,dehydration,0.6511250734,0,0,1,1,1,1,0,0,0,1
+LINZESS,warnings and precautions,severe diarrhea,diarrhea,0.7581444979,0,0,1,1,1,1,0,0,0,1
+LINZESS,warnings and precautions,mortality within the first 24 hours due to dehydration,dehydration,0.7054272294,0,0,1,1,1,1,0,0,0,1
+LINZESS,warnings and precautions,significant diarrhea,diarrhea,0.7544803619,0,0,1,1,1,1,0,0,0,1
+LINZESS,warnings and precautions,its potentially serious consequences,mortality,0.5540734529,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,adverse reactions,embryo-fetal toxicity,embryo-fetal toxicity,1.000000119,0,0,0,0,,,,,,
+OPSUMIT,adverse reactions,hepatotoxicity,hepatotoxicity,0.9999998808,0,0,0,1,,,,,,
+OPSUMIT,adverse reactions,decrease in hemoglobin,decrease in hemoglobin,0.9999998808,0,0,0,0,,,,,,
+OPSUMIT,adverse reactions,anemia,anemia,1.000000238,0,0,0,1,,,,,,
+OPSUMIT,adverse reactions,nasopharyngitis/pharyngitis,nasopharyngitis,0.8136109114,0,0,0,1,1,1,0,0,0,1
+OPSUMIT,adverse reactions,bronchitis,bronchitis,1,0,0,0,1,,,,,,
+OPSUMIT,adverse reactions,headache,headache,1,0,0,0,1,,,,,,
+OPSUMIT,adverse reactions,influenza,influenza,1,0,0,0,1,,,,,,
+OPSUMIT,adverse reactions,urinary tract infection,urinary tract infection,0.9999997616,0,0,0,1,,,,,,
+OPSUMIT,adverse reactions,hypersensitivity reactions (angioedema,angioedema,0.8491801023,0,0,0,1,1,1,0,0,0,1
+OPSUMIT,adverse reactions,pruritus and rash),pruritus,0.8289630413,0,0,0,1,1,1,0,0,0,1
+OPSUMIT,adverse reactions,nasal congestion,nasal congestion,1,0,0,0,1,,,,,,
+OPSUMIT,boxed warnings,embryo-fetal toxicity,embryo-fetal toxicity,1.000000119,0,0,0,0,,,,,,
+OPSUMIT,boxed warnings,fetal harm,embryo-fetal toxicity,0.7870016098,0,0,0,0,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,hepatotoxicity,hepatotoxicity,0.9999998808,0,0,1,1,,,,,,
+OPSUMIT,warnings and precautions,liver failure,liver failure,1,0,0,1,0,,,,,,
+OPSUMIT,warnings and precautions,baseline liver enzymes,liver failure,0.6698607206,0,0,1,0,0,1,0,1,0,0
+OPSUMIT,warnings and precautions,monitor,liver failure,0.5500259399,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,decreases in hemoglobin,decreases in hemoglobin,1,0,0,0,0,,,,,,
+OPSUMIT,warnings and precautions,pulmonary edema,pulmonary edema,0.9999999404,0,0,0,1,,,,,,
+OPSUMIT,warnings and precautions,pulmonary veno-occlusive disease,pulmonary edema,0.6888850927,0,0,0,1,1,0,0,0,1,0
+OPSUMIT,warnings and precautions,discontinue treatment,decrease in hemoglobin,0.5842680335,0,0,0,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,decreases in sperm count,decreases in sperm count,1.000000119,0,0,1,0,,,,,,
+OPSUMIT,warnings and precautions,fetal harm,fetal harm,1,0,0,1,0,,,,,,
+OPSUMIT,warnings and precautions,embryo-fetal toxicity,fetal harm,0.7870016098,0,0,1,0,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,elevated aminotransferases,elevated aminotransferases,0.9999997616,0,0,0,0,,,,,,
+OPSUMIT,warnings and precautions,liver enzyme tests,liver failure,0.7031424046,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,hepatic adverse events,hepatic adverse events,1.000000119,0,0,0,0,,,,,,
+OPSUMIT,warnings and precautions,symptoms suggesting hepatic injury,hepatic adverse events,0.7097612619,0,0,0,0,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,nausea,liver failure,0.6641024947,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,vomiting,liver failure,0.6552433372,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,right upper quadrant pain,elevated aminotransferases,0.5179841518,0,0,0,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,fatigue,liver failure,0.6580195427,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,anorexia,liver failure,0.6383327246,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,jaundice,liver failure,0.6808060408,0,0,1,0,0,1,0,1,0,0
+OPSUMIT,warnings and precautions,dark urine,decrease in hemoglobin,0.5919958353,0,0,0,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,fever,liver failure,0.6233418584,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,itching,elevations of aminotransferases,0.6039555073,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,clinically relevant aminotransferase elevations,elevations of aminotransferases,0.9332543015,0,0,1,0,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,increase in bilirubin,elevations of aminotransferases,0.747680068,0,0,1,0,0,0,1,0,0,0
+OPSUMIT,warnings and precautions,clinical symptoms of hepatotoxicity,hepatotoxicity,0.7725120187,0,0,1,1,0,1,0,1,0,0
+OPSUMIT,warnings and precautions,hemoglobin decrease,decrease in hemoglobin,0.9756113291,0,0,0,0,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,hematocrit,decreases in hematocrit,0.8170207739,1,0,0,0,0,1,0,1,0,0
+OPSUMIT,warnings and precautions,mean decrease in hemoglobin,decrease in hemoglobin,0.9391496181,0,0,0,0,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,decrease in hemoglobin to below 100 g/dl,decrease in hemoglobin,0.9002973437,0,0,0,0,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,severe anemia,decreases in hemoglobin concentration,0.6718062162,0,0,0,0,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,pulmonary edema with pulmonary veno-occlusive disease (pvod),pulmonary edema,0.7698093653,0,0,0,1,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,decreased sperm counts,decreases in sperm count,0.9538012743,0,0,1,0,1,1,0,0,0,1
+OPSUMIT,warnings and precautions,adverse effects on spermatogenesis,adverse effects on spermatogenesis,1.000000238,0,0,1,0,,,,,,
+OPSUMIT,warnings and precautions,effects on fertility,adverse effects on spermatogenesis,0.7558411956,0,0,1,0,0,1,0,1,0,0
+ASCLERA,adverse reactions,mild local reactions at the site of injection,local reactions at the site of injection,0.9454718828,0,0,0,0,1,1,0,0,0,1
+ASCLERA,adverse reactions,injection site haematoma,injection site haematoma,0.9999998808,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,injection site irritation,injection site irritation,1.000000119,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,injection site discoloration,injection site discoloration,1.000000119,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,injection site pain,injection site pain,1.000000119,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,injection site pruritus,injection site pruritus,1,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,injection site warmth,injection site warmth,0.9999999404,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,neovascularisation,neovascularisation,0.9999997616,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,injection site thrombosis,injection site thrombosis,1.000000238,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,anaphylactic shock,anaphylactic shock,1.000000119,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,angioedema,angioedema,1.000000238,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,urticaria generalized,urticaria generalized,0.9999998808,0,0,0,0,,,,,,
+ASCLERA,adverse reactions,asthma,asthma,1.000000238,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,cerebrovascular accident,cerebrovascular accident,0.9999998212,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,migraine,migraine,1,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,paresthesia (local),paresthesia local,0.9571577311,1,0,0,0,1,1,0,0,0,1
+ASCLERA,adverse reactions,loss of consciousness,loss of consciousness,0.9999998212,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,confusional state,confusional state,1,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,dizziness,dizziness,0.9999998808,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,cardiac arrest,cardiac arrest,1.000000238,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,palpitations,palpitations,1,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,deep vein thrombosis,deep vein thrombosis,0.9999999404,0,1,0,1,,,,,,
+ASCLERA,adverse reactions,pulmonary embolism,pulmonary embolism,1,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,syncope vasovagal,syncope vasovagal,1.000000119,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,circulatory collapse,circulatory collapse,0.9999999404,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,vasculitis,vasculitis,1,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,dyspnea,dyspnea,0.9999999404,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,skin hyperpigmentation,skin hyperpigmentation,1,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,dermatitis allergic,dermatitis allergic,0.9999999404,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,hypertrichosis,hypertrichosis in the area of sclerotherapy,0.8288597465,1,0,0,0,1,1,0,0,0,1
+ASCLERA,adverse reactions,injection site necrosis,injection site necrosis,1.000000119,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,pyrexia,pyrexia,0.9999998808,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,hot flush,hot flush,1,0,0,0,1,,,,,,
+ASCLERA,adverse reactions,nerve injury,nerve injury,1.000000119,0,0,0,1,,,,,,
+ASCLERA,warnings and precautions,anaphylaxis,anaphylactic reactions,0.8610984683,0,0,0,0,1,1,0,0,0,1
+ASCLERA,warnings and precautions,severe allergic reactions,allergic reactions,0.8378603458,0,0,0,0,1,1,0,0,0,1
+ASCLERA,warnings and precautions,anaphylactic reactions,anaphylactic reactions,1.000000119,0,0,0,0,,,,,,
+ASCLERA,warnings and precautions,tissue necrosis,local tissue necrosis,0.9081661701,1,0,0,0,1,1,0,0,0,1
+ASCLERA,warnings and precautions,severe necrosis,local tissue necrosis,0.8040949106,1,0,0,0,1,1,0,0,0,1
+ASCLERA,warnings and precautions,ischemia,local tissue necrosis,0.6288719177,1,0,0,0,0,0,1,0,0,0
+ASCLERA,warnings and precautions,gangrene,fatal,0.7019922733,0,0,0,0,0,0,1,0,0,0
+ASCLERA,warnings and precautions,pain,fatal,0.6445826292,0,0,0,0,0,0,1,0,0,0
+KYNAMRO,adverse reactions,risk of hepatotoxicity,hepatotoxicity,0.834249258,0,0,1,1,1,1,0,0,0,1
+KYNAMRO,adverse reactions,injection site reactions,injection site reactions,1.000000238,0,0,0,0,,,,,,
+KYNAMRO,adverse reactions,flu-like symptoms,flu-like symptoms,0.9999998808,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,nausea,nausea,0.9999998808,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,headache,headache,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,elevations in serum transaminases,elevations in serum transaminases,0.9999998808,0,0,0,0,,,,,,
+KYNAMRO,adverse reactions,alt increased,elevated alt levels,0.8232229352,0,0,0,0,1,1,0,0,0,1
+KYNAMRO,adverse reactions,alanine aminotransferase increased,alanine aminotransferase increased,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,aspartate aminotransferase increased,aspartate aminotransferase increased,1.000000119,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,liver function test abnormal,liver function test abnormal,0.9999999404,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,treatment discontinuation,pruritus at previous injection sites,0.596750021,0,0,0,0,0,0,1,0,0,0
+KYNAMRO,adverse reactions,angina pectoris,angina pectoris,1.000000119,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,palpitations,palpitations,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,vomiting,vomiting,1.000000119,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,abdominal pain,abdominal pain,0.9999998808,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,fatigue,fatigue,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,influenza like illness,influenza like illness,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,pyrexia,pyrexia,0.9999998808,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,chills,chills,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,edema peripheral,edema peripheral,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,hepatic steatosis,hepatic steatosis,1.000000119,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,pain in extremity,pain in extremity,0.999999702,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,musculoskeletal pain,musculoskeletal pain,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,insomnia,insomnia,0.9999998212,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,hypertension,hypertension,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,neoplasms (benign and malignant),neoplasms benign,0.8730249405,1,0,0,0,1,1,0,0,0,1
+KYNAMRO,adverse reactions,proteinuria,proteinuria,0.9999999404,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,hypersensitivity reaction with angioedema,angioedema,0.836286664,0,0,0,1,1,1,0,0,0,1
+KYNAMRO,adverse reactions,glomerular nephritis,glomerular nephritis,0.9999998808,0,0,0,0,,,,,,
+KYNAMRO,adverse reactions,platelet count decrease,change in platelet count -23.8 * 10 3 /ul,0.7967182994,1,0,0,0,1,1,0,0,0,1
+KYNAMRO,adverse reactions,transaminase elevations,transaminase elevations,1.000000238,0,0,0,0,,,,,,
+KYNAMRO,adverse reactions,erythema,injection site erythema,0.7671458721,1,0,0,1,1,1,0,0,0,1
+KYNAMRO,adverse reactions,pain,musculoskeletal pain,0.8281086683,0,0,0,1,1,1,0,0,0,1
+KYNAMRO,adverse reactions,hematoma,injection site hematoma,0.7636438012,1,0,0,1,1,1,0,0,0,1
+KYNAMRO,adverse reactions,pruritus,injection site pruritus,0.7746272683,1,0,0,1,1,1,0,0,0,1
+KYNAMRO,adverse reactions,swelling,injection site swelling,0.7804408669,1,0,0,1,1,1,0,0,0,1
+KYNAMRO,adverse reactions,discoloration,injection site discoloration,0.7839389443,1,0,0,1,1,1,0,0,0,1
+KYNAMRO,adverse reactions,recall reactions,injection site recall reactions,0.8339635134,1,0,0,0,1,1,0,0,0,1
+KYNAMRO,adverse reactions,myalgia,myalgia,0.9999999404,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,arthralgia,arthralgia,1,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,malaise,malaise,1.000000238,0,0,0,1,,,,,,
+KYNAMRO,adverse reactions,immunogenicity,hypersensitivity reaction,0.6182259917,0,0,0,1,0,0,1,0,0,0
+KYNAMRO,adverse reactions,anti-kynamro antibodies,hypersensitivity reaction,0.579980135,0,0,0,1,0,0,1,0,0,0
+KYNAMRO,adverse reactions,idiopathic thrombocytopenic purpura,idiopathic thrombocytopenic purpura,0.9999998808,0,0,0,1,,,,,,
+KYNAMRO,boxed warnings,elevations in transaminases,elevations in transaminases,1,0,0,1,0,,,,,,
+KYNAMRO,boxed warnings,elevation in alanine aminotransferase (alt) >= 3x upper limit of normal (uln),elevation in alanine aminotransferase,0.8753705025,0,0,0,0,1,1,0,0,0,1
+KYNAMRO,boxed warnings,increases hepatic fat,increases hepatic fat,0.9999998808,0,0,0,0,,,,,,
+KYNAMRO,boxed warnings,hepatic steatosis,hepatic steatosis,1.000000119,0,0,0,1,,,,,,
+KYNAMRO,boxed warnings,risk factor for advanced liver disease,progressive liver disease,0.7176195383,0,0,1,0,1,1,0,0,0,1
+KYNAMRO,boxed warnings,steatohepatitis,steatohepatitis,0.9999998808,0,0,1,1,,,,,,
+KYNAMRO,boxed warnings,cirrhosis,cirrhosis,0.9999999404,0,0,1,0,,,,,,
+KYNAMRO,boxed warnings,clinically significant liver toxicity,hepatotoxicity,0.7411971092,0,0,1,1,1,1,0,0,0,1
+KYNAMRO,warnings and precautions,erythema,injection site erythema,0.7671458721,1,0,0,1,1,1,0,0,0,1
+KYNAMRO,warnings and precautions,pain,myalgia,0.7505105734,0,0,0,1,1,1,0,0,0,1
+KYNAMRO,warnings and precautions,tenderness,injection site tenderness,0.7213246226,1,0,0,1,1,1,0,0,0,1
+KYNAMRO,warnings and precautions,pruritus,injection site pruritus,0.7746272683,1,0,0,1,1,1,0,0,0,1
+KYNAMRO,warnings and precautions,local swelling,injection site local swelling,0.8501012325,1,0,0,0,1,1,0,0,0,1
+KYNAMRO,warnings and precautions,influenza-like illness,influenza-like illness,0.9999998808,0,0,0,0,,,,,,
+KYNAMRO,warnings and precautions,pyrexia,pyrexia,0.9999998808,0,0,0,1,,,,,,
+KYNAMRO,warnings and precautions,chills,chills,1,0,0,0,1,,,,,,
+KYNAMRO,warnings and precautions,myalgia,myalgia,0.9999999404,0,0,0,1,,,,,,
+KYNAMRO,warnings and precautions,arthralgia,arthralgia,1,0,0,0,1,,,,,,
+KYNAMRO,warnings and precautions,malaise,malaise,1.000000238,0,0,0,1,,,,,,
+KYNAMRO,warnings and precautions,fatigue,fatigue,1,0,0,0,1,,,,,,
+KYNAMRO,warnings and precautions,elevations in transaminases,elevations in transaminases,1,0,0,1,0,,,,,,
+KYNAMRO,warnings and precautions,hepatic steatosis,hepatic steatosis,1.000000119,1,0,1,1,,,,,,
+KYNAMRO,warnings and precautions,steatohepatitis,steatohepatitis,0.9999998808,0,0,1,1,,,,,,
+KYNAMRO,warnings and precautions,cirrhosis,cirrhosis,0.9999999404,0,0,1,0,,,,,,
+KYNAMRO,warnings and precautions,nausea,fatigue,0.7079747319,0,0,0,1,0,0,1,0,0,0
+KYNAMRO,warnings and precautions,vomiting,chills,0.6399515867,0,0,0,1,0,0,1,0,0,0
+KYNAMRO,warnings and precautions,abdominal pain,myalgia,0.6183792353,0,0,0,1,0,0,1,0,0,0
+KYNAMRO,warnings and precautions,fever,pyrexia,0.7324533463,0,0,0,1,1,1,0,0,0,1
+KYNAMRO,warnings and precautions,jaundice,cirrhosis,0.7177015543,0,0,1,0,0,0,1,0,0,0
+KYNAMRO,warnings and precautions,lethargy,fatigue,0.7633578777,0,0,0,1,1,1,0,0,0,1
+KYNAMRO,warnings and precautions,liver injury,cirrhosis,0.7901765108,0,0,1,0,1,1,0,0,0,1
+KYNAMRO,warnings and precautions,increases in bilirubin >= 2x uln,increases in transaminases,0.7793270946,0,0,0,0,0,0,1,0,0,0
+KYNAMRO,warnings and precautions,active liver disease,cirrhosis,0.7465979457,0,0,1,0,0,1,0,1,0,0
+XARELTO,adverse reactions,increased risk of stroke after discontinuation in nonvalvular atrial fibrillation,hemorrhagic strokes,0.6134839058,0,0,0,0,0,1,0,1,0,0
+XARELTO,adverse reactions,bleeding risk,bleeding complications,0.819889307,0,0,0,0,1,1,0,0,0,1
+XARELTO,adverse reactions,spinal/epidural hematoma,epidural hematoma,0.9064314961,0,0,0,1,1,1,0,0,0,1
+XARELTO,adverse reactions,bleeding,bleeding,0.9999998808,0,0,1,1,,,,,,
+XARELTO,adverse reactions,hemorrhage,cerebral hemorrhage,0.8453872204,0,0,0,1,1,1,0,0,0,1
+XARELTO,adverse reactions,major bleeding,major bleeding,1,0,0,0,0,,,,,,
+XARELTO,adverse reactions,bleeding into a critical organ,bleeding into a critical organ,1,0,0,0,0,,,,,,
+XARELTO,adverse reactions,fatal bleeding,bleeding,0.8432984948,0,0,1,1,1,1,0,0,0,1
+XARELTO,adverse reactions,bleeding resulting in transfusion of >=2 units of whole blood or packed red blood cells,bleeding,0.7410000563,0,0,1,1,1,1,0,0,0,1
+XARELTO,adverse reactions,gastrointestinal bleeding,gastrointestinal bleeding,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,intracranial,bleeding intracranial,0.828332901,1,0,0,1,1,1,0,0,0,1
+XARELTO,adverse reactions,non-fatal critical organ bleeding,critical organ bleeding,0.8885415792,0,0,0,0,1,1,0,0,0,1
+XARELTO,adverse reactions,non-fatal non-critical organ bleeding,critical organ bleeding,0.824624002,0,0,0,0,1,1,0,0,0,1
+XARELTO,adverse reactions,decrease in hb >= 2g/dl,decrease in hb,0.8945867419,0,0,0,0,1,1,0,0,0,1
+XARELTO,adverse reactions,transfusion of >=2 units of whole blood or packed red blood cells,bleeding,0.6070311069,0,0,1,1,0,0,1,0,0,0
+XARELTO,adverse reactions,clinically relevant non-major bleeding,major bleeding,0.7479037046,0,0,0,0,0,0,1,0,0,0
+XARELTO,adverse reactions,any bleeding,bleeding,0.867566824,0,0,1,1,1,1,0,0,0,1
+XARELTO,adverse reactions,menorrhagia,menorrhagia,0.9999998808,0,0,0,1,,,,,,
+XARELTO,adverse reactions,major bleeding event,major bleeding event,1,0,0,0,0,,,,,,
+XARELTO,adverse reactions,extra-surgical site bleeding requiring transfusion of >2 units of whole blood or packed cells,extra-surgical site bleeding,0.8313997984,0,0,0,0,1,1,0,0,0,1
+XARELTO,adverse reactions,bleeding that required re-operation,bleeding,0.7754452229,0,0,1,1,1,1,0,0,0,1
+XARELTO,adverse reactions,abdominal pain upper,abdominal pain upper,1.000000119,0,0,0,1,,,,,,
+XARELTO,adverse reactions,dyspepsia,dyspepsia,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,toothache,toothache,1.000000119,0,0,0,1,,,,,,
+XARELTO,adverse reactions,fatigue,fatigue,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,sinusitis,sinusitis,0.9999997616,0,0,0,1,,,,,,
+XARELTO,adverse reactions,urinary tract infection,urinary tract infection,0.9999997616,0,0,0,1,,,,,,
+XARELTO,adverse reactions,back pain,back pain,1.000000119,0,0,0,1,,,,,,
+XARELTO,adverse reactions,osteoarthritis,osteoarthritis,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,oropharyngeal pain,oropharyngeal pain,1.000000238,0,0,0,1,,,,,,
+XARELTO,adverse reactions,wound secretion,wound secretion,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,pain in extremity,pain in extremity,0.999999702,0,0,0,1,,,,,,
+XARELTO,adverse reactions,muscle spasm,muscle spasm,1.000000119,0,0,0,1,,,,,,
+XARELTO,adverse reactions,syncope,syncope,0.9999998808,0,0,0,1,,,,,,
+XARELTO,adverse reactions,pruritus,pruritus,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,blister,blister,0.9999999404,0,0,0,1,,,,,,
+XARELTO,adverse reactions,pulmonary hemorrhage,pulmonary hemorrhage,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,pulmonary hemorrhage with bronchiectasis,bronchiectasis,0.7649747133,0,0,0,1,1,1,0,0,0,1
+XARELTO,adverse reactions,agranulocytosis,agranulocytosis,0.9999999404,0,0,0,1,,,,,,
+XARELTO,adverse reactions,thrombocytopenia,thrombocytopenia,1.000000238,0,0,0,1,,,,,,
+XARELTO,adverse reactions,retroperitoneal hemorrhage,retroperitoneal hemorrhage,0.9999999404,0,0,0,1,,,,,,
+XARELTO,adverse reactions,jaundice,jaundice,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,cholestasis,cholestasis,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,hepatitis,hepatitis,1.000000119,0,0,0,1,,,,,,
+XARELTO,adverse reactions,hepatocellular injury,hepatocellular injury,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,hypersensitivity,hypersensitivity,1.000000238,0,0,0,1,,,,,,
+XARELTO,adverse reactions,anaphylactic reaction,anaphylactic reaction,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,anaphylactic shock,anaphylactic shock,1.000000119,0,0,0,1,,,,,,
+XARELTO,adverse reactions,angioedema,angioedema,1.000000238,0,0,0,1,,,,,,
+XARELTO,adverse reactions,cerebral hemorrhage,cerebral hemorrhage,1.000000238,0,0,0,1,,,,,,
+XARELTO,adverse reactions,subdural hematoma,subdural hematoma,1,0,0,0,1,,,,,,
+XARELTO,adverse reactions,epidural hematoma,epidural hematoma,0.9999999404,0,0,0,1,,,,,,
+XARELTO,adverse reactions,hemiparesis,hemiparesis,0.9999999404,0,0,0,1,,,,,,
+XARELTO,adverse reactions,stevens-johnson syndrome,stevens-johnson syndrome,1.000000238,0,0,0,1,,,,,,
+XARELTO,boxed warnings,thrombotic events,hematomas,0.6179839969,0,0,0,0,0,0,1,0,0,0
+XARELTO,boxed warnings,spinal/epidural hematoma,epidural hematoma,0.9064314961,0,0,0,1,1,1,0,0,0,1
+XARELTO,boxed warnings,long-term or permanent paralysis,paralysis,0.8241658211,0,0,1,1,1,1,0,0,0,1
+XARELTO,boxed warnings,neurological impairment,paralysis,0.6808382869,0,0,1,1,0,0,1,0,0,0
+XARELTO,warnings and precautions,serious and fatal bleeding,bleeding,0.8269487619,0,0,1,1,1,1,0,0,0,1
+XARELTO,warnings and precautions,obstetric hemorrhage,pregnancy-related hemorrhage,0.8329844475,0,0,0,0,1,1,0,0,0,1
+XARELTO,warnings and precautions,thrombotic events,bleeding,0.6536176205,0,0,1,1,0,0,1,0,0,0
+XARELTO,warnings and precautions,stroke,bleeding,0.7061148286,0,0,1,1,0,0,1,0,0,0
+XARELTO,warnings and precautions,blood loss,bleeding,0.8286235332,0,0,1,1,1,1,0,0,0,1
+XARELTO,warnings and precautions,active pathological hemorrhage,bleeding,0.7013909817,0,0,1,1,1,1,0,0,0,1
+XARELTO,warnings and precautions,bleeding,bleeding,0.9999998808,0,0,1,1,,,,,,
+XARELTO,warnings and precautions,epidural or spinal hematoma,epidural hematoma,0.9179845452,1,0,0,1,1,1,0,0,0,1
+,,,,,0,0,1,1,,,46,10,2,122

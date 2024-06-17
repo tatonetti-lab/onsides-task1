@@ -1,0 +1,149 @@
+---
+title: "cosine_sim_manual"
+author: "undina"
+date: "2024-06-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(caret)
+library(ggpubr)
+library(tidymodels)
+library(cowplot)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Get Manual Annotation
+
+```{r}
+data <- read_csv('data/cosine_similarity/cosine_sim_threshold - reactionstring_matches.csv')
+data <- data %>% replace_na(list('sophia' = 1, 'uog' = 1)) %>% 
+        mutate(uog = factor(uog, levels = c('1', '0')),
+               sophia = factor(sophia, levels = c('1', '0')))
+data %>% head()
+```
+
+## Get Max F1
+
+```{r}
+uog_results <- data %>%
+    pr_curve(uog, similarity) %>%
+    mutate(model = 'Labeler 1')
+
+uog_plot <- uog_results %>%
+  ggplot(aes(x = recall, y = precision)) +
+  geom_path() +
+  coord_equal() +
+  theme_bw() +
+  coord_fixed(ratio = 2)
+
+uog_roc <- data %>%
+  roc_curve(uog, similarity) %>%
+  mutate(model = 'Labeler 1')
+
+# uog_roc <- uog_roc %>% 
+#   ggplot(aes(x = 1 - specificity, y = sensitivity)) +
+#   geom_path() +
+#   geom_abline(lty = 3) +
+#   coord_equal() +
+#   theme_bw()
+```
+
+
+```{r}
+sophia_results <- data %>%
+    pr_curve(sophia, similarity) %>%
+    mutate(model = 'Labeler 2')
+
+sophia_plot <- sophia_results %>%
+  ggplot(aes(x = recall, y = precision)) +
+  geom_path() +
+  coord_equal() +
+  theme_bw() +
+  coord_fixed(ratio = 2)
+
+sophia_roc <- data %>%
+  roc_curve(sophia, similarity) %>%
+  mutate(model = 'Labeler 2')
+```
+
+
+```{r}
+max_f1_uog <- uog_results %>%
+  mutate(f1 = 2 * (precision * recall) / (precision + recall)) %>%
+  filter(f1 == max(f1))
+max_f1_sophia <- sophia_results %>%
+  mutate(f1 = 2 * (precision * recall) / (precision + recall)) %>%
+  filter(f1 == max(f1))
+```
+
+
+```{r}
+pr_plot <- ggplot(data = uog_results, mapping = aes(x = recall, y = precision, color = model)) +
+              geom_path(linewidth = 1) +
+              geom_point(data = max_f1_uog, mapping = aes(x = recall, y = precision),
+                         color = '#D81B60', size = 3) + 
+              geom_text(data = max_f1_uog,
+                        mapping = aes(x = recall,
+                                      y = precision,
+                                      label = str_glue('F1 = {signif(f1, digits = 3)}')),
+                        hjust = 0, nudge_x = -0.35, color = '#D81B60') +
+              geom_path(data = sophia_results,
+                        mapping = aes(x = recall, y = precision, color = model),
+                        linewidth = 1) +
+              geom_point(data = max_f1_sophia, mapping = aes(x = recall, y = precision),
+                         color = '#1E88E5', size = 3) +
+              geom_text(data = max_f1_sophia,
+                        mapping = aes(x = recall,
+                                      y = precision,
+                                      label = str_glue('F1 = {signif(f1, digits = 3)}')),
+                        hjust = 0, nudge_x = 0.05, color = '#1E88E5') +
+              theme_cowplot() + 
+              theme(legend.position = c(0.05, 0.1),
+                    legend.title = element_blank(),
+                    aspect.ratio = 1) +
+              # coord_fixed(ratio = 1.5) +
+              scale_color_manual(values = c('#1E88E5','#D81B60')) +
+              xlab('Recall') + 
+              ylab('Precision')
+```
+
+```{r}
+auroc_plot <- ggplot(data = uog_roc, mapping = aes(y = sensitivity,
+                                                       x = 1-specificity,
+                                                       color = model)) +
+              geom_abline(linetype = 'dashed', color = 'gray') + 
+              geom_path(linewidth = 1) +
+              geom_path(data = sophia_roc,
+                        mapping = aes(y = sensitivity,
+                                      x = 1-specificity,
+                                      color = model),
+                        linewidth = 1) +
+              theme_cowplot() + 
+              theme(legend.position = c(0.4, 0.1),
+                    legend.title = element_blank()) +
+              scale_color_manual(values = c('#D81B60','#1E88E5')) +
+              xlab('1-Specificity') + 
+              ylab('Sensitivity') + 
+              theme(legend.position = c(0.2, 0.1),
+                    aspect.ratio = 1)
+```
+
+
+
+```{r}
+plot_grid(auroc_plot,
+          pr_plot,
+          labels = c("A", "B" ),
+          ncol = 2, nrow = 1,
+          rel_widths = c(1,1),
+          align="hv")
+
+
+ggsave('figures/cosine_similarity_threshold.png', dpi = 1200,
+        width = 8, height = 4, bg = 'white')
+```
+
+
