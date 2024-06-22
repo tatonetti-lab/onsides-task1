@@ -91,7 +91,10 @@ def extract_ade_terms(config, prompt, text, temperature, max_length):
   if extraction is None:
     raise Exception(f"perform_extraction() return None for {BASE_MODEL}")
   else:
-    extraction = perform_cleanup(extraction, config['OpenAI']['openai_api_key'])
+    try:
+        extraction = perform_cleanup(extraction, config['OpenAI']['openai_api_key'])
+    except:
+        print("WARNING: There was an error cleaning up the extraction. Will return extraction without cleanup.")
     return extraction
   
 
@@ -112,12 +115,15 @@ outputs = {}
 
 config = json.load(open('./config.json'))
 
+BASE_PATH = config.get('path', '')
+
 # gpt_model = 'code-llama-34b'
 # model_id = "codellama/CodeLlama-34b-Instruct-hf"
 
 # model_id = "google/gemma-7b"
 # model_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
 
+model_id = BASE_MODEL
 model_name = BASE_MODEL.split('/')[1]
 
 max_length = MAX_LENGTH
@@ -170,8 +176,8 @@ user_prompt = prompt_options[user_prompt_name]
 
 gpt_params = [f"temp{temperature}"]
 
-if model_id.split('/')[0] in ("codellama", "mistralai"):
-    print("Modifying the prompt to include instruction tags.")
+if model_id.split('/')[0] in ("codellama", "mistralai", "meta-llama"):
+    print("Modifying the prompt to include instruction tags.", flush=True)
     prefix = ""
     prompt = f"<s>[INST] <<SYS>>\\n{system_content}\\n<</SYS>>\\n\\n{user_prompt}[/INST]{prefix}"
 else:
@@ -186,21 +192,21 @@ num_tries = defaultdict(int)
 #run local
 for i in range(nruns):
     run_key = "{}_run{}".format(output_file_basename, i)
-    print(run_key)
+    print(run_key, flush=True)
     
     if run_key in outputs:
-        print(f"Run {run_key} already started will pick up from where it was left off.")
-    elif os.path.exists('results/extract/{}.csv'.format(run_key)):
-        gpt_output = pd.read_csv('results/extract/{}.csv'.format(run_key))
+        print(f"Run {run_key} already started will pick up from where it was left off.", flush=True)
+    elif os.path.exists(os.path.join(BASE_PATH,'results/extract/{}.csv'.format(run_key))):
+        gpt_output = pd.read_csv(os.path.join(BASE_PATH,'results/extract/{}.csv'.format(run_key)))
         outputs[run_key] = gpt_output
-        print(f"Run {run_key} started, loading from disk and pick up from where it was left off.")
+        print(f"Run {run_key} started, loading from disk and pick up from where it was left off.", flush=True)
     
     start = time.time()
     results = list()
     for i, row in tqdm(drugs.iterrows(), total=drugs.shape[0]):
 
         if num_tries[(run_key,i)] >= max_tries:
-            print(f"Skipping run {(run_key,i)} because we have tried it {max_tries} times.")
+            print(f"Skipping run {(run_key,i)} because we have tried it {max_tries} times.", flush=True)
             continue
         
         name, section = row['drug_name'], row['section_name']
@@ -222,19 +228,19 @@ for i in range(nruns):
             results.append([name, section, gpt_out])    
         except Exception as err:
             num_tries[(run_key,i)] += 1
-            print(f"Encountered an exception for row: '{name}' '{section}'.")
-            print(f"This is the {num_tries[(run_key,i)]} time we have tried to run this. Will try {max_tries} times and then skip.")
-            print(f"Will save progress, so you can restart from where we left off.")
+            print(f"Encountered an exception for row: '{name}' '{section}'.", flush=True)
+            print(f"This is the {num_tries[(run_key,i)]} time we have tried to run this. Will try {max_tries} times and then skip.", flush=True)
+            print(f"Will save progress, so you can restart from where we left off.", flush=True)
             gpt_output = pd.DataFrame(
                 [r for r in results if r is not None],
                 columns=['drug_name', 'section_name', 'gpt_output']
             )
             if gpt_output.shape[0] > 0:
-                print("Saved progress successfully.")
+                print("Saved progress successfully.", flush=True)
                 outputs[run_key] = gpt_output
-                gpt_output.to_csv('results/extract/{}.csv'.format(run_key))
+                gpt_output.to_csv(os.path.join(BASE_PATH,'results/extract/{}.csv'.format(run_key)))
             
-            print(f"Failed for prompt: {prompt.format(text)}")
+            print(f"Failed for prompt: {prompt.format(text)}", flush=True)
             raise err
             continue
     
@@ -246,9 +252,9 @@ for i in range(nruns):
     
     if gpt_output.shape[0] > 0:
         outputs[run_key] = gpt_output
-        gpt_output.to_csv('results/extract/{}.csv'.format(run_key))
+        gpt_output.to_csv(os.path.join(BASE_PATH,'results/extract/{}.csv'.format(run_key)))
     
-    print(f"Run: {run_key}, time elapsed: {end-start}s.")
+    print(f"Run: {run_key}, time elapsed: {end-start}s.", flush=True)
 
 
 #EVALUATION

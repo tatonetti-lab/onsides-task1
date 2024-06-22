@@ -11,6 +11,10 @@ data/drug_ade_embed_modeluae.json
 .DS_Store
 .vscode/
 
+# hpc files and folders
+hpc_run_llama3.sh*
+log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

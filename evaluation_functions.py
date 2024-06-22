@@ -86,22 +86,22 @@ def evaluation_subtype(manual, gpt_vals, drug, section='adverse reactions', subt
         f1 = np.nan
         FP = np.nan
         if TP == 0 and FN == 0:
-            recall = np.NAN
+            recall = np.nan
         else:
             recall = TP/(TP+FN)
     else:
         if TP == 0 and FP == 0:
-            precision = np.NAN
+            precision = np.nan
         else:
             precision = TP/(TP+FP)
         if TP == 0 and FN == 0:
-            recall = np.NAN
+            recall = np.nan
         else:
             recall = TP/(TP+FN)
         if precision != 0 and recall != 0:
             f1 = (2 * precision * recall)/(precision + recall)# 2*TP/(2*TP+FP+FN)
         else:
-            f1 = np.NAN
+            f1 = np.nan
     
     return [drug, section, subtype, len(manual), len(gpt_vals), TP, FP, FN, precision, recall, f1]
 
