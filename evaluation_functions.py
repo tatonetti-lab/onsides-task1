@@ -71,13 +71,16 @@ def evaluation_subtype(manual, gpt_vals, drug, section='adverse reactions', subt
     '''
     For a given drug, evaluate the performance of GPT on a given subtype of ADEs. 
     '''
-            
+    
     if eval_method == 'strict':
         TP = len(manual.intersection(gpt_vals))
         FP = len(gpt_vals.difference(manual))
         FN = len(manual.difference(gpt_vals))
     elif eval_method == 'lenient':
-        [TP, FP, FN] = common_lenient_performance(gpt_vals, manual)
+        if len(gpt_vals) == 0:
+            [TP, FP, FN] = [0, 0, 0]
+        else:
+            [TP, FP, FN] = common_lenient_performance(gpt_vals, manual)
     elif eval_method == 'embed':
         [TP, FP, FN] = embed_evaluation(manual, gpt_vals, threshold = 0.6681796)
     

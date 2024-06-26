@@ -18,7 +18,7 @@ from collections import defaultdict
 
 ##Variables
 MAX_LENGTH = 5000 #maximum lenght of the input
-NUM_RUNS = 1 #number of runs
+NUM_RUNS = 3 #number of runs
 TEMP = 0 #temperature for the model
 MAX_TRIES =2
 BASE_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
