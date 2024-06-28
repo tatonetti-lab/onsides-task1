@@ -1,5 +1,7 @@
 # ignore the api keys
 config.json
+.snakemake/
+archive/
 
 # ignore the embed files
 data/drug_ade_embed.pkl
