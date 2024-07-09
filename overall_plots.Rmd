@@ -101,11 +101,18 @@ ggplot(mapping = aes(x = llm_model, y = max_val, fill = llm_model)) +
 
 ```{r}
 granular <- read_csv('results/agg_evals/granular_results_across_models.csv')
-granular %>% distinct(base_name)
+granular %>% head()
 ```
+
+
+```{r}
+granular %>% distinct(eval_method)
+```
+
+
 ```{r}
 selected_gran_results <- granular %>%
-  filter(section == 'adverse reactions',  # focus on ADR section
+  filter(section == 'warnings and precautions',  # focus on ADR section
          ade_type == 'all', # not consider ade_type
          eval_method %in% c('ember-v1')) %>%
   group_by(base_name, run) %>%
@@ -118,8 +125,8 @@ selected_gran_results <- granular %>%
            factor(.,ordered = T,
                   levels = c('exact', 'deepcadrme', 'code-llama-34b',
                              'Mixtral-8x7B-Instruct-v0.1',
-                             'gpt-3.5-turbo-0125', 'gpt-4-1106-preview')) )
-selected_gran_results %>% filter(llm_model == 'deepcadrme')
+                             'gpt-3.5-turbo-0125', 'gpt-4-1106-preview', 'Meta-Llama-3-8B-Instruct')) )
+selected_gran_results %>% filter(llm_model_name == 'Llama 2') %>% distinct()
 ```
 
 
@@ -130,7 +137,7 @@ selected_gran_results %>% filter(llm_model == 'deepcadrme')
         else:
             recall = TP/(TP+FN)
         if precision != 0 and recall != 0:
-            f1 = (2 * precision * recall)/(precision + recall)# 2*TP/(2*TP+FP+FN)
+            f1 = (2 * precision * recall)/(precision + recall)# 2\*TP/(2\*TP+FP+FN)
 
 ```{r}
 granular %>% 
@@ -178,11 +185,16 @@ table(granular$eval_method)
 ```
 
 ```{r}
+unique(granular$llm_model)
+```
+
+
+```{r}
 selected_top_gran <-
   granular %>%
   filter(section == 'adverse reactions',  # focus on ADR section
          ade_type == 'all', # not consider ade_type
-         eval_method %in% c('ember-v1')) %>%
+         eval_method %in% c('lenient')) %>% #c('ember-v1')) %>%
   group_by(llm_model, dataset, base_name) %>% 
   mutate(mean_f1 = mean(f1, na.rm = T)) %>%
   ungroup() %>% group_by(llm_model, dataset) %>%
@@ -192,7 +204,8 @@ selected_top_gran <-
          ifelse(dataset == 'train' | llm_model == 'deepcadrme', TRUE, FALSE)) %>%
   mutate(llm_model_name = case_when(llm_model == 'exact' ~ 'Exact MedDRA',
                                     llm_model == 'deepcadrme' ~ 'DeepCADRME',
-                                    llm_model == 'code-llama-34b' ~ 'Llama 2',
+                                    grepl('34b', llm_model, ignore.case = T) ~ 'Llama 2',
+                                    llm_model == 'Meta-Llama-3-8B-Instruct' ~ 'Llama 3',
                                     grepl(pattern = 'Mixtral', llm_model) ~ 'Mixtral',
                                     grepl(pattern = 'gpt-3.5', llm_model) ~ 'GPT-3.5',
                                     grepl(pattern = 'gpt-4', llm_model) ~ 'GPT-4')) %>%
@@ -202,14 +215,18 @@ selected_top_gran <-
          llm_model_name = llm_model_name %>%
            factor(.,ordered = T,
                   levels = c('Exact MedDRA', 'DeepCADRME', 'Llama 2',
-                             'Mixtral',
+                             'Mixtral', 'Llama 3',
                              'GPT-3.5', 'GPT-4')) )
+```
+
+```{r}
+selected_top_gran %>% filter(llm_model_name == 'DeepCADRME')
 ```
 
 
 ```{r}
 selected_top_gran %>% 
-ggplot(mapping = aes(x = llm_model_name, y = value,
+ggplot(mapping = aes(x = base_name, y = value,
                      color = llm_model_name, fill = llm_model_name)) +
   geom_jitter(alpha = 0.5) +
   geom_boxplot(color = 'white', aes(ymin=..lower.., ymax=..upper..),
@@ -221,15 +238,15 @@ ggplot(mapping = aes(x = llm_model_name, y = value,
   xlab('') +
   ylab('') + 
   # labs(fill = 'Model', color = 'Model') +
-  scale_fill_manual(values=c("#1e4620", "#3E0C48", "#33447D", "#00837F",
-                             "#44C15E", "#00A5F0")) + 
-  scale_color_manual(values=c("#1e4620", "#3E0C48", "#33447D", "#00837F",
-                              "#44C15E", "#00A5F0")) + # "#56B4E9")) + 
+  # scale_fill_manual(values=c("#1e4620", "#3E0C48", "#33447D", "#00837F",
+  #                            "#44C15E", "#00A5F0", 'yellow')) + 
+  # scale_color_manual(values=c("#1e4620", "#3E0C48", "#33447D", "#00837F",
+                              # "#44C15E", "#00A5F0", 'yellow')) + # "#56B4E9")) + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         strip.background = element_rect(fill="white"),
         legend.title = element_blank(),
         legend.position = '') +
-  panel_border() 
+  panel_border() + theme(axis.text.x = element_blank())
   # coord_flip()
 
 ggsave('figures/granular_embed_compare_extraction.png', dpi = 1200,

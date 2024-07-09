@@ -2,6 +2,7 @@
 config.json
 .snakemake/
 archive/
+data/embeds/
 
 # ignore the embed files
 data/drug_ade_embed.pkl

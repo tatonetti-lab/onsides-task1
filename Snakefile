@@ -16,14 +16,14 @@ rule update_figures:
         'results/agg_evals/overall_results_across_models.csv',
         'results/agg_evals/granular_results_across_models.csv'
     output:
-        'figures/gpt-4_performance_ade-type.png',
-        'figures/granular_compare_extraction.png',
-        'figures/granular_embed_compare_extraction.png',
-        'figures/granular_exact_compare_extraction.png',
-        'figures/granular_performance_label_length.png',
-        'figures/granular_performance_label_length_embed.png',
-        'figures/section_performance.png'
+        'figures/granular-adverse_reactions-strict.png',
+        'figures/granular-adverse_reactions-lenient.png',
+        'figures/granular-adverse_reactions-ember-v1.png',
+        'figures/granular-warnings_and_precautions-strict.png',
+        'figures/granular-warnings_and_precautions-lenient.png',
+        'figures/granular-warnings_and_precautions-ember-v1.png',
     shell:
         """
-        
+        Rscript granular_figures.R
+        Rscript granular_figures.R
         """

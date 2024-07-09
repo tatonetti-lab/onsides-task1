@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd 
 import numpy as np
 import glob
 
@@ -9,21 +9,30 @@ def summ_results(results):
     """
     all_data = []
     for label in results:
-        [api_source, llm_model, prompt, system_prompt, temp, dataset, run, eval_method] = [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
+        [api_source, llm_model, llm_model_name, prompt, system_prompt, temp, dataset, run, eval_method] = [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
         relevant_info = label.split('/')[-1].split('_')
         if relevant_info[0] == 'deepcadrme': # ['deepcadrme', '010', 'test', 'strict', 'overall']
             [llm_model, run, dataset, eval_method] = relevant_info[0:4]
+            llm_model_name = 'DeepCADRME'
             basename = llm_model
         elif relevant_info[0] == 'exact': # ['exact', 'train', 'lenient', 'overall']
             [llm_model, dataset, eval_method] = relevant_info[0:3]
+            llm_model_name = 'Exact MedDRA'
             basename = '_'.join([llm_model])
-        elif relevant_info[0] in ['code-llama-34b', 'Meta-Llama-3-8B-Instruct', 'CodeLlama-34b-Instruct-hf']: 
+        elif relevant_info[0] in ['code-llama-34b', 'CodeLlama-34b-Instruct-hf']: 
             #['code-llama-34b', 'fatal-prompt-v2', 'pharmexpert-v1', 'temp0', 'train', 'run0', 'strict']
             [llm_model, prompt, system_prompt, temp, dataset, run, eval_method] = relevant_info[:-1]
+            llm_model_name = 'Llama 2'
+            basename = '_'.join([llm_model, prompt, system_prompt])
+        elif relevant_info[0].lower() == 'Meta-Llama-3-8B-Instruct'.lower():
+            [llm_model, prompt, system_prompt, temp, dataset, run, eval_method] = relevant_info[:-1]
+            llm_model_name = 'Llama 3'
+            print(llm_model)
             basename = '_'.join([llm_model, prompt, system_prompt])
         elif relevant_info[0] == 'Mixtral-8x7B-Instruct-v0.1':
             # ['Mixtral-8x7B-Instruct-v0.1', 'fatal-prompt-v2', 'pharmexpert-v0', 'temp0', 'train', 'run0', 'lenient', 'overall.csv']
             [llm_model, prompt, system_prompt, temp, dataset, run, eval_method] = relevant_info[:-1]
+            llm_model_name = 'Mixtral'
             basename = '_'.join([llm_model, prompt, system_prompt])
         else: 
             # ['OpenAI', 'gpt-4-1106-preview', 'fatal-prompt-v2', 'pharmexpert-v1', 'temp0', 'train', 'run3', 'lenient', 'overall.csv']
@@ -32,6 +41,12 @@ def summ_results(results):
             try:
                 [api_source, llm_model, prompt, system_prompt, temp, dataset, run, eval_method] = relevant_info[:-1]
                 basename = '_'.join([llm_model, prompt, system_prompt])
+                if '3.5' in llm_model:
+                    llm_model_name = 'GPT-3.5'
+                elif '4' in llm_model:
+                    llm_model_name = 'GPT-4'
+                else:
+                    llm_model_name = 'GPT'
             except:
                 print(relevant_info)
                 print(label)
@@ -41,6 +56,7 @@ def summ_results(results):
             data = pd.read_csv(f)
             data['api_source'] = api_source
             data['llm_model'] = llm_model
+            data['llm_model_name'] = llm_model_name
             data['prompt'] = prompt
             data['system'] = system_prompt
             data['temp'] = temp
@@ -71,6 +87,6 @@ granular_results[0].split('/')[-1]
 ## create csv file with summary of results
 granular_summary = summ_results(granular_results)
 all_gran_results = pd.concat(granular_summary, axis=0, ignore_index=True)
-all_gran_results.to_csv('results/agg_evals/granular_results_across_models.csv'
+all_gran_results.to_csv('results/agg_evals/granular_results_across_models.csv',
                          index=False)
 
