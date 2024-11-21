@@ -13,10 +13,391 @@ library(cowplot)
 options(fig.height=6, fig.width=10)
 ```
 
+
+## NEW
+
+### Tables for performance
+
+```{r}
+baselines = c('DeepCADRME', 'Exact MedDRA')
+```
+
+
+```{r}
+overall_results <- read_csv('results/agg_evals/overall_results_across_models.csv')
+overall_results %>%
+            filter(section == 'adverse reactions',
+                   ade_type == 'all',
+                   eval_method == 'lenient'
+                   ) %>% 
+            group_by(llm_model_name, api_source, prompt, system, temp,
+                     dataset, run) %>%
+            mutate(mean_f1 = mean(macro_f1, na.rm = T)) %>% 
+            ungroup() %>% group_by(llm_model_name) %>%
+            filter(mean_f1 == max(mean_f1)) %>% 
+  select(llm_model_name, starts_with('micro'), starts_with('macro')) %>%
+  arrange(desc(macro_f1))
+```
+
+```{r}
+overall_results %>%
+            filter(section == 'adverse reactions',
+                   ade_type == 'all',
+                   eval_method == 'strict'
+                   ) %>% 
+            group_by(llm_model_name, api_source, prompt, system, temp,
+                     dataset, run) %>%
+            mutate(mean_f1 = mean(macro_f1, na.rm = T)) %>% 
+            ungroup() %>% group_by(llm_model_name) %>%
+            filter(mean_f1 == max(mean_f1)) %>% 
+  select(llm_model_name, starts_with('micro'), starts_with('macro')) %>%
+  arrange(desc(macro_f1))
+```
+
+```{r}
+overall_results %>%
+            filter(section == 'adverse reactions',
+                   ade_type == 'all',
+                   eval_method == 'ember-v1'
+                   ) %>% 
+            group_by(llm_model_name, api_source, prompt, system, temp,
+                     dataset, run) %>%
+            mutate(mean_f1 = mean(macro_f1, na.rm = T)) %>% 
+            ungroup() %>% group_by(llm_model_name) %>%
+            filter(mean_f1 == max(mean_f1)) %>% 
+  select(llm_model_name, starts_with('micro'), starts_with('macro')) %>%
+  arrange(desc(macro_f1))
+```
+
+
+```{r}
+get_top_performin <- function(data, section, ade_type, eval_method) {
+        
+  results <- data %>%
+            filter(section == !!section,
+                   ade_type == !!ade_type,
+                   eval_method == !!eval_method
+                   ) %>%
+            group_by(llm_model_name, api_source, prompt, system, temp,
+                     dataset, run) %>%
+            mutate(mean_f1 = mean(f1, na.rm = T)) %>% 
+            ungroup() %>% group_by(llm_model_name) %>%
+            filter(mean_f1 == max(mean_f1)) %>% ungroup() %>% 
+            select(llm_model_name, drug_name, eval_method, precision, recall, f1) %>%
+            pivot_longer(precision:f1, names_to = 'metric', values_to = 'value') %>%
+            mutate(metric = metric %>% str_to_sentence)
+
+  return (results)
+}
+```
+
+```{r}
+granular <- read_csv('results/agg_evals/granular_results_across_models.csv',
+                     show_col_types = FALSE)
+sections <- c('adverse_reactions', 'warnings_and_precautions')
+section = 'adverse_reactions'
+ade_type = 'all'
+eval_methods = c('strict', 'lenient', 'ember-v1')
+top_performs <- get_top_performin(granular, 'adverse reactions', 'all', eval_methods[1])
+top_performs
+```
+
+### Label Length Figure
+
+```{r, fig.height=5, fig.width=10}
+section_length <- read_csv('data/section_char_count.csv')
+section_length %>% head
+top_performs <- get_top_performin(granular, 'adverse reactions', 'all', 'ember-v1')
+
+ann_text <- top_performs %>% filter(llm_model_name != 'Exact MedDRA') %>%
+  inner_join(section_length) %>%
+  filter(!is.na(value)) %>%
+  group_by(metric, llm_model_name) %>%
+  summarise(label = str_glue('R = {signif(cor(value, num_char), digits = 2)}')) %>%
+  ungroup() %>%
+mutate(x = 5,
+         y = rep(c(0.05, 0.10, 0.15, 0.2, 0.25), 3))
+
+quantile_data <- top_performs %>% filter(llm_model_name != 'Exact MedDRA') %>%
+                  inner_join(section_length %>% filter(section == 'adverse reactions'), by = c('drug_name')) %>%
+                  filter(!is.na(value)) %>%
+                  group_by(llm_model_name, metric) %>%
+                  mutate(x_quantile = ntile(num_char, 15)) %>%
+                  group_by(llm_model_name, metric, x_quantile) %>%
+                  summarize(x_mean = mean(num_char),
+                            y_mean = mean(value),
+                            y_sd = sd(value),
+                            y_min = y_mean - y_sd,
+                            y_max = min(y_mean + y_sd, 1),
+                            .groups = 'drop')
+
+
+quantile_data %>% filter(llm_model_name != 'Exact MedDRA') %>%
+# ggplot(mapping = aes(x = num_char/1000, y = value, color = llm_model_name)) +
+ggplot(mapping = aes(x = x_mean/1000, y = y_mean, color = llm_model_name)) + 
+  geom_point(alpha = 0.35) +
+  geom_errorbar(aes(ymin = y_min, ymax = y_max)) + 
+theme_cowplot() +
+  theme(legend.position = c(0.85,0.2),
+        legend.title = element_blank(),
+        strip.background=element_rect(colour="white",
+                                      fill="white"),
+        legend.box.background = element_rect(colour = "darkgray"),
+        legend.text = element_text(
+    margin = margin(r = 3, unit = "pt"))) +
+  facet_wrap(~metric, nrow =  1) +
+  xlab('Character Length (in thousands)') +
+  ylab('') +
+  geom_text(data = ann_text, mapping = aes(x = x, y = y, label = label),
+            show.legend = FALSE) +
+  geom_smooth(method = 'lm', se = F, show.legend = FALSE, alpha = 0.5) +
+  ylim(0,1)
+ggsave('figures/granular_label_length_ember.png', bg = 'white',
+       width = 10, height = 5, dpi = 400)
+```
+
+
+
+### Section Performance Figure
+
+```{r,fig.width=10, fig.height=8}
+granular %>% distinct(section)
+adr <- get_top_performin(granular, 'adverse reactions', 'all', 'ember-v1') %>% mutate(section = 'Adverse Reaction')
+wp <- get_top_performin(granular, 'warnings and precautions', 'all', 'ember-v1') %>% mutate(section = 'Warnings and Precautions')
+bw <- get_top_performin(granular, 'boxed warnings', 'all', 'ember-v1') %>% mutate(section = 'Boxed Warnings')
+all <- get_top_performin(granular, 'all-concat', 'all', 'ember-v1') %>% mutate(section = "All")
+sections_perf <- adr %>% bind_rows(wp,bw)
+sections_perf %>% distinct(llm_model_name)
+
+sections_perf %>%
+  mutate(llm_model_name = factor(llm_model_name,
+                                 levels=c('Exact MedDRA','DeepCADRME', 'GPT-3.5', 'GPT-4',
+                                          'Llama 2', 'Llama 3', 'Mixtral'),
+                                 ordered = TRUE)) %>%
+  ggplot(mapping = aes(x = llm_model_name, y = f1, fill = section)) +
+  geom_hline(yintercept = 0.62, color = '#6D9DF8', linewidth = 1.5) + 
+  geom_hline(yintercept = 0.63, color = '#53B74C', linewidth = 1.5) +
+  geom_hline(yintercept = 0.88, color = '#E77D72', linewidth = 1.5) +
+  geom_boxplot() +
+  theme_cowplot() +
+  theme(axis.text.x = element_text(size = 15, angle = 45, hjust = 1),
+        axis.text.y = element_text(size = 15),
+        text = element_text(size = 20),
+        legend.position = c(0.5, 0.06),
+        legend.title = element_blank(),
+        legend.spacing.y = unit(0, "mm"), 
+        panel.border = element_rect(colour = "black", fill=NA),
+        aspect.ratio = 1, axis.text = element_text(colour = 1, size = 12),
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black")) +
+  xlab('') + ylim(0,1) + ylab('F1 Score')
+ggsave('figures/section_performance_f1_v2.png', bg = 'white',
+       width = 10, height = 8, dpi = 400)
+```
+
+```{r}
+sections_perf %>%
+  group_by(llm_model_name, section, metric) %>%
+  summarise(macro = round(mean(value, na.rm = T), digits = 3),
+            sd_val = round(sd(value, na.rm = T), digits = 3)) %>%
+  mutate(value = str_glue('{macro} ({sd_val})')) %>% select(-macro, -sd_val) %>%
+  pivot_wider(names_from = metric, values_from = value) %>% write_csv('sections_performance.csv')
+```
+
+
+```{r}
+get_recall_perform <- function(data, section, ade_type, eval_method) {
+        
+  results <- data %>%
+            filter(section == !!section,
+                   ade_type == !!ade_type,
+                   eval_method == !!eval_method
+                   ) %>%
+            group_by(llm_model_name, api_source, ade_type, prompt, system, temp,
+                     dataset, run) %>%
+            mutate(mean_recall = mean(recall, na.rm = T)) %>% 
+            ungroup() %>% group_by(llm_model_name) %>%
+            filter(mean_recall == max(mean_recall)) %>% ungroup() %>% 
+            select(llm_model_name, base_name, drug_name, eval_method, ade_type, recall)
+
+  return (results)
+}
+```
+
+
+```{r, fig.width=10}
+granular %>% distinct(ade_type)
+adr_type_dat <- get_recall_perform(granular, 'adverse reactions', 'all', 'ember-v1') %>%
+    bind_rows(get_recall_perform(granular, 'adverse reactions', 'exact-meddra', 'ember-v1')) %>%
+    bind_rows(get_recall_perform(granular, 'adverse reactions', 'non-meddra', 'ember-v1')) %>%
+    bind_rows(get_recall_perform(granular, 'adverse reactions', 'discontinuous', 'ember-v1')) %>%
+    bind_rows(get_recall_perform(granular, 'adverse reactions', 'negated', 'ember-v1')) %>%
+    bind_rows(get_recall_perform(granular, 'adverse reactions', 'hypothetical', 'ember-v1')) %>% mutate(evaluation = 'Semantic')
+# lenient_adr <- get_recall_perform(granular, 'adverse reactions', 'all', 'lenient') %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'exact-meddra', 'lenient')) %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'non-meddra', 'lenient')) %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'discontinuous', 'lenient')) %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'negated', 'lenient')) %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'hypothetical', 'lenient')) %>% mutate(evaluation = 'Lenient')
+# strict_adr <- get_recall_perform(granular, 'adverse reactions', 'all', 'strict') %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'exact-meddra', 'strict')) %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'non-meddra', 'strict')) %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'discontinuous', 'strict')) %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'negated', 'strict')) %>%
+#     bind_rows(get_recall_perform(granular, 'adverse reactions', 'hypothetical', 'strict')) %>% mutate(evaluation = 'Strict')
+
+granular %>% 
+  filter(base_name == 'gpt-4-1106-preview_fatal-two-shot_pharmexpert-v1') %>%
+  mutate(evaluation = case_when(eval_method == 'strict' ~ 'Strict',
+                                eval_method == 'ember-v1' ~ 'Semantic',
+                                eval_method == 'lenient' ~ 'Lenient')) %>%
+  # distinct(llm_model_name, drug_name, ade_type, evaluation, recall=recall.y) %>% head
+# adr_type_dat %>% 
+#   bind_rows(lenient_adr, strict_adr) %>%
+  mutate(evaluation = factor(evaluation, levels = c('Strict', 'Lenient', 'Semantic'))) %>%
+  # filter(!llm_model_name %in% c('Exact MedDRA', 'DeepCADRME')) %>%
+  mutate(ade_type = factor(str_to_sentence(ade_type), 
+                           levels = c('All', 'Exact-meddra', 'Non-meddra', 'Hypothetical', 'Negated', 'Discontinuous'))) %>%
+  filter(evaluation == 'Semantic') %>%
+  ggplot(mapping = aes(x = ade_type, y = recall, fill = ade_type)) +
+  geom_boxplot(show.legend = FALSE) +
+  theme_cowplot() +
+  theme(axis.text.x = element_text(size = 15),
+        legend.title = element_blank()) + 
+  xlab('') +ylab('Recall')
+ggsave(filename = 'figures/ade_type_perf_v2.png', width = 10, bg = 'white', dpi = 300)
+```
+
+```{r}
+granular %>% 
+  filter(base_name == 'gpt-4-1106-preview_fatal-two-shot_pharmexpert-v1') %>%
+  mutate(evaluation = case_when(eval_method == 'strict' ~ 'Strict',
+                                eval_method == 'ember-v1' ~ 'Semantic',
+                                eval_method == 'lenient' ~ 'Lenient')) %>%
+  # distinct(llm_model_name, drug_name, ade_type, evaluation, recall=recall.y) %>% head
+# adr_type_dat %>% 
+#   bind_rows(lenient_adr, strict_adr) %>%
+  mutate(evaluation = factor(evaluation, levels = c('Strict', 'Lenient', 'Semantic'))) %>%
+  # filter(!llm_model_name %in% c('Exact MedDRA', 'DeepCADRME')) %>%
+  mutate(ade_type = factor(str_to_sentence(ade_type), 
+                           levels = c('All', 'Exact-meddra', 'Non-meddra', 'Hypothetical', 'Negated', 'Discontinuous'))) %>%
+  filter(evaluation == 'Semantic') %>%
+  group_by(ade_type) %>% summarise(total = sum(n_manual),
+                                   mean = round(mean(n_manual), digits = 2),
+                                   sd = round(sd(n_manual), digits = 2))
+```
+
+
+
+```{r}
+overall_results %>%
+  filter(llm_model_name == 'GPT-4', ade_type == 'all', section == 'adverse reactions',
+         system != 'gpt-written-prompt') %>% 
+  ggplot(mapping = aes(x = system, y = macro_f1)) +
+    geom_boxplot() +
+    ylim(0,1) + 
+   theme_cowplot()+
+  xlab('System Prompt') + ylab('Macro F1 Score')
+ggsave(filename = 'figures/system_prompt_perf.png',  width = 6, height = 3, bg = 'white', dpi = 400)
+```
+
+```{r}
+granular %>%
+  filter(eval_method == 'ember-v1', llm_model_name == 'GPT-4', ade_type == 'all', section == 'adverse reactions',
+         !grepl(pattern = 'shot|positive', prompt)) %>% 
+  ggplot(mapping = aes(x = prompt, y = f1)) +
+    geom_boxplot() +
+    ylim(0,1) + 
+   theme_cowplot()+
+  xlab('User Prompt') + ylab('Macro F1 Score')
+```
+
+```{r}
+overall_results %>% filter(!llm_model_name %in% baselines, eval_method =='ember-v1') %>%
+  ggplot(mapping = aes(x = base_name, y = macro_f1, fill = llm_model_name)) +
+  geom_boxplot() +
+  ylim(0,1) + 
+  theme_cowplot() + 
+  theme(axis.text.x = element_blank(),
+        legend.title = element_blank(),
+        legend.position = c(0.75, 0.25),
+        legend.spacing.y = unit(0, "mm"), 
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black")) +
+  xlab('System + User Prompt Combinations') +
+  ylab('Macro F1')
+ggsave(filename = 'figures/system_user_prompt_f1.png', width = 6, height = 3, bg = 'white', dpi = 400)
+```
+
+
+```{r}
+get_top_performin <- function(data, section, ade_type, eval_method) {
+        
+  results <- data %>%
+            filter(section == !!section,
+                   ade_type == !!ade_type,
+                   eval_method == !!eval_method
+                   ) %>%
+            group_by(llm_model_name, api_source, prompt, system, temp,
+                     dataset, run) %>%
+            mutate(mean_f1 = mean(f1, na.rm = T)) %>% 
+            ungroup() %>% group_by(llm_model_name) %>%
+            filter(mean_f1 == max(mean_f1)) %>% ungroup()
+  return (results)
+}
+
+top_performs <- get_top_performin(granular,
+                                      'adverse reactions',
+                                      'all',
+                                      'ember-v1')
+```
+
+
+
+```{r}
+granular %>% filter(!llm_model_name %in% baselines, eval_method =='ember-v1',
+                   grepl(pattern = 'shot', prompt)) %>%
+  bind_rows(top_performs %>% filter(llm_model_name == 'GPT-4') %>%
+    pivot_wider(names_from = metric, values_from = value) %>% rename(f1=F1)) %>%
+  filter(llm_model_name == 'GPT-4') %>%
+  mutate(shot = ifelse(grepl(pattern = 'one', prompt), 'One Shot', 
+                       ifelse(grepl(pattern = 'two', prompt), 'Two Shot', 'Zero Shot')),
+         shot = relevel(factor(shot), ref = 'Zero Shot'),
+         system_name = ifelse(grepl(pattern = 'pharm', system), 'pharm_expert', 'gpt_written')) %>%
+  ggplot(mapping = aes(x = shot, y = f1, fill = shot)) +
+  geom_boxplot(show.legend = FALSE) +
+  ylim(0,1) + 
+  theme_cowplot() + 
+  # theme(legend.title = element_blank(),
+  #       legend.position =  + # c(0.75, 0.1),
+        # legend.spacing.y = unit(0, "mm"), 
+        # legend.background = element_blank(),
+        # legend.box.background = element_rect(colour = "black")) +
+  xlab('') +
+  ylab('Macro F1')
+ggsave(filename = 'figures/shotprompting.png', height = 6, bg = 'white', dpi = 400)
+```
+
+
+
+
+
+
+
+## OLD
+
 ```{r}
 overall <- read_csv('results/agg_evals/overall_results_across_models.csv')
 overall %>% head()
 ```
+```{r}
+overall %>% 
+  distinct(prompt,llm_model) %>%
+  arrange(prompt, llm_model)
+```
+
+
+
 ```{r}
 overall %>%
   filter(section == 'adverse reactions',
@@ -277,6 +658,24 @@ ggplot(mapping = aes(x = prompt, y = f1)) +
 section_length <- read_csv('data/section_char_count.csv')
 section_length %>% head
 ```
+
+```{r}
+section_length %>%
+  mutate(total_drugs = n_distinct(drug_name)) %>%
+  group_by(section, total_drugs) %>%
+  summarise(drug = n_distinct(drug_name),
+            perc = drug/101)
+```
+
+```{r}
+section_length %>%
+  group_by(section) %>%
+  summarise(median_length = median(num_char),
+            iqr25 = quantile(num_char, 0.25),
+            iqr75 = quantile(num_char, 0.75))
+```
+
+
 
 ### DeepCadreMe does not have results on training
 

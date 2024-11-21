@@ -99,7 +99,7 @@ pr_plot <- ggplot(data = uog_results, mapping = aes(x = recall, y = precision, c
                         mapping = aes(x = recall,
                                       y = precision,
                                       label = str_glue('F1 = {signif(f1, digits = 3)}')),
-                        hjust = 0, nudge_x = 0.05, color = '#1E88E5') +
+                        hjust = 0, nudge_x = -0.33, color = '#1E88E5') +
               theme_cowplot() + 
               theme(legend.position = c(0.05, 0.1),
                     legend.title = element_blank(),
@@ -108,6 +108,7 @@ pr_plot <- ggplot(data = uog_results, mapping = aes(x = recall, y = precision, c
               scale_color_manual(values = c('#1E88E5','#D81B60')) +
               xlab('Recall') + 
               ylab('Precision')
+pr_plot
 ```
 
 ```{r}
@@ -142,7 +143,7 @@ plot_grid(auroc_plot,
           align="hv")
 
 
-ggsave('figures/cosine_similarity_threshold.png', dpi = 1200,
+ggsave('figures/cosine_similarity_threshold.png', dpi = 400,
         width = 8, height = 4, bg = 'white')
 ```
 

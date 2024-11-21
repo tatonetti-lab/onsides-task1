@@ -11,13 +11,14 @@ get_top_performin <- function(data, section, ade_type, eval_method) {
   results <- data %>%
             filter(section == !!section,
                    ade_type == !!ade_type,
-                   eval_method == !!eval_method) %>%
+                   eval_method == !!eval_method
+                   ) %>%
             group_by(llm_model_name, api_source, prompt, system, temp,
                      dataset, run) %>%
             mutate(mean_f1 = mean(f1, na.rm = T)) %>% 
             ungroup() %>% group_by(llm_model_name) %>%
             filter(mean_f1 == max(mean_f1)) %>% ungroup() %>% 
-            select(llm_model_name, drug_name, precision, recall, f1) %>%
+            select(llm_model_name, drug_name, eval_method, precision, recall, f1) %>%
             pivot_longer(precision:f1, names_to = 'metric', values_to = 'value') %>%
             mutate(metric = metric %>% str_to_sentence)
 
@@ -40,7 +41,8 @@ eval_methods = c('strict', 'lenient', 'ember-v1')
 
 for (section in sections) {
   for (eval_method in eval_methods) {
-    print(eval_method)
+  print(eval_method)
+    eval_method = 'all'
     this_section = gsub(pattern = '_', replacement = ' ', x = section)
     top_performs <- get_top_performin(granular,
                                       this_section,
@@ -49,13 +51,18 @@ for (section in sections) {
     top_performs %>% dim() %>% print
     
     top_performs %>% 
+      mutate(eval_method = relevel(factor(case_when(eval_method == 'strict' ~ 'Strict',
+                                     eval_method == 'lenient' ~ 'Lenient Lexical',
+                                     eval_method == 'ember-v1'~'Semantic')), ref = 'Strict')
+             ) %>%
+      filter(eval_method == 'Sematic') %>%
       ggplot(mapping = aes(x = llm_model_name, y = value,
                            color = llm_model_name, fill = llm_model_name)) +
       geom_jitter(alpha = 0.5) +
       geom_boxplot(color = 'white', aes(ymin=..lower.., ymax=..upper..),
                    outlier.shape = NA, alpha = 0.8) +
       geom_boxplot(colour = 'white', outlier.shape = NA) +
-      facet_wrap(~metric, nrow = 1) +
+      facet_grid(metric~eval_method, switch = "y") +
       theme_cowplot() +
       xlab('') +
       ylab('') + 
@@ -67,13 +74,18 @@ for (section in sections) {
       theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
             strip.background = element_rect(fill="white"),
             legend.title = element_blank(),
-            legend.position = '') +
+            legend.position = '',
+            strip.placement = "outside",
+            ) +
       panel_border()
     
     png_name = str_glue('./figures/granular-{section}-{eval_method}.png')
     print(png_name)
     ggsave(png_name,
            dpi = 1200,
-           width = 8, height = 6, bg = 'white')
+           width = 8, height = 10, bg = 'white')
   }
 }
+
+
+
