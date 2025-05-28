@@ -134,7 +134,7 @@ auroc_plot <- ggplot(data = uog_roc, mapping = aes(y = sensitivity,
 
 
 
-```{r}
+```{r, fig.height=4, fig.width=8}
 plot_grid(auroc_plot,
           pr_plot,
           labels = c("A", "B" ),

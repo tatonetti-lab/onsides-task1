@@ -168,13 +168,33 @@ bw <- get_top_performin(granular, 'boxed warnings', 'all', 'ember-v1') %>% mutat
 all <- get_top_performin(granular, 'all-concat', 'all', 'ember-v1') %>% mutate(section = "All")
 sections_perf <- adr %>% bind_rows(wp,bw)
 sections_perf %>% distinct(llm_model_name)
+```
 
+```{r}
 sections_perf %>%
   mutate(llm_model_name = factor(llm_model_name,
                                  levels=c('Exact MedDRA','DeepCADRME', 'GPT-3.5', 'GPT-4',
                                           'Llama 2', 'Llama 3', 'Mixtral'),
                                  ordered = TRUE)) %>%
-  ggplot(mapping = aes(x = llm_model_name, y = f1, fill = section)) +
+  group_by(llm_model_name, section, metric) %>%
+  summarise(med_f1 = round(median(value, na.rm = T), digits = 2),
+            firt_quart = round(quantile(value, probs = .25, na.rm = T), digits = 2),
+            upper_quart = round(quantile(value, probs = .75, na.rm = T), digits = 2)) %>%
+  mutate(results = str_glue('{med_f1} ({firt_quart} - {upper_quart})')) %>%
+  arrange(llm_model_name, section) %>%
+  select(-c(med_f1, firt_quart, upper_quart)) %>%
+  pivot_wider(names_from = metric, values_from = results) %>%
+  write_csv(file = 'median_quantile_results.csv')
+
+```
+
+```{r}
+sections_perf %>%
+  mutate(llm_model_name = factor(llm_model_name,
+                                 levels=c('Exact MedDRA','DeepCADRME', 'GPT-3.5', 'GPT-4',
+                                          'Llama 2', 'Llama 3', 'Mixtral'),
+                                 ordered = TRUE)) %>% filter(metric == 'F1') %>%
+  ggplot(mapping = aes(x = llm_model_name, y = value, fill = section)) +
   geom_hline(yintercept = 0.62, color = '#6D9DF8', linewidth = 1.5) + 
   geom_hline(yintercept = 0.63, color = '#53B74C', linewidth = 1.5) +
   geom_hline(yintercept = 0.88, color = '#E77D72', linewidth = 1.5) +
@@ -194,6 +214,7 @@ sections_perf %>%
 ggsave('figures/section_performance_f1_v2.png', bg = 'white',
        width = 10, height = 8, dpi = 400)
 ```
+
 
 ```{r}
 sections_perf %>%
@@ -222,6 +243,50 @@ get_recall_perform <- function(data, section, ade_type, eval_method) {
 
   return (results)
 }
+```
+
+
+```{r}
+granular %>% 
+  filter(base_name == 'gpt-4-1106-preview_fatal-two-shot_pharmexpert-v1') %>%
+  mutate(evaluation = case_when(eval_method == 'strict' ~ 'Strict',
+                                eval_method == 'ember-v1' ~ 'Semantic',
+                                eval_method == 'lenient' ~ 'Lenient')) %>%
+  # distinct(llm_model_name, drug_name, ade_type, evaluation, recall=recall.y) %>% head
+# adr_type_dat %>% 
+#   bind_rows(lenient_adr, strict_adr) %>%
+  mutate(evaluation = factor(evaluation, levels = c('Strict', 'Lenient', 'Semantic'))) %>%
+  # filter(!llm_model_name %in% c('Exact MedDRA', 'DeepCADRME')) %>%
+  mutate(ade_type = factor(str_to_sentence(ade_type), 
+                           levels = c('All', 'Exact-meddra', 'Non-meddra', 'Hypothetical', 'Negated', 'Discontinuous'))) %>%
+  group_by(ade_type, eval_method) %>%
+  summarise(mean(recall)) 
+```
+
+
+```{r}
+granular %>% 
+  filter(base_name == 'gpt-4-1106-preview_fatal-two-shot_pharmexpert-v1') %>%
+  mutate(evaluation = case_when(eval_method == 'strict' ~ 'Strict',
+                                eval_method == 'ember-v1' ~ 'Semantic',
+                                eval_method == 'lenient' ~ 'Lenient')) %>%
+  # distinct(llm_model_name, drug_name, ade_type, evaluation, recall=recall.y) %>% head
+# adr_type_dat %>% 
+#   bind_rows(lenient_adr, strict_adr) %>%
+  mutate(evaluation = factor(evaluation, levels = c('Strict', 'Lenient', 'Semantic'))) %>%
+  # filter(!llm_model_name %in% c('Exact MedDRA', 'DeepCADRME')) %>%
+  mutate(ade_type = factor(str_to_sentence(ade_type), 
+                           levels = c('All', 'Exact-meddra', 'Non-meddra', 'Hypothetical', 'Negated', 'Discontinuous'))) %>%
+  ggplot(mapping = aes(x = ade_type, y = recall, fill = ade_type)) +
+  geom_boxplot(show.legend = FALSE) +
+  theme_cowplot() +
+  theme(axis.text.x = element_text(size = 15),
+        legend.position="none") + 
+  xlab('') +ylab('Recall') +
+  facet_wrap(~evaluation) +
+  coord_flip() +
+  guides(fill = guide_legend(reverse = TRUE))
+ ggsave(filename = 'figures/ade_type_perf.png', width = 10, bg = 'white', dpi = 300)
 ```
 
 
@@ -314,19 +379,25 @@ granular %>%
 
 ```{r}
 overall_results %>% filter(!llm_model_name %in% baselines, eval_method =='ember-v1') %>%
-  ggplot(mapping = aes(x = base_name, y = macro_f1, fill = llm_model_name)) +
+  filter(llm_model_name %in% c('GPT-3.5', 'GPT-4', 'Llama 2',
+                             'Mixtral', 'Llama 3')) %>%
+  mutate(group = str_glue('{llm_model_name}_{system}_{prompt}'),
+         ) %>%
+  ggplot(mapping = aes(x = group, y = macro_f1, fill = llm_model_name)) +
   geom_boxplot() +
   ylim(0,1) + 
   theme_cowplot() + 
+  scale_x_discrete(limits = rev(levels(~llm_model_name))) +
   theme(axis.text.x = element_blank(),
+        # axis.text.x = element_text(angle = 90),
         legend.title = element_blank(),
-        legend.position = c(0.75, 0.25),
+        legend.position = c(0.85, 0.2),
         legend.spacing.y = unit(0, "mm"), 
         legend.background = element_blank(),
         legend.box.background = element_rect(colour = "black")) +
   xlab('System + User Prompt Combinations') +
   ylab('Macro F1')
-ggsave(filename = 'figures/system_user_prompt_f1.png', width = 6, height = 3, bg = 'white', dpi = 400)
+ggsave(filename = 'figures/system_user_prompt_f1.png', width = 8, height = 4, bg = 'white', dpi = 400)
 ```
 
 
@@ -1184,7 +1255,7 @@ ggplot(mapping = aes(x = x_mean, y = y_mean, color = ade_type,
   ylab('Recall') +
   xlab('Character Length') 
 
-ggsave('figures/gpt-4_performance_ade-type.png', dpi = 1200,
+ggsave('figures/gpt-4_performance_ade-type.png', dpi = 400,
        width = 8, height = 4, bg = 'white')
 ```
 
@@ -1293,6 +1364,74 @@ granular %>%
   
 ```
 
+
+
+### TABLE OF NUMBER OF ADR TYPES
+```{r}
+train_dat <- read_csv('/Users/undinagisladottir/Documents/Columbia/Tatonetti_Lab/llm_onsides/onsides-task1/data/TAC2017/train_drug_label_text_manual_ades.csv') %>%
+  select(str, discontinuous_term, negated_term, hypothetical_term, meddra_exact_term) %>% distinct()
+train_dat %>% head()
+```
+
+```{r}
+train_dat %>%
+  mutate(total = 1) %>%
+  pivot_longer(discontinuous_term:total) %>%
+  group_by(name) %>%
+  summarise(total = sum(value),
+            perc = total/n() * 100)
+```
+
+
+```{r}
+granular %>% head()
+```
+
+
+
+### HALLUCINATIONS
+
+```{r}
+granular %>%
+            filter(section == 'adverse reactions',
+                   ade_type == 'all'
+                   ) %>%
+            group_by(llm_model_name, api_source, prompt, system, temp,
+                     dataset, run, eval_method) %>%
+            mutate(mean_f1 = mean(f1, na.rm = T)) %>% 
+            ungroup() %>% group_by(llm_model_name, eval_method) %>%
+            filter(mean_f1 == max(mean_f1)) %>% ungroup() %>%
+            select(llm_model_name, base_name, drug_name, eval_method, tp, fp, fn, precision, recall, f1) %>%
+  filter(llm_model_name == 'GPT-4') %>%
+  mutate(tots = fp + fn,
+         perc = fp/tots) %>%
+  replace_na(list('perc'=0)) %>%
+  group_by(eval_method) %>% 
+  summarise(mean_tot = mean(tots),
+            mean_fp = mean(fp),
+            mean_perccc = mean(perc),
+            mean_perc = (mean_fp/mean_tot) )# round(mean(perc)*100, digits = 2))
+```
+
+```{r}
+overall_results %>% filter(base_name == 'gpt-4-1106-preview_fatal-prompt-v2_pharmexpert-v1', section == 'adverse reactions',
+                   ade_type == 'all', eval_method == 'ember-v1') %>%
+  
+  group_by(base_name) %>%
+  summarise(micro_precision = mean(micro_precision),
+            macro_precision = mean(macro_precision))
+```
+
+
+
+```{r}
+overall_results %>% filter(ade_type == 'all',
+                           section == 'adverse reactions') %>%
+  group_by(base_name, eval_method) %>% summarise(total_tp = sum(tp),
+                                                 total_fp = sum(fp),
+                                                 total_fn = sum(fn),
+                                                 perc = round(total_fp/(total_tp + total_fp + total_fn) * 100, digits = 2))
+```
 
 
 
