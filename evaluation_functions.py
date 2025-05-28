@@ -136,9 +136,11 @@ def evaluation_granular(manual_ades, gpt_output, eval_method='strict', embed_mod
                 if manual_data.shape[0] == 0:
                     continue
                 if eval_method == 'embed':
-                    man_vals = dict(zip(manual_data['reaction_string'], manual_data['embeds']))
+                    # man_vals = dict(zip(manual_data['reaction_string'], manual_data['embeds']))
+                    man_vals = dict(zip(manual_ades['meddra_pt'].dropna().str.lower().to_list(), manual_data['embeds']))
                 else:
-                    man_vals = set(manual_data['reaction_string'].to_list())
+                    # man_vals = set(manual_data['reaction_string'].to_list())
+                    man_vals = set(manual_ades['meddra_pt'].dropna().str.lower().to_list())
 
                 results.append(evaluation_subtype(man_vals, gpt_vals, drug,
                                                    eval_method=eval_method, subtype=subtype, section = section))
@@ -151,14 +153,14 @@ def evaluate(outputs, manual_ades, eval_method='strict', embed_model_name=None, 
 
     for run_key, output in outputs.items():
         if eval_method != 'embed':
-            granular_save_filename = 'results/evals/{}_{}_granular.csv'.format(run_key, eval_method)
-            overall_save_filename = 'results/evals/{}_{}_overall.csv'.format(run_key, eval_method)
+            granular_save_filename = 'results/evals/{}_{}_MEDDRA_granular.csv'.format(run_key, eval_method)
+            overall_save_filename = 'results/evals/{}_{}_MEDDRA_overall.csv'.format(run_key, eval_method)
         else:
-            granular_save_filename = 'results/evals/{}_{}_granular.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
-            overall_save_filename = 'results/evals/{}_{}_overall.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
+            granular_save_filename = 'results/evals/{}_{}_MEDDRA_granular.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
+            overall_save_filename = 'results/evals/{}_{}_MEDDRA_overall.csv'.format(run_key.strip('/'), embed_model_name.split('/')[-1])
         
         print(run_key)
-        print(f'saving results to {granular_save_filename} and {overall_save_filename}')
+        print(f'MEDDDRAAA saving results to {granular_save_filename} and {overall_save_filename}')
         
         results_granular = evaluation_granular(manual_ades, output, eval_method=eval_method, embed_model = embed_model)
         overall_results = results_granular.groupby(['section','ade_type'])[['tp', 'fp', 'fn']].sum(min_count = 1).reset_index()
